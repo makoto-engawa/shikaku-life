@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>カテゴリ一覧｜資格Life</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .cat-hero { padding: 56px 0 28px; }
+  .cat-hero h1 { font-size: 40px; line-height: 1.45; margin: 14px 0 12px; }
+  @media (max-width: 720px) { .cat-hero h1 { font-size: 30px; } }
+  .cat-hero p { color: var(--soft); margin: 0; max-width: 640px; line-height: 1.9; }
+
+  .big-cat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    padding: 32px 0 64px;
+  }
+  @media (max-width: 720px) { .big-cat-grid { grid-template-columns: 1fr; } }
+  .big-cat {
+    background: #fff;
+    border-radius: var(--radius-xl);
+    border: 1.5px solid var(--rule);
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+    color: var(--ink);
+    transition: all .2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .big-cat::before {
+    content: "";
+    position: absolute;
+    inset: -60px -60px auto auto;
+    width: 240px; height: 240px;
+    border-radius: 50%;
+    z-index: 0;
+    opacity: .5;
+  }
+  .big-cat.b-bilmen::before { background: radial-gradient(circle, var(--mint-soft), transparent 70%); }
+  .big-cat.b-ai::before     { background: radial-gradient(circle, var(--violet-soft), transparent 70%); }
+  .big-cat.b-law::before    { background: radial-gradient(circle, var(--primary-soft), transparent 70%); }
+  .big-cat.b-money::before  { background: radial-gradient(circle, var(--yellow-soft), transparent 70%); }
+  .big-cat.b-lang::before   { background: radial-gradient(circle, var(--pink-soft), transparent 70%); }
+  .big-cat.b-story::before  { background: radial-gradient(circle, var(--orange-soft), transparent 70%); }
+  .big-cat > * { position: relative; z-index: 1; }
+  .big-cat:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); text-decoration: none; border-color: var(--primary-soft); }
+
+  .big-cat .top { display: flex; align-items: center; gap: 16px; }
+  .big-cat .ico {
+    width: 64px; height: 64px;
+    border-radius: 18px;
+    display: grid; place-items: center;
+    font-size: 32px;
+    background: var(--bg);
+  }
+  .big-cat h2 { margin: 0; font-size: 24px; }
+  .big-cat .count {
+    font-family: var(--font-heading);
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: .15em;
+    display: block;
+  }
+  .big-cat .desc { color: var(--soft); line-height: 1.85; margin: 0; }
+  .big-cat ul.popular {
+    list-style: none;
+    padding: 0;
+    margin: 6px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .big-cat ul.popular li {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 14px;
+    background: var(--bg);
+    border-radius: 12px;
+    font-size: 14px;
+    font-family: var(--font-heading);
+    color: var(--ink);
+  }
+  .big-cat ul.popular li .pos {
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    background: #fff;
+    color: var(--soft);
+    font-size: 11px;
+    display: grid; place-items: center;
+    font-weight: 900;
+    border: 1.5px solid var(--rule);
+  }
+  .big-cat .foot {
+    display: flex; align-items: center; gap: 12px;
+    margin-top: 4px;
+  }
+  .big-cat .go {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--primary-deep);
+  }
+  .big-cat .go:hover { color: var(--orange-deep); }
+</style>
+</head>
+<body data-screen-label="06 Categories">
+
+<div id="header-slot"></div>
+
+<section class="cat-hero">
+  <div class="container">
+    <span class="eyebrow">CATEGORIES</span>
+    <h1>6つの<em>カテゴリ</em>から、選ぶ。</h1>
+    <p>「自分が向いている道」は、最初は誰にもわかりません。まず1つのジャンルから記事を読んでみて、興味の輪郭をつかんでください。</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="big-cat-grid">
+
+      <a class="big-cat b-bilmen" href="articles.html">
+        <div class="top">
+          <span class="ico">🔧</span>
+          <div>
+            <h2>ビルメン系</h2>
+            <span class="count">32 ARTICLES ／ 7 RESOURCES</span>
+          </div>
+        </div>
+        <p class="desc">電気工事士・ボイラー・危険物・冷凍機械。手に職をつける王道ジャンル。姉妹サイト「ビルメンアカデミー」へも誘導しています。</p>
+        <ul class="popular">
+          <li><span class="pos">1</span>第二種電気工事士、独学6ヶ月で一発合格</li>
+          <li><span class="pos">2</span>危険物乙4、ビルメン入門に最適な理由</li>
+          <li><span class="pos">3</span>2級ボイラー、実技講習の流れと注意点</li>
+        </ul>
+        <div class="foot"><span class="go">カテゴリを見る →</span></div>
+      </a>
+
+      <a class="big-cat b-ai" href="articles.html">
+        <div class="top">
+          <span class="ico">🤖</span>
+          <div>
+            <h2>IT・AI</h2>
+            <span class="count">24 ARTICLES ／ 5 RESOURCES</span>
+          </div>
+        </div>
+        <p class="desc">AI活用・プロンプト・基本情報技術者まで。「AIに仕事を奪われる側」ではなく「AIで作る側」になるための学び。</p>
+        <ul class="popular">
+          <li><span class="pos">1</span>ChatGPTで資格勉強を爆速化、プロンプト10選</li>
+          <li><span class="pos">2</span>基本情報技術者、文系でも受かる勉強プラン</li>
+          <li><span class="pos">3</span>AI時代に残る職をくれる7つの資格</li>
+        </ul>
+        <div class="foot"><span class="go">カテゴリを見る →</span></div>
+      </a>
+
+      <a class="big-cat b-law" href="articles.html">
+        <div class="top">
+          <span class="ico">⚖️</span>
+          <div>
+            <h2>法律系</h2>
+            <span class="count">18 ARTICLES ／ 4 RESOURCES</span>
+          </div>
+        </div>
+        <p class="desc">宅建・行政書士・FP3級など。社会人の「武器になる資格」を、独学派と通信派の両方から解説。</p>
+        <ul class="popular">
+          <li><span class="pos">1</span>宅建、社会人が働きながら受かるには</li>
+          <li><span class="pos">2</span>行政書士、独学はやめるべき？タイプ別判定</li>
+          <li><span class="pos">3</span>司法書士まで、社会人が辿る進路マップ</li>
+        </ul>
+        <div class="foot"><span class="go">カテゴリを見る →</span></div>
+      </a>
+
+      <a class="big-cat b-money" href="articles.html">
+        <div class="top">
+          <span class="ico">💰</span>
+          <div>
+            <h2>金融</h2>
+            <span class="count">21 ARTICLES ／ 4 RESOURCES</span>
+          </div>
+        </div>
+        <p class="desc">簿記・FP・証券外務員。「自分のお金にも仕事のお金にも強くなる」、地味だけど最強カテゴリ。</p>
+        <ul class="popular">
+          <li><span class="pos">1</span>簿記3級、最短2週間で合格する勉強法</li>
+          <li><span class="pos">2</span>FP3級、ぜんぶ対応のテンプレ勉強法</li>
+          <li><span class="pos">3</span>証券外務員、未経験から1ヶ月合格プラン</li>
+        </ul>
+        <div class="foot"><span class="go">カテゴリを見る →</span></div>
+      </a>
+
+      <a class="big-cat b-lang" href="articles.html">
+        <div class="top">
+          <span class="ico">🗣️</span>
+          <div>
+            <h2>語学</h2>
+            <span class="count">19 ARTICLES ／ 3 RESOURCES</span>
+          </div>
+        </div>
+        <p class="desc">TOEIC・英検・中国語検定。日々の積み上げで一番効きやすいジャンル。続け方のテクをまとめています。</p>
+        <ul class="popular">
+          <li><span class="pos">1</span>TOEIC 600→800、朝活ルーティン</li>
+          <li><span class="pos">2</span>中国語検定HSK、半年で4級合格</li>
+          <li><span class="pos">3</span>英検1級、独学で合格した参考書ルート</li>
+        </ul>
+        <div class="foot"><span class="go">カテゴリを見る →</span></div>
+      </a>
+
+      <a class="big-cat b-story" href="story.html">
+        <div class="top">
+          <span class="ico">📔</span>
+          <div>
+            <h2>物語・コラム</h2>
+            <span class="count">14 ARTICLES ／ 1 SAGA</span>
+          </div>
+        </div>
+        <p class="desc">父さんとAIの制作物語、再就職の体験談、勉強が辛い夜の話。<em>読み物として楽しめる</em>記事を置いています。</p>
+        <ul class="popular">
+          <li><span class="pos">1</span>父とAIで資格アプリを作った、夏のはなし</li>
+          <li><span class="pos">2</span>「もう遅い」と言わなくなった日のこと</li>
+          <li><span class="pos">3</span>50代で再就職。資格が背中を押した</li>
+        </ul>
+        <div class="foot"><span class="go">物語を読む →</span></div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<div id="footer-slot"></div>
+
+<script src="partials.js"></script>
+<script>
+  SL.mountHeader('categories');
+  SL.mountFooter();
+</script>
+</body>
+</html>

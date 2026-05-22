@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>教材比較ハブ｜資格Life</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .hub-hero {
+    position: relative;
+    padding: 64px 0 48px;
+    overflow: hidden;
+  }
+  .hub-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(40% 70% at 12% 30%, rgba(58, 160, 255, .22), transparent 70%),
+      radial-gradient(40% 70% at 88% 70%, rgba(255, 139, 61, .18), transparent 70%);
+    z-index: 0;
+  }
+  .hub-hero .container { position: relative; z-index: 1; }
+  .hub-hero h1 { font-size: 44px; line-height: 1.4; margin: 16px 0 16px; }
+  @media (max-width: 720px) { .hub-hero h1 { font-size: 32px; } }
+  .hub-hero p.lede { color: var(--soft); font-size: 17px; line-height: 1.9; max-width: 680px; margin: 0; }
+
+  .hub-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    padding: 40px 0 80px;
+  }
+  @media (max-width: 720px) { .hub-grid { grid-template-columns: 1fr; } }
+  .hub-card {
+    background: #fff;
+    border: 1.5px solid var(--rule);
+    border-radius: var(--radius-xl);
+    padding: 28px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: all .2s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .hub-card::before {
+    content: "";
+    position: absolute;
+    inset: -40px -40px auto auto;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    opacity: .35;
+    z-index: 0;
+  }
+  .hub-card.h-bilmen::before { background: radial-gradient(circle, var(--mint-soft), transparent 70%); }
+  .hub-card.h-ai::before     { background: radial-gradient(circle, var(--violet-soft), transparent 70%); }
+  .hub-card.h-law::before    { background: radial-gradient(circle, var(--primary-soft), transparent 70%); }
+  .hub-card.h-money::before  { background: radial-gradient(circle, var(--yellow-soft), transparent 70%); }
+  .hub-card.h-lang::before   { background: radial-gradient(circle, var(--pink-soft), transparent 70%); }
+  .hub-card.h-other::before  { background: radial-gradient(circle, var(--orange-soft), transparent 70%); }
+  .hub-card > * { position: relative; z-index: 1; }
+  .hub-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--primary-soft); text-decoration: none; }
+  .hub-card .ico {
+    width: 56px; height: 56px;
+    border-radius: 16px;
+    display: grid; place-items: center;
+    font-size: 28px;
+    background: var(--bg);
+  }
+  .hub-card h3 { margin: 0; font-size: 22px; color: var(--ink-strong); }
+  .hub-card p { margin: 0; color: var(--soft); line-height: 1.85; font-size: 14px; }
+  .hub-card .list {
+    list-style: none; padding: 0; margin: 8px 0 4px;
+    display: flex; flex-wrap: wrap; gap: 6px;
+  }
+  .hub-card .list li {
+    font-family: var(--font-heading);
+    font-size: 12px;
+    color: var(--ink);
+    background: var(--bg);
+    border-radius: 999px;
+    padding: 4px 12px;
+  }
+  .hub-card .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+  }
+  .hub-card .foot .meta {
+    font-family: var(--font-heading);
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: .1em;
+  }
+  .hub-card .foot .go {
+    background: var(--orange);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 13px;
+    box-shadow: var(--shadow-cta);
+  }
+  .hub-card .foot .go:hover { background: var(--orange-deep); }
+
+  .badge-new {
+    display: inline-block;
+    background: var(--orange);
+    color: #fff;
+    border-radius: 999px;
+    padding: 2px 10px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: .15em;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+
+  .why-section { padding: 60px 0; background: #fff; border-top: 1.5px solid var(--rule); border-bottom: 1.5px solid var(--rule); }
+  .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  @media (max-width: 720px) { .why-grid { grid-template-columns: 1fr; } }
+  .why-card { background: var(--bg); border-radius: var(--radius-lg); padding: 24px; }
+  .why-card .ico {
+    width: 44px; height: 44px;
+    border-radius: 12px;
+    background: var(--primary-soft);
+    color: var(--primary-deep);
+    display: grid; place-items: center;
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  .why-card h3 { font-size: 17px; margin: 0 0 6px; }
+  .why-card p { color: var(--soft); font-size: 14px; line-height: 1.85; margin: 0; }
+</style>
+</head>
+<body data-screen-label="04 Comparison Hub">
+
+<div id="header-slot"></div>
+
+<section class="hub-hero">
+  <div class="container">
+    <span class="eyebrow">COMPARISON HUB</span>
+    <h1>教材を選ぶ前に、<br><em>正直に比較</em>するページ。</h1>
+    <p class="lede">
+      ジャンルごとに、信頼できる通信講座を中立に並べました。<br>
+      気になる資格カテゴリを選ぶと、比較表・各社レビュー・用途別ランキングが見られます。
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="hub-grid">
+
+      <a class="hub-card h-bilmen" href="comparison-denko2.html">
+        <span class="ico">⚡</span>
+        <h3>第二種電気工事士<span class="badge-new">UPDATED</span></h3>
+        <p>ユーキャン・フォーサイト・スタディング他、計6社を徹底比較。短期合格・コスパなど用途別ランキングつき。</p>
+        <ul class="list">
+          <li>ユーキャン</li><li>フォーサイト</li><li>スタディング</li><li>JTEX</li><li>日建学院</li><li>翔泳社</li>
+        </ul>
+        <div class="foot"><span class="meta">6 社 ／ 2026 EDITION</span><span class="go">比較を見る →</span></div>
+      </a>
+
+      <a class="hub-card h-bilmen" href="comparison-denko2.html">
+        <span class="ico">🔥</span>
+        <h3>危険物取扱者 乙4</h3>
+        <p>ビルメン入門の登竜門。短期合格に強い教材から、独学派向けの参考書まで5社で比較。</p>
+        <ul class="list"><li>ユーキャン</li><li>スタディング</li><li>翔泳社</li><li>独学プラン</li><li>たのまな</li></ul>
+        <div class="foot"><span class="meta">5 社 ／ 2026 EDITION</span><span class="go">比較を見る →</span></div>
+      </a>
+
+      <a class="hub-card h-bilmen" href="comparison-denko2.html">
+        <span class="ico">♨️</span>
+        <h3>2級ボイラー技士</h3>
+        <p>実技講習が必須のボイラー試験。講座選びと講習の組み合わせを4社で整理しました。</p>
+        <ul class="list"><li>ユーキャン</li><li>たのまな</li><li>独学プラン</li><li>SAT</li></ul>
+        <div class="foot"><span class="meta">4 社 ／ 2026 EDITION</span><span class="go">比較を見る →</span></div>
+      </a>
+
+      <a class="hub-card h-law" href="comparison-denko2.html">
+        <span class="ico">🏠</span>
+        <h3>宅地建物取引士（宅建）<span class="badge-new">POPULAR</span></h3>
+        <p>独学・通信・通学。300時間プランで合格するための教材を5社で比較。社会人向けランキングつき。</p>
+        <ul class="list"><li>フォーサイト</li><li>スタディング</li><li>ユーキャン</li><li>LEC</li><li>TAC</li></ul>
+        <div class="foot"><span class="meta">5 社 ／ 2026 EDITION</span><span class="go">比較を見る →</span></div>
+      </a>
+
+      <a class="hub-card h-money" href="comparison-denko2.html">
+        <span class="ico">📊</span>
+        <h3>簿記3級・2級</h3>
+        <p>独学派と通信派、それぞれの最短ルート。スマホ完結派／紙派の好みで選べる比較ガイド。</p>
+        <ul class="list"><li>クレアール</li><li>スタディング</li><li>大原</li><li>ユーキャン</li></ul>
+        <div class="foot"><span class="meta">4 社 ／ 2026 EDITION</span><span class="go">比較を見る →</span></div>
+      </a>
+
+      <a class="hub-card h-money" href="comparison-denko2.html">
+        <span class="ico">💴</span>
+        <h3>FP（ファイナンシャル・プランナー）</h3>
+        <p>3級・2級・AFP。受検階層に合わせた教材選びを、料金とサポート観点で整理。</p>
+        <ul class="list"><li>ユーキャン</li><li>フォーサイト</li><li>LEC</li><li>ECC</li></ul>
+        <div class="foot"><span class="meta">4 社 ／ 2026 EDITION</span><span class="go">比較を見る →</span></div>
+      </a>
+
+      <a class="hub-card h-ai" href="comparison-denko2.html">
+        <span class="ico">🤖</span>
+        <h3>基本情報技術者・AI学習<span class="badge-new">NEW</span></h3>
+        <p>IT・AI領域の教材を、目的別（資格／実務）に整理。プロンプト学習サービスも含めて比較。</p>
+        <ul class="list"><li>キャリカレ</li><li>スタディング</li><li>Coursera</li><li>Udemy</li></ul>
+        <div class="foot"><span class="meta">4 社 ／ 2026 EDITION</span><span class="go">比較を見る →</span></div>
+      </a>
+
+      <a class="hub-card h-lang" href="comparison-denko2.html">
+        <span class="ico">🗣️</span>
+        <h3>TOEIC・英検</h3>
+        <p>目標スコア別に、最適なオンライン教材／アプリを整理。朝活ルーティンの作り方も。</p>
+        <ul class="list"><li>スタディサプリ</li><li>レアジョブ</li><li>ECC</li><li>独学プラン</li></ul>
+        <div class="foot"><span class="meta">4 社 ／ 2026 EDITION</span><span class="go">比較を見る →</span></div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="why-section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">OUR EDITORIAL POLICY</span>
+        <h2>私たちの「中立」のかたち</h2>
+      </div>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="ico">🤝</div>
+        <h3>実際に資料請求して比較</h3>
+        <p>編集部が各社の資料請求・体験受講をしたうえで記事化しています。「触らずに書いた記事」は載せません。</p>
+      </div>
+      <div class="why-card">
+        <div class="ico">💎</div>
+        <h3>料金は税込・最新を明記</h3>
+        <p>取材時点の税込価格をすべての記事で表示。キャンペーン適用前後を分けて記載しています。</p>
+      </div>
+      <div class="why-card">
+        <div class="ico">🪶</div>
+        <h3>合わない人にはハッキリ書く</h3>
+        <p>「全員におすすめ」とは書きません。「こういう人には合わない」も併記して、ミスマッチを減らします。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding: 80px 0;">
+  <div class="container">
+    <div class="bilmen-band">
+      <span class="float float-1">⚙️</span>
+      <span class="float float-2">🏢</span>
+      <div>
+        <span class="eyebrow">SISTER SITE</span>
+        <h2>ビルメン四点セットの<em>深い比較</em>は、こちら。</h2>
+        <p>ビルメン特化メディア「ビルメンアカデミー」では、現場視点での教材レビューを公開中。</p>
+        <a href="#" class="btn btn-cta" target="_blank" rel="noopener">ビルメンアカデミーを見る →</a>
+      </div>
+      <div class="stickers">
+        <div class="sticker"><span class="ico">⚡</span>第二種電気工事士</div>
+        <div class="sticker"><span class="ico">🔥</span>危険物 乙4</div>
+        <div class="sticker"><span class="ico">♨️</span>2級ボイラー</div>
+        <div class="sticker"><span class="ico">❄️</span>3冷凍機械</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-slot"></div>
+
+<script src="partials.js"></script>
+<script>
+  SL.mountHeader('comparison');
+  SL.mountFooter();
+</script>
+</body>
+</html>

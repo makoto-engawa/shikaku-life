@@ -1,0 +1,840 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>第二種電気工事士、独学6ヶ月で一発合格するための学習ロードマップ｜資格Life</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .article-wrap { padding: 28px 0 64px; }
+  .article-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 56px;
+    margin-top: 28px;
+  }
+  @media (max-width: 980px) { .article-layout { grid-template-columns: 1fr; } }
+
+  /* ------ HEAD ------ */
+  .a-head .crumbs { margin-bottom: 18px; }
+  .a-head .pr-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 18px; }
+  .a-head h1 {
+    font-size: 38px;
+    line-height: 1.5;
+    margin: 12px 0 22px;
+  }
+  @media (max-width: 720px) { .a-head h1 { font-size: 28px; } }
+  .a-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-family: var(--font-heading);
+    font-size: 13px;
+    color: var(--soft);
+    padding: 14px 0 22px;
+    border-bottom: 1.5px solid var(--rule);
+  }
+  .a-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--muted); }
+  .a-meta .author {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .a-meta .avatar {
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--orange-soft), var(--mint-soft));
+    display: grid; place-items: center;
+    font-size: 18px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1.5px var(--rule);
+  }
+
+  .eyecatch {
+    aspect-ratio: 16 / 9;
+    border-radius: var(--radius-xl);
+    background:
+      radial-gradient(60% 80% at 20% 30%, rgba(255, 207, 77, .35), transparent 65%),
+      radial-gradient(60% 80% at 80% 70%, rgba(77, 209, 168, .35), transparent 65%),
+      linear-gradient(135deg, var(--primary-soft), #fff 80%);
+    display: grid;
+    place-items: center;
+    font-size: 180px;
+    margin: 24px 0 36px;
+    box-shadow: var(--shadow-md);
+  }
+
+  /* ------ LEDE ------ */
+  .lede-block {
+    background: var(--orange-soft);
+    border-left: 5px solid var(--orange);
+    border-radius: 14px;
+    padding: 22px 26px;
+    margin: 0 0 32px;
+  }
+  .lede-block p { margin: 0; line-height: 1.95; }
+  .lede-block strong { color: var(--orange-deep); }
+
+  /* ------ TOC ------ */
+  .toc {
+    background: #fff;
+    border: 1.5px solid var(--rule);
+    border-radius: var(--radius-lg);
+    padding: 22px 26px;
+    margin-bottom: 36px;
+  }
+  .toc summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--ink-strong);
+  }
+  .toc summary::-webkit-details-marker { display: none; }
+  .toc summary::after {
+    content: "▾";
+    margin-left: auto;
+    color: var(--muted);
+    transition: transform .2s ease;
+  }
+  .toc[open] summary::after { transform: rotate(180deg); }
+  .toc ol { margin: 16px 0 0; padding-left: 22px; color: var(--ink); line-height: 1.9; }
+  .toc ol ol { margin: 4px 0 6px; padding-left: 18px; color: var(--soft); font-size: 14px; }
+  .toc a { color: var(--ink); }
+  .toc a:hover { color: var(--primary-deep); }
+
+  /* ------ BODY ------ */
+  .a-body { font-size: 17px; line-height: 2.05; }
+  .a-body h2 {
+    font-size: 26px;
+    margin-top: 56px;
+    margin-bottom: 18px;
+    padding-left: 18px;
+    border-left: 6px solid var(--primary);
+    line-height: 1.5;
+  }
+  .a-body h3 {
+    font-size: 19px;
+    margin-top: 36px;
+    margin-bottom: 12px;
+    color: var(--primary-deep);
+  }
+  .a-body p { margin-bottom: 1.4em; }
+  .a-body ul, .a-body ol { padding-left: 1.4em; margin-bottom: 1.4em; line-height: 1.95; }
+  .a-body li { margin-bottom: .4em; }
+  .a-body blockquote {
+    margin: 1.5em 0;
+    padding: 18px 26px;
+    background: var(--primary-soft);
+    border-left: 5px solid var(--primary);
+    border-radius: 12px;
+    color: var(--ink);
+    line-height: 1.9;
+  }
+  .a-body blockquote p:last-child { margin-bottom: 0; }
+  .callout {
+    background: var(--mint-soft);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin: 1.6em 0;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .callout .ico { font-size: 28px; flex: none; }
+  .callout p { margin: 0; }
+  .callout strong { color: #1c8a64; }
+
+  /* ------ MID CTA: 3 product cards ------ */
+  .mid-cta {
+    background: linear-gradient(180deg, var(--orange-soft) 0%, #fff 80%);
+    border: 1.5px solid #f8d4b3;
+    border-radius: var(--radius-xl);
+    padding: 32px 32px 28px;
+    margin: 56px 0;
+  }
+  .mid-cta .head {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .mid-cta .head .label {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 12px;
+    letter-spacing: .25em;
+    color: var(--orange-deep);
+    background: #fff;
+    border: 1.5px dashed var(--orange);
+    border-radius: 999px;
+    padding: 4px 16px;
+    display: inline-block;
+  }
+  .mid-cta h3 {
+    font-size: 22px;
+    margin: 14px 0 4px;
+    color: var(--ink-strong);
+  }
+  .mid-cta .sub { color: var(--soft); margin: 0; font-size: 14px; }
+  .mid-cta .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 26px;
+  }
+  @media (max-width: 880px) { .mid-cta .cards { grid-template-columns: 1fr; } }
+  .mid-cta .p-card {
+    background: #fff;
+    border-radius: var(--radius-lg);
+    padding: 22px 22px 24px;
+    border: 1.5px solid var(--rule);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all .2s ease;
+    position: relative;
+  }
+  .mid-cta .p-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--orange); }
+  .mid-cta .p-card .tag {
+    position: absolute;
+    top: -10px; left: 16px;
+    background: var(--ink-strong);
+    color: #fff;
+    border-radius: 999px;
+    padding: 3px 12px;
+    font-family: var(--font-heading);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .1em;
+  }
+  .mid-cta .p-card .tag.t-best { background: var(--orange); }
+  .mid-cta .p-card .tag.t-cheap { background: var(--mint); color: #053b29; }
+  .mid-cta .p-card h4 { margin: 4px 0 0; font-size: 19px; }
+  .mid-cta .p-card .feat { color: var(--soft); font-size: 14px; margin: 0; line-height: 1.7; }
+  .mid-cta .p-card .price {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    color: var(--orange-deep);
+    font-size: 22px;
+  }
+  .mid-cta .p-card .price .yen { font-size: 14px; margin-left: 2px; }
+  .mid-cta .p-card .price .note { font-size: 12px; color: var(--soft); font-weight: 500; margin-left: 6px; }
+  .mid-cta .p-card .pros { font-size: 13px; color: var(--soft); margin: 6px 0; padding-left: 18px; list-style: none; }
+  .mid-cta .p-card .pros li { position: relative; padding-left: 4px; margin-bottom: 4px; }
+  .mid-cta .p-card .pros li::before { content: "✓"; color: var(--mint); font-weight: 900; position: absolute; left: -16px; }
+  .mid-cta .p-card .cta-btn {
+    margin-top: auto;
+    background: var(--orange);
+    color: #fff;
+    text-align: center;
+    border-radius: 999px;
+    padding: 12px 16px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: var(--shadow-cta);
+    transition: all .15s;
+  }
+  .mid-cta .p-card .cta-btn:hover {
+    background: var(--orange-deep);
+    text-decoration: none;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+  .mid-cta .pr-foot { text-align: center; font-size: 11px; color: var(--muted); margin-top: 18px; }
+
+  /* ------ COMPARISON TABLE (end-of-article) ------ */
+  .end-bundle {
+    margin: 56px 0;
+    background: #fff;
+    border: 1.5px solid var(--rule);
+    border-radius: var(--radius-xl);
+    padding: 36px 36px 32px;
+  }
+  @media (max-width: 720px) { .end-bundle { padding: 22px; } }
+  .end-bundle > .head {
+    margin-bottom: 24px;
+  }
+  .end-bundle > .head .label {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--ink-strong); color: #fff; border-radius: 999px;
+    padding: 4px 14px; font-family: var(--font-heading);
+    font-size: 12px; font-weight: 700; letter-spacing: .12em;
+  }
+  .end-bundle > .head h3 { font-size: 24px; margin: 14px 0 6px; }
+  .end-bundle > .head p { margin: 0; color: var(--soft); font-size: 14px; }
+
+  .table-wrap {
+    overflow-x: auto;
+    border-radius: 14px;
+    border: 1.5px solid var(--rule);
+    margin-bottom: 28px;
+  }
+  table.compare {
+    width: 100%;
+    min-width: 760px;
+    border-collapse: collapse;
+    background: #fff;
+    font-size: 14px;
+  }
+  table.compare th, table.compare td {
+    padding: 14px 16px;
+    border-bottom: 1.5px solid var(--rule);
+    text-align: left;
+    vertical-align: middle;
+  }
+  table.compare thead th {
+    background: var(--primary-soft);
+    color: var(--primary-deep);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  table.compare tbody tr:hover { background: #fafdff; }
+  table.compare td.name { font-family: var(--font-heading); font-weight: 700; color: var(--ink-strong); white-space: nowrap; }
+  table.compare td.price { font-family: var(--font-heading); font-weight: 700; color: var(--orange-deep); white-space: nowrap; }
+  table.compare a.go {
+    display: inline-flex; align-items: center; gap: 4px;
+    background: var(--orange); color: #fff;
+    padding: 7px 14px; border-radius: 999px;
+    font-family: var(--font-heading); font-weight: 700; font-size: 12px;
+    white-space: nowrap;
+  }
+  table.compare a.go:hover { background: var(--orange-deep); text-decoration: none; color: #fff; }
+  table.compare tr.featured td { background: linear-gradient(90deg, var(--yellow-soft), transparent 50%); }
+
+  /* ------ Ranking ------ */
+  .rank-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  @media (max-width: 880px) { .rank-grid { grid-template-columns: 1fr; } }
+  .rank-card {
+    background: var(--bg);
+    border-radius: var(--radius-lg);
+    padding: 22px 22px 24px;
+    border: 1.5px solid var(--rule);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    overflow: hidden;
+  }
+  .rank-card .badge {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 13px;
+    color: var(--ink-strong);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #fff;
+    border-radius: 999px;
+    padding: 4px 14px;
+    width: max-content;
+    border: 1.5px solid var(--rule);
+  }
+  .rank-card.no1 .badge { background: #fffaea; border-color: #f0c34a; color: #8a5e00; }
+  .rank-card.fast .badge { background: var(--violet-soft); border-color: #b5b4ff; color: #4a48d8; }
+  .rank-card.cheap .badge { background: var(--mint-soft); border-color: #6fdab5; color: #1c8a64; }
+  .rank-card h4 { font-size: 20px; margin: 6px 0 0; }
+  .rank-card p { font-size: 14px; color: var(--soft); margin: 0; line-height: 1.85; }
+  .rank-card .go {
+    display: inline-flex; align-items: center; justify-content: center;
+    margin-top: auto;
+    background: var(--orange); color: #fff;
+    border-radius: 999px;
+    padding: 11px 18px;
+    font-family: var(--font-heading); font-weight: 700; font-size: 14px;
+    box-shadow: var(--shadow-cta);
+    transition: all .15s;
+  }
+  .rank-card .go:hover { background: var(--orange-deep); text-decoration: none; color: #fff; transform: translateY(-2px); }
+
+  /* ------ Author box ------ */
+  .author-box {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    background: var(--primary-soft);
+    border-radius: var(--radius-lg);
+    padding: 22px 26px;
+    margin: 40px 0;
+  }
+  .author-box .avatar {
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    background: #fff;
+    display: grid; place-items: center;
+    font-size: 32px;
+    flex: none;
+  }
+  .author-box h4 { margin: 0 0 6px; font-size: 16px; }
+  .author-box p { font-size: 14px; line-height: 1.8; margin: 0; color: var(--soft); }
+
+  /* ------ Sidebar ------ */
+  .side { position: sticky; top: 96px; align-self: start; display: flex; flex-direction: column; gap: 20px; }
+  .side .panel {
+    background: #fff;
+    border: 1.5px solid var(--rule);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+  }
+  .side .panel h4 {
+    font-size: 13px;
+    letter-spacing: .15em;
+    color: var(--soft);
+    margin: 0 0 14px;
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+  }
+  .side .panel ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+  .side .panel li { font-size: 13px; line-height: 1.5; }
+  .side .panel li a { color: var(--ink); }
+  .side .side-cta {
+    background: linear-gradient(160deg, var(--orange) 0%, var(--orange-deep) 100%);
+    color: #fff;
+    border: 0;
+    text-align: center;
+  }
+  .side .side-cta h4 { color: #fff; opacity: .9; }
+  .side .side-cta .copy { font-family: var(--font-heading); font-weight: 700; font-size: 17px; line-height: 1.5; margin-bottom: 14px; }
+  .side .side-cta a {
+    display: block;
+    background: #fff; color: var(--orange-deep);
+    border-radius: 999px;
+    padding: 10px 14px;
+    font-family: var(--font-heading); font-weight: 700; font-size: 14px;
+  }
+
+  /* ------ Related ------ */
+  .related { margin-top: 56px; }
+
+  /* ------ Floating progress + back-to-top ------ */
+  .progress-bar {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--orange));
+    width: 0%;
+    z-index: 40;
+    transition: width .12s linear;
+  }
+</style>
+</head>
+<body data-screen-label="03 Article Single">
+
+<div id="header-slot"></div>
+<div class="progress-bar" id="progress"></div>
+
+<div class="article-wrap container">
+
+  <div class="article-layout">
+
+    <!-- =================== MAIN =================== -->
+    <article>
+
+      <header class="a-head">
+        <nav class="crumbs">
+          <a href="index.html">ホーム</a>
+          <span class="sep">›</span>
+          <a href="categories.html">ビルメン系</a>
+          <span class="sep">›</span>
+          <span>第二種電気工事士、独学6ヶ月の学習ロードマップ</span>
+        </nav>
+
+        <div class="pr-row">
+          <span class="cat-pill cat-bilmen">🔧 ビルメン系</span>
+          <span class="pr-badge">※当記事にはアフィリエイト広告（PR）が含まれます</span>
+        </div>
+
+        <h1>第二種電気工事士、独学6ヶ月で<em>一発合格</em>するための学習ロードマップ【2026年版】</h1>
+
+        <div class="a-meta">
+          <span class="author">
+            <span class="avatar">👨‍🦱</span>
+            <span>編集部・タカシ</span>
+          </span>
+          <span class="dot"></span>
+          <span>2026年5月18日 公開</span>
+          <span class="dot"></span>
+          <span>読了 約12分</span>
+          <span class="dot"></span>
+          <span>更新 2026年5月20日</span>
+        </div>
+
+        <div class="eyecatch" aria-hidden="true">⚡</div>
+
+        <div class="lede-block">
+          <p>
+            「電気って文系の自分に取れるの？」――結論、<strong>取れます</strong>。<br>
+            この記事では、私と父が実際に挑戦した独学ルートを土台に、
+            6ヶ月の月別タスク・おすすめ教材・実技対策まで初心者の目線で整理しました。<br>
+            <strong>「気合いでがんばる」ではなく「淡々と進むだけで受かる」</strong>方法を、ここに残します。
+          </p>
+        </div>
+
+        <details class="toc" open>
+          <summary>📑 目次（タップで開閉）</summary>
+          <ol>
+            <li><a href="#chap-1">なぜ「第二種電気工事士」が、最初の一歩に向いているのか</a></li>
+            <li>
+              <a href="#chap-2">6ヶ月の学習ロードマップ</a>
+              <ol>
+                <li><a href="#chap-2-1">1〜2ヶ月目：筆記の基礎をつくる</a></li>
+                <li><a href="#chap-2-2">3〜4ヶ月目：過去問道場</a></li>
+                <li><a href="#chap-2-3">5〜6ヶ月目：実技の反復</a></li>
+              </ol>
+            </li>
+            <li><a href="#chap-3">迷う前に：おすすめ教材ピックアップ</a></li>
+            <li><a href="#chap-4">実技で落ちないための3つの鉄則</a></li>
+            <li><a href="#chap-5">この資格、合格したあとの「次の一手」</a></li>
+            <li><a href="#chap-6">教材まとめ｜あなたに合うのはこれ</a></li>
+          </ol>
+        </details>
+      </header>
+
+      <div class="a-body">
+
+        <h2 id="chap-1">なぜ「第二種電気工事士」が、最初の一歩に向いているのか</h2>
+        <p>
+          ビルメン業界の入口として、第二種電気工事士は<em>とにかく強い</em>資格です。
+          国家資格でありながら年2回のチャンスがあり、合格率は筆記で約60%、実技で約70%。
+          きちんと手順を踏めば、文系・未経験でも十分に合格圏に入れます。
+        </p>
+        <p>
+          そして何より、「電気が触れる人」というだけで、転職市場での自分の見え方は大きく変わります。
+          私が父と一緒に挑戦したとき、「もう60過ぎだから」と諦めかけていた父の声が、
+          試験会場を出た瞬間に少しだけ若返って聞こえたのを覚えています。
+        </p>
+
+        <div class="callout">
+          <span class="ico">💡</span>
+          <p>
+            <strong>ポイント：</strong>
+            「いつかやる」を「6ヶ月後に受ける」に変えるのが、合格率を一番上げるコツです。
+            この記事を読み終わるまでに、<em>受験する回</em>を決めてしまいましょう。
+          </p>
+        </div>
+
+        <h2 id="chap-2">6ヶ月の学習ロードマップ</h2>
+        <p>
+          ここからは、実際に私たちが組んだ6ヶ月プランを月別に紹介します。
+          働きながらでも、1日<strong>平均45分</strong>で回せる量です。
+        </p>
+
+        <h3 id="chap-2-1">1〜2ヶ月目：筆記の基礎をつくる</h3>
+        <p>
+          まずは「電気とはなにか」を体に入れる期間。教科書を読み込みすぎず、<em>分からなくても先に進む</em>のが鉄則です。
+          オームの法則・配線図記号・電線の太さといった、登場頻度の高いところから手をつけます。
+        </p>
+        <ul>
+          <li>教科書を1日10ページ、ノートは取らずに眺める</li>
+          <li>章末問題は「答えを見ながら解く」でOK</li>
+          <li>YouTube解説を「ながら聴き」する</li>
+        </ul>
+
+        <h3 id="chap-2-2">3〜4ヶ月目：過去問道場</h3>
+        <p>
+          ここで合否が決まります。過去10年分を、最低でも3周。<br>
+          「答えを覚える」ではなく「<em>なぜそうなるか</em>を10秒で説明できる」を目標に。
+        </p>
+        <blockquote>
+          <p>父の口ぐせは「もう覚えられん」でした。でも3周目の終盤、急に正答率が伸びる瞬間が来ます。続けてください。</p>
+        </blockquote>
+
+        <h3 id="chap-2-3">5〜6ヶ月目：実技の反復</h3>
+        <p>
+          筆記が終わったら、いよいよ実技。<br>
+          ここはとにかく<em>手を動かす</em>こと。13問の候補問題を、最低2周は通しで作ります。
+          工具・電線・器具がセットになった「練習材料セット」を買えば、ここで一気に楽になります。
+        </p>
+      </div>
+
+      <!-- ======================= 中間CTA: 教材ピックアップ ======================= -->
+      <section class="mid-cta" aria-labelledby="mid-cta-title">
+        <div class="head">
+          <span class="label">★ この資格に強い教材ピックアップ ★</span>
+          <h3 id="mid-cta-title">迷うくらいなら、この3つから選べばOK</h3>
+          <p class="sub">編集部が実際に手にとって比較した、第二種電気工事士の通信講座 3選</p>
+        </div>
+        <div class="cards">
+          <a class="p-card" href="/go/u-can-denko2" rel="nofollow sponsored noopener" target="_blank">
+            <span class="tag t-best">王道で安心</span>
+            <h4>ユーキャン</h4>
+            <p class="feat">通信講座の代名詞。質問サポートと添削つきで、初学者がいちばん転びにくい。</p>
+            <ul class="pros">
+              <li>質問・添削サポートつき</li>
+              <li>紙テキスト＋eラーニング</li>
+              <li>受講期間 最大12ヶ月</li>
+            </ul>
+            <div class="price">63,000<span class="yen">円</span><span class="note">（税込）</span></div>
+            <div class="cta-btn">公式サイトを見る →</div>
+          </a>
+          <a class="p-card" href="/go/foresight-denko2" rel="nofollow sponsored noopener" target="_blank">
+            <span class="tag">短期合格</span>
+            <h4>フォーサイト</h4>
+            <p class="feat">合格率高めの王道。フルカラーテキストと講義動画で「分かる→解ける」が早い。</p>
+            <ul class="pros">
+              <li>合格率の実績を公開</li>
+              <li>動画講義 + eラーニング</li>
+              <li>不合格時の返金制度あり</li>
+            </ul>
+            <div class="price">54,800<span class="yen">円</span><span class="note">（税込）</span></div>
+            <div class="cta-btn">公式サイトを見る →</div>
+          </a>
+          <a class="p-card" href="/go/studying-denko2" rel="nofollow sponsored noopener" target="_blank">
+            <span class="tag t-cheap">コスパ最強</span>
+            <h4>スタディング</h4>
+            <p class="feat">スマホ1台で完結。通勤や昼休みの「5分」を積み上げて受かりたい人に。</p>
+            <ul class="pros">
+              <li>スマホ完結のeラーニング</li>
+              <li>AI問題復習で抜け漏れ防止</li>
+              <li>受講期間 翌年度末まで</li>
+            </ul>
+            <div class="price">46,800<span class="yen">円</span><span class="note">（税込）</span></div>
+            <div class="cta-btn">公式サイトを見る →</div>
+          </a>
+        </div>
+        <p class="pr-foot">※ 価格・サービス内容は 2026年5月時点。最新情報は各公式サイトでご確認ください。</p>
+      </section>
+
+      <div class="a-body">
+        <h2 id="chap-4">実技で落ちないための3つの鉄則</h2>
+        <p>
+          ここは経験者全員が口を揃えるところ。<strong>実技は「速さ」より「ミスゼロ」</strong>です。
+        </p>
+        <ol>
+          <li><strong>結線図を読む順番を体に入れる</strong>：問題用紙が配られたら、最初の30秒で全体を把握。</li>
+          <li><strong>欠陥の定義を毎回つぶやく</strong>：心線露出・絶縁被覆の傷など、覚えるべきはたった14個。</li>
+          <li><strong>本番と同じ工具で練習する</strong>：本番にメルカリ工具で挑むと、ペースが乱れて事故ります。</li>
+        </ol>
+
+        <h2 id="chap-5">この資格、合格したあとの「次の一手」</h2>
+        <p>
+          第二種に合格したら、次は<a href="article.html">危険物乙4</a>か、ボイラー、冷凍機械。
+          いわゆる「ビルメン四点セット」を揃えると、未経験でも現場の選択肢が一気に広がります。
+          専門解説は姉妹サイトの<a href="#" target="_blank" rel="noopener">ビルメンアカデミー</a>に集約しています。
+        </p>
+
+        <div class="author-box">
+          <span class="avatar">👨‍🦱</span>
+          <div>
+            <h4>編集部・タカシ</h4>
+            <p>
+              60代の父と二人で第二種電気工事士に挑戦し、AIで学習アプリまで作ってしまった。
+              「もう遅い」と言いがちな人にこそ読んでほしい記事を書いています。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======================= 末尾「教材まとめ」 ======================= -->
+      <section class="end-bundle" id="chap-6">
+        <div class="head">
+          <span class="label">📊 末尾まとめ｜教材ハイブリッド比較</span>
+          <h3>第二種電気工事士、教材まとめ</h3>
+          <p>料金・期間・サポートを並べて、用途別のおすすめも提示します。中立に並べたうえで、あなたに合う一冊を選んでください。</p>
+        </div>
+
+        <div class="table-wrap">
+          <table class="compare">
+            <thead>
+              <tr>
+                <th>教材</th>
+                <th>価格</th>
+                <th>期間</th>
+                <th>サポート</th>
+                <th>合格率</th>
+                <th>特徴</th>
+                <th>公式</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="featured">
+                <td class="name">ユーキャン</td>
+                <td class="price">63,000円</td>
+                <td>6ヶ月</td>
+                <td>添削・質問</td>
+                <td>非公開</td>
+                <td>王道・安心感</td>
+                <td><a class="go" href="/go/u-can-denko2" rel="nofollow sponsored noopener" target="_blank">公式 →</a></td>
+              </tr>
+              <tr>
+                <td class="name">フォーサイト</td>
+                <td class="price">54,800円</td>
+                <td>4ヶ月</td>
+                <td>質問あり</td>
+                <td>合格率公開</td>
+                <td>動画と教材が秀逸</td>
+                <td><a class="go" href="/go/foresight-denko2" rel="nofollow sponsored noopener" target="_blank">公式 →</a></td>
+              </tr>
+              <tr>
+                <td class="name">スタディング</td>
+                <td class="price">46,800円</td>
+                <td>翌年度末</td>
+                <td>掲示板</td>
+                <td>非公開</td>
+                <td>スマホ完結</td>
+                <td><a class="go" href="/go/studying-denko2" rel="nofollow sponsored noopener" target="_blank">公式 →</a></td>
+              </tr>
+              <tr>
+                <td class="name">日建学院</td>
+                <td class="price">72,600円</td>
+                <td>6ヶ月</td>
+                <td>通学+通信</td>
+                <td>非公開</td>
+                <td>通学併用ができる</td>
+                <td><a class="go" href="/go/nikken-denko2" rel="nofollow sponsored noopener" target="_blank">公式 →</a></td>
+              </tr>
+              <tr>
+                <td class="name">JTEX</td>
+                <td class="price">28,600円</td>
+                <td>6ヶ月</td>
+                <td>添削あり</td>
+                <td>非公開</td>
+                <td>低価格・実践向け</td>
+                <td><a class="go" href="/go/jtex-denko2" rel="nofollow sponsored noopener" target="_blank">公式 →</a></td>
+              </tr>
+              <tr>
+                <td class="name">翔泳社アカデミー</td>
+                <td class="price">42,900円</td>
+                <td>3ヶ月</td>
+                <td>掲示板</td>
+                <td>非公開</td>
+                <td>短期集中型</td>
+                <td><a class="go" href="/go/shoeisha-denko2" rel="nofollow sponsored noopener" target="_blank">公式 →</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="margin-top: 28px; margin-bottom: 18px; font-size: 18px;">あなたに合うのは、たぶんこれ</h3>
+        <div class="rank-grid">
+          <div class="rank-card no1">
+            <span class="badge">🥇 初心者向け No.1</span>
+            <h4>ユーキャン</h4>
+            <p>添削・質問サポートあり。「教科書1ページ目で閉じた経験ある人」ほど安心して進められる。</p>
+            <a class="go" href="/go/u-can-denko2" rel="nofollow sponsored noopener" target="_blank">公式へ →</a>
+          </div>
+          <div class="rank-card fast">
+            <span class="badge">⚡ 短期合格 No.1</span>
+            <h4>フォーサイト</h4>
+            <p>合格率実績が高めで、4ヶ月の短期集中で本気で取りに行く人向け。動画も短くテンポよし。</p>
+            <a class="go" href="/go/foresight-denko2" rel="nofollow sponsored noopener" target="_blank">公式へ →</a>
+          </div>
+          <div class="rank-card cheap">
+            <span class="badge">💰 コスパ No.1</span>
+            <h4>スタディング</h4>
+            <p>46,800円でスマホ完結。通勤や昼休みの隙間で進めたい、忙しい社会人にぴったり。</p>
+            <a class="go" href="/go/studying-denko2" rel="nofollow sponsored noopener" target="_blank">公式へ →</a>
+          </div>
+        </div>
+
+        <p style="text-align:center; font-size: 12px; color: var(--muted); margin: 24px 0 0;">
+          ※ 当サイトはアフィリエイトプログラムを利用しています。価格・キャンペーンは各公式サイト最新情報を必ずご確認ください。
+        </p>
+      </section>
+
+      <!-- ======================= 関連記事 ======================= -->
+      <section class="related">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">RELATED</span>
+            <h2>合わせて読みたい</h2>
+          </div>
+        </div>
+        <div class="article-grid">
+          <a class="article-card card" href="article.html">
+            <div class="thumb t-mint">🔥<span class="cat-pill cat-bilmen badge">ビルメン系</span></div>
+            <div class="body">
+              <h3>危険物乙4、ビルメン入門に最適な理由</h3>
+              <p class="excerpt">電工2種の次の一手。乙4から始める「ビルメン四点セット」攻略法。</p>
+              <div class="meta"><span>読了 6分</span></div>
+            </div>
+          </a>
+          <a class="article-card card" href="article.html">
+            <div class="thumb">💡<span class="cat-pill cat-bilmen badge">ビルメン系</span></div>
+            <div class="body">
+              <h3>第一種電気工事士、二種からの最短ルート</h3>
+              <p class="excerpt">実務経験要件と試験対策。「次の一段」を効率よく上るための地図。</p>
+              <div class="meta"><span>読了 11分</span></div>
+            </div>
+          </a>
+          <a class="article-card card" href="story.html">
+            <div class="thumb t-orange">📔<span class="cat-pill cat-story badge">物語</span></div>
+            <div class="body">
+              <h3>父とAIで資格アプリを作った、夏のはなし</h3>
+              <p class="excerpt">電気工事士を取りたい父と、AIで学習アプリを作った51日間の記録。</p>
+              <div class="meta"><span>読了 14分</span></div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </article>
+
+    <!-- =================== SIDEBAR =================== -->
+    <aside class="side">
+      <div class="panel side-cta">
+        <h4>SPONSORED</h4>
+        <p class="copy">迷ったら、まず比較。<br>第二種電工の通信講座を一覧で。</p>
+        <a href="comparison.html">比較ページを見る →</a>
+      </div>
+
+      <div class="panel">
+        <h4>POPULAR</h4>
+        <ul>
+          <li><a href="article.html">AI時代に残る職をくれる7資格</a></li>
+          <li><a href="article.html">40代からの資格挑戦リアル</a></li>
+          <li><a href="article.html">通信講座の選び方ガイド</a></li>
+          <li><a href="article.html">スマホ完結で受かる時代の勉強法</a></li>
+          <li><a href="article.html">独学 vs 通信、結局どちら？</a></li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h4>CATEGORIES</h4>
+        <ul>
+          <li><a href="categories.html">🔧 ビルメン系</a></li>
+          <li><a href="categories.html">🤖 IT・AI</a></li>
+          <li><a href="categories.html">⚖️ 法律系</a></li>
+          <li><a href="categories.html">💰 金融</a></li>
+          <li><a href="categories.html">🗣️ 語学</a></li>
+          <li><a href="story.html">📔 物語・コラム</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<div id="footer-slot"></div>
+
+<script src="partials.js"></script>
+<script>
+  SL.mountHeader('articles');
+  SL.mountFooter();
+
+  // Reading progress bar
+  const bar = document.getElementById('progress');
+  function updateProgress() {
+    const h = document.documentElement;
+    const scrollTop = h.scrollTop || document.body.scrollTop;
+    const scrollHeight = h.scrollHeight - h.clientHeight;
+    const pct = Math.min(100, Math.max(0, (scrollTop / scrollHeight) * 100));
+    bar.style.width = pct + '%';
+  }
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+</script>
+</body>
+</html>

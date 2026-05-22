@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>資格Life｜AI時代に手に職をつける応援メディア</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="ビルメン系・IT/AI・法律・金融・語学。AI時代に資格で人生をやり直したいあなたの背中を押す、明るい応援メディア「資格Life」。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* ====== Hero ====== */
+  .hero {
+    position: relative;
+    padding: 80px 0 92px;
+    overflow: hidden;
+  }
+  .hero::before, .hero::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(8px);
+    z-index: 0;
+  }
+  .hero::before {
+    width: 520px; height: 520px;
+    background: radial-gradient(circle at 30% 30%, rgba(58, 160, 255, .35), transparent 65%);
+    top: -160px; left: -120px;
+  }
+  .hero::after {
+    width: 480px; height: 480px;
+    background: radial-gradient(circle at 70% 70%, rgba(255, 139, 61, .28), transparent 65%);
+    top: 40px; right: -160px;
+  }
+  .hero .container { position: relative; z-index: 1; display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; align-items: center; }
+  @media (max-width: 880px) { .hero .container { grid-template-columns: 1fr; gap: 32px; } .hero { padding: 56px 0 64px; } }
+  .hero h1 {
+    font-size: 52px;
+    line-height: 1.35;
+    margin: 18px 0 22px;
+    letter-spacing: -.01em;
+  }
+  @media (max-width: 880px) { .hero h1 { font-size: 36px; } }
+  .hero h1 .stroke {
+    background: linear-gradient(180deg, transparent 62%, var(--yellow-soft) 62%);
+    padding: 0 .15em;
+  }
+  .hero .lede {
+    font-size: 17px;
+    color: var(--soft);
+    margin: 0 0 30px;
+    max-width: 540px;
+    line-height: 1.95;
+  }
+  .hero .cta-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+  .hero .meta-row {
+    display: flex; gap: 18px; flex-wrap: wrap; align-items: center;
+    margin-top: 28px;
+    font-family: var(--font-heading);
+    font-size: 13px;
+    color: var(--soft);
+  }
+  .hero .meta-row .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--rule-strong); }
+  .hero .meta-row .num { color: var(--primary-deep); font-weight: 700; font-size: 16px; }
+
+  /* Hero illustration */
+  .hero-art {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .hero-art .bubble {
+    position: absolute;
+    background: #fff;
+    border: 1.5px solid var(--rule);
+    border-radius: 18px;
+    padding: 14px 18px;
+    box-shadow: var(--shadow-md);
+    font-family: var(--font-heading);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+  }
+  .hero-art .bubble .ico { font-size: 24px; }
+  .hero-art .bubble.b1 { top: 4%; left: -4%; transform: rotate(-5deg); animation: float 6s ease-in-out infinite; }
+  .hero-art .bubble.b2 { top: 18%; right: -8%; transform: rotate(4deg); animation: float 7s ease-in-out infinite -2s; }
+  .hero-art .bubble.b3 { bottom: 18%; left: -2%; transform: rotate(3deg); animation: float 8s ease-in-out infinite -1s; }
+  .hero-art .bubble.b4 { bottom: 4%; right: -2%; transform: rotate(-4deg); animation: float 6.5s ease-in-out infinite -3s; }
+  @keyframes float {
+    0%, 100% { translate: 0 0; }
+    50% { translate: 0 -8px; }
+  }
+  .hero-art .center {
+    position: absolute;
+    inset: 18% 14%;
+    border-radius: 28px;
+    background: linear-gradient(160deg, var(--primary) 0%, var(--primary-deep) 100%);
+    display: grid;
+    place-items: center;
+    box-shadow: 0 30px 60px rgba(29, 111, 196, .35);
+    color: #fff;
+    text-align: center;
+    padding: 24px;
+  }
+  .hero-art .center .big {
+    font-size: 84px;
+    line-height: 1;
+    margin-bottom: 8px;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,.2));
+  }
+  .hero-art .center .label {
+    font-family: var(--font-heading);
+    font-size: 13px;
+    letter-spacing: .3em;
+    opacity: .9;
+  }
+  .hero-art .center .ttl {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    font-weight: 900;
+    margin-top: 4px;
+  }
+
+  /* ====== Categories ====== */
+  .categories { padding: 36px 0 24px; }
+  .cat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+  @media (max-width: 880px) { .cat-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 520px) { .cat-grid { grid-template-columns: 1fr; } }
+  .cat-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 22px 24px;
+    background: #fff;
+    border: 1.5px solid var(--rule);
+    border-radius: var(--radius-lg);
+    transition: all .2s ease;
+    color: var(--ink);
+  }
+  .cat-card:hover {
+    text-decoration: none;
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-soft);
+  }
+  .cat-card .ico {
+    flex: none;
+    width: 60px; height: 60px;
+    border-radius: 16px;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+  }
+  .cat-card.c-bilmen .ico { background: var(--mint-soft); }
+  .cat-card.c-ai     .ico { background: var(--violet-soft); }
+  .cat-card.c-law    .ico { background: var(--primary-soft); }
+  .cat-card.c-money  .ico { background: var(--yellow-soft); }
+  .cat-card.c-lang   .ico { background: var(--pink-soft); }
+  .cat-card.c-story  .ico { background: var(--orange-soft); }
+  .cat-card h3 {
+    margin: 0;
+    font-size: 17px;
+  }
+  .cat-card p {
+    margin: 2px 0 0;
+    font-size: 13px;
+    color: var(--soft);
+    line-height: 1.6;
+  }
+  .cat-card .count {
+    font-family: var(--font-heading);
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: .15em;
+    margin-top: 4px;
+    display: block;
+  }
+  .cat-card .arrow {
+    margin-left: auto;
+    color: var(--muted);
+    font-size: 20px;
+    transition: transform .2s ease, color .2s ease;
+  }
+  .cat-card:hover .arrow { color: var(--primary-deep); transform: translateX(4px); }
+
+  /* ====== Latest articles ====== */
+  .latest { padding: 56px 0 24px; }
+
+  /* ====== Featured large article (top of latest) ====== */
+  .featured {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 0;
+    background: #fff;
+    border: 1.5px solid var(--rule);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    margin-bottom: 28px;
+    transition: all .2s ease;
+  }
+  .featured:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); text-decoration: none; }
+  @media (max-width: 880px) { .featured { grid-template-columns: 1fr; } }
+  .featured .thumb {
+    aspect-ratio: 16 / 10;
+    display: grid;
+    place-items: center;
+    font-size: 130px;
+    background: linear-gradient(135deg, var(--primary-soft) 0%, var(--mint-soft) 100%);
+    position: relative;
+  }
+  .featured .thumb .pin {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--ink-strong);
+    color: #fff;
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .featured .body { padding: 36px 40px; display: flex; flex-direction: column; justify-content: center; gap: 16px; }
+  @media (max-width: 880px) { .featured .body { padding: 24px; } }
+  .featured h3 {
+    color: var(--ink-strong);
+    font-size: 26px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .featured .ex {
+    color: var(--soft);
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.9;
+  }
+
+  /* ====== Highlights / topics ====== */
+  .topics { padding: 56px 0 20px; }
+  .topics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  @media (max-width: 880px) { .topics-grid { grid-template-columns: 1fr 1fr; } }
+  .topic-tile {
+    background: #fff;
+    border: 1.5px solid var(--rule);
+    border-radius: var(--radius);
+    padding: 22px 22px 20px;
+    transition: all .2s ease;
+    color: var(--ink);
+  }
+  .topic-tile:hover { transform: translateY(-3px); border-color: var(--primary); text-decoration: none; box-shadow: var(--shadow-sm); }
+  .topic-tile .num {
+    font-family: var(--font-heading);
+    font-size: 13px;
+    color: var(--orange-deep);
+    font-weight: 900;
+    letter-spacing: .15em;
+  }
+  .topic-tile h4 { font-size: 16px; margin: 8px 0 0; line-height: 1.55; }
+
+  /* ====== Author / mission strip ====== */
+  .mission {
+    padding: 56px 0;
+  }
+  .mission .card-wrap {
+    background: #fff;
+    border-radius: var(--radius-xl);
+    border: 1.5px solid var(--rule);
+    padding: 44px 48px;
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 36px;
+    align-items: center;
+  }
+  @media (max-width: 720px) { .mission .card-wrap { grid-template-columns: 1fr; padding: 28px; } }
+  .mission .face {
+    aspect-ratio: 1/1;
+    max-width: 220px;
+    border-radius: 50%;
+    background:
+      radial-gradient(circle at 30% 30%, var(--yellow-soft), transparent 60%),
+      linear-gradient(135deg, var(--orange-soft), var(--mint-soft));
+    display: grid;
+    place-items: center;
+    font-size: 80px;
+    margin: 0 auto;
+    border: 8px solid var(--bg);
+    box-shadow: 0 10px 30px rgba(29, 111, 196, .12);
+  }
+  .mission h2 { font-size: 26px; line-height: 1.5; }
+  .mission p { color: var(--soft); line-height: 1.95; margin: 0 0 16px; }
+  .mission .signature {
+    font-family: var(--font-heading);
+    font-size: 14px;
+    color: var(--ink);
+  }
+  .mission .signature strong { color: var(--ink-strong); }
+</style>
+</head>
+<body data-screen-label="01 Home">
+
+<div id="header-slot"></div>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="container">
+    <div>
+      <span class="eyebrow">SHIKAKU-LIFE — START HERE</span>
+      <h1>
+        資格で、<br>
+        <span class="stroke">人生をやり直す。</span><br>
+        AI時代の<em>手に職</em>を、<br>応援するメディア。
+      </h1>
+      <p class="lede">
+        20代も、50代も。電気工事士からAI活用、宅建、TOEICまで。<br>
+        「もう遅いかも」と思った夜に開ける、明るい資格情報サイトを目指しています。
+      </p>
+      <div class="cta-row">
+        <a href="articles.html" class="btn btn-cta">記事を読んでみる →</a>
+        <a href="comparison.html" class="btn btn-ghost">教材をくらべる</a>
+      </div>
+      <div class="meta-row">
+        <span><span class="num">128</span> 本の記事</span>
+        <span class="dot"></span>
+        <span><span class="num">6</span> カテゴリ</span>
+        <span class="dot"></span>
+        <span><span class="num">12</span> 教材を中立レビュー</span>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <div class="bubble b1"><span class="ico">🔧</span>ビルメン</div>
+      <div class="bubble b2"><span class="ico">🤖</span>AI活用</div>
+      <div class="bubble b3"><span class="ico">⚖️</span>宅建</div>
+      <div class="bubble b4"><span class="ico">💰</span>簿記</div>
+      <div class="center">
+        <span class="big">📚</span>
+        <span class="label">SHIKAKU-LIFE</span>
+        <span class="ttl">合格、いっしょに。</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CATEGORIES ===================== -->
+<section class="categories">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">CATEGORIES</span>
+        <h2>どの資格を、選びますか？</h2>
+      </div>
+      <a class="more" href="categories.html">すべて見る →</a>
+    </div>
+
+    <div class="cat-grid">
+      <a href="categories.html" class="cat-card c-bilmen">
+        <span class="ico">🔧</span>
+        <div>
+          <h3>ビルメン系</h3>
+          <p>電気工事士・ボイラー・危険物・冷凍機械など</p>
+          <span class="count">32 ARTICLES</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+      <a href="categories.html" class="cat-card c-ai">
+        <span class="ico">🤖</span>
+        <div>
+          <h3>IT・AI</h3>
+          <p>AI活用・プロンプト・基本情報技術者など</p>
+          <span class="count">24 ARTICLES</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+      <a href="categories.html" class="cat-card c-law">
+        <span class="ico">⚖️</span>
+        <div>
+          <h3>法律系</h3>
+          <p>宅建・行政書士・FP3級など</p>
+          <span class="count">18 ARTICLES</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+      <a href="categories.html" class="cat-card c-money">
+        <span class="ico">💰</span>
+        <div>
+          <h3>金融</h3>
+          <p>簿記・FP・証券外務員など</p>
+          <span class="count">21 ARTICLES</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+      <a href="categories.html" class="cat-card c-lang">
+        <span class="ico">🗣️</span>
+        <div>
+          <h3>語学</h3>
+          <p>TOEIC・英検・中国語検定など</p>
+          <span class="count">19 ARTICLES</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+      <a href="story.html" class="cat-card c-story">
+        <span class="ico">📔</span>
+        <div>
+          <h3>物語・コラム</h3>
+          <p>父さんとAIの制作物語・体験談</p>
+          <span class="count">14 ARTICLES</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LATEST ===================== -->
+<section class="latest">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">LATEST</span>
+        <h2>新着の記事</h2>
+      </div>
+      <a class="more" href="articles.html">すべて見る →</a>
+    </div>
+
+    <!-- featured -->
+    <a class="featured" href="article.html">
+      <div class="thumb">
+        <span class="pin">📌 注目</span>
+        ⚡
+      </div>
+      <div class="body">
+        <span class="cat-pill cat-bilmen">🔧 ビルメン系</span>
+        <h3>第二種電気工事士、独学6ヶ月で<em>一発合格</em>するための学習ロードマップ【2026年版】</h3>
+        <p class="ex">
+          「電気って文系の自分に取れるの？」――結論、取れます。父と私で実際に挑戦した独学ルートを、
+          月別タスク・おすすめ教材・実技対策まで、初心者の目線で丁寧に並べました。
+        </p>
+        <div style="display:flex;gap:14px;color:var(--muted);font-family:var(--font-heading);font-size:13px;">
+          <span>2026.05.18</span><span>·</span><span>読了 12分</span>
+        </div>
+      </div>
+    </a>
+
+    <div class="article-grid">
+      <a class="article-card card" href="article.html">
+        <div class="thumb t-violet">🤖<span class="cat-pill cat-ai badge">IT・AI</span></div>
+        <div class="body">
+          <h3>ChatGPTで資格勉強を爆速化。プロンプト10選</h3>
+          <p class="excerpt">「過去問を分野別に解説して」だけで世界が変わる。実際に効いた指示文を共有します。</p>
+          <div class="meta"><span>2026.05.15</span><span class="dot"></span><span>読了 8分</span></div>
+        </div>
+      </a>
+      <a class="article-card card" href="article.html">
+        <div class="thumb t-orange">📚<span class="cat-pill cat-law badge">法律系</span></div>
+        <div class="body">
+          <h3>宅建、社会人が働きながら受かるには</h3>
+          <p class="excerpt">通勤時間と土日で完結する300時間プラン。挫折ポイントの避け方つき。</p>
+          <div class="meta"><span>2026.05.12</span><span class="dot"></span><span>読了 10分</span></div>
+        </div>
+      </a>
+      <a class="article-card card" href="article.html">
+        <div class="thumb t-yellow">💴<span class="cat-pill cat-money badge">金融</span></div>
+        <div class="body">
+          <h3>簿記3級、最短2週間で合格する勉強法</h3>
+          <p class="excerpt">仕訳の感覚さえつかめば一気に進む。最初の3日でやることを具体化しました。</p>
+          <div class="meta"><span>2026.05.09</span><span class="dot"></span><span>読了 7分</span></div>
+        </div>
+      </a>
+      <a class="article-card card" href="article.html">
+        <div class="thumb t-pink">🗣️<span class="cat-pill cat-lang badge">語学</span></div>
+        <div class="body">
+          <h3>TOEIC 600→800、半年で伸ばした朝活ルーティン</h3>
+          <p class="excerpt">朝の30分を投資する習慣化テクと、効いた教材だけを残して紹介します。</p>
+          <div class="meta"><span>2026.05.05</span><span class="dot"></span><span>読了 9分</span></div>
+        </div>
+      </a>
+      <a class="article-card card" href="article.html">
+        <div class="thumb t-mint">🔥<span class="cat-pill cat-bilmen badge">ビルメン系</span></div>
+        <div class="body">
+          <h3>危険物乙4、ビルメン入門に最適な理由</h3>
+          <p class="excerpt">ビルメン四点セットの「とっかかり」として乙4を勧める理由を整理しました。</p>
+          <div class="meta"><span>2026.05.02</span><span class="dot"></span><span>読了 6分</span></div>
+        </div>
+      </a>
+      <a class="article-card card" href="story.html">
+        <div class="thumb t-orange">📔<span class="cat-pill cat-story badge">物語</span></div>
+        <div class="body">
+          <h3>父とAIで資格アプリを作った、夏のはなし</h3>
+          <p class="excerpt">電気工事士を取りたい父と、AIで学習アプリを作った51日間の記録。</p>
+          <div class="meta"><span>2026.04.28</span><span class="dot"></span><span>読了 14分</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TOPICS / TODAY ===================== -->
+<section class="topics">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">PICKED UP</span>
+        <h2>今、読まれている話</h2>
+      </div>
+    </div>
+    <div class="topics-grid">
+      <a class="topic-tile" href="article.html"><span class="num">№ 01</span><h4>AI時代に「人が残る職」をくれる7つの資格</h4></a>
+      <a class="topic-tile" href="article.html"><span class="num">№ 02</span><h4>40代からの資格挑戦、5つのリアル</h4></a>
+      <a class="topic-tile" href="comparison.html"><span class="num">№ 03</span><h4>通信講座、結局どこが一番いい？</h4></a>
+      <a class="topic-tile" href="article.html"><span class="num">№ 04</span><h4>スマホだけで合格できる時代の勉強法</h4></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BILMEN BAND ===================== -->
+<section style="padding: 64px 0;">
+  <div class="container">
+    <div class="bilmen-band">
+      <span class="float float-1">⚙️</span>
+      <span class="float float-2">🏢</span>
+      <div>
+        <span class="eyebrow">SISTER SITE</span>
+        <h2>ビルメンを<em>本気</em>で目指すなら<br>「ビルメンアカデミー」へ。</h2>
+        <p>
+          電気工事士・ボイラー・危険物・冷凍機械——<br>
+          ビルメン四点セットに特化した、姉妹サイトを運営中。<br>
+          実技対策の動画、現場の体験談、合格者ロードマップ。
+        </p>
+        <a href="#" class="btn btn-cta" target="_blank" rel="noopener">ビルメンアカデミーを見る →</a>
+      </div>
+      <div class="stickers">
+        <div class="sticker"><span class="ico">⚡</span>第二種電気工事士</div>
+        <div class="sticker"><span class="ico">🔥</span>危険物 乙4</div>
+        <div class="sticker"><span class="ico">♨️</span>2級ボイラー</div>
+        <div class="sticker"><span class="ico">❄️</span>3冷凍機械</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MISSION / FOUNDER ===================== -->
+<section class="mission">
+  <div class="container">
+    <div class="card-wrap">
+      <div class="face" aria-hidden="true">👨‍👦</div>
+      <div>
+        <span class="eyebrow">OUR STORY</span>
+        <h2>「もう遅い」が、口ぐせだった父と。</h2>
+        <p>
+          60歳を過ぎても新しい仕事を探す父と、AI時代に取り残されかけた私。<br>
+          二人で資格に挑戦するうちに、<em>学び直しは何歳からでも始められる</em>と確信しました。
+          このサイトは、その記録と、同じことで悩む誰かへのお守りです。
+        </p>
+        <p class="signature"><strong>資格Life 編集部</strong> ／ 父さんとAIの記録より</p>
+        <a href="story.html" class="btn btn-primary btn-sm">物語を読む →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-slot"></div>
+
+<script src="partials.js"></script>
+<script>
+  SL.mountHeader('home');
+  SL.mountFooter();
+</script>
+</body>
+</html>

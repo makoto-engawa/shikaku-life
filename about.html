@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>このサイトについて｜資格Life</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .about-hero { padding: 56px 0 28px; }
+  .about-hero h1 { font-size: 40px; line-height: 1.45; margin: 14px 0 12px; }
+  @media (max-width: 720px) { .about-hero h1 { font-size: 30px; } }
+  .about-hero p { color: var(--soft); margin: 0; max-width: 640px; line-height: 1.9; }
+
+  .about-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 40px;
+    padding: 32px 0 80px;
+  }
+  @media (max-width: 880px) { .about-layout { grid-template-columns: 1fr; } }
+
+  .about-nav {
+    position: sticky;
+    top: 96px;
+    align-self: start;
+    background: #fff;
+    border: 1.5px solid var(--rule);
+    border-radius: var(--radius-lg);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .about-nav a {
+    padding: 10px 14px;
+    border-radius: 10px;
+    color: var(--ink);
+    font-family: var(--font-heading);
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .about-nav a:hover { background: var(--primary-soft); color: var(--primary-deep); text-decoration: none; }
+
+  .about-section {
+    background: #fff;
+    border-radius: var(--radius-xl);
+    border: 1.5px solid var(--rule);
+    padding: 36px 44px;
+    margin-bottom: 24px;
+  }
+  @media (max-width: 720px) { .about-section { padding: 24px; } }
+  .about-section h2 {
+    font-size: 24px;
+    margin: 0 0 18px;
+    padding-bottom: 14px;
+    border-bottom: 1.5px solid var(--rule);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .about-section h2 .ico {
+    width: 38px; height: 38px;
+    border-radius: 12px;
+    background: var(--primary-soft);
+    color: var(--primary-deep);
+    display: grid; place-items: center;
+    font-size: 20px;
+  }
+  .about-section h3 { font-size: 17px; margin: 24px 0 8px; color: var(--primary-deep); }
+  .about-section p { line-height: 1.95; color: var(--ink); }
+  .about-section p.soft { color: var(--soft); }
+  .about-section ul { padding-left: 1.4em; line-height: 1.95; }
+  .about-section li { margin-bottom: 6px; }
+
+  .author-row {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    margin-top: 8px;
+  }
+  @media (max-width: 560px) { .author-row { flex-direction: column; } }
+  .author-row .avatar {
+    width: 110px; height: 110px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--orange-soft), var(--mint-soft));
+    display: grid;
+    place-items: center;
+    font-size: 56px;
+    flex: none;
+    border: 6px solid var(--bg);
+    box-shadow: 0 0 0 1.5px var(--rule);
+  }
+  .author-row h3 { margin: 0 0 4px; font-size: 19px; }
+  .author-row .role { font-family: var(--font-heading); font-size: 12px; color: var(--orange-deep); letter-spacing: .15em; margin-bottom: 10px; }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 8px 18px;
+    padding: 18px 22px;
+    background: var(--bg);
+    border-radius: 14px;
+    margin-top: 12px;
+    font-size: 14px;
+  }
+  .info-grid dt { font-family: var(--font-heading); color: var(--soft); }
+  .info-grid dd { margin: 0; color: var(--ink); }
+</style>
+</head>
+<body data-screen-label="08 About">
+
+<div id="header-slot"></div>
+
+<section class="about-hero">
+  <div class="container">
+    <span class="eyebrow">ABOUT US</span>
+    <h1>このサイトについて</h1>
+    <p>運営者・編集方針・プライバシー・利用規約・広告ポリシー。<em>透明に</em>並べておきます。</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="about-layout">
+
+      <nav class="about-nav">
+        <a href="#about">📔 運営者について</a>
+        <a href="#policy">📝 編集方針</a>
+        <a href="#ad-policy">📣 広告掲載ポリシー</a>
+        <a href="#privacy">🔒 プライバシーポリシー</a>
+        <a href="#terms">⚖️ 利用規約</a>
+        <a href="#contact">✉️ お問い合わせ</a>
+      </nav>
+
+      <div>
+
+        <article class="about-section" id="about">
+          <h2><span class="ico">📔</span>運営者について</h2>
+          <div class="author-row">
+            <span class="avatar">👨‍🦱</span>
+            <div>
+              <h3>編集部・タカシ</h3>
+              <span class="role">EDITOR / FOUNDER</span>
+              <p>
+                40代手前で、AI時代の働き方に揺さぶられた一人。60歳を過ぎた父と二人で第二種電気工事士に挑戦し、その記録を残すために本サイトを立ち上げました。
+                資格取得の現場感を、なるべく等身大の言葉で書いていきたいと思っています。
+              </p>
+            </div>
+          </div>
+          <dl class="info-grid">
+            <dt>サイト名</dt><dd>資格Life（SHIKAKU-LIFE）</dd>
+            <dt>運営開始</dt><dd>2024年9月</dd>
+            <dt>運営場所</dt><dd>日本（東京・千葉）</dd>
+            <dt>姉妹サイト</dt><dd>ビルメンアカデミー（bilumen.jp）</dd>
+            <dt>使用ツール</dt><dd>WordPress, Cloudflare, ChatGPT, Google Search Console</dd>
+          </dl>
+        </article>
+
+        <article class="about-section" id="policy">
+          <h2><span class="ico">📝</span>編集方針</h2>
+          <p>「明るく親しみのある、応援メディア」を合言葉に、初心者でも踏み込みやすい記事を目指しています。</p>
+          <h3>大切にしている3つのこと</h3>
+          <ul>
+            <li><strong>触らずに書かない：</strong>教材は資料請求／体験受講したうえで記事化します。</li>
+            <li><strong>「合わない人」も書く：</strong>万人向けは存在しません。ミスマッチを減らすために「向いていない人」も書きます。</li>
+            <li><strong>料金は税込・最新を明示：</strong>取材時点の税込価格を必ず併記。記事冒頭に最終更新日を載せます。</li>
+          </ul>
+        </article>
+
+        <article class="about-section" id="ad-policy">
+          <h2><span class="ico">📣</span>広告掲載ポリシー</h2>
+          <p>本サイトは、もしもアフィリエイト等のアフィリエイトプログラムを通じて、教材会社の広告リンクを掲載しています。</p>
+          <h3>明示について</h3>
+          <ul>
+            <li>アフィリエイトリンクを含む記事には、冒頭または該当箇所に「※当記事にはアフィリエイト広告（PR）が含まれます」と表記しています。</li>
+            <li>外部リンクには <code>rel="nofollow sponsored noopener"</code> を付与し、検索エンジンに対しても広告であることを示しています。</li>
+          </ul>
+          <h3>編集との独立性</h3>
+          <p>広告主からの依頼に応じてランキングや記事内容を操作することはありません。比較記事の順位は、編集部独自の評価軸（料金・期間・サポート・実績）に基づいて決定しています。</p>
+        </article>
+
+        <article class="about-section" id="privacy">
+          <h2><span class="ico">🔒</span>プライバシーポリシー</h2>
+          <h3>取得する情報</h3>
+          <p class="soft">アクセス解析（Google Analytics）を用い、訪問者数・流入経路・ページ閲覧状況などを匿名で取得しています。個人を特定する情報は取得していません。</p>
+          <h3>Cookieの使用</h3>
+          <p class="soft">広告効果の測定・ユーザー体験の改善のためにCookieを利用しています。ブラウザの設定でCookieを無効にすることができます。</p>
+          <h3>第三者配信の広告サービス</h3>
+          <p class="soft">本サイトはGoogle AdSenseおよびもしもアフィリエイト等の第三者配信の広告サービスを利用することがあります。これらのサービスはCookieを使用して、ユーザーの興味に応じた広告を表示する場合があります。</p>
+          <h3>お問い合わせ・削除請求</h3>
+          <p class="soft">個人情報の取り扱いに関するお問い合わせは、下記のお問い合わせフォームよりご連絡ください。</p>
+        </article>
+
+        <article class="about-section" id="terms">
+          <h2><span class="ico">⚖️</span>利用規約</h2>
+          <h3>記事の目的</h3>
+          <p class="soft">本サイトの記事は、資格取得を目指す方への情報提供を目的としています。記載内容は取材時点の情報であり、最新の試験要項・教材内容については各公式情報をご確認ください。</p>
+          <h3>免責事項</h3>
+          <p class="soft">本サイトのコンテンツの正確性については最大限の注意を払っていますが、その正確性・有用性・特定の目的への適合性等を保証するものではありません。読者の判断と責任において記事をご利用ください。</p>
+          <h3>著作権</h3>
+          <p class="soft">本サイトに掲載されている文章・画像・デザインは、運営者または正当な権利者に帰属します。無断転載・複製を禁じます。引用の際は、引用元として本サイトのURLを明示してください。</p>
+        </article>
+
+        <article class="about-section" id="contact">
+          <h2><span class="ico">✉️</span>お問い合わせ</h2>
+          <p>記事の感想・誤情報のご指摘・取材／執筆／広告掲載のご相談は、以下までお気軽にご連絡ください。</p>
+          <dl class="info-grid">
+            <dt>お問い合わせ先</dt><dd>contact@shikaku-life.jp</dd>
+            <dt>取材／広告</dt><dd>partner@shikaku-life.jp</dd>
+            <dt>SNS</dt><dd>X（旧Twitter）: @shikaku_life</dd>
+          </dl>
+          <p style="margin-top:18px;">
+            <a class="btn btn-cta" href="mailto:contact@shikaku-life.jp">メールで問い合わせる →</a>
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-slot"></div>
+
+<script src="partials.js"></script>
+<script>
+  SL.mountHeader();
+  SL.mountFooter();
+</script>
+</body>
+</html>

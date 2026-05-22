@@ -1,0 +1,22 @@
+# Render Static / Netlify 形式のリダイレクト設定
+# アフィリエイトリンクは /go/<slug> 経由でサーバーリダイレクト
+# （広告ブロッカー回避 + クリック計測の一元化）
+#
+# 各行のフォーマット：
+#   /go/<slug>  <アフィの実URL>  301
+#
+# もしもアフィのプログラム提携が決まったら、ここを順次更新する。
+
+# === 第二種電気工事士 ===
+# /go/u-can-denko2      https://af.moshimo.com/af/c/click?...  301
+# /go/foresight-denko2  https://af.moshimo.com/af/c/click?...  301
+# /go/studying-denko2   https://af.moshimo.com/af/c/click?...  301
+
+# === 危険物乙4 ===
+# /go/u-can-kiken4      https://af.moshimo.com/af/c/click?...  301
+
+# === 簿記3級 ===
+# /go/cpa-bokki3        https://af.moshimo.com/af/c/click?...  301
+
+# 既存（bilumen.jp と同じ準備万端シリーズ・参考）
+/go/junbi-bantan  https://af.moshimo.com/af/c/click?a_id=5580354&p_id=5087&pc_id=13757&pl_id=66856  302
