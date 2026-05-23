@@ -385,34 +385,56 @@
     background: #fff;
     border: 1px solid var(--line);
     border-radius: 10px;
-    padding: 14px 8px 12px;
-    text-align: center;
     cursor: pointer;
-    transition: all .15s;
+    transition: all .2s;
+    position: relative;
+    overflow: hidden;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+  }
+  .cat::before {
+    content: "";
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.15) 45%, rgba(0,0,0,0.78) 100%);
+    z-index: 1;
+    transition: background .2s;
   }
   .cat:hover {
-    border-color: var(--blue);
-    box-shadow: 0 4px 14px rgba(0,102,204,0.12);
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(0,40,100,0.22);
   }
-  .cat-ic {
-    width: 48px; height: 48px; margin: 0 auto 8px;
-    border-radius: 12px;
-    display: grid; place-items: center; font-size: 24px;
+  .cat:hover::before {
+    background: linear-gradient(180deg, rgba(0,102,204,0.1) 0%, rgba(0,102,204,0.35) 45%, rgba(0,40,100,0.85) 100%);
+  }
+  .cat-overlay {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 10px 12px 11px;
+    z-index: 2;
     color: #fff;
+    text-align: left;
   }
-  .cat-ic.bil { background: linear-gradient(135deg,#2aa874,#1c8a5f); }
-  .cat-ic.it { background: linear-gradient(135deg,#7c4dff,#5b35d3); }
-  .cat-ic.law { background: linear-gradient(135deg,#1a2230,#3a4456); }
-  .cat-ic.fin { background: linear-gradient(135deg,#f5b400,#e09b00); }
-  .cat-ic.lang { background: linear-gradient(135deg,#ff5a7a,#e0405e); }
-  .cat-ic.med { background: linear-gradient(135deg,#0066cc,#0049a3); }
   .cat-name {
     font-family: "Zen Maru Gothic", sans-serif;
-    font-weight: 700; font-size: 13px;
-    color: var(--ink); line-height: 1.3;
+    font-weight: 900; font-size: 15px;
+    color: #fff; line-height: 1.3;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
   }
-  .cat-cnt { font-size: 10px; color: var(--mute); margin-top: 2px; }
+  .cat-cnt {
+    font-size: 10px; color: rgba(255,255,255,0.95);
+    margin-top: 3px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  }
+  .cat-bilmen { background-image: url('images/cat-bilmen.png'); }
+  .cat-it     { background-image: url('images/cat-it.png'); }
+  .cat-law    { background-image: url('images/cat-law.png'); }
+  .cat-fin    { background-image: url('images/cat-fin.png'); }
+  .cat-lang   { background-image: url('images/cat-lang.png'); }
+  .cat-med    { background-image: url('images/cat-med.png'); }
 
   /* ===================== SECTIONS / MAIN ===================== */
   main { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
@@ -926,7 +948,7 @@
       <h1>
         資格で、<span class="underline">人生</span>を変える。<br />
         <span class="accent">AI時代</span>の手に職を、<br />
-        本気で考える。
+        応援するメディア。
       </h1>
       <p class="hero-sub">
         20代の挑戦も、50代のやり直しも。AIに置き換わらない「現場の力」と「専門資格」を、<br />
@@ -942,8 +964,8 @@
     <div class="hero-card">
       <span class="hc-badge">📚 RESOURCES</span>
       <h2 class="hc-title">資格Lifeの記事から、<br />あなたに合う一本を。</h2>
-      <p class="hc-count">現在 <b>1,284</b> 件の記事を公開中</p>
-      <a href="#" class="hc-cta">無料で記事を読む<span class="arr">→</span></a>
+      <p class="hc-count">現在 <b>128</b> 件の記事を公開中</p>
+      <a href="articles.html" class="hc-cta">無料で記事を読む<span class="arr">→</span></a>
       <p class="hc-sub">会員登録すると <b>気になる保存</b> ＆ <b>学習履歴管理</b> ができます</p>
     </div>
   </div>
@@ -954,7 +976,7 @@
   <div class="search-inner">
     <div class="search-head">
       <span class="lab">条件から記事を探す</span>
-      <span class="cnt"><b>1,284</b>件の記事から探す</span>
+      <span class="cnt"><b>128</b>件の記事から探す</span>
     </div>
     <div class="search-row">
       <div class="sf">
@@ -996,35 +1018,41 @@
 <!-- ============ CATEGORY ICONS ============ -->
 <div class="cats">
   <div class="cats-grid">
-    <div class="cat">
-      <div class="cat-ic bil">🔧</div>
-      <div class="cat-name">ビルメン系</div>
-      <div class="cat-cnt">186 記事</div>
+    <div class="cat cat-bilmen">
+      <div class="cat-overlay">
+        <div class="cat-name">ビルメン系</div>
+        <div class="cat-cnt">32 記事</div>
+      </div>
     </div>
-    <div class="cat">
-      <div class="cat-ic it">💻</div>
-      <div class="cat-name">IT・AI</div>
-      <div class="cat-cnt">312 記事</div>
+    <div class="cat cat-it">
+      <div class="cat-overlay">
+        <div class="cat-name">IT・AI</div>
+        <div class="cat-cnt">24 記事</div>
+      </div>
     </div>
-    <div class="cat">
-      <div class="cat-ic law">⚖️</div>
-      <div class="cat-name">法律系</div>
-      <div class="cat-cnt">204 記事</div>
+    <div class="cat cat-law">
+      <div class="cat-overlay">
+        <div class="cat-name">法律系</div>
+        <div class="cat-cnt">18 記事</div>
+      </div>
     </div>
-    <div class="cat">
-      <div class="cat-ic fin">💰</div>
-      <div class="cat-name">金融</div>
-      <div class="cat-cnt">178 記事</div>
+    <div class="cat cat-fin">
+      <div class="cat-overlay">
+        <div class="cat-name">金融</div>
+        <div class="cat-cnt">21 記事</div>
+      </div>
     </div>
-    <div class="cat">
-      <div class="cat-ic lang">🗣</div>
-      <div class="cat-name">語学</div>
-      <div class="cat-cnt">156 記事</div>
+    <div class="cat cat-lang">
+      <div class="cat-overlay">
+        <div class="cat-name">語学</div>
+        <div class="cat-cnt">19 記事</div>
+      </div>
     </div>
-    <div class="cat">
-      <div class="cat-ic med">🏥</div>
-      <div class="cat-name">医療・福祉系</div>
-      <div class="cat-cnt">248 記事</div>
+    <div class="cat cat-med">
+      <div class="cat-overlay">
+        <div class="cat-name">医療・福祉系</div>
+        <div class="cat-cnt">16 記事</div>
+      </div>
     </div>
   </div>
 </div>
@@ -1045,12 +1073,12 @@
     <div class="card-grid-4">
       <article class="card">
         <div class="card-thumb" style="background:linear-gradient(135deg,#e6f4ed,#a8d8c0);">
-          <span class="new">NEW</span><span class="fav">♡</span>🔧
+          <span class="new">NEW</span><span class="fav">♡</span>⚡
         </div>
         <div class="card-body">
           <span class="pill bil">ビルメン系</span>
-          <h3 class="card-title">ビル管理士に最短で合格するための学習スケジュール完全版【2026年度版】</h3>
-          <div class="card-meta"><span>2026.05.22</span><span class="read">⏱ 8分</span></div>
+          <h3 class="card-title">第二種電気工事士、独学6ヶ月で一発合格するための学習ロードマップ【2026年版】</h3>
+          <div class="card-meta"><span>2026.05.18</span><span class="read">⏱ 12分</span></div>
         </div>
       </article>
       <article class="card">
@@ -1059,38 +1087,8 @@
         </div>
         <div class="card-body">
           <span class="pill it">IT・AI</span>
-          <h3 class="card-title">G検定 vs E資格、どちらを先に取るべき？AI時代の本命資格を徹底比較</h3>
-          <div class="card-meta"><span>2026.05.21</span><span class="read">⏱ 12分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb" style="background:linear-gradient(135deg,#fff4d6,#f5cf6a);">
-          <span class="new">NEW</span><span class="fav">♡</span>💰
-        </div>
-        <div class="card-body">
-          <span class="pill fin">金融</span>
-          <h3 class="card-title">FP3級は本当に「役立たない」のか？資格保有者600人へのアンケート結果</h3>
-          <div class="card-meta"><span>2026.05.20</span><span class="read">⏱ 6分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb" style="background:linear-gradient(135deg,#e8eaef,#a0a8b8);">
-          <span class="new">NEW</span><span class="fav">♡</span>⚖️
-        </div>
-        <div class="card-body">
-          <span class="pill law">法律系</span>
-          <h3 class="card-title">行政書士の合格率は10%。働きながら受かる人の共通点を分析した</h3>
-          <div class="card-meta"><span>2026.05.19</span><span class="read">⏱ 10分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb" style="background:linear-gradient(135deg,#ffe1e7,#ff9aa2);">
-          <span class="new">NEW</span><span class="fav on">♥</span>🗣
-        </div>
-        <div class="card-body">
-          <span class="pill lang">語学</span>
-          <h3 class="card-title">TOEIC700点を3ヶ月で達成した独学ロードマップ（無料教材リスト付き）</h3>
-          <div class="card-meta"><span>2026.05.18</span><span class="read">⏱ 14分</span></div>
+          <h3 class="card-title">ChatGPTで資格勉強を爆速化。実際に効いたプロンプト10選</h3>
+          <div class="card-meta"><span>2026.05.15</span><span class="read">⏱ 8分</span></div>
         </div>
       </article>
       <article class="card">
@@ -1100,27 +1098,57 @@
         <div class="card-body">
           <span class="pill med">医療・福祉系</span>
           <h3 class="card-title">介護福祉士は本当に「食いっぱぐれない」資格か。需給データで検証</h3>
-          <div class="card-meta"><span>2026.05.17</span><span class="read">⏱ 9分</span></div>
+          <div class="card-meta"><span>2026.05.13</span><span class="read">⏱ 9分</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-thumb" style="background:linear-gradient(135deg,#e8eaef,#a0a8b8);">
+          <span class="new">NEW</span><span class="fav">♡</span>⚖️
+        </div>
+        <div class="card-body">
+          <span class="pill law">法律系</span>
+          <h3 class="card-title">宅建、社会人が働きながら受かるには。通勤＋土日の300時間プラン</h3>
+          <div class="card-meta"><span>2026.05.12</span><span class="read">⏱ 10分</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-thumb" style="background:linear-gradient(135deg,#fff4d6,#f5cf6a);">
+          <span class="new">NEW</span><span class="fav">♡</span>💴
+        </div>
+        <div class="card-body">
+          <span class="pill fin">金融</span>
+          <h3 class="card-title">簿記3級、最短2週間で合格する勉強法。最初の3日でやることを具体化</h3>
+          <div class="card-meta"><span>2026.05.09</span><span class="read">⏱ 7分</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-thumb" style="background:linear-gradient(135deg,#ffe1e7,#ff9aa2);">
+          <span class="new">NEW</span><span class="fav on">♥</span>🗣
+        </div>
+        <div class="card-body">
+          <span class="pill lang">語学</span>
+          <h3 class="card-title">TOEIC 600→800、半年で伸ばした朝活ルーティン</h3>
+          <div class="card-meta"><span>2026.05.05</span><span class="read">⏱ 9分</span></div>
         </div>
       </article>
       <article class="card">
         <div class="card-thumb" style="background:linear-gradient(135deg,#e6f4ed,#80c8a4);">
-          <span class="new">NEW</span><span class="fav">♡</span>🔧
+          <span class="new">NEW</span><span class="fav">♡</span>🔥
         </div>
         <div class="card-body">
           <span class="pill bil">ビルメン系</span>
-          <h3 class="card-title">第二種電気工事士、技能試験で落ちる人がやりがちな10のミス</h3>
-          <div class="card-meta"><span>2026.05.16</span><span class="read">⏱ 7分</span></div>
+          <h3 class="card-title">危険物乙4、ビルメン入門に最適な理由。四点セットの「とっかかり」</h3>
+          <div class="card-meta"><span>2026.05.02</span><span class="read">⏱ 6分</span></div>
         </div>
       </article>
       <article class="card">
         <div class="card-thumb" style="background:linear-gradient(135deg,#efe7ff,#9c7eff);">
-          <span class="new">NEW</span><span class="fav">♡</span>💻
+          <span class="new">NEW</span><span class="fav">♡</span>📔
         </div>
         <div class="card-body">
           <span class="pill it">IT・AI</span>
-          <h3 class="card-title">基本情報技術者の科目B対策、過去問だけでは不十分な理由</h3>
-          <div class="card-meta"><span>2026.05.15</span><span class="read">⏱ 11分</span></div>
+          <h3 class="card-title">父とAIで資格アプリを作った、夏のはなし。51日間の記録</h3>
+          <div class="card-meta"><span>2026.04.28</span><span class="read">⏱ 14分</span></div>
         </div>
       </article>
     </div>
@@ -1134,29 +1162,29 @@
         <div class="feat-item">
           <span class="feat-rank">1</span>
           <div>
-            <div class="feat-title">AI時代に「絶対なくならない」と言われる現場資格7選</div>
+            <div class="feat-title">AI時代に「人が残る職」をくれる7つの資格</div>
             <div class="feat-cat">SPECIAL / 全12記事</div>
           </div>
         </div>
         <div class="feat-item">
           <span class="feat-rank">2</span>
           <div>
-            <div class="feat-title">50代からの資格やり直し。実例8人に聞いた、それからの暮らし</div>
+            <div class="feat-title">40代からの資格挑戦、5つのリアル</div>
             <div class="feat-cat">SPECIAL / 全8記事</div>
           </div>
         </div>
         <div class="feat-item">
           <span class="feat-rank">3</span>
           <div>
-            <div class="feat-title">通信講座 大手3社徹底比較：費用・合格率・サポートで選ぶ</div>
+            <div class="feat-title">通信講座、結局どこが一番いい？大手3社徹底比較</div>
             <div class="feat-cat">COMPARE / 全6記事</div>
           </div>
         </div>
         <div class="feat-item">
           <span class="feat-rank">4</span>
           <div>
-            <div class="feat-title">未経験から年収500万円。資格×転職の実話インタビュー</div>
-            <div class="feat-cat">CAREER / 全10記事</div>
+            <div class="feat-title">スマホだけで合格できる時代の勉強法</div>
+            <div class="feat-cat">LIFE / 全10記事</div>
           </div>
         </div>
         <div class="feat-item">
@@ -1243,23 +1271,23 @@
       </div>
       <div class="career-card">
         <div class="cc-num">02 / IT</div>
-        <div class="cc-icon">💼</div>
-        <h3 class="cc-title">IT・エンジニア転職、資格はどこまで効くのか</h3>
-        <p class="cc-desc">基本情報からAWS、G検定まで。IT転職で本当に評価される資格と、評価されない資格の境目。</p>
+        <div class="cc-icon">🚀</div>
+        <h3 class="cc-title">30代未経験からITエンジニア｜おすすめ転職エージェント</h3>
+        <p class="cc-desc">基本情報＋AI活用スキルを武器に転職した編集部員の実例と、効いたエージェント比較。</p>
         <span class="cc-link">記事を読む →</span>
       </div>
       <div class="career-card">
         <div class="cc-num">03 / MEDICAL</div>
-        <div class="cc-icon">🩺</div>
-        <h3 class="cc-title">医療・福祉転職、資格別の年収レンジを公開</h3>
-        <p class="cc-desc">介護福祉士、看護助手、医療事務、登録販売者…現場別のリアルな給与データと、おすすめ転職先。</p>
+        <div class="cc-icon">🏥</div>
+        <h3 class="cc-title">医療事務から介護福祉士で再就職｜年収はどう変わる？</h3>
+        <p class="cc-desc">資格取得後の年収シミュレーションと、福祉系に強い転職サービスを徹底比較しました。</p>
         <span class="cc-link">記事を読む →</span>
       </div>
       <div class="career-card">
         <div class="cc-num">04 / SPECIAL</div>
-        <div class="cc-icon">🎯</div>
-        <h3 class="cc-title">資格別 × 転職エージェントの相性ガイド</h3>
-        <p class="cc-desc">あなたが持つ資格（または取得予定の資格）に強い、専門特化型エージェントを資格別にマップ化。</p>
+        <div class="cc-icon">📊</div>
+        <h3 class="cc-title">資格別おすすめ転職サイト2026年版【完全ガイド】</h3>
+        <p class="cc-desc">15資格×8転職サイトをマトリクスで比較。あなたに合うエージェントが必ず見つかる。</p>
         <span class="cc-link">記事を読む →</span>
       </div>
     </div>
@@ -1290,14 +1318,14 @@
     <div class="story-visual">📖</div>
     <div>
       <div class="story-eyebrow">OUR STORY</div>
-      <h2>父とAIと、資格と人生の話。</h2>
+      <h2>「もう遅い」が、口ぐせだった父と。</h2>
       <p>
-        この資格Lifeは、52歳でビルメンの世界に飛び込んだ私の父と、AI時代に手に職を考える私自身の対話から始まりました。父は「現場の資格」で人生を立て直し、私は「AI時代の資格」で未来を選び直そうとしています。
+        60歳を過ぎても新しい仕事を探す父と、AI時代に取り残されかけた私。二人で資格に挑戦するうちに、学び直しは何歳からでも始められると確信しました。
       </p>
       <p>
-        資格は、肩書きじゃありません。生き方を変えるための、いちばん再現性のある手段です。20代の挑戦も、50代のやり直しも、私たちは同じ熱量で応援します。
+        このサイトは、その記録と、同じことで悩む誰かへのお守りです。20代の挑戦も、50代のやり直しも、私たちは同じ熱量で応援します。
       </p>
-      <p class="story-sign">— 編集部より</p>
+      <p class="story-sign">— 資格Life 編集部 ／ 父さんとAIの記録より</p>
     </div>
   </section>
 </main>
