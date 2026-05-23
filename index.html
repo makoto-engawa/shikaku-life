@@ -1593,6 +1593,31 @@
         runSearch();
       });
     });
+
+    // Header search box → forward to filter, run, scroll
+    const headerInput = document.querySelector('.header-search input');
+    const headerBtn = document.querySelector('.header-search button');
+    const runHeaderSearch = () => {
+      const word = (headerInput?.value || '').trim();
+      const allSfs = document.querySelectorAll('.search-row .sf');
+      // Reset category to "すべて" for global search
+      if (allSfs[0]) allSfs[0].querySelector('.sf-val').textContent = 'すべて';
+      if (kwInput) kwInput.value = word;
+      runSearch();
+      // Scroll to search result section
+      document.querySelector('.search-wrap')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+    headerBtn?.addEventListener('click', e => {
+      e.preventDefault();
+      e.stopPropagation();
+      runHeaderSearch();
+    });
+    headerInput?.addEventListener('keypress', e => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        runHeaderSearch();
+      }
+    });
   })();
 </script>
 
