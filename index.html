@@ -13,7 +13,7 @@
   /* ====== Hero ====== */
   .hero {
     position: relative;
-    padding: 110px 0 120px;
+    padding: 56px 0 48px;
     overflow: hidden;
     background-image: url('images/hero-student.png');
     background-size: cover;
@@ -40,37 +40,37 @@
   }
   .hero .container { position: relative; z-index: 1; max-width: 1120px; }
   .hero > .container > div:first-child { min-width: 0; max-width: 580px; }
-  @media (max-width: 880px) { .hero { padding: 70px 0 80px; } }
+  @media (max-width: 880px) { .hero { padding: 40px 0 40px; } }
   .hero h1 {
     word-break: keep-all;
-    font-size: 52px;
-    line-height: 1.35;
-    margin: 18px 0 22px;
+    font-size: 38px;
+    line-height: 1.4;
+    margin: 12px 0 16px;
     letter-spacing: -.01em;
     color: var(--primary-deep);
     text-shadow: 0 1px 2px rgba(255,255,255,.55);
   }
-  @media (max-width: 880px) { .hero h1 { font-size: 36px; } }
+  @media (max-width: 880px) { .hero h1 { font-size: 28px; } }
   .hero h1 .stroke {
     background: linear-gradient(180deg, transparent 62%, var(--yellow-soft) 62%);
     padding: 0 .15em;
     color: var(--ink-strong);
   }
   .hero .lede {
-    font-size: 17px;
+    font-size: 15px;
     color: var(--ink);
-    margin: 0 0 30px;
+    margin: 0 0 20px;
     max-width: 540px;
-    line-height: 1.95;
+    line-height: 1.8;
     text-shadow: 0 1px 2px rgba(255,255,255,.6);
     font-weight: 500;
   }
-  .hero .cta-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+  .hero .cta-row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
   .hero .meta-row {
-    display: flex; gap: 18px; flex-wrap: wrap; align-items: center;
-    margin-top: 28px;
+    display: flex; gap: 16px; flex-wrap: wrap; align-items: center;
+    margin-top: 18px;
     font-family: var(--font-heading);
-    font-size: 13px;
+    font-size: 12px;
     color: var(--soft);
   }
   .hero .meta-row .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--rule-strong); }
@@ -114,22 +114,22 @@
   }
 
   /* ====== Categories ====== */
-  .categories { padding: 36px 0 24px; }
+  .categories { padding: 28px 0 12px; }
   .cat-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
+    gap: 12px;
   }
   @media (max-width: 880px) { .cat-grid { grid-template-columns: 1fr 1fr; } }
   @media (max-width: 520px) { .cat-grid { grid-template-columns: 1fr; } }
   .cat-card {
     display: flex;
     align-items: center;
-    gap: 18px;
-    padding: 26px 28px;
+    gap: 14px;
+    padding: 16px 20px;
     background: #fff;
     border: 1.5px solid var(--rule);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius);
     transition: all .2s ease;
     color: var(--ink);
     border-left: 4px solid var(--rule);
@@ -139,7 +139,7 @@
   .cat-card.c-law    { border-left-color: var(--primary); }
   .cat-card.c-money  { border-left-color: var(--yellow); }
   .cat-card.c-lang   { border-left-color: var(--pink); }
-  .cat-card.c-story  { border-left-color: var(--orange); }
+  .cat-card.c-care   { border-left-color: var(--orange); }
   .cat-card > div { flex: 1; }
   .cat-card:hover {
     text-decoration: none;
@@ -163,21 +163,21 @@
   .cat-card.c-story  .ico { background: var(--orange-soft); }
   .cat-card h3 {
     margin: 0;
-    font-size: 19px;
+    font-size: 16px;
     letter-spacing: .02em;
   }
   .cat-card p {
-    margin: 6px 0 0;
-    font-size: 13px;
+    margin: 4px 0 0;
+    font-size: 12px;
     color: var(--soft);
-    line-height: 1.7;
+    line-height: 1.55;
   }
   .cat-card .count {
     font-family: var(--font-heading);
-    font-size: 11px;
+    font-size: 10px;
     color: var(--muted);
     letter-spacing: .15em;
-    margin-top: 8px;
+    margin-top: 4px;
     display: block;
   }
   .cat-card .arrow {
@@ -189,89 +189,99 @@
   .cat-card:hover .arrow { color: var(--primary-deep); transform: translateX(4px); }
 
   /* ====== Latest articles ====== */
-  .latest { padding: 56px 0 24px; }
+  .latest { padding: 36px 0 16px; }
 
   /* ====== Featured large article (top of latest) ====== */
   .featured {
     display: grid;
-    grid-template-columns: 1.05fr 1fr;
+    grid-template-columns: 1fr 1.4fr;
     gap: 0;
     background: #fff;
     border: 1.5px solid var(--rule);
-    border-radius: var(--radius-xl);
+    border-radius: var(--radius-lg);
     overflow: hidden;
-    margin-bottom: 28px;
+    margin-bottom: 18px;
     transition: all .2s ease;
   }
-  .featured:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); text-decoration: none; }
+  .featured:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); text-decoration: none; }
   @media (max-width: 880px) { .featured { grid-template-columns: 1fr; } }
   .featured .thumb {
     aspect-ratio: 16 / 10;
     display: grid;
     place-items: center;
-    font-size: 130px;
+    font-size: 80px;
     background: linear-gradient(135deg, var(--primary-soft) 0%, var(--mint-soft) 100%);
     position: relative;
   }
   .featured .thumb .pin {
     position: absolute;
-    top: 18px;
-    left: 18px;
+    top: 12px;
+    left: 12px;
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 4px;
     background: var(--ink-strong);
     color: #fff;
     border-radius: 999px;
-    padding: 4px 12px;
+    padding: 3px 10px;
     font-family: var(--font-heading);
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
   }
-  .featured .body { padding: 36px 40px; display: flex; flex-direction: column; justify-content: center; gap: 16px; }
-  @media (max-width: 880px) { .featured .body { padding: 24px; } }
+  .featured .body { padding: 20px 24px; display: flex; flex-direction: column; justify-content: center; gap: 10px; }
+  @media (max-width: 880px) { .featured .body { padding: 18px; } }
   .featured h3 {
     color: var(--ink-strong);
-    font-size: 26px;
+    font-size: 19px;
     line-height: 1.5;
     margin: 0;
   }
   .featured .ex {
     color: var(--soft);
     margin: 0;
-    font-size: 15px;
-    line-height: 1.9;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  /* ====== Career section ====== */
+  .career { padding: 32px 0 16px; }
+  .career-lead {
+    color: var(--soft);
+    font-size: 14px;
+    line-height: 1.8;
+    margin: -8px 0 18px;
+    max-width: 720px;
   }
 
   /* ====== Highlights / topics ====== */
-  .topics { padding: 56px 0 20px; }
+  .topics { padding: 32px 0 16px; }
   .topics-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
+    gap: 12px;
   }
   @media (max-width: 880px) { .topics-grid { grid-template-columns: 1fr 1fr; } }
   .topic-tile {
     background: #fff;
     border: 1.5px solid var(--rule);
     border-radius: var(--radius);
-    padding: 22px 22px 20px;
+    padding: 14px 16px;
     transition: all .2s ease;
     color: var(--ink);
   }
-  .topic-tile:hover { transform: translateY(-3px); border-color: var(--primary); text-decoration: none; box-shadow: var(--shadow-sm); }
+  .topic-tile:hover { transform: translateY(-2px); border-color: var(--primary); text-decoration: none; box-shadow: var(--shadow-sm); }
   .topic-tile .num {
     font-family: var(--font-heading);
-    font-size: 13px;
+    font-size: 11px;
     color: var(--orange-deep);
     font-weight: 900;
     letter-spacing: .15em;
   }
-  .topic-tile h4 { font-size: 16px; margin: 8px 0 0; line-height: 1.55; }
+  .topic-tile h4 { font-size: 14px; margin: 4px 0 0; line-height: 1.5; }
 
   /* ====== Author / mission strip ====== */
   .mission {
-    padding: 56px 0;
+    padding: 32px 0 40px;
   }
   .mission .card-wrap {
     background: #fff;
@@ -394,11 +404,11 @@
         </div>
         <span class="arrow">→</span>
       </a>
-      <a href="story.html" class="cat-card c-story">
+      <a href="categories.html" class="cat-card c-care">
         <div>
-          <h3>物語・コラム</h3>
-          <p>父さんとAIの制作物語・体験談</p>
-          <span class="count">14 ARTICLES</span>
+          <h3>医療・福祉系</h3>
+          <p>介護福祉士・ケアマネ・登録販売者・医療事務など</p>
+          <span class="count">16 ARTICLES</span>
         </div>
         <span class="arrow">→</span>
       </a>
@@ -483,6 +493,58 @@
           <h3>父とAIで資格アプリを作った、夏のはなし</h3>
           <p class="excerpt">電気工事士を取りたい父と、AIで学習アプリを作った51日間の記録。</p>
           <div class="meta"><span>2026.04.28</span><span class="dot"></span><span>読了 14分</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CAREER（転職） ===================== -->
+<section class="career">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">CAREER</span>
+        <h2>資格を、転職に活かす。</h2>
+      </div>
+      <a class="more" href="articles.html">すべて見る →</a>
+    </div>
+    <p class="career-lead">
+      せっかく取った資格、次は「いい職場」に活かしませんか？
+      編集部が転職エージェントを実際に使って比較・解説した記事をまとめました。
+    </p>
+
+    <div class="article-grid">
+      <a class="article-card card" href="article.html">
+        <div class="thumb t-violet">💼<span class="cat-pill cat-career badge">転職</span></div>
+        <div class="body">
+          <h3>電気工事士で転職するならこの3社｜doda・マイナビ比較</h3>
+          <p class="excerpt">ビルメン四点セット保持者が実際に4社のエージェントを使い比べた本音レビュー。</p>
+          <div class="meta"><span>2026.05.20</span><span class="dot"></span><span>読了 11分</span></div>
+        </div>
+      </a>
+      <a class="article-card card" href="article.html">
+        <div class="thumb t-orange">🚀<span class="cat-pill cat-career badge">転職</span></div>
+        <div class="body">
+          <h3>30代未経験からITエンジニア｜おすすめ転職エージェント</h3>
+          <p class="excerpt">基本情報＋AI活用スキルを武器に転職した編集部員の実例と、効いたエージェント。</p>
+          <div class="meta"><span>2026.05.16</span><span class="dot"></span><span>読了 10分</span></div>
+        </div>
+      </a>
+      <a class="article-card card" href="article.html">
+        <div class="thumb t-pink">🏥<span class="cat-pill cat-career badge">転職</span></div>
+        <div class="body">
+          <h3>医療事務から介護福祉士で再就職｜年収はどう変わる？</h3>
+          <p class="excerpt">資格取得後の年収シミュレーションと、福祉系に強い転職サービスを徹底比較。</p>
+          <div class="meta"><span>2026.05.13</span><span class="dot"></span><span>読了 9分</span></div>
+        </div>
+      </a>
+      <a class="article-card card" href="article.html">
+        <div class="thumb t-yellow">📊<span class="cat-pill cat-career badge">転職</span></div>
+        <div class="body">
+          <h3>資格別おすすめ転職サイト2026年版【完全ガイド】</h3>
+          <p class="excerpt">15資格×8転職サイトをマトリクスで比較。あなたに合うエージェントが必ず見つかる。</p>
+          <div class="meta"><span>2026.05.10</span><span class="dot"></span><span>読了 14分</span></div>
         </div>
       </a>
     </div>
