@@ -126,13 +126,21 @@
     display: flex;
     align-items: center;
     gap: 18px;
-    padding: 22px 24px;
+    padding: 26px 28px;
     background: #fff;
     border: 1.5px solid var(--rule);
     border-radius: var(--radius-lg);
     transition: all .2s ease;
     color: var(--ink);
+    border-left: 4px solid var(--rule);
   }
+  .cat-card.c-bilmen { border-left-color: var(--mint); }
+  .cat-card.c-ai     { border-left-color: var(--violet); }
+  .cat-card.c-law    { border-left-color: var(--primary); }
+  .cat-card.c-money  { border-left-color: var(--yellow); }
+  .cat-card.c-lang   { border-left-color: var(--pink); }
+  .cat-card.c-story  { border-left-color: var(--orange); }
+  .cat-card > div { flex: 1; }
   .cat-card:hover {
     text-decoration: none;
     transform: translateY(-4px);
@@ -155,20 +163,21 @@
   .cat-card.c-story  .ico { background: var(--orange-soft); }
   .cat-card h3 {
     margin: 0;
-    font-size: 17px;
+    font-size: 19px;
+    letter-spacing: .02em;
   }
   .cat-card p {
-    margin: 2px 0 0;
+    margin: 6px 0 0;
     font-size: 13px;
     color: var(--soft);
-    line-height: 1.6;
+    line-height: 1.7;
   }
   .cat-card .count {
     font-family: var(--font-heading);
     font-size: 11px;
     color: var(--muted);
     letter-spacing: .15em;
-    margin-top: 4px;
+    margin-top: 8px;
     display: block;
   }
   .cat-card .arrow {
@@ -346,7 +355,6 @@
 
     <div class="cat-grid">
       <a href="categories.html" class="cat-card c-bilmen">
-        <span class="ico">🔧</span>
         <div>
           <h3>ビルメン系</h3>
           <p>電気工事士・ボイラー・危険物・冷凍機械など</p>
@@ -355,7 +363,6 @@
         <span class="arrow">→</span>
       </a>
       <a href="categories.html" class="cat-card c-ai">
-        <span class="ico">🤖</span>
         <div>
           <h3>IT・AI</h3>
           <p>AI活用・プロンプト・基本情報技術者など</p>
@@ -364,7 +371,6 @@
         <span class="arrow">→</span>
       </a>
       <a href="categories.html" class="cat-card c-law">
-        <span class="ico">⚖️</span>
         <div>
           <h3>法律系</h3>
           <p>宅建・行政書士・FP3級など</p>
@@ -373,7 +379,6 @@
         <span class="arrow">→</span>
       </a>
       <a href="categories.html" class="cat-card c-money">
-        <span class="ico">💰</span>
         <div>
           <h3>金融</h3>
           <p>簿記・FP・証券外務員など</p>
@@ -382,7 +387,6 @@
         <span class="arrow">→</span>
       </a>
       <a href="categories.html" class="cat-card c-lang">
-        <span class="ico">🗣️</span>
         <div>
           <h3>語学</h3>
           <p>TOEIC・英検・中国語検定など</p>
@@ -391,7 +395,6 @@
         <span class="arrow">→</span>
       </a>
       <a href="story.html" class="cat-card c-story">
-        <span class="ico">📔</span>
         <div>
           <h3>物語・コラム</h3>
           <p>父さんとAIの制作物語・体験談</p>
