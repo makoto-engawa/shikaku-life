@@ -361,6 +361,46 @@
     font-family: inherit;
   }
   .btn-search:hover { background: var(--blue-deep); }
+  /* search dropdown */
+  .sf-dropdown {
+    position: absolute;
+    top: calc(100% + 4px); left: 0; right: 0;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0,40,100,0.16);
+    z-index: 30;
+    overflow: hidden;
+    max-height: 220px;
+    overflow-y: auto;
+  }
+  .sf-opt {
+    padding: 9px 12px;
+    font-size: 13px;
+    cursor: pointer;
+    color: var(--ink);
+  }
+  .sf-opt:hover { background: var(--blue-soft); color: var(--blue); }
+  .sf-opt.is-selected { background: var(--blue-soft); color: var(--blue); font-weight: 700; }
+  /* search result message */
+  .search-result-msg {
+    max-width: 1180px;
+    margin: 12px auto 0;
+    padding: 10px 16px;
+    background: var(--blue-soft);
+    border-left: 3px solid var(--blue);
+    color: var(--blue-deep);
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 4px;
+  }
+  .search-result-msg .reset {
+    margin-left: 12px;
+    color: var(--blue);
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+  }
   .search-tags {
     display: flex; gap: 6px; margin-top: 12px; flex-wrap: wrap;
     align-items: center;
@@ -1432,6 +1472,128 @@
       f.textContent = f.classList.contains('on') ? '♥' : '♡';
     });
   });
+
+  // ========== Search filter ==========
+  (function() {
+    const OPTIONS = {
+      'カテゴリ':   ['すべて', 'ビルメン系', 'IT・AI', '法律系', '金融', '語学', '医療・福祉系'],
+      '難易度':     ['指定なし', '入門', '初級', '中級', '上級'],
+      '取得期間':   ['指定なし', '1ヶ月以内', '3ヶ月', '6ヶ月', '1年以上']
+    };
+
+    // Build dropdowns
+    document.querySelectorAll('.search-row .sf').forEach(sf => {
+      const label = sf.querySelector('.sf-label');
+      const val = sf.querySelector('.sf-val');
+      if (!label || !val) return;
+      const opts = OPTIONS[label.textContent.trim()];
+      if (!opts) return;
+
+      sf.addEventListener('click', e => {
+        e.stopPropagation();
+        // close other dropdowns
+        document.querySelectorAll('.sf-dropdown').forEach(d => {
+          if (d.parentElement !== sf) d.remove();
+        });
+        const existing = sf.querySelector('.sf-dropdown');
+        if (existing) { existing.remove(); return; }
+
+        const dd = document.createElement('div');
+        dd.className = 'sf-dropdown';
+        opts.forEach(opt => {
+          const item = document.createElement('div');
+          item.className = 'sf-opt' + (opt === val.textContent.trim() ? ' is-selected' : '');
+          item.textContent = opt;
+          item.addEventListener('click', ev => {
+            ev.stopPropagation();
+            val.textContent = opt;
+            dd.remove();
+          });
+          dd.appendChild(item);
+        });
+        sf.appendChild(dd);
+      });
+    });
+
+    // Close dropdowns on outside click
+    document.addEventListener('click', () => {
+      document.querySelectorAll('.sf-dropdown').forEach(d => d.remove());
+    });
+
+    // Search button
+    const searchBtn = document.querySelector('.btn-search');
+    const resetSearch = () => {
+      document.querySelectorAll('.card').forEach(c => c.style.display = '');
+      const msg = document.querySelector('.search-result-msg');
+      if (msg) msg.remove();
+    };
+    const runSearch = () => {
+      const sfs = document.querySelectorAll('.search-row .sf');
+      const cat = sfs[0]?.querySelector('.sf-val')?.textContent.trim() || 'すべて';
+      const kwInput = document.querySelector('.search-row input[type="text"]');
+      const kw = (kwInput?.value || '').trim().toLowerCase();
+
+      const cards = document.querySelectorAll('.card');
+      let visible = 0;
+      cards.forEach(card => {
+        const title = (card.querySelector('.card-title')?.textContent || '').toLowerCase();
+        const pillEl = card.querySelector('.pill');
+        const pill = pillEl ? pillEl.textContent.trim() : '';
+        let show = true;
+        if (cat && cat !== 'すべて' && pill !== cat) show = false;
+        if (kw && !title.includes(kw)) show = false;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+
+      // Show result message
+      let msg = document.querySelector('.search-result-msg');
+      if (!msg) {
+        msg = document.createElement('div');
+        msg.className = 'search-result-msg';
+        document.querySelector('.search-wrap .search-inner')?.appendChild(msg);
+      }
+      const parts = [];
+      if (cat !== 'すべて') parts.push(`カテゴリ：${cat}`);
+      if (kw) parts.push(`キーワード：${kwInput.value.trim()}`);
+      const cond = parts.length ? `（${parts.join(' / ')}）` : '';
+      msg.innerHTML = visible > 0
+        ? `🔍 ${visible}件の記事が見つかりました${cond} <span class="reset">条件をリセット</span>`
+        : `🔍 該当する記事が見つかりませんでした${cond} <span class="reset">条件をリセット</span>`;
+      msg.querySelector('.reset')?.addEventListener('click', () => {
+        if (sfs[0]) sfs[0].querySelector('.sf-val').textContent = 'すべて';
+        if (sfs[1]) sfs[1].querySelector('.sf-val').textContent = '指定なし';
+        if (sfs[2]) sfs[2].querySelector('.sf-val').textContent = '指定なし';
+        if (kwInput) kwInput.value = '';
+        resetSearch();
+      });
+    };
+
+    searchBtn?.addEventListener('click', e => {
+      e.preventDefault();
+      e.stopPropagation();
+      runSearch();
+    });
+
+    // Enter key on keyword
+    const kwInput = document.querySelector('.search-row input[type="text"]');
+    kwInput?.addEventListener('keypress', e => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        runSearch();
+      }
+    });
+
+    // Popular tag click → set as keyword and search
+    document.querySelectorAll('.stag').forEach(tag => {
+      tag.style.cursor = 'pointer';
+      tag.addEventListener('click', () => {
+        const word = tag.textContent.replace(/^#/, '').trim();
+        if (kwInput) kwInput.value = word;
+        runSearch();
+      });
+    });
+  })();
 </script>
 
 </body>
