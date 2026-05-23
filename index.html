@@ -535,11 +535,21 @@
   .card-thumb {
     aspect-ratio: 16 / 10;
     background: linear-gradient(135deg, #e8f1fb, #d1e3f7);
+    background-size: cover;
+    background-position: center;
     position: relative;
     display: grid; place-items: center;
     font-size: 44px;
     overflow: hidden;
   }
+  .card-thumb.art-denko   { background-image: url('images/art-denko.png'); }
+  .card-thumb.art-chatgpt { background-image: url('images/art-chatgpt.png'); }
+  .card-thumb.art-care    { background-image: url('images/art-care.png'); }
+  .card-thumb.art-takken  { background-image: url('images/art-takken.png'); }
+  .card-thumb.art-boki    { background-image: url('images/art-boki.png'); }
+  .card-thumb.art-toeic   { background-image: url('images/art-toeic.png'); }
+  .card-thumb.art-otsu4   { background-image: url('images/art-otsu4.png'); }
+  .card-thumb.art-aidev   { background-image: url('images/art-aidev.png'); }
   .card-thumb .new {
     position: absolute; top: 8px; left: 8px;
     background: var(--pink); color: #fff;
@@ -1061,7 +1071,7 @@
     <span class="num">01</span>
     <div class="title-block">
       <div class="small">FIND CERTIFICATIONS</div>
-      <div class="big">資格を、探す。</div>
+      <div class="big">資格を探す。</div>
     </div>
     <p class="desc">
       ビルメン・IT・法律・金融・語学・医療福祉の6分野から、あなたの「やり直し」「キャリアアップ」に直結する資格を厳選して紹介します。
@@ -1114,7 +1124,7 @@
     <span class="num">02</span>
     <div class="title-block">
       <div class="small">NEW ARTICLES</div>
-      <div class="big">新着の、記事。</div>
+      <div class="big">新着の記事。</div>
     </div>
     <p class="desc">
       編集部とAIが二人三脚で書き続ける、合格体験記・教材レビュー・勉強法。毎週木曜日・日曜日に更新中です。
@@ -1124,8 +1134,8 @@
   <div class="two-col">
     <div class="card-grid-4">
       <article class="card">
-        <div class="card-thumb" style="background:linear-gradient(135deg,#e6f4ed,#a8d8c0);">
-          <span class="new">NEW</span><span class="fav">♡</span>⚡
+        <div class="card-thumb art-denko">
+          <span class="new">NEW</span><span class="fav">♡</span>
         </div>
         <div class="card-body">
           <span class="pill bil">ビルメン系</span>
@@ -1134,8 +1144,8 @@
         </div>
       </article>
       <article class="card">
-        <div class="card-thumb" style="background:linear-gradient(135deg,#efe7ff,#bea5ff);">
-          <span class="new">NEW</span><span class="fav">♡</span>🤖
+        <div class="card-thumb art-chatgpt">
+          <span class="new">NEW</span><span class="fav">♡</span>
         </div>
         <div class="card-body">
           <span class="pill it">IT・AI</span>
@@ -1144,8 +1154,8 @@
         </div>
       </article>
       <article class="card">
-        <div class="card-thumb" style="background:linear-gradient(135deg,#e8f1fb,#a5cdf5);">
-          <span class="new">NEW</span><span class="fav">♡</span>🏥
+        <div class="card-thumb art-care">
+          <span class="new">NEW</span><span class="fav">♡</span>
         </div>
         <div class="card-body">
           <span class="pill med">医療・福祉系</span>
@@ -1154,8 +1164,8 @@
         </div>
       </article>
       <article class="card">
-        <div class="card-thumb" style="background:linear-gradient(135deg,#e8eaef,#a0a8b8);">
-          <span class="new">NEW</span><span class="fav">♡</span>⚖️
+        <div class="card-thumb art-takken">
+          <span class="new">NEW</span><span class="fav">♡</span>
         </div>
         <div class="card-body">
           <span class="pill law">法律系</span>
@@ -1164,8 +1174,8 @@
         </div>
       </article>
       <article class="card">
-        <div class="card-thumb" style="background:linear-gradient(135deg,#fff4d6,#f5cf6a);">
-          <span class="new">NEW</span><span class="fav">♡</span>💴
+        <div class="card-thumb art-boki">
+          <span class="new">NEW</span><span class="fav">♡</span>
         </div>
         <div class="card-body">
           <span class="pill fin">金融</span>
@@ -1174,8 +1184,8 @@
         </div>
       </article>
       <article class="card">
-        <div class="card-thumb" style="background:linear-gradient(135deg,#ffe1e7,#ff9aa2);">
-          <span class="new">NEW</span><span class="fav on">♥</span>🗣
+        <div class="card-thumb art-toeic">
+          <span class="new">NEW</span><span class="fav on">♥</span>
         </div>
         <div class="card-body">
           <span class="pill lang">語学</span>
@@ -1184,8 +1194,8 @@
         </div>
       </article>
       <article class="card">
-        <div class="card-thumb" style="background:linear-gradient(135deg,#e6f4ed,#80c8a4);">
-          <span class="new">NEW</span><span class="fav">♡</span>🔥
+        <div class="card-thumb art-otsu4">
+          <span class="new">NEW</span><span class="fav">♡</span>
         </div>
         <div class="card-body">
           <span class="pill bil">ビルメン系</span>
@@ -1194,8 +1204,8 @@
         </div>
       </article>
       <article class="card">
-        <div class="card-thumb" style="background:linear-gradient(135deg,#efe7ff,#9c7eff);">
-          <span class="new">NEW</span><span class="fav">♡</span>📔
+        <div class="card-thumb art-aidev">
+          <span class="new">NEW</span><span class="fav">♡</span>
         </div>
         <div class="card-body">
           <span class="pill it">IT・AI</span>
@@ -1256,7 +1266,7 @@
       <span class="num">03</span>
       <div class="title-block">
         <div class="small">MOST READ</div>
-        <div class="big">よく読まれている、記事。</div>
+        <div class="big">よく読まれている記事。</div>
       </div>
       <p class="desc">
         編集部おすすめの定番記事を集めました。資格の選び方に迷ったら、まずはここから読んでみてください。
@@ -1308,7 +1318,7 @@
       <span class="num">04</span>
       <div class="title-block">
         <div class="small">CAREER CHANGE</div>
-        <div class="big">資格を、転職に活かす。</div>
+        <div class="big">資格を転職に活かす。</div>
       </div>
       <p class="desc">
         資格は取って終わりじゃない。あなたの資格を「年収」と「働き方」に変えるための、転職メディア・転職エージェントの本気の比較記事を集めました。
