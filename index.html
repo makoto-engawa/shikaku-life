@@ -718,6 +718,16 @@
     font-size: 36px; margin: 8px 0 10px;
     position: relative; z-index: 1;
   }
+  .cc-img {
+    height: 130px;
+    margin: -18px -16px 12px;
+    background-size: cover;
+    background-position: center;
+    position: relative; z-index: 1;
+  }
+  .cc-img.cc-img-compare { background-image: url('images/car-compare.png'); }
+  .cc-img.cc-img-it      { background-image: url('images/car-it.png'); }
+  .cc-img.cc-img-special { background-image: url('images/car-special.png'); }
   .cc-title {
     font-family: "Zen Maru Gothic", sans-serif;
     font-weight: 900; font-size: 16px;
@@ -1333,15 +1343,15 @@
 
     <div class="career-cards">
       <div class="career-card">
+        <div class="cc-img cc-img-compare"></div>
         <div class="cc-num">01 / COMPARE</div>
-        <div class="cc-icon">🆚</div>
         <h3 class="cc-title">総合転職サイト徹底比較：求人数・サポート・年収UP実績で選ぶ</h3>
         <p class="cc-desc">大手総合転職サイトを、求人数・スカウト機能・コンサルタントの質などの観点で比較しました。</p>
         <span class="cc-link">記事を読む →</span>
       </div>
       <div class="career-card">
+        <div class="cc-img cc-img-it"></div>
         <div class="cc-num">02 / IT</div>
-        <div class="cc-icon">🚀</div>
         <h3 class="cc-title">30代未経験からITエンジニア｜おすすめ転職エージェント</h3>
         <p class="cc-desc">基本情報＋AI活用スキルを武器に転職した編集部員の実例と、効いたエージェント比較。</p>
         <span class="cc-link">記事を読む →</span>
@@ -1354,8 +1364,8 @@
         <span class="cc-link">記事を読む →</span>
       </div>
       <div class="career-card">
+        <div class="cc-img cc-img-special"></div>
         <div class="cc-num">04 / SPECIAL</div>
-        <div class="cc-icon">📊</div>
         <h3 class="cc-title">資格別おすすめ転職サイト2026年版【完全ガイド】</h3>
         <p class="cc-desc">15資格×8転職サイトをマトリクスで比較。あなたに合うエージェントが必ず見つかる。</p>
         <span class="cc-link">記事を読む →</span>
