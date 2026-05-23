@@ -962,9 +962,12 @@
   }
   .cat-img-ph::before { content: "🖼  "; font-size: 18px; }
   .cat-img-full {
-    width: 100%; height: auto; display: block;
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    display: block;
     border-radius: 10px;
-    margin: 24px 0;
+    margin: 24px auto;
     box-shadow: 0 4px 18px rgba(0, 40, 100, 0.12);
   }
   .cat-img-cap {
@@ -974,7 +977,8 @@
     font-family: "Zen Maru Gothic", sans-serif;
   }
   .real-box .cat-img-full {
-    margin: 18px 0;
+    max-width: 540px;
+    margin: 18px auto;
     border-radius: 6px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   }
