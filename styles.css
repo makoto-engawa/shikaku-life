@@ -595,3 +595,17 @@ em {
 
 /* ========== Hide/show utility ========== */
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+
+/* =========================================================
+   記事レイアウト：本文幅をやや絞る（2026-05-25 適用）
+   - 本文を780pxに絞って読みやすさUP、サイドバーは維持
+   - 全体は中央寄せ（左右の余白で重心を整える）
+   - 対象：.article-layout を持つ全ファイル（article.html + article-*.html × 8）
+   - 戻したい場合：このブロックを丸ごと削除すればOK
+   ========================================================= */
+@media (min-width: 981px) {
+  .article-layout {
+    grid-template-columns: minmax(0, 780px) 280px !important;
+    justify-content: center !important;
+  }
+}
