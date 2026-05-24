@@ -62,17 +62,17 @@
           <div>
             <h4>このサイトについて</h4>
             <ul>
-              <li><a href="about.html">運営者について</a></li>
-              <li><a href="about.html">プライバシーポリシー</a></li>
-              <li><a href="about.html">利用規約</a></li>
-              <li><a href="about.html">広告掲載ポリシー</a></li>
-              <li><a href="about.html">お問い合わせ</a></li>
+              <li><a href="about.html#about">運営者について</a></li>
+              <li><a href="about.html#privacy">プライバシーポリシー</a></li>
+              <li><a href="about.html#terms">利用規約</a></li>
+              <li><a href="about.html#ad-policy">広告掲載ポリシー</a></li>
+              <li><a href="about.html#contact">お問い合わせ</a></li>
             </ul>
           </div>
         </div>
         <div class="legal">
           <span>© 2026 SHIKAKU-LIFE. All rights reserved.</span>
-          <span>姉妹サイト: <a href="#">ビルメンアカデミー（bilumen.jp）</a></span>
+          <span>姉妹サイト: <a href="https://bilumen.jp" target="_blank" rel="noopener">ビルメンアカデミー（bilumen.jp）</a></span>
         </div>
       </div>
     </footer>
