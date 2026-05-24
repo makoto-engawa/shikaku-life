@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=1280" />
-<title>資格Life｜資格で、人生を変える。AI時代の手に職を、応援するメディア。</title>
+<title>第一種電気工事士｜独学8ヶ月で合格する完全ガイド【2026年版】｜資格Life</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet" />
@@ -476,72 +476,6 @@
   .cat-lang   { background-image: url('images/cat-lang.png'); }
   .cat-med    { background-image: url('images/cat-med.png'); }
 
-  /* ===================== 資格名リスト（カテゴリ別） ===================== */
-  .shikaku-list-wrap {
-    margin-top: 24px;
-    padding: 28px 24px 20px;
-    background: #fff;
-    border: 1px solid var(--line);
-    border-radius: 10px;
-  }
-  .shikaku-list-title {
-    font-family: "Zen Maru Gothic", sans-serif;
-    font-weight: 900; font-size: 14px; color: var(--blue-deep);
-    margin: 0 0 18px;
-    letter-spacing: 0.05em;
-  }
-  .shikaku-list-title::before {
-    content: "📋 ";
-  }
-  .shikaku-list-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 18px;
-  }
-  @media (max-width: 1100px) { .shikaku-list-grid { grid-template-columns: repeat(3, 1fr); } }
-  @media (max-width: 720px)  { .shikaku-list-grid { grid-template-columns: repeat(2, 1fr); } }
-  .shikaku-list-col h4 {
-    font-family: "Zen Maru Gothic", sans-serif;
-    font-weight: 900; font-size: 13px;
-    color: var(--ink);
-    margin: 0 0 10px;
-    padding-bottom: 6px;
-    border-bottom: 2px solid var(--blue);
-    display: flex; align-items: center; gap: 6px;
-  }
-  .shikaku-list-col.lc-bilmen h4 { border-bottom-color: var(--green); }
-  .shikaku-list-col.lc-it h4     { border-bottom-color: var(--purple); }
-  .shikaku-list-col.lc-law h4    { border-bottom-color: var(--ink-strong, #1a2230); }
-  .shikaku-list-col.lc-fin h4    { border-bottom-color: var(--yellow); }
-  .shikaku-list-col.lc-lang h4   { border-bottom-color: var(--pink); }
-  .shikaku-list-col.lc-med h4    { border-bottom-color: var(--blue); }
-  .shikaku-list-col ul {
-    list-style: none;
-    padding: 0; margin: 0;
-  }
-  .shikaku-list-col li {
-    font-size: 12px;
-    color: var(--ink-soft);
-    line-height: 1.95;
-    padding-left: 12px;
-    position: relative;
-  }
-  .shikaku-list-col li::before {
-    content: "›";
-    position: absolute;
-    left: 0; top: 0;
-    color: var(--blue);
-    font-weight: 700;
-  }
-  .shikaku-list-col li a {
-    color: var(--ink-soft);
-    transition: color .15s;
-  }
-  .shikaku-list-col li a:hover {
-    color: var(--blue);
-    text-decoration: underline;
-  }
-
   /* ===================== SECTIONS / MAIN ===================== */
   main { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
 
@@ -911,6 +845,353 @@
     border-left: 3px solid var(--orange); padding-left: 10px;
   }
 
+  /* ===================== CATEGORY PAGE ===================== */
+  .cat-hero {
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    background:
+      linear-gradient(110deg, rgba(0,40,90,0.78) 0%, rgba(0,55,130,0.62) 50%, rgba(0,30,80,0.55) 100%),
+      url('images/bil-hero.png');
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+  .cat-hero-inner {
+    max-width: 1180px; margin: 0 auto;
+    padding: 60px 16px 50px;
+    position: relative; z-index: 1;
+  }
+  .cat-crumb {
+    font-size: 11px; letter-spacing: 0.08em;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 14px;
+  }
+  .cat-crumb a { color: rgba(255,255,255,0.85); text-decoration: underline; }
+  .cat-crumb a:hover { color: #ffd76a; }
+  .cat-hero h1 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 42px; line-height: 1.3;
+    margin: 0 0 14px;
+    text-shadow: 0 2px 16px rgba(0,30,80,0.4);
+  }
+  .cat-hero h1 .accent { color: #ffd76a; }
+  .cat-hero h1 .underline {
+    background: linear-gradient(transparent 70%, rgba(255,122,0,0.55) 70%);
+    padding: 0 4px;
+  }
+  .cat-hero .lead {
+    font-size: 15px; line-height: 1.8; max-width: 640px;
+    color: rgba(255,255,255,0.95);
+    text-shadow: 0 1px 6px rgba(0,30,80,0.5);
+  }
+  .cat-hero .meta-row {
+    display: flex; gap: 18px; flex-wrap: wrap;
+    margin-top: 22px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 12px;
+  }
+  .cat-hero .meta-row .item {
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(8px);
+    padding: 6px 14px; border-radius: 999px;
+    font-weight: 700;
+  }
+  .cat-hero .meta-row .item b { color: #ffd76a; margin-right: 4px; }
+
+  .cat-main { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
+  .cat-sec {
+    padding: 56px 0 12px;
+    border-bottom: 1px dashed var(--line);
+  }
+  .cat-sec:last-child { border-bottom: 0; }
+  .cat-sec-head {
+    display: flex; align-items: end; gap: 14px;
+    margin-bottom: 22px;
+  }
+  .cat-sec-num {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 48px;
+    color: var(--blue); line-height: 0.85;
+  }
+  .cat-sec-title-block .small {
+    font-size: 11px; color: var(--blue);
+    letter-spacing: 0.18em; font-weight: 700;
+  }
+  .cat-sec-title-block .big {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 26px; line-height: 1.3;
+    color: var(--ink); margin-top: 4px;
+  }
+  .cat-sec p {
+    font-size: 14px; line-height: 1.95; color: var(--ink-soft);
+    margin: 0 0 16px;
+  }
+  .cat-sec h3 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 18px;
+    color: var(--ink); margin: 28px 0 12px;
+    padding-left: 12px; border-left: 4px solid var(--blue);
+    line-height: 1.5;
+  }
+  .cat-sec h4 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 15px;
+    color: var(--ink); margin: 22px 0 10px;
+  }
+  .cat-sec ul, .cat-sec ol {
+    font-size: 14px; line-height: 1.9; color: var(--ink-soft);
+    margin: 0 0 16px; padding-left: 20px;
+  }
+  .cat-sec ul li, .cat-sec ol li { margin-bottom: 4px; }
+  .cat-sec strong { color: var(--ink); }
+  .cat-sec em { font-style: normal; color: var(--blue-deep); font-weight: 700; }
+
+  /* placeholder image box */
+  .cat-img-ph {
+    background: linear-gradient(135deg, var(--blue-soft), #fff);
+    border: 1px dashed var(--blue);
+    border-radius: 8px;
+    padding: 28px;
+    text-align: center;
+    color: var(--blue-deep);
+    font-size: 12px;
+    margin: 20px 0;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 700;
+  }
+  .cat-img-ph::before { content: "🖼  "; font-size: 18px; }
+  .cat-img-full {
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin: 24px auto;
+    box-shadow: 0 4px 18px rgba(0, 40, 100, 0.12);
+  }
+  .cat-img-cap {
+    font-size: 11px; color: var(--mute);
+    text-align: center;
+    margin: -16px 0 24px;
+    font-family: "Zen Maru Gothic", sans-serif;
+  }
+  .real-box .cat-img-full {
+    max-width: 540px;
+    margin: 18px auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  /* 8 shikaku grid */
+  .shikaku-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;
+    margin: 18px 0 8px;
+  }
+  @media (max-width: 720px) { .shikaku-grid { grid-template-columns: 1fr; } }
+  .shikaku-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--blue);
+    border-radius: 6px;
+    padding: 14px 16px;
+  }
+  .shikaku-item.lv-入門 { border-left-color: var(--green); }
+  .shikaku-item.lv-中級 { border-left-color: var(--blue); }
+  .shikaku-item.lv-上位 { border-left-color: var(--purple); }
+  .shikaku-name {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 16px; color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .shikaku-lv {
+    font-size: 10px; padding: 2px 8px; border-radius: 999px;
+    background: var(--blue-soft); color: var(--blue-deep);
+    margin-left: 8px; font-weight: 700; vertical-align: middle;
+  }
+  .shikaku-lv.lv-入門 { background: #e6f4ed; color: #1c8a5f; }
+  .shikaku-lv.lv-中級 { background: var(--blue-soft); color: var(--blue-deep); }
+  .shikaku-lv.lv-上位 { background: #efe7ff; color: #5b35d3; }
+  .shikaku-meta {
+    font-size: 11px; color: var(--mute);
+    font-family: "Zen Maru Gothic", sans-serif; font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .shikaku-meta span { margin-right: 10px; }
+  .shikaku-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.7; margin: 0; }
+
+  /* path cards (パターンA/B/C) */
+  .path-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+    margin: 18px 0;
+  }
+  @media (max-width: 720px) { .path-cards { grid-template-columns: 1fr; } }
+  .path-card {
+    background: #fff; border: 1px solid var(--line); border-radius: 10px;
+    padding: 22px 20px;
+    position: relative; overflow: hidden;
+  }
+  .path-card .pc-no {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 36px; font-weight: 900;
+    color: var(--blue); line-height: 1;
+    opacity: 0.85;
+  }
+  .path-card .pc-tgt {
+    font-size: 11px; color: var(--mute); font-weight: 700;
+    letter-spacing: 0.08em; margin: 6px 0 12px;
+  }
+  .path-card .pc-name {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 18px;
+    color: var(--ink); margin-bottom: 8px;
+  }
+  .path-card .pc-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.75; margin: 0; }
+
+  /* 比較表 */
+  .cat-table {
+    width: 100%; border-collapse: collapse;
+    font-size: 13px; margin: 14px 0;
+  }
+  .cat-table th, .cat-table td {
+    padding: 10px 12px; text-align: left;
+    border-bottom: 1px solid var(--line);
+  }
+  .cat-table th {
+    background: var(--blue-soft);
+    color: var(--blue-deep); font-weight: 700;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 12px;
+  }
+  .cat-table td { color: var(--ink-soft); }
+  .cat-table tr:hover td { background: #f7f9fc; }
+  .cat-table .highlight {
+    background: linear-gradient(90deg, #fff8e6, #fff);
+    font-weight: 700; color: var(--ink);
+  }
+
+  /* edu cards (3社比較) */
+  .edu-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+    margin: 18px 0;
+  }
+  @media (max-width: 720px) { .edu-cards { grid-template-columns: 1fr; } }
+  .edu-card {
+    background: #fff; border: 1px solid var(--line); border-radius: 10px;
+    padding: 20px 18px;
+    display: flex; flex-direction: column;
+  }
+  .edu-card .edu-name {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 17px; color: var(--ink);
+    margin-bottom: 4px;
+  }
+  .edu-card .edu-tag {
+    font-size: 10px; padding: 3px 8px; border-radius: 999px;
+    background: var(--orange); color: #fff; font-weight: 700;
+    display: inline-block; margin-bottom: 10px;
+    width: fit-content;
+  }
+  .edu-card .edu-price {
+    font-size: 18px; font-weight: 900; color: var(--blue-deep);
+    font-family: "Zen Maru Gothic", sans-serif;
+  }
+  .edu-card .edu-price .yen { font-size: 12px; }
+  .edu-card .edu-feat {
+    font-size: 13px; color: var(--ink-soft); line-height: 1.7;
+    margin: 10px 0 14px; flex: 1;
+  }
+  .edu-card .edu-cta {
+    display: block; text-align: center;
+    background: var(--orange); color: #fff;
+    padding: 10px 14px; border-radius: 6px;
+    font-weight: 700; font-size: 13px;
+    box-shadow: 0 1px 0 var(--orange-deep);
+  }
+  .edu-card .edu-cta:hover { background: var(--orange-deep); color: #fff; }
+
+  /* FAQ */
+  .faq-item {
+    background: #fff; border: 1px solid var(--line); border-radius: 8px;
+    padding: 16px 18px; margin-bottom: 10px;
+  }
+  .faq-item .faq-q {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 14px; color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .faq-item .faq-q::before {
+    content: "Q. "; color: var(--blue); font-weight: 900;
+  }
+  .faq-item .faq-a { font-size: 13px; color: var(--ink-soft); line-height: 1.8; margin: 0; }
+  .faq-item .faq-a::before {
+    content: "A. "; color: var(--orange); font-weight: 900;
+  }
+
+  /* 現場の話の強調ボックス */
+  .real-box {
+    background: linear-gradient(135deg, #fff8e6, #fffaf0);
+    border-left: 5px solid var(--orange);
+    border-radius: 8px;
+    padding: 22px 24px;
+    margin: 20px 0;
+  }
+  .real-box .real-tag {
+    display: inline-block;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 11px;
+    background: var(--orange); color: #fff;
+    padding: 4px 10px; border-radius: 4px;
+    margin-bottom: 12px;
+    letter-spacing: 0.08em;
+  }
+  .real-box h3 {
+    margin: 0 0 10px;
+    padding-left: 0;
+    border-left: 0;
+    color: var(--ink);
+    font-size: 19px;
+  }
+  .real-box p { font-size: 14px; line-height: 2; color: var(--ink); }
+  .real-box strong { color: var(--orange-deep); }
+
+  /* CTA bottom */
+  .cat-cta {
+    background: linear-gradient(135deg, var(--blue), var(--blue-deep));
+    color: #fff; border-radius: 14px;
+    padding: 36px 32px; text-align: center;
+    margin: 40px 0;
+  }
+  .cat-cta h3 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 24px;
+    margin: 0 0 8px; color: #fff;
+    border-left: 0; padding-left: 0;
+  }
+  .cat-cta p { font-size: 13px; color: rgba(255,255,255,0.92); margin: 0 0 20px; }
+  .cat-cta .btn-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .cat-cta .btn-primary {
+    background: var(--orange); color: #fff;
+    padding: 12px 26px; border-radius: 6px;
+    font-weight: 700; font-size: 14px;
+    box-shadow: 0 2px 0 var(--orange-deep);
+  }
+  .cat-cta .btn-primary:hover { background: var(--orange-deep); color: #fff; }
+  .cat-cta .btn-sub {
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.4);
+    color: #fff; padding: 12px 22px; border-radius: 6px;
+    font-weight: 700; font-size: 13px;
+  }
+  .cat-cta .btn-sub:hover { background: rgba(255,255,255,0.22); color: #fff; }
+
+  @media (max-width: 720px) {
+    .cat-hero h1 { font-size: 28px; }
+    .cat-sec-head { flex-wrap: wrap; }
+    .cat-sec-num { font-size: 36px; }
+    .cat-sec-title-block .big { font-size: 20px; }
+  }
+
   /* ===================== FOOTER ===================== */
   footer.site {
     background: #1a2230; color: #c5cbd6;
@@ -1072,487 +1353,412 @@
   </div>
 </nav>
 
-<!-- ============ HERO ============ -->
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-copy">
-      <div class="hero-eyebrow">📈 AI時代の手に職を、応援するメディア <b>NEW</b></div>
-      <h1>
-        資格で、<span class="underline">人生</span>を変える。<br />
-        <span class="accent">AI時代</span>の手に職を、<br />
-        応援するメディア。
-      </h1>
-      <p class="hero-sub">
-        20代の挑戦も、50代のやり直しも。AIに置き換わらない「現場の力」と「専門資格」を、<br />
-        独学・通信・通学のリアルな比較記事で、ゼロから応援します。
-      </p>
-      <div class="hero-illust">
-        <div class="person">👨‍💼<div class="person-label">20代・IT転職</div></div>
-        <div class="person b">👩‍⚕️<div class="person-label">30代・医療職</div></div>
-        <div class="person c">👨‍🔧<div class="person-label">50代・ビルメン</div></div>
-      </div>
+<!-- ============ ARTICLE HERO ============ -->
+<section class="cat-hero">
+  <div class="cat-hero-inner">
+    <div class="cat-crumb">
+      <a href="index.html">資格Life</a> ／ <a href="category-bilmen.html">ビルメン系</a> ／ 第一種電気工事士
     </div>
-
-    <div class="hero-card">
-      <span class="hc-badge">📚 RESOURCES</span>
-      <h2 class="hc-title">資格Lifeの記事から、<br />あなたに合う一本を。</h2>
-      <p class="hc-count">資格カテゴリ別に、厳選記事を公開中</p>
-      <a href="articles.html" class="hc-cta">無料で記事を読む<span class="arr">→</span></a>
-      <p class="hc-sub">会員登録すると <b>気になる保存</b> ＆ <b>学習履歴管理</b> ができます</p>
+    <h1>
+      第一種電気工事士、<br />
+      <span class="underline">独学8ヶ月</span>で<span class="accent">一発合格</span>する完全ガイド。
+    </h1>
+    <p class="lead">
+      電工2種の上位資格。500kW未満の高圧自家用設備まで扱える、<em>「人生を変える」プロの登竜門</em>です。試験概要・実務経験・学習法・教材まで、これ1ページですべて分かります。
+    </p>
+    <div class="meta-row">
+      <span class="item">難易度 <b>★★★★☆</b></span>
+      <span class="item">学習時間 <b>200〜300時間</b></span>
+      <span class="item">合格率 <b>学科50% / 技能60%</b></span>
+      <span class="item">年収UP <b>+50〜100万</b></span>
     </div>
   </div>
 </section>
 
-<!-- ============ SEARCH ============ -->
-<div class="search-wrap">
-  <div class="search-inner">
-    <div class="search-head">
-      <span class="lab">条件から資格を探す</span>
-      <span class="cnt">資格名・カテゴリで探す</span>
-    </div>
-    <div class="search-row">
-      <div class="sf">
-        <span class="sf-label">カテゴリ</span>
-        <span class="sf-val">すべて</span>
-        <span class="sf-arr">▼</span>
-      </div>
-      <div class="sf">
-        <span class="sf-label">難易度</span>
-        <span class="sf-val">指定なし</span>
-        <span class="sf-arr">▼</span>
-      </div>
-      <div class="sf">
-        <span class="sf-label">取得期間</span>
-        <span class="sf-val">指定なし</span>
-        <span class="sf-arr">▼</span>
-      </div>
-      <div class="sf">
-        <span class="sf-label">キーワード</span>
-        <input type="text" placeholder="例：宅建士、簿記2級、基本情報" />
-      </div>
-      <button class="btn-search">🔍 検索する</button>
-    </div>
-    <div class="search-tags">
-      <span class="tlab">人気タグ：</span>
-      <span class="stag">#宅建士</span>
-      <span class="stag">#基本情報技術者</span>
-      <span class="stag">#簿記2級</span>
-      <span class="stag">#FP3級</span>
-      <span class="stag">#ビル管理士</span>
-      <span class="stag">#TOEIC700</span>
-      <span class="stag">#介護福祉士</span>
-      <span class="stag">#G検定</span>
-      <span class="stag">#行政書士</span>
+<main class="cat-main">
+
+<!-- 【1】電工1種とは -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">01</div>
+    <div class="cat-sec-title-block">
+      <div class="small">WHAT IS DENKO-1</div>
+      <div class="big">第一種電気工事士って、どんな資格？</div>
     </div>
   </div>
-</div>
 
-<!-- ============ CATEGORY ICONS ============ -->
-<div class="cats">
-  <div class="career-head">
-    <span class="num">01</span>
-    <div class="title-block">
-      <div class="small">FIND CERTIFICATIONS</div>
-      <div class="big">資格を探す。</div>
+  <p>
+    第一種電気工事士（通称：電工1種）は、電工2種の上位資格で<strong>最大電力500kW未満の自家用電気工作物</strong>の電気工事を行うことができる国家資格です。<em>電工2種では扱えなかった高圧（6,600V）設備</em>を扱えるため、商業ビル・工場・大型施設の電気工事に従事できる、電気工事業界の中核資格です。
+  </p>
+
+  <p>
+    電工1種を取得すると、<strong>「街の電気屋さん」から「ビル・工場の電気プロ」</strong>に立場が変わります。ビルメン業界でも年収レンジが一気に上がり、<em>「電工1種＋実務経験」</em>で電気工事会社の独立開業も視野に入ります。
+  </p>
+
+  <h3>電工2種との違い</h3>
+  <ul>
+    <li><strong>電工2種</strong>：600V以下（一般住宅・小規模店舗）</li>
+    <li><strong>電工1種</strong>：500kW未満の自家用電気工作物（中小ビル・工場）</li>
+    <li><strong>電気主任技術者</strong>：500kW以上（大型ビル・大規模工場）</li>
+  </ul>
+
+  <h3>免状交付に「実務経験」が必須</h3>
+  <p>
+    電工1種は<em>試験に合格しただけでは免状が交付されない</em>のが大きな特徴。<strong>3年以上の電気工事の実務経験</strong>（電工2種免状取得後など）が必要です。試験合格後5年以内に実務経験を満たして申請する仕組み。<em>「先に試験を取って、働きながら実務経験を貯める」</em>パターンが一般的です。
+  </p>
+</section>
+
+<!-- 【2】試験概要 -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">02</div>
+    <div class="cat-sec-title-block">
+      <div class="small">EXAM OUTLINE</div>
+      <div class="big">試験概要：学科・技能・実務経験</div>
     </div>
-    <p class="desc">
-      6分野から、あなたに合う資格を厳選して紹介します。
+  </div>
+
+  <p>
+    電工1種は<strong>学科試験＋技能試験＋実務経験3年</strong>の3ステップ。学科と技能はそれぞれ年1回（学科10月／技能12月）の実施です。
+  </p>
+
+  <h3>学科試験データ（2026年版）</h3>
+  <ul>
+    <li><strong>受験料</strong>：10,900円（CBT 11,300円）</li>
+    <li><strong>受験資格</strong>：なし（誰でも受験可）</li>
+    <li><strong>試験時間</strong>：2時間20分</li>
+    <li><strong>出題形式</strong>：マークシート（4肢択一）</li>
+    <li><strong>問題数</strong>：50問</li>
+    <li><strong>合格基準</strong>：30問以上正解（60%以上）</li>
+    <li><strong>合格率</strong>：50%前後</li>
+  </ul>
+
+  <h3>技能試験データ</h3>
+  <ul>
+    <li><strong>試験時間</strong>：1時間</li>
+    <li><strong>出題</strong>：事前公表の候補問題10問から1問</li>
+    <li><strong>合格率</strong>：60%前後</li>
+    <li><strong>必要工具</strong>：圧着工具・ペンチ・ドライバーなどフルセット</li>
+    <li><strong>練習材料</strong>：電線・器具セット（20,000〜30,000円目安）</li>
+  </ul>
+
+  <h3>免状交付の要件</h3>
+  <p>
+    学科＋技能合格後、<em>「電気工事に関する実務経験 通算3年以上」</em>を満たし、都道府県知事に免状交付申請します。<strong>電工2種を持って電気工事会社で3年働いた経験</strong>などが該当。「合格証書」と「免状」は別物なので注意。
+  </p>
+</section>
+
+<!-- 【3】取得メリット -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">03</div>
+    <div class="cat-sec-title-block">
+      <div class="small">5 MERITS</div>
+      <div class="big">電工1種を取る、5つの大きなメリット</div>
+    </div>
+  </div>
+
+  <h3>① 年収レンジが100万円単位で上がる</h3>
+  <p>
+    電工2種が「未経験ビルメン」の登竜門なら、電工1種は<strong>「電気のプロ」</strong>の証明。<em>電工2種＋経験者で年収350〜400万円なら、電工1種で450〜550万円が標準レンジ</em>。資格手当も月10,000〜30,000円と倍以上に跳ね上がります。
+  </p>
+
+  <h3>② 自家用電気工作物の工事が可能に</h3>
+  <p>
+    <strong>中小ビル・工場・コンビニ・チェーン店</strong>など、6,600V受電の自家用電気設備の工事が可能になります。電工2種では入れなかった<em>「キュービクル（高圧受変電設備）」</em>の工事に従事でき、職人の世界が大きく広がります。
+  </p>
+
+  <h3>③ 5年ごとの「定期講習」で最新法令もキャッチアップ</h3>
+  <p>
+    電工1種は<strong>免状取得後5年ごとに「定期講習」</strong>を受講する義務があります。<em>最新の電気設備技術基準・法令改正をキャッチアップ</em>でき、生涯にわたって最新スキルを維持できる仕組み。会社が受講料を出してくれる場合も多いです。
+  </p>
+
+  <h3>④ 電験3種・施工管理技士へのステップアップ</h3>
+  <p>
+    電工1種を取得すると、<strong>電験3種（第三種電気主任技術者）の「実務経験認定ルート」</strong>が見えてきます。さらに<em>「電気工事施工管理技士」</em>の受験資格にもなり、現場監督・施工管理者として独立開業も可能。年収600万円超のキャリアパスが開けます。
+  </p>
+
+  <h3>⑤ 独立開業・電気工事業の自営も可能</h3>
+  <p>
+    電工1種＋実務経験5年で<strong>「電気工事業の登録」</strong>が可能になり、自分で電気工事会社を開業できます。<em>「店舗・小規模工場の電気工事」を請け負う独立職人</em>として、年収700〜1,000万円も視野に。「会社員ビルメン」から「独立電気職人」への道が拓けます。
+  </p>
+</section>
+
+<!-- 【4】学習ロードマップ -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">04</div>
+    <div class="cat-sec-title-block">
+      <div class="small">STUDY ROADMAP</div>
+      <div class="big">8ヶ月で合格する、32週間の学習プラン</div>
+    </div>
+  </div>
+
+  <p>
+    電工2種をベースに学科を5ヶ月＋技能を3ヶ月で固める、社会人向けプランです。<em>合計200〜300時間</em>を目標に。電工2種合格者を前提とした構成です。
+  </p>
+
+  <h3>第1〜8週：電気理論・電気計測（50時間）</h3>
+  <p>
+    電工2種の延長線で<strong>「三相交流回路」「電力・電圧降下」「計測機器」</strong>を深堀り。<em>高圧回路の計算問題が頻出</em>で、電工2種よりも数式が複雑になります。
+  </p>
+
+  <h3>第9〜16週：電気機器・配電・送電（50時間）</h3>
+  <p>
+    <strong>変圧器・誘導電動機・進相コンデンサ・キュービクル</strong>の構造と特性。<em>自家用電気設備の保護協調</em>も重要単元。図解の暗記と計算の両方が必要です。
+  </p>
+
+  <h3>第17〜20週：保安管理・施工方法（30時間</h3>
+  <p>
+    <strong>高圧ケーブル工事・接地工事・絶縁耐力試験</strong>などの実務知識。電工2種とは異なる「高圧」の世界の知識を身につけます。
+  </p>
+
+  <h3>第21〜24週：電気法規・電気設備技術基準（25時間）</h3>
+  <p>
+    <strong>電気事業法・電気工事士法・電気設備技術基準</strong>の最新版を読み込みます。<em>電工2種より暗記量が3割増し</em>。
+  </p>
+
+  <h3>第25〜28週：技能試験対策（45時間）</h3>
+  <p>
+    候補問題10問を<strong>1問40分</strong>で完成させる練習。電工2種より<em>「VVRケーブル剥き」「KIP電線処理」「金属管端末処理」</em>など難度が大きく上がります。<strong>練習材料2セット購入</strong>がおすすめ。
+  </p>
+
+  <h3>第29〜32週：直前総合演習（30時間）</h3>
+  <p>
+    過去問5年分を本試験形式で解き、<em>「学科60%以上＋技能完成」</em>を確認。試験前1週間は新しいことに手を出さず、復習に専念しましょう。
+  </p>
+</section>
+
+<!-- 【5】教材比較 -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">05</div>
+    <div class="cat-sec-title-block">
+      <div class="small">COMPARE COURSES</div>
+      <div class="big">教材を比較する（独学・通信・技能練習）</div>
+    </div>
+  </div>
+
+  <p>
+    電工1種は<strong>学科＋技能</strong>の両方が必要なため、技能練習材料の確保も重要です（PR）。
+  </p>
+
+  <div class="edu-cards">
+    <div class="edu-card">
+      <div class="edu-card-head">
+        <div class="edu-name">ユーキャン 第一種電気工事士講座</div>
+        <div class="edu-price">79,000円</div>
+      </div>
+      <ul class="edu-feats">
+        <li>添削指導付き（4回）</li>
+        <li>標準学習期間：6ヶ月</li>
+        <li>技能練習材料1セット付属</li>
+        <li>動画講義100時間以上</li>
+      </ul>
+      <p class="edu-summary">「学科と技能を一気に固めたい」方に。<em>技能材料が標準付属</em>なのが大きな安心。</p>
+      <a href="#" class="btn-affil" rel="nofollow sponsored noopener" target="_blank">ユーキャンの詳細を見る →</a>
+    </div>
+
+    <div class="edu-card">
+      <div class="edu-card-head">
+        <div class="edu-name">SAT 第一種電気工事士講座</div>
+        <div class="edu-price">54,780円</div>
+      </div>
+      <ul class="edu-feats">
+        <li>動画講義45時間</li>
+        <li>技能候補問題10問の解説動画</li>
+        <li>不合格時返金保証</li>
+        <li>スマホ・PC学習対応</li>
+      </ul>
+      <p class="edu-summary">「動画中心で学びたい」方に。<em>技能動画が圧倒的に詳しい</em>のが定評です。</p>
+      <a href="#" class="btn-affil" rel="nofollow sponsored noopener" target="_blank">SATを見る →</a>
+    </div>
+
+    <div class="edu-card">
+      <div class="edu-card-head">
+        <div class="edu-name">HOZAN 技能試験練習セット</div>
+        <div class="edu-price">29,800円</div>
+      </div>
+      <ul class="edu-feats">
+        <li>電線・器具フルセット</li>
+        <li>候補問題10問対応</li>
+        <li>YouTube解説動画無料</li>
+        <li>業界標準ブランド</li>
+      </ul>
+      <p class="edu-summary">「学科は独学、技能だけ確実に」方に。<em>HOZAN公式の練習動画は無料</em>でクオリティ最高。</p>
+      <a href="#" class="btn-affil" rel="nofollow sponsored noopener" target="_blank">HOZANセットを見る →</a>
+    </div>
+  </div>
+
+  <p>
+    <em>市販テキスト派</em>には、<strong>「ぜんぶ絵で見て覚える 第一種電気工事士 学科試験 テキスト＆問題集」（翔泳社／2,420円）</strong>＋<strong>「2026年版 第一種電気工事士 技能試験 候補問題できた！」（オーム社／2,750円）</strong>の組み合わせが定番です。
+  </p>
+</section>
+
+<!-- 【6】合格体験談 -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">06</div>
+    <div class="cat-sec-title-block">
+      <div class="small">REAL STORIES</div>
+      <div class="big">合格者の声：現場の3人</div>
+    </div>
+  </div>
+
+  <div class="real-box">
+    <h4>Case 1：32歳・電気工事会社2年目（東京）</h4>
+    <p>
+      電工2種を持って入社2年目で電工1種に挑戦。<em>会社の先輩からSATの動画講座を勧められ</em>独学＋動画で6ヶ月学習。一発で学科・技能ともに合格。「2種と1種の難度差はかなりあるが、実務で使う知識ばかりだったので頭に入りやすかった。合格と同時に手当が月15,000円増えた」。
     </p>
   </div>
-  <div class="cats-grid">
-    <a class="cat cat-bilmen" href="category-bilmen.html">
-      <div class="cat-overlay">
-        <div class="cat-name">ビルメン系</div>
-        <div class="cat-cnt">8 資格</div>
-      </div>
-    </a>
-    <a class="cat cat-it" href="category-it-ai.html">
-      <div class="cat-overlay">
-        <div class="cat-name">IT・AI</div>
-        <div class="cat-cnt">6 資格</div>
-      </div>
-    </a>
-    <a class="cat cat-law" href="category-law.html">
-      <div class="cat-overlay">
-        <div class="cat-name">法律系</div>
-        <div class="cat-cnt">5 資格</div>
-      </div>
-    </a>
-    <a class="cat cat-fin" href="category-fin.html">
-      <div class="cat-overlay">
-        <div class="cat-name">金融</div>
-        <div class="cat-cnt">6 資格</div>
-      </div>
-    </a>
-    <a class="cat cat-lang" href="category-lang.html">
-      <div class="cat-overlay">
-        <div class="cat-name">語学</div>
-        <div class="cat-cnt">4 資格</div>
-      </div>
-    </a>
-    <a class="cat cat-med" href="category-med.html">
-      <div class="cat-overlay">
-        <div class="cat-name">医療・福祉系</div>
-        <div class="cat-cnt">13 資格</div>
-      </div>
-    </a>
-  </div>
 
-  <!-- 資格名リスト（カテゴリ別） -->
-  <div class="shikaku-list-wrap">
-    <p class="shikaku-list-title">カテゴリ別 主要資格一覧（42資格）</p>
-    <div class="shikaku-list-grid">
-      <div class="shikaku-list-col lc-bilmen">
-        <h4>ビルメン系</h4>
-        <ul>
-          <li><a href="denko2.html">第二種電気工事士</a></li>
-          <li><a href="otsu4.html">危険物乙4</a></li>
-          <li><a href="boiler2.html">2級ボイラー技士</a></li>
-          <li><a href="reito3.html">第三種冷凍機械</a></li>
-          <li><a href="denko1.html">第一種電気工事士</a></li>
-          <li><a href="shoubou4.html">消防設備士 甲4</a></li>
-          <li><a href="bilkan.html">ビル管理士</a></li>
-          <li><a href="enekan.html">エネルギー管理士</a></li>
-        </ul>
-      </div>
-      <div class="shikaku-list-col lc-it">
-        <h4>IT・AI</h4>
-        <ul>
-          <li><a href="category-it-ai.html">ITパスポート</a></li>
-          <li><a href="category-it-ai.html">MOS Excel</a></li>
-          <li><a href="category-it-ai.html">基本情報技術者</a></li>
-          <li><a href="category-it-ai.html">応用情報技術者</a></li>
-          <li><a href="category-it-ai.html">G検定</a></li>
-          <li><a href="category-it-ai.html">E資格</a></li>
-        </ul>
-      </div>
-      <div class="shikaku-list-col lc-law">
-        <h4>法律系</h4>
-        <ul>
-          <li><a href="category-law.html">FP3級</a></li>
-          <li><a href="category-law.html">宅地建物取引士</a></li>
-          <li><a href="category-law.html">FP2級</a></li>
-          <li><a href="category-law.html">行政書士</a></li>
-          <li><a href="category-law.html">社会保険労務士</a></li>
-        </ul>
-      </div>
-      <div class="shikaku-list-col lc-fin">
-        <h4>金融</h4>
-        <ul>
-          <li><a href="category-fin.html">簿記3級</a></li>
-          <li><a href="category-fin.html">FP3級</a></li>
-          <li><a href="category-fin.html">簿記2級</a></li>
-          <li><a href="category-fin.html">証券外務員 二種</a></li>
-          <li><a href="category-fin.html">簿記1級</a></li>
-          <li><a href="category-fin.html">中小企業診断士</a></li>
-        </ul>
-      </div>
-      <div class="shikaku-list-col lc-lang">
-        <h4>語学</h4>
-        <ul>
-          <li><a href="category-lang.html">TOEIC L&R</a></li>
-          <li><a href="category-lang.html">英検</a></li>
-          <li><a href="category-lang.html">TOEIC S&W</a></li>
-          <li><a href="category-lang.html">HSK・中国語検定</a></li>
-        </ul>
-      </div>
-      <div class="shikaku-list-col lc-med">
-        <h4>医療・福祉系</h4>
-        <ul>
-          <li><a href="category-med.html">医療事務</a></li>
-          <li><a href="category-med.html">登録販売者</a></li>
-          <li><a href="category-med.html">介護職員初任者研修</a></li>
-          <li><a href="category-med.html">介護福祉士</a></li>
-          <li><a href="category-med.html">保育士</a></li>
-          <li><a href="category-med.html">ケアマネジャー</a></li>
-          <li><a href="category-med.html">精神保健福祉士</a></li>
-          <li><a href="category-med.html">看護師</a></li>
-          <li><a href="category-med.html">准看護師</a></li>
-          <li><a href="category-med.html">診療放射線技師</a></li>
-          <li><a href="category-med.html">薬剤師</a></li>
-          <li><a href="category-med.html">臨床工学技士</a></li>
-          <li><a href="category-med.html">臨床検査技師</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<main>
-
-  <!-- ============ NEW + FEATURED ============ -->
-  <div class="career-head">
-    <span class="num">02</span>
-    <div class="title-block">
-      <div class="small">NEW ARTICLES</div>
-      <div class="big">新着の記事。</div>
-    </div>
-    <p class="desc">
-      資格と学び直し、キャリアアップの最新記事。週2回更新中。
+  <div class="real-box">
+    <h4>Case 2：38歳・元自動車整備士（神奈川）</h4>
+    <p>
+      整備士から電気工事業へ転職。電工2種を取って3年後、電工1種に挑戦。<em>ユーキャンを8ヶ月かけて完走</em>し合格。「8万円弱は痛いけど、技能材料も付いてくるし、添削指導で安心感があった。<strong>32歳から始めて38歳で1種、人生まだまだ動く</strong>」。
     </p>
   </div>
 
-  <div class="two-col">
-    <div class="card-grid-4">
-      <article class="card">
-        <div class="card-thumb art-denko">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill bil">ビルメン系</span>
-          <h3 class="card-title">第二種電気工事士、独学6ヶ月で一発合格するための学習ロードマップ【2026年版】</h3>
-          <div class="card-meta"><span>2026.05.18</span><span class="read">⏱ 12分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-chatgpt">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill it">IT・AI</span>
-          <h3 class="card-title">ChatGPTで資格勉強を爆速化。実際に効いたプロンプト10選</h3>
-          <div class="card-meta"><span>2026.05.15</span><span class="read">⏱ 8分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-care">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill med">医療・福祉系</span>
-          <h3 class="card-title">介護福祉士は本当に「食いっぱぐれない」資格か。需給データで検証</h3>
-          <div class="card-meta"><span>2026.05.13</span><span class="read">⏱ 9分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-takken">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill law">法律系</span>
-          <h3 class="card-title">宅建、社会人が働きながら受かるには。通勤＋土日の300時間プラン</h3>
-          <div class="card-meta"><span>2026.05.12</span><span class="read">⏱ 10分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-boki">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill fin">金融</span>
-          <h3 class="card-title">簿記3級、最短2週間で合格する勉強法。最初の3日でやることを具体化</h3>
-          <div class="card-meta"><span>2026.05.09</span><span class="read">⏱ 7分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-toeic">
-          <span class="new">NEW</span><span class="fav on">♥</span>
-        </div>
-        <div class="card-body">
-          <span class="pill lang">語学</span>
-          <h3 class="card-title">TOEIC 600→800、半年で伸ばした朝活ルーティン</h3>
-          <div class="card-meta"><span>2026.05.05</span><span class="read">⏱ 9分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-otsu4">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill bil">ビルメン系</span>
-          <h3 class="card-title">危険物乙4、ビルメン入門に最適な理由。四点セットの「とっかかり」</h3>
-          <div class="card-meta"><span>2026.05.02</span><span class="read">⏱ 6分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-aidev">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill it">IT・AI</span>
-          <h3 class="card-title">父とAIで資格アプリを作った、夏のはなし。51日間の記録</h3>
-          <div class="card-meta"><span>2026.04.28</span><span class="read">⏱ 14分</span></div>
-        </div>
-      </article>
-    </div>
-
-    <aside class="feature-card">
-      <div class="feature-head">
-        <span class="jp">人気の特集</span>
-        <span class="en">FEATURED</span>
-      </div>
-      <div class="feature-list">
-        <div class="feat-item">
-          <span class="feat-rank">1</span>
-          <div>
-            <div class="feat-title">AI時代に「人が残る職」をくれる7つの資格</div>
-            <div class="feat-cat">SPECIAL / 全12記事</div>
-          </div>
-        </div>
-        <div class="feat-item">
-          <span class="feat-rank">2</span>
-          <div>
-            <div class="feat-title">40代からの資格挑戦、5つのリアル</div>
-            <div class="feat-cat">SPECIAL / 全8記事</div>
-          </div>
-        </div>
-        <div class="feat-item">
-          <span class="feat-rank">3</span>
-          <div>
-            <div class="feat-title">通信講座、結局どこが一番いい？大手3社徹底比較</div>
-            <div class="feat-cat">COMPARE / 全6記事</div>
-          </div>
-        </div>
-        <div class="feat-item">
-          <span class="feat-rank">4</span>
-          <div>
-            <div class="feat-title">スマホだけで合格できる時代の勉強法</div>
-            <div class="feat-cat">LIFE / 全10記事</div>
-          </div>
-        </div>
-        <div class="feat-item">
-          <span class="feat-rank">5</span>
-          <div>
-            <div class="feat-title">育児・介護をしながら勉強する人のための「スキマ時間術」</div>
-            <div class="feat-cat">LIFE / 全7記事</div>
-          </div>
-        </div>
-      </div>
-    </aside>
-  </div>
-
-  <!-- ============ POPULAR ============ -->
-  <section class="popular">
-    <div class="career-head">
-      <span class="num">03</span>
-      <div class="title-block">
-        <div class="small">MOST READ</div>
-        <div class="big">よく読まれている記事。</div>
-      </div>
-      <p class="desc">
-        編集部おすすめの定番記事。迷ったらここから。
-      </p>
-    </div>
-
-    <div class="card-grid-4">
-      <article class="card">
-        <div class="card-thumb"><span class="fav">♡</span>📊</div>
-        <div class="card-body">
-          <span class="pill fin">金融</span>
-          <h3 class="card-title">簿記2級は独学で何時間？合格者300人の平均勉強時間を公開</h3>
-          <div class="card-meta"><span>2026.05</span><span class="read">⏱ 8分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb"><span class="fav on">♥</span>🏠</div>
-        <div class="card-body">
-          <span class="pill law">法律系</span>
-          <h3 class="card-title">宅建士、合格ライン35点時代の最新傾向と対策【2026】</h3>
-          <div class="card-meta"><span>2026.05</span><span class="read">⏱ 10分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb"><span class="fav">♡</span>🧠</div>
-        <div class="card-body">
-          <span class="pill it">IT・AI</span>
-          <h3 class="card-title">ITパスポートとG検定、文系30代はどちらから取るべきか</h3>
-          <div class="card-meta"><span>2026.05</span><span class="read">⏱ 7分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb"><span class="fav">♡</span>🛠</div>
-        <div class="card-body">
-          <span class="pill bil">ビルメン系</span>
-          <h3 class="card-title">ビルメン4点セットの取得順序、現役主任が解説する最適ルート</h3>
-          <div class="card-meta"><span>2026.05</span><span class="read">⏱ 9分</span></div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-</main>
-
-<!-- ============ CAREER BAND ============ -->
-<section class="career-band">
-  <div class="career-band-inner">
-    <div class="career-head">
-      <span class="num">04</span>
-      <div class="title-block">
-        <div class="small">CAREER CHANGE</div>
-        <div class="big">資格を転職に活かす。</div>
-      </div>
-      <p class="desc">
-        資格を「年収」と「働き方」に変える、転職の比較記事。
-      </p>
-    </div>
-
-    <div class="career-cards">
-      <div class="career-card">
-        <div class="cc-img cc-img-compare"></div>
-        <div class="cc-num">01 / COMPARE</div>
-        <h3 class="cc-title">総合転職サイト徹底比較：求人数・サポート・年収UP実績で選ぶ</h3>
-        <p class="cc-desc">大手総合転職サイトを、求人数・スカウト機能・コンサルタントの質などの観点で比較しました。</p>
-        <span class="cc-link">記事を読む →</span>
-      </div>
-      <div class="career-card">
-        <div class="cc-img cc-img-it"></div>
-        <div class="cc-num">02 / IT</div>
-        <h3 class="cc-title">30代未経験からITエンジニア｜おすすめ転職エージェント</h3>
-        <p class="cc-desc">基本情報＋AI活用スキルを武器に転職した編集部員の実例と、効いたエージェント比較。</p>
-        <span class="cc-link">記事を読む →</span>
-      </div>
-      <div class="career-card">
-        <div class="cc-num">03 / MEDICAL</div>
-        <div class="cc-icon">🏥</div>
-        <h3 class="cc-title">医療事務から介護福祉士で再就職｜年収はどう変わる？</h3>
-        <p class="cc-desc">資格取得後の年収シミュレーションと、福祉系に強い転職サービスを徹底比較しました。</p>
-        <span class="cc-link">記事を読む →</span>
-      </div>
-      <div class="career-card">
-        <div class="cc-img cc-img-special"></div>
-        <div class="cc-num">04 / SPECIAL</div>
-        <h3 class="cc-title">資格別おすすめ転職サイト2026年版【完全ガイド】</h3>
-        <p class="cc-desc">15資格×8転職サイトをマトリクスで比較。あなたに合うエージェントが必ず見つかる。</p>
-        <span class="cc-link">記事を読む →</span>
-      </div>
-    </div>
+  <div class="real-box">
+    <h4>Case 3：45歳・元営業職→ビルメン（埼玉）</h4>
+    <p>
+      45歳でビルメン転職、電工2種＋4点セット取得後、上位資格として電工1種に挑戦。<em>HOZANの練習セット＋市販テキストで独学</em>、8ヶ月で合格。「ビルメン現場の高圧設備に関われるようになり、年収が420万円→510万円に。50歳までに電験3種を狙います」。
+    </p>
   </div>
 </section>
 
-<main>
-  <!-- ============ SISTER SITE BANNER ============ -->
-  <a href="#" class="sister">
-    <div class="sister-info">
-      <span class="sister-tag">🏢 SISTER MEDIA</span>
-      <h3 class="sister-title">
-        ビルメンに、本気で詳しいメディア。<br />
-        <span class="small">ビルメンアカデミー / bilumen.jp</span>
-      </h3>
-      <p class="sister-desc">
-        ビル管理の現場で20年。元主任が運営する、ビルメン4点セットから上位資格まで、ビルメン業界の「リアル」だけを発信する姉妹サイトです。
-      </p>
+<!-- 【7】キャリア -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">07</div>
+    <div class="cat-sec-title-block">
+      <div class="small">CAREER PATH</div>
+      <div class="big">取得後のキャリア・年収アップ事例</div>
     </div>
-    <div class="sister-btn">
-      bilumen.jp を見る →
-      <small>SISTER SITE</small>
-    </div>
-  </a>
+  </div>
 
-  <!-- ============ OUR STORY ============ -->
-  <section class="story">
-    <div class="story-visual">📖</div>
-    <div>
-      <div class="story-eyebrow">OUR STORY</div>
-      <h2>「もう遅い」が、口ぐせだった父と。</h2>
-      <p>
-        60歳を過ぎても新しい仕事を探す父と、AI時代に取り残されかけた私。二人で資格に挑戦するうちに、学び直しは何歳からでも始められると確信しました。
-      </p>
-      <p>
-        このサイトは、その記録と、同じことで悩む誰かへのお守りです。20代の挑戦も、50代のやり直しも、私たちは同じ熱量で応援します。
-      </p>
-      <p class="story-sign">— 資格Life 編集部 ／ 父さんとAIの記録より</p>
+  <p>
+    電工1種は、<em>「電工2種＋経験者」</em>がさらに上のキャリアを目指す決定打。電気工事・ビルメン・施工管理など、複数の道が開けます。
+  </p>
+
+  <h3>業界別・年収アップ目安</h3>
+  <table style="width:100%; border-collapse: collapse; margin: 16px 0; font-size: 14px;">
+    <tr style="background: var(--blue-soft);">
+      <th style="padding: 10px; border: 1px solid var(--line); text-align: left;">業界</th>
+      <th style="padding: 10px; border: 1px solid var(--line); text-align: left;">想定年収</th>
+      <th style="padding: 10px; border: 1px solid var(--line); text-align: left;">資格手当</th>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid var(--line);">電気工事会社（職人）</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">450〜600万円</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">月10,000〜20,000円</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid var(--line);">ビルメン（中規模ビル）</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">400〜520万円</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">月8,000〜15,000円</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid var(--line);">電気工事施工管理</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">500〜700万円</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">月15,000〜30,000円</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid var(--line);">独立開業（電気工事業）</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">600〜1,200万円</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">—（事業主）</td>
+    </tr>
+  </table>
+
+  <h3>王道ルート：電工2種 → 電工1種 → 施工管理技士 / 電験3種</h3>
+  <p>
+    電工2種からスタートし、<strong>3〜5年の実務経験で電工1種、その後「電気工事施工管理技士」または「電験3種」</strong>へ。<em>どちらに進んでも年収600万円超</em>の世界が見えてきます。独立志向なら施工管理、技術志向なら電験という分岐です。
+  </p>
+</section>
+
+<!-- 【8】FAQ -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">08</div>
+    <div class="cat-sec-title-block">
+      <div class="small">Q &amp; A</div>
+      <div class="big">よくある質問・読者からの声</div>
     </div>
-  </section>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">電工2種を持っていなくても受験できますか？</div>
+    <p class="faq-a"><em>電工1種の受験資格は「なし」</em>。電工2種なしでも受験可能です。ただし<strong>免状交付には「実務経験3年以上」</strong>が必要で、実務経験の蓄積には電工2種があった方が圧倒的に有利。「2種で実務経験→1種試験→1種免状」の順が王道です。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">実務経験はどうやって証明するんですか？</div>
+    <p class="faq-a"><em>勤務先の事業主から「実務経験証明書」</em>を発行してもらいます。<strong>電気工事の種類・期間・従事内容</strong>を記載した正式な書類。電工2種を取って電気工事会社で3年勤務した経歴があれば、ほぼ確実に認定されます。「ビルメン業務」だけだと電気工事の従事時間が不足することがあるので注意。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">学科試験と技能試験の片方だけ合格した場合は？</div>
+    <p class="faq-a">学科合格者は<em>翌年度の技能試験のみ受験可能</em>な「免除制度」があります。<strong>「学科合格→翌年技能再挑戦」</strong>のパターンは多数。逆に、技能だけ先に受かることはできません（学科合格が必須）。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">合格証書と免状は何が違うんですか？</div>
+    <p class="faq-a">合格証書は<em>「試験に合格した」証明</em>にすぎず、実際に電工1種として電気工事を行うには<strong>免状（電気工事士免状）</strong>が必要です。免状は実務経験3年達成後に申請し、知事から交付されます。<em>「合格証書だけでは電工1種を名乗れない」</em>のがポイント。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">電工1種の難易度は電工2種の何倍ですか？</div>
+    <p class="faq-a">体感的には<em>「電工2種の2〜3倍」</em>。学科は<strong>三相交流回路・電力計算・自家用設備の保護協調</strong>などが新たに加わり、文系には壁。技能は<em>「KIP電線」「金属管端末」「VVRケーブル」</em>など新規器具・材料が増えます。電工2種で基礎を固めてから挑戦するのが安全策。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">定期講習は必須ですか？費用はどのくらい？</div>
+    <p class="faq-a">電工1種は<em>免状取得後5年ごとに定期講習が義務</em>。受講料は約9,200円で、1日6時間の講義（オンライン可）。<strong>怠ると免状取消の可能性</strong>があります。多くの会社は受講料を負担し、業務時間内で受講させてくれます。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">技能試験の練習用工具・材料はどこで買えますか？</div>
+    <p class="faq-a">Amazon・楽天で<em>「電気工事士技能試験 1種 練習セット」</em>を検索。<strong>HOZAN・モズシリーズが定番</strong>で、フルセット20,000〜35,000円。電線は1セットで全候補問題1周分。<em>「2セット買えば確実」</em>と多くの合格者が推奨しています。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">CBT方式と紙の試験、どちらがおすすめ？</div>
+    <p class="faq-a">電工1種学科も<em>2023年から「CBT方式」</em>が選択可能。<strong>試験日を柔軟に選べる</strong>のがメリットで、忙しい社会人に人気。受験料はCBTの方が400円高いですが、「年1回の紙試験」を逃さない安心感を取るならCBT一択です。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">電工1種を取った後、電験3種への近道はある？</div>
+    <p class="faq-a">電工1種＋実務経験5年で<em>「電気主任技術者の認定ルート」</em>が使える場合があります（電気事業法による）。<strong>ただし、認定は経済産業省の審査が必要</strong>で、無条件ではありません。一般的には「電験3種を試験で取る」のが確実な道です。</p>
+  </div>
+</section>
+
+<!-- 【9】姉妹サイト誘導 -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">09</div>
+    <div class="cat-sec-title-block">
+      <div class="small">DEEP DIVE</div>
+      <div class="big">過去問・教科書は「ビルメンアカデミー」で</div>
+    </div>
+  </div>
+
+  <p>
+    第一種電気工事士の<strong>過去問・教科書・解説</strong>は、姉妹サイト「ビルメンアカデミー」（bilumen.jp）で<em>無料公開予定</em>です。
+  </p>
+  <ul>
+    <li>全分野の教科書（電気理論〜法規）</li>
+    <li>過去問演習（5年分・分野別）</li>
+    <li>技能試験 候補問題10問の解説</li>
+    <li>AI質問チャット（準備中）</li>
+  </ul>
+  <p>
+    元主任が監修した、現場の言葉で語る教科書です。試験合格までの<em>「もう一冊」</em>として、ぜひご活用ください。
+  </p>
+</section>
+
+<!-- CTA -->
+<div class="cat-cta">
+  <h3>第一種電気工事士、今日から始めよう。</h3>
+  <p>電気のプロへの登竜門。電工2種の上を目指す、次の1本へ。</p>
+  <div class="btn-row">
+    <a href="#" class="btn-primary">教材を比較する →</a>
+    <a href="https://bilumen.jp" class="btn-sub" target="_blank" rel="noopener">ビルメンアカデミーで深掘り →</a>
+  </div>
+</div>
+
+
 </main>
 
 <!-- ============ FOOTER ============ -->

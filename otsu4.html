@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=1280" />
-<title>資格Life｜資格で、人生を変える。AI時代の手に職を、応援するメディア。</title>
+<title>危険物取扱者 乙種第4類｜1ヶ月で合格する完全ガイド【2026年版】｜資格Life</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet" />
@@ -476,72 +476,6 @@
   .cat-lang   { background-image: url('images/cat-lang.png'); }
   .cat-med    { background-image: url('images/cat-med.png'); }
 
-  /* ===================== 資格名リスト（カテゴリ別） ===================== */
-  .shikaku-list-wrap {
-    margin-top: 24px;
-    padding: 28px 24px 20px;
-    background: #fff;
-    border: 1px solid var(--line);
-    border-radius: 10px;
-  }
-  .shikaku-list-title {
-    font-family: "Zen Maru Gothic", sans-serif;
-    font-weight: 900; font-size: 14px; color: var(--blue-deep);
-    margin: 0 0 18px;
-    letter-spacing: 0.05em;
-  }
-  .shikaku-list-title::before {
-    content: "📋 ";
-  }
-  .shikaku-list-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 18px;
-  }
-  @media (max-width: 1100px) { .shikaku-list-grid { grid-template-columns: repeat(3, 1fr); } }
-  @media (max-width: 720px)  { .shikaku-list-grid { grid-template-columns: repeat(2, 1fr); } }
-  .shikaku-list-col h4 {
-    font-family: "Zen Maru Gothic", sans-serif;
-    font-weight: 900; font-size: 13px;
-    color: var(--ink);
-    margin: 0 0 10px;
-    padding-bottom: 6px;
-    border-bottom: 2px solid var(--blue);
-    display: flex; align-items: center; gap: 6px;
-  }
-  .shikaku-list-col.lc-bilmen h4 { border-bottom-color: var(--green); }
-  .shikaku-list-col.lc-it h4     { border-bottom-color: var(--purple); }
-  .shikaku-list-col.lc-law h4    { border-bottom-color: var(--ink-strong, #1a2230); }
-  .shikaku-list-col.lc-fin h4    { border-bottom-color: var(--yellow); }
-  .shikaku-list-col.lc-lang h4   { border-bottom-color: var(--pink); }
-  .shikaku-list-col.lc-med h4    { border-bottom-color: var(--blue); }
-  .shikaku-list-col ul {
-    list-style: none;
-    padding: 0; margin: 0;
-  }
-  .shikaku-list-col li {
-    font-size: 12px;
-    color: var(--ink-soft);
-    line-height: 1.95;
-    padding-left: 12px;
-    position: relative;
-  }
-  .shikaku-list-col li::before {
-    content: "›";
-    position: absolute;
-    left: 0; top: 0;
-    color: var(--blue);
-    font-weight: 700;
-  }
-  .shikaku-list-col li a {
-    color: var(--ink-soft);
-    transition: color .15s;
-  }
-  .shikaku-list-col li a:hover {
-    color: var(--blue);
-    text-decoration: underline;
-  }
-
   /* ===================== SECTIONS / MAIN ===================== */
   main { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
 
@@ -911,6 +845,353 @@
     border-left: 3px solid var(--orange); padding-left: 10px;
   }
 
+  /* ===================== CATEGORY PAGE ===================== */
+  .cat-hero {
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    background:
+      linear-gradient(110deg, rgba(0,40,90,0.78) 0%, rgba(0,55,130,0.62) 50%, rgba(0,30,80,0.55) 100%),
+      url('images/bil-hero.png');
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+  .cat-hero-inner {
+    max-width: 1180px; margin: 0 auto;
+    padding: 60px 16px 50px;
+    position: relative; z-index: 1;
+  }
+  .cat-crumb {
+    font-size: 11px; letter-spacing: 0.08em;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 14px;
+  }
+  .cat-crumb a { color: rgba(255,255,255,0.85); text-decoration: underline; }
+  .cat-crumb a:hover { color: #ffd76a; }
+  .cat-hero h1 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 42px; line-height: 1.3;
+    margin: 0 0 14px;
+    text-shadow: 0 2px 16px rgba(0,30,80,0.4);
+  }
+  .cat-hero h1 .accent { color: #ffd76a; }
+  .cat-hero h1 .underline {
+    background: linear-gradient(transparent 70%, rgba(255,122,0,0.55) 70%);
+    padding: 0 4px;
+  }
+  .cat-hero .lead {
+    font-size: 15px; line-height: 1.8; max-width: 640px;
+    color: rgba(255,255,255,0.95);
+    text-shadow: 0 1px 6px rgba(0,30,80,0.5);
+  }
+  .cat-hero .meta-row {
+    display: flex; gap: 18px; flex-wrap: wrap;
+    margin-top: 22px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 12px;
+  }
+  .cat-hero .meta-row .item {
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(8px);
+    padding: 6px 14px; border-radius: 999px;
+    font-weight: 700;
+  }
+  .cat-hero .meta-row .item b { color: #ffd76a; margin-right: 4px; }
+
+  .cat-main { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
+  .cat-sec {
+    padding: 56px 0 12px;
+    border-bottom: 1px dashed var(--line);
+  }
+  .cat-sec:last-child { border-bottom: 0; }
+  .cat-sec-head {
+    display: flex; align-items: end; gap: 14px;
+    margin-bottom: 22px;
+  }
+  .cat-sec-num {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 48px;
+    color: var(--blue); line-height: 0.85;
+  }
+  .cat-sec-title-block .small {
+    font-size: 11px; color: var(--blue);
+    letter-spacing: 0.18em; font-weight: 700;
+  }
+  .cat-sec-title-block .big {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 26px; line-height: 1.3;
+    color: var(--ink); margin-top: 4px;
+  }
+  .cat-sec p {
+    font-size: 14px; line-height: 1.95; color: var(--ink-soft);
+    margin: 0 0 16px;
+  }
+  .cat-sec h3 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 18px;
+    color: var(--ink); margin: 28px 0 12px;
+    padding-left: 12px; border-left: 4px solid var(--blue);
+    line-height: 1.5;
+  }
+  .cat-sec h4 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 15px;
+    color: var(--ink); margin: 22px 0 10px;
+  }
+  .cat-sec ul, .cat-sec ol {
+    font-size: 14px; line-height: 1.9; color: var(--ink-soft);
+    margin: 0 0 16px; padding-left: 20px;
+  }
+  .cat-sec ul li, .cat-sec ol li { margin-bottom: 4px; }
+  .cat-sec strong { color: var(--ink); }
+  .cat-sec em { font-style: normal; color: var(--blue-deep); font-weight: 700; }
+
+  /* placeholder image box */
+  .cat-img-ph {
+    background: linear-gradient(135deg, var(--blue-soft), #fff);
+    border: 1px dashed var(--blue);
+    border-radius: 8px;
+    padding: 28px;
+    text-align: center;
+    color: var(--blue-deep);
+    font-size: 12px;
+    margin: 20px 0;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 700;
+  }
+  .cat-img-ph::before { content: "🖼  "; font-size: 18px; }
+  .cat-img-full {
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin: 24px auto;
+    box-shadow: 0 4px 18px rgba(0, 40, 100, 0.12);
+  }
+  .cat-img-cap {
+    font-size: 11px; color: var(--mute);
+    text-align: center;
+    margin: -16px 0 24px;
+    font-family: "Zen Maru Gothic", sans-serif;
+  }
+  .real-box .cat-img-full {
+    max-width: 540px;
+    margin: 18px auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  /* 8 shikaku grid */
+  .shikaku-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;
+    margin: 18px 0 8px;
+  }
+  @media (max-width: 720px) { .shikaku-grid { grid-template-columns: 1fr; } }
+  .shikaku-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--blue);
+    border-radius: 6px;
+    padding: 14px 16px;
+  }
+  .shikaku-item.lv-入門 { border-left-color: var(--green); }
+  .shikaku-item.lv-中級 { border-left-color: var(--blue); }
+  .shikaku-item.lv-上位 { border-left-color: var(--purple); }
+  .shikaku-name {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 16px; color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .shikaku-lv {
+    font-size: 10px; padding: 2px 8px; border-radius: 999px;
+    background: var(--blue-soft); color: var(--blue-deep);
+    margin-left: 8px; font-weight: 700; vertical-align: middle;
+  }
+  .shikaku-lv.lv-入門 { background: #e6f4ed; color: #1c8a5f; }
+  .shikaku-lv.lv-中級 { background: var(--blue-soft); color: var(--blue-deep); }
+  .shikaku-lv.lv-上位 { background: #efe7ff; color: #5b35d3; }
+  .shikaku-meta {
+    font-size: 11px; color: var(--mute);
+    font-family: "Zen Maru Gothic", sans-serif; font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .shikaku-meta span { margin-right: 10px; }
+  .shikaku-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.7; margin: 0; }
+
+  /* path cards (パターンA/B/C) */
+  .path-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+    margin: 18px 0;
+  }
+  @media (max-width: 720px) { .path-cards { grid-template-columns: 1fr; } }
+  .path-card {
+    background: #fff; border: 1px solid var(--line); border-radius: 10px;
+    padding: 22px 20px;
+    position: relative; overflow: hidden;
+  }
+  .path-card .pc-no {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 36px; font-weight: 900;
+    color: var(--blue); line-height: 1;
+    opacity: 0.85;
+  }
+  .path-card .pc-tgt {
+    font-size: 11px; color: var(--mute); font-weight: 700;
+    letter-spacing: 0.08em; margin: 6px 0 12px;
+  }
+  .path-card .pc-name {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 18px;
+    color: var(--ink); margin-bottom: 8px;
+  }
+  .path-card .pc-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.75; margin: 0; }
+
+  /* 比較表 */
+  .cat-table {
+    width: 100%; border-collapse: collapse;
+    font-size: 13px; margin: 14px 0;
+  }
+  .cat-table th, .cat-table td {
+    padding: 10px 12px; text-align: left;
+    border-bottom: 1px solid var(--line);
+  }
+  .cat-table th {
+    background: var(--blue-soft);
+    color: var(--blue-deep); font-weight: 700;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 12px;
+  }
+  .cat-table td { color: var(--ink-soft); }
+  .cat-table tr:hover td { background: #f7f9fc; }
+  .cat-table .highlight {
+    background: linear-gradient(90deg, #fff8e6, #fff);
+    font-weight: 700; color: var(--ink);
+  }
+
+  /* edu cards (3社比較) */
+  .edu-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+    margin: 18px 0;
+  }
+  @media (max-width: 720px) { .edu-cards { grid-template-columns: 1fr; } }
+  .edu-card {
+    background: #fff; border: 1px solid var(--line); border-radius: 10px;
+    padding: 20px 18px;
+    display: flex; flex-direction: column;
+  }
+  .edu-card .edu-name {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 17px; color: var(--ink);
+    margin-bottom: 4px;
+  }
+  .edu-card .edu-tag {
+    font-size: 10px; padding: 3px 8px; border-radius: 999px;
+    background: var(--orange); color: #fff; font-weight: 700;
+    display: inline-block; margin-bottom: 10px;
+    width: fit-content;
+  }
+  .edu-card .edu-price {
+    font-size: 18px; font-weight: 900; color: var(--blue-deep);
+    font-family: "Zen Maru Gothic", sans-serif;
+  }
+  .edu-card .edu-price .yen { font-size: 12px; }
+  .edu-card .edu-feat {
+    font-size: 13px; color: var(--ink-soft); line-height: 1.7;
+    margin: 10px 0 14px; flex: 1;
+  }
+  .edu-card .edu-cta {
+    display: block; text-align: center;
+    background: var(--orange); color: #fff;
+    padding: 10px 14px; border-radius: 6px;
+    font-weight: 700; font-size: 13px;
+    box-shadow: 0 1px 0 var(--orange-deep);
+  }
+  .edu-card .edu-cta:hover { background: var(--orange-deep); color: #fff; }
+
+  /* FAQ */
+  .faq-item {
+    background: #fff; border: 1px solid var(--line); border-radius: 8px;
+    padding: 16px 18px; margin-bottom: 10px;
+  }
+  .faq-item .faq-q {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 14px; color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .faq-item .faq-q::before {
+    content: "Q. "; color: var(--blue); font-weight: 900;
+  }
+  .faq-item .faq-a { font-size: 13px; color: var(--ink-soft); line-height: 1.8; margin: 0; }
+  .faq-item .faq-a::before {
+    content: "A. "; color: var(--orange); font-weight: 900;
+  }
+
+  /* 現場の話の強調ボックス */
+  .real-box {
+    background: linear-gradient(135deg, #fff8e6, #fffaf0);
+    border-left: 5px solid var(--orange);
+    border-radius: 8px;
+    padding: 22px 24px;
+    margin: 20px 0;
+  }
+  .real-box .real-tag {
+    display: inline-block;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 11px;
+    background: var(--orange); color: #fff;
+    padding: 4px 10px; border-radius: 4px;
+    margin-bottom: 12px;
+    letter-spacing: 0.08em;
+  }
+  .real-box h3 {
+    margin: 0 0 10px;
+    padding-left: 0;
+    border-left: 0;
+    color: var(--ink);
+    font-size: 19px;
+  }
+  .real-box p { font-size: 14px; line-height: 2; color: var(--ink); }
+  .real-box strong { color: var(--orange-deep); }
+
+  /* CTA bottom */
+  .cat-cta {
+    background: linear-gradient(135deg, var(--blue), var(--blue-deep));
+    color: #fff; border-radius: 14px;
+    padding: 36px 32px; text-align: center;
+    margin: 40px 0;
+  }
+  .cat-cta h3 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 24px;
+    margin: 0 0 8px; color: #fff;
+    border-left: 0; padding-left: 0;
+  }
+  .cat-cta p { font-size: 13px; color: rgba(255,255,255,0.92); margin: 0 0 20px; }
+  .cat-cta .btn-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .cat-cta .btn-primary {
+    background: var(--orange); color: #fff;
+    padding: 12px 26px; border-radius: 6px;
+    font-weight: 700; font-size: 14px;
+    box-shadow: 0 2px 0 var(--orange-deep);
+  }
+  .cat-cta .btn-primary:hover { background: var(--orange-deep); color: #fff; }
+  .cat-cta .btn-sub {
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.4);
+    color: #fff; padding: 12px 22px; border-radius: 6px;
+    font-weight: 700; font-size: 13px;
+  }
+  .cat-cta .btn-sub:hover { background: rgba(255,255,255,0.22); color: #fff; }
+
+  @media (max-width: 720px) {
+    .cat-hero h1 { font-size: 28px; }
+    .cat-sec-head { flex-wrap: wrap; }
+    .cat-sec-num { font-size: 36px; }
+    .cat-sec-title-block .big { font-size: 20px; }
+  }
+
   /* ===================== FOOTER ===================== */
   footer.site {
     background: #1a2230; color: #c5cbd6;
@@ -1072,487 +1353,424 @@
   </div>
 </nav>
 
-<!-- ============ HERO ============ -->
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-copy">
-      <div class="hero-eyebrow">📈 AI時代の手に職を、応援するメディア <b>NEW</b></div>
-      <h1>
-        資格で、<span class="underline">人生</span>を変える。<br />
-        <span class="accent">AI時代</span>の手に職を、<br />
-        応援するメディア。
-      </h1>
-      <p class="hero-sub">
-        20代の挑戦も、50代のやり直しも。AIに置き換わらない「現場の力」と「専門資格」を、<br />
-        独学・通信・通学のリアルな比較記事で、ゼロから応援します。
-      </p>
-      <div class="hero-illust">
-        <div class="person">👨‍💼<div class="person-label">20代・IT転職</div></div>
-        <div class="person b">👩‍⚕️<div class="person-label">30代・医療職</div></div>
-        <div class="person c">👨‍🔧<div class="person-label">50代・ビルメン</div></div>
-      </div>
+<!-- ============ ARTICLE HERO ============ -->
+<section class="cat-hero">
+  <div class="cat-hero-inner">
+    <div class="cat-crumb">
+      <a href="index.html">資格Life</a> ／ <a href="category-bilmen.html">ビルメン系</a> ／ 危険物取扱者 乙種第4類
     </div>
-
-    <div class="hero-card">
-      <span class="hc-badge">📚 RESOURCES</span>
-      <h2 class="hc-title">資格Lifeの記事から、<br />あなたに合う一本を。</h2>
-      <p class="hc-count">資格カテゴリ別に、厳選記事を公開中</p>
-      <a href="articles.html" class="hc-cta">無料で記事を読む<span class="arr">→</span></a>
-      <p class="hc-sub">会員登録すると <b>気になる保存</b> ＆ <b>学習履歴管理</b> ができます</p>
+    <h1>
+      危険物取扱者 乙種第4類、<br />
+      <span class="underline">独学1ヶ月</span>で<span class="accent">一発合格</span>する完全ガイド。
+    </h1>
+    <p class="lead">
+      ビルメン4点セットの「最初の1枚」。文系・未経験から1ヶ月で取れる、<em>「人生を変える」入門資格</em>です。試験概要・学習法・教材・合格者の声まで、これ1ページですべて分かります。
+    </p>
+    <div class="meta-row">
+      <span class="item">難易度 <b>★★☆☆☆</b></span>
+      <span class="item">学習時間 <b>60〜80時間</b></span>
+      <span class="item">合格率 <b>30〜40%</b></span>
+      <span class="item">年収UP <b>+10〜30万</b></span>
     </div>
   </div>
 </section>
 
-<!-- ============ SEARCH ============ -->
-<div class="search-wrap">
-  <div class="search-inner">
-    <div class="search-head">
-      <span class="lab">条件から資格を探す</span>
-      <span class="cnt">資格名・カテゴリで探す</span>
-    </div>
-    <div class="search-row">
-      <div class="sf">
-        <span class="sf-label">カテゴリ</span>
-        <span class="sf-val">すべて</span>
-        <span class="sf-arr">▼</span>
-      </div>
-      <div class="sf">
-        <span class="sf-label">難易度</span>
-        <span class="sf-val">指定なし</span>
-        <span class="sf-arr">▼</span>
-      </div>
-      <div class="sf">
-        <span class="sf-label">取得期間</span>
-        <span class="sf-val">指定なし</span>
-        <span class="sf-arr">▼</span>
-      </div>
-      <div class="sf">
-        <span class="sf-label">キーワード</span>
-        <input type="text" placeholder="例：宅建士、簿記2級、基本情報" />
-      </div>
-      <button class="btn-search">🔍 検索する</button>
-    </div>
-    <div class="search-tags">
-      <span class="tlab">人気タグ：</span>
-      <span class="stag">#宅建士</span>
-      <span class="stag">#基本情報技術者</span>
-      <span class="stag">#簿記2級</span>
-      <span class="stag">#FP3級</span>
-      <span class="stag">#ビル管理士</span>
-      <span class="stag">#TOEIC700</span>
-      <span class="stag">#介護福祉士</span>
-      <span class="stag">#G検定</span>
-      <span class="stag">#行政書士</span>
+<main class="cat-main">
+
+<!-- 【1】乙4とは -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">01</div>
+    <div class="cat-sec-title-block">
+      <div class="small">WHAT IS OTSU-4</div>
+      <div class="big">危険物取扱者 乙種第4類って、どんな資格？</div>
     </div>
   </div>
-</div>
 
-<!-- ============ CATEGORY ICONS ============ -->
-<div class="cats">
-  <div class="career-head">
-    <span class="num">01</span>
-    <div class="title-block">
-      <div class="small">FIND CERTIFICATIONS</div>
-      <div class="big">資格を探す。</div>
+  <p>
+    危険物取扱者 乙種第4類（通称：乙4／おつよん）は、ガソリン・灯油・軽油・重油・アルコールなど、<strong>引火性液体（第4類危険物）</strong>を取り扱うことができる国家資格です。消防法に基づき、消防庁・各都道府県の消防試験研究センターが運営する公的資格で、<em>「ビルメン4点セットの登竜門」</em>として、文系・未経験の方が最初に挑戦することが多い人気資格です。
+  </p>
+
+  <p>
+    病院・ホテル・商業ビル・工場では、地下に<strong>重油・軽油の地下タンク（非常用発電機の燃料）</strong>を持っていることが多く、その取り扱いには必ず乙4の有資格者が必要です。特にビルメン業界では、<em>「電工2種＋乙4＋ボイラー2級＋冷凍3種」</em>を揃えると「ビルメン4点セット」と呼ばれ、未経験から正社員転職する際の<strong>最強パスポート</strong>になります。
+  </p>
+
+  <h3>取り扱える危険物（第4類）の例</h3>
+  <ul>
+    <li><strong>ガソリン</strong>：自動車燃料・ガソリンスタンドで取り扱い必須</li>
+    <li><strong>灯油・軽油</strong>：暖房用・ディーゼル燃料・農業機械</li>
+    <li><strong>重油</strong>：ボイラー燃料・非常用発電機・大型船舶</li>
+    <li><strong>アルコール類</strong>：エタノール・メタノール（消毒・工業用）</li>
+    <li><strong>第1〜第4石油類</strong>：シンナー・潤滑油・機械油など</li>
+  </ul>
+
+  <h3>「甲種」「乙4以外の乙種」「丙種」との違い</h3>
+  <p>
+    危険物取扱者には、<strong>甲種・乙種（1〜6類）・丙種</strong>の3区分があります。<em>乙4は乙種の中で最も需要が高く、求人数も最多</em>。甲種は全類取り扱えますが受験資格があり、丙種はガソリン・灯油など一部のみ取り扱い可で立会権限がありません。<strong>「迷ったらまず乙4」</strong>が業界の常識です。
+  </p>
+</section>
+
+<!-- 【2】試験概要 -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">02</div>
+    <div class="cat-sec-title-block">
+      <div class="small">EXAM OUTLINE</div>
+      <div class="big">試験概要：受験料・日程・合格基準</div>
     </div>
-    <p class="desc">
-      6分野から、あなたに合う資格を厳選して紹介します。
+  </div>
+
+  <p>
+    乙4は、<strong>受験資格なし・誰でも受験可能</strong>な国家資格です。試験は全国で年に複数回実施され、<em>都道府県によっては毎月のように受験チャンス</em>があります（東京は月2〜3回、他県は年4〜6回が目安）。
+  </p>
+
+  <h3>試験データ（2026年版）</h3>
+  <ul>
+    <li><strong>受験料</strong>：4,600円（2024年10月から5,300円に改定）</li>
+    <li><strong>受験資格</strong>：なし（誰でも受験可）</li>
+    <li><strong>試験時間</strong>：2時間</li>
+    <li><strong>出題形式</strong>：マークシート（5肢択一）</li>
+    <li><strong>合計問題数</strong>：35問（3科目）</li>
+    <li><strong>合格基準</strong>：3科目それぞれ60%以上（足切りあり！）</li>
+    <li><strong>合格率</strong>：30〜40%（年度・回によって変動）</li>
+  </ul>
+
+  <h3>3科目の内訳</h3>
+  <ul>
+    <li><strong>① 危険物に関する法令</strong>：15問（消防法・指定数量・許可申請など）</li>
+    <li><strong>② 基礎的な物理学・化学</strong>：10問（燃焼・引火・酸化還元など）</li>
+    <li><strong>③ 危険物の性質と消火</strong>：10問（第4類各物質の引火点・消火方法）</li>
+  </ul>
+
+  <p>
+    <em>注意点：3科目それぞれで60%以上（法令9問・物理化学6問・性質消火6問）取らないと不合格</em>。総合点でカバーできない「足切り制度」があるため、苦手科目を作らない学習が重要です。<strong>特に「物理・化学」で挫折する人が多い</strong>ので、文系の方は早めの対策を。
+  </p>
+
+  <h3>申込方法</h3>
+  <p>
+    「<a href="https://www.shoubo-shiken.or.jp/" target="_blank" rel="noopener">一般財団法人 消防試験研究センター</a>」の公式サイトから電子申請、または書面申請（願書配布あり）で申し込みます。<strong>電子申請なら24時間いつでも可能</strong>、写真もアップロード形式で楽。願書は消防署・市役所で無料配布されています。
+  </p>
+</section>
+
+<!-- 【3】取得メリット -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">03</div>
+    <div class="cat-sec-title-block">
+      <div class="small">5 MERITS</div>
+      <div class="big">乙4を取る、5つの大きなメリット</div>
+    </div>
+  </div>
+
+  <h3>① ビルメン4点セットの「最初の1枚」になる</h3>
+  <p>
+    ビルメン業界では、<strong>「電工2種・乙4・ボイラー2級・冷凍3種」</strong>の4資格をまとめて「4点セット」と呼びます。中でも乙4は<em>勉強時間60〜80時間と最も短く、文系でも合格しやすい</em>ため、最初の1枚として最適。「とりあえず乙4」から始めて、ビルメンキャリアの扉を開く人が圧倒的多数です。
+  </p>
+
+  <h3>② 1ヶ月で取れる「コスパ最強」資格</h3>
+  <p>
+    乙4は<strong>勉強時間60〜80時間</strong>。1日2時間で1ヶ月、休日にまとめてやれば3週間で合格可能。受験料も<em>5,300円と国家資格の中では破格</em>。「短時間・低コスト・国家資格」の三拍子で、社会人がスキマ時間で取れる代表格です。
+  </p>
+
+  <h3>③ ガソリンスタンド・運送業界でも需要大</h3>
+  <p>
+    ビルメン業界以外でも、<strong>ガソリンスタンド（セルフ含む）の立会者として乙4が必須</strong>。タンクローリーの運転手、化学プラントの作業員、塗料・印刷会社など、引火性液体を扱うあらゆる業界で活躍できます。<em>パート・アルバイトでも時給アップする</em>のが乙4の強みです。
+  </p>
+
+  <h3>④ 資格手当・優遇措置がつく会社が多い</h3>
+  <p>
+    多くの企業で、乙4取得者には<strong>月3,000〜10,000円の資格手当</strong>がつきます。年間で36,000〜120,000円のプラス。さらに、就職・転職時の「優遇資格」「歓迎資格」として求人票に明記されるケースが圧倒的多数。<em>「乙4持ち」というだけで採用確率が上がる</em>のは事実です。
+  </p>
+
+  <h3>⑤ 「次の資格」へのモチベーションになる</h3>
+  <p>
+    乙4は「最初の国家資格」として、学習習慣・試験慣れ・自己肯定感を一気に上げてくれる存在。<em>「自分にも国家資格が取れた」という成功体験</em>が、次のボイラー・冷凍・電工へのステップアップを支えます。<strong>「一生学び続ける」マインドが、乙4合格をきっかけに立ち上がる</strong>のです。
+  </p>
+</section>
+
+<!-- 【4】学習ロードマップ -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">04</div>
+    <div class="cat-sec-title-block">
+      <div class="small">STUDY ROADMAP</div>
+      <div class="big">1ヶ月で合格する、4週間の学習プラン</div>
+    </div>
+  </div>
+
+  <p>
+    社会人で平日1〜2時間・休日3〜4時間を勉強に充てられる方向けの、現実的な4週間プランです。<em>合計60〜80時間で合格レベル到達</em>を目指します。
+  </p>
+
+  <h3>第1週：法令の暗記（15時間）</h3>
+  <p>
+    最初の1週間で<strong>「① 法令（15問）」</strong>を一気に固めます。消防法・指定数量・許可申請・予防規程・保安距離など、<em>暗記7割・理解3割</em>の科目。テキストを1周読み、過去問を3回まわすのが王道です。
+  </p>
+  <ul>
+    <li>1〜2日目：危険物の分類・指定数量・倍数計算</li>
+    <li>3〜4日目：許可申請・取扱者制度・保安距離</li>
+    <li>5〜6日目：予防規程・定期点検・運搬基準</li>
+    <li>7日目：法令過去問1回目（目標：9問正解）</li>
+  </ul>
+
+  <h3>第2週：物理化学の理解（20時間）</h3>
+  <p>
+    <em>多くの受験生が最も苦戦する科目</em>。文系の方は特に時間を厚めに。<strong>「燃焼の3要素」「引火点・発火点」「酸化還元反応」</strong>などの基本原理を、図解付きの動画教材で理解するのが近道です。
+  </p>
+  <ul>
+    <li>8〜9日目：燃焼の3要素・燃焼の種類（拡散・予混合）</li>
+    <li>10〜11日目：引火点・発火点・燃焼範囲・蒸気密度</li>
+    <li>12〜13日目：酸化還元・静電気・熱の移動</li>
+    <li>14日目：物理化学過去問1回目（目標：6問正解）</li>
+  </ul>
+
+  <h3>第3週：性質と消火の暗記（20時間）</h3>
+  <p>
+    <strong>「ガソリン・灯油・軽油・重油・アルコール」</strong>など、第4類の代表物質ごとに引火点・比重・蒸気密度・消火方法を覚えます。<em>「引火点が低い順」「比重が水より重い／軽い」</em>などの暗記表を自作するのがおすすめ。
+  </p>
+  <ul>
+    <li>15〜16日目：特殊引火物・第1石油類（ガソリン・アセトン）</li>
+    <li>17〜18日目：アルコール類・第2石油類（灯油・軽油）</li>
+    <li>19〜20日目：第3〜4石油類（重油・潤滑油）・動植物油類</li>
+    <li>21日目：性質消火過去問1回目（目標：6問正解）</li>
+  </ul>
+
+  <h3>第4週：総合演習＋直前対策（15時間）</h3>
+  <p>
+    本試験形式で過去問5年分を解き、<em>「3科目すべてで60%以上」</em>を安定させます。間違えた問題は必ずテキストに戻って復習。<strong>本試験前日は徹夜せず、6〜7時間しっかり睡眠</strong>を取りましょう。
+  </p>
+</section>
+
+<!-- 【5】教材比較 -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">05</div>
+    <div class="cat-sec-title-block">
+      <div class="small">COMPARE COURSES</div>
+      <div class="big">教材を比較する（独学・通信・アプリ）</div>
+    </div>
+  </div>
+
+  <p>
+    乙4の教材は<strong>市販のテキスト＋過去問題集</strong>でも合格可能ですが、<em>「物理化学で挫折した経験がある」「1発合格したい」</em>方は通信講座が安心です。ここでは編集部が選んだ3講座を紹介します（PR）。
+  </p>
+
+  <div class="edu-cards">
+    <div class="edu-card">
+      <div class="edu-card-head">
+        <div class="edu-name">ユーキャン 危険物取扱者講座</div>
+        <div class="edu-price">39,000円</div>
+      </div>
+      <ul class="edu-feats">
+        <li>添削指導付き（3回）</li>
+        <li>標準学習期間：5ヶ月</li>
+        <li>テキスト2冊＋問題集＋副教材</li>
+        <li>初心者向けの定番ブランド</li>
+      </ul>
+      <p class="edu-summary">「物理化学が不安」「テキストだけだと不安」な方に。<em>添削指導と質問サポート</em>で、独学のつまずきを防げます。</p>
+      <a href="#" class="btn-affil" rel="nofollow sponsored noopener" target="_blank">ユーキャンの詳細を見る →</a>
+    </div>
+
+    <div class="edu-card">
+      <div class="edu-card-head">
+        <div class="edu-name">スタディング 危険物乙4講座</div>
+        <div class="edu-price">7,920円</div>
+      </div>
+      <ul class="edu-feats">
+        <li>スマホ完結・動画講義</li>
+        <li>AI問題復習機能</li>
+        <li>合格祝い金 2,000円</li>
+        <li>圧倒的低価格でコスパ最強</li>
+      </ul>
+      <p class="edu-summary">通勤時間・休憩中にスマホで学習したい方に。<em>1万円以下で動画＋過去問アプリ</em>が揃う、社会人の定番。</p>
+      <a href="#" class="btn-affil" rel="nofollow sponsored noopener" target="_blank">スタディングを見る →</a>
+    </div>
+
+    <div class="edu-card">
+      <div class="edu-card-head">
+        <div class="edu-name">たのまな（ヒューマンアカデミー）</div>
+        <div class="edu-price">28,600円</div>
+      </div>
+      <ul class="edu-feats">
+        <li>映像講義＋テキスト</li>
+        <li>標準学習期間：3ヶ月</li>
+        <li>e-ラーニング対応</li>
+        <li>質問サポート充実</li>
+      </ul>
+      <p class="edu-summary">「動画で理解したい」けど「ユーキャンほど長期は要らない」方の中間選択。<em>3ヶ月集中型</em>のカリキュラム。</p>
+      <a href="#" class="btn-affil" rel="nofollow sponsored noopener" target="_blank">たのまなを見る →</a>
+    </div>
+  </div>
+
+  <p>
+    <em>市販テキスト派</em>には、<strong>「10日で受かる！乙種第4類危険物取扱者すぃ〜っと合格」（ナツメ社／1,650円）</strong>＋<strong>「乙4類危険物 過去問題集」（公論出版／1,540円）</strong>の組み合わせが、ビルメン業界の定番です。合計3,200円で合格を狙えます。
+  </p>
+</section>
+
+<!-- 【6】合格体験談 -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">06</div>
+    <div class="cat-sec-title-block">
+      <div class="small">REAL STORIES</div>
+      <div class="big">合格者の声：現場の3人</div>
+    </div>
+  </div>
+
+  <div class="real-box">
+    <h4>Case 1：42歳・元小売店長（埼玉）</h4>
+    <p>
+      コロナで店長職を解雇され、ビルメンへの転職を決意。<em>「とりあえず1枚」と乙4から挑戦</em>し、ナツメ社のテキスト＋過去問で3週間学習。法令と性質消火は楽勝でしたが、<strong>物理化学で1回不合格</strong>。2回目はYouTubeの解説動画で理解を補強し、無事合格しました。「乙4の合格証書が届いた日、人生が動き出した気がしました」。
     </p>
   </div>
-  <div class="cats-grid">
-    <a class="cat cat-bilmen" href="category-bilmen.html">
-      <div class="cat-overlay">
-        <div class="cat-name">ビルメン系</div>
-        <div class="cat-cnt">8 資格</div>
-      </div>
-    </a>
-    <a class="cat cat-it" href="category-it-ai.html">
-      <div class="cat-overlay">
-        <div class="cat-name">IT・AI</div>
-        <div class="cat-cnt">6 資格</div>
-      </div>
-    </a>
-    <a class="cat cat-law" href="category-law.html">
-      <div class="cat-overlay">
-        <div class="cat-name">法律系</div>
-        <div class="cat-cnt">5 資格</div>
-      </div>
-    </a>
-    <a class="cat cat-fin" href="category-fin.html">
-      <div class="cat-overlay">
-        <div class="cat-name">金融</div>
-        <div class="cat-cnt">6 資格</div>
-      </div>
-    </a>
-    <a class="cat cat-lang" href="category-lang.html">
-      <div class="cat-overlay">
-        <div class="cat-name">語学</div>
-        <div class="cat-cnt">4 資格</div>
-      </div>
-    </a>
-    <a class="cat cat-med" href="category-med.html">
-      <div class="cat-overlay">
-        <div class="cat-name">医療・福祉系</div>
-        <div class="cat-cnt">13 資格</div>
-      </div>
-    </a>
-  </div>
 
-  <!-- 資格名リスト（カテゴリ別） -->
-  <div class="shikaku-list-wrap">
-    <p class="shikaku-list-title">カテゴリ別 主要資格一覧（42資格）</p>
-    <div class="shikaku-list-grid">
-      <div class="shikaku-list-col lc-bilmen">
-        <h4>ビルメン系</h4>
-        <ul>
-          <li><a href="denko2.html">第二種電気工事士</a></li>
-          <li><a href="otsu4.html">危険物乙4</a></li>
-          <li><a href="boiler2.html">2級ボイラー技士</a></li>
-          <li><a href="reito3.html">第三種冷凍機械</a></li>
-          <li><a href="denko1.html">第一種電気工事士</a></li>
-          <li><a href="shoubou4.html">消防設備士 甲4</a></li>
-          <li><a href="bilkan.html">ビル管理士</a></li>
-          <li><a href="enekan.html">エネルギー管理士</a></li>
-        </ul>
-      </div>
-      <div class="shikaku-list-col lc-it">
-        <h4>IT・AI</h4>
-        <ul>
-          <li><a href="category-it-ai.html">ITパスポート</a></li>
-          <li><a href="category-it-ai.html">MOS Excel</a></li>
-          <li><a href="category-it-ai.html">基本情報技術者</a></li>
-          <li><a href="category-it-ai.html">応用情報技術者</a></li>
-          <li><a href="category-it-ai.html">G検定</a></li>
-          <li><a href="category-it-ai.html">E資格</a></li>
-        </ul>
-      </div>
-      <div class="shikaku-list-col lc-law">
-        <h4>法律系</h4>
-        <ul>
-          <li><a href="category-law.html">FP3級</a></li>
-          <li><a href="category-law.html">宅地建物取引士</a></li>
-          <li><a href="category-law.html">FP2級</a></li>
-          <li><a href="category-law.html">行政書士</a></li>
-          <li><a href="category-law.html">社会保険労務士</a></li>
-        </ul>
-      </div>
-      <div class="shikaku-list-col lc-fin">
-        <h4>金融</h4>
-        <ul>
-          <li><a href="category-fin.html">簿記3級</a></li>
-          <li><a href="category-fin.html">FP3級</a></li>
-          <li><a href="category-fin.html">簿記2級</a></li>
-          <li><a href="category-fin.html">証券外務員 二種</a></li>
-          <li><a href="category-fin.html">簿記1級</a></li>
-          <li><a href="category-fin.html">中小企業診断士</a></li>
-        </ul>
-      </div>
-      <div class="shikaku-list-col lc-lang">
-        <h4>語学</h4>
-        <ul>
-          <li><a href="category-lang.html">TOEIC L&R</a></li>
-          <li><a href="category-lang.html">英検</a></li>
-          <li><a href="category-lang.html">TOEIC S&W</a></li>
-          <li><a href="category-lang.html">HSK・中国語検定</a></li>
-        </ul>
-      </div>
-      <div class="shikaku-list-col lc-med">
-        <h4>医療・福祉系</h4>
-        <ul>
-          <li><a href="category-med.html">医療事務</a></li>
-          <li><a href="category-med.html">登録販売者</a></li>
-          <li><a href="category-med.html">介護職員初任者研修</a></li>
-          <li><a href="category-med.html">介護福祉士</a></li>
-          <li><a href="category-med.html">保育士</a></li>
-          <li><a href="category-med.html">ケアマネジャー</a></li>
-          <li><a href="category-med.html">精神保健福祉士</a></li>
-          <li><a href="category-med.html">看護師</a></li>
-          <li><a href="category-med.html">准看護師</a></li>
-          <li><a href="category-med.html">診療放射線技師</a></li>
-          <li><a href="category-med.html">薬剤師</a></li>
-          <li><a href="category-med.html">臨床工学技士</a></li>
-          <li><a href="category-med.html">臨床検査技師</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<main>
-
-  <!-- ============ NEW + FEATURED ============ -->
-  <div class="career-head">
-    <span class="num">02</span>
-    <div class="title-block">
-      <div class="small">NEW ARTICLES</div>
-      <div class="big">新着の記事。</div>
-    </div>
-    <p class="desc">
-      資格と学び直し、キャリアアップの最新記事。週2回更新中。
+  <div class="real-box">
+    <h4>Case 2：29歳・元工場勤務（愛知）</h4>
+    <p>
+      化学プラントで働きながら、キャリアアップのため乙4を受験。<strong>会社からの推薦で受験料を会社負担</strong>、平日昼休み＋休日にスタディングで学習。<em>2ヶ月で合格</em>。「動画講義のおかげで物理化学が初めて『面白い』と思えました。合格後、月3,000円の資格手当がつきました」。
     </p>
   </div>
 
-  <div class="two-col">
-    <div class="card-grid-4">
-      <article class="card">
-        <div class="card-thumb art-denko">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill bil">ビルメン系</span>
-          <h3 class="card-title">第二種電気工事士、独学6ヶ月で一発合格するための学習ロードマップ【2026年版】</h3>
-          <div class="card-meta"><span>2026.05.18</span><span class="read">⏱ 12分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-chatgpt">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill it">IT・AI</span>
-          <h3 class="card-title">ChatGPTで資格勉強を爆速化。実際に効いたプロンプト10選</h3>
-          <div class="card-meta"><span>2026.05.15</span><span class="read">⏱ 8分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-care">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill med">医療・福祉系</span>
-          <h3 class="card-title">介護福祉士は本当に「食いっぱぐれない」資格か。需給データで検証</h3>
-          <div class="card-meta"><span>2026.05.13</span><span class="read">⏱ 9分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-takken">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill law">法律系</span>
-          <h3 class="card-title">宅建、社会人が働きながら受かるには。通勤＋土日の300時間プラン</h3>
-          <div class="card-meta"><span>2026.05.12</span><span class="read">⏱ 10分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-boki">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill fin">金融</span>
-          <h3 class="card-title">簿記3級、最短2週間で合格する勉強法。最初の3日でやることを具体化</h3>
-          <div class="card-meta"><span>2026.05.09</span><span class="read">⏱ 7分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-toeic">
-          <span class="new">NEW</span><span class="fav on">♥</span>
-        </div>
-        <div class="card-body">
-          <span class="pill lang">語学</span>
-          <h3 class="card-title">TOEIC 600→800、半年で伸ばした朝活ルーティン</h3>
-          <div class="card-meta"><span>2026.05.05</span><span class="read">⏱ 9分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-otsu4">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill bil">ビルメン系</span>
-          <h3 class="card-title">危険物乙4、ビルメン入門に最適な理由。四点セットの「とっかかり」</h3>
-          <div class="card-meta"><span>2026.05.02</span><span class="read">⏱ 6分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-aidev">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill it">IT・AI</span>
-          <h3 class="card-title">父とAIで資格アプリを作った、夏のはなし。51日間の記録</h3>
-          <div class="card-meta"><span>2026.04.28</span><span class="read">⏱ 14分</span></div>
-        </div>
-      </article>
-    </div>
-
-    <aside class="feature-card">
-      <div class="feature-head">
-        <span class="jp">人気の特集</span>
-        <span class="en">FEATURED</span>
-      </div>
-      <div class="feature-list">
-        <div class="feat-item">
-          <span class="feat-rank">1</span>
-          <div>
-            <div class="feat-title">AI時代に「人が残る職」をくれる7つの資格</div>
-            <div class="feat-cat">SPECIAL / 全12記事</div>
-          </div>
-        </div>
-        <div class="feat-item">
-          <span class="feat-rank">2</span>
-          <div>
-            <div class="feat-title">40代からの資格挑戦、5つのリアル</div>
-            <div class="feat-cat">SPECIAL / 全8記事</div>
-          </div>
-        </div>
-        <div class="feat-item">
-          <span class="feat-rank">3</span>
-          <div>
-            <div class="feat-title">通信講座、結局どこが一番いい？大手3社徹底比較</div>
-            <div class="feat-cat">COMPARE / 全6記事</div>
-          </div>
-        </div>
-        <div class="feat-item">
-          <span class="feat-rank">4</span>
-          <div>
-            <div class="feat-title">スマホだけで合格できる時代の勉強法</div>
-            <div class="feat-cat">LIFE / 全10記事</div>
-          </div>
-        </div>
-        <div class="feat-item">
-          <span class="feat-rank">5</span>
-          <div>
-            <div class="feat-title">育児・介護をしながら勉強する人のための「スキマ時間術」</div>
-            <div class="feat-cat">LIFE / 全7記事</div>
-          </div>
-        </div>
-      </div>
-    </aside>
-  </div>
-
-  <!-- ============ POPULAR ============ -->
-  <section class="popular">
-    <div class="career-head">
-      <span class="num">03</span>
-      <div class="title-block">
-        <div class="small">MOST READ</div>
-        <div class="big">よく読まれている記事。</div>
-      </div>
-      <p class="desc">
-        編集部おすすめの定番記事。迷ったらここから。
-      </p>
-    </div>
-
-    <div class="card-grid-4">
-      <article class="card">
-        <div class="card-thumb"><span class="fav">♡</span>📊</div>
-        <div class="card-body">
-          <span class="pill fin">金融</span>
-          <h3 class="card-title">簿記2級は独学で何時間？合格者300人の平均勉強時間を公開</h3>
-          <div class="card-meta"><span>2026.05</span><span class="read">⏱ 8分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb"><span class="fav on">♥</span>🏠</div>
-        <div class="card-body">
-          <span class="pill law">法律系</span>
-          <h3 class="card-title">宅建士、合格ライン35点時代の最新傾向と対策【2026】</h3>
-          <div class="card-meta"><span>2026.05</span><span class="read">⏱ 10分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb"><span class="fav">♡</span>🧠</div>
-        <div class="card-body">
-          <span class="pill it">IT・AI</span>
-          <h3 class="card-title">ITパスポートとG検定、文系30代はどちらから取るべきか</h3>
-          <div class="card-meta"><span>2026.05</span><span class="read">⏱ 7分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb"><span class="fav">♡</span>🛠</div>
-        <div class="card-body">
-          <span class="pill bil">ビルメン系</span>
-          <h3 class="card-title">ビルメン4点セットの取得順序、現役主任が解説する最適ルート</h3>
-          <div class="card-meta"><span>2026.05</span><span class="read">⏱ 9分</span></div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-</main>
-
-<!-- ============ CAREER BAND ============ -->
-<section class="career-band">
-  <div class="career-band-inner">
-    <div class="career-head">
-      <span class="num">04</span>
-      <div class="title-block">
-        <div class="small">CAREER CHANGE</div>
-        <div class="big">資格を転職に活かす。</div>
-      </div>
-      <p class="desc">
-        資格を「年収」と「働き方」に変える、転職の比較記事。
-      </p>
-    </div>
-
-    <div class="career-cards">
-      <div class="career-card">
-        <div class="cc-img cc-img-compare"></div>
-        <div class="cc-num">01 / COMPARE</div>
-        <h3 class="cc-title">総合転職サイト徹底比較：求人数・サポート・年収UP実績で選ぶ</h3>
-        <p class="cc-desc">大手総合転職サイトを、求人数・スカウト機能・コンサルタントの質などの観点で比較しました。</p>
-        <span class="cc-link">記事を読む →</span>
-      </div>
-      <div class="career-card">
-        <div class="cc-img cc-img-it"></div>
-        <div class="cc-num">02 / IT</div>
-        <h3 class="cc-title">30代未経験からITエンジニア｜おすすめ転職エージェント</h3>
-        <p class="cc-desc">基本情報＋AI活用スキルを武器に転職した編集部員の実例と、効いたエージェント比較。</p>
-        <span class="cc-link">記事を読む →</span>
-      </div>
-      <div class="career-card">
-        <div class="cc-num">03 / MEDICAL</div>
-        <div class="cc-icon">🏥</div>
-        <h3 class="cc-title">医療事務から介護福祉士で再就職｜年収はどう変わる？</h3>
-        <p class="cc-desc">資格取得後の年収シミュレーションと、福祉系に強い転職サービスを徹底比較しました。</p>
-        <span class="cc-link">記事を読む →</span>
-      </div>
-      <div class="career-card">
-        <div class="cc-img cc-img-special"></div>
-        <div class="cc-num">04 / SPECIAL</div>
-        <h3 class="cc-title">資格別おすすめ転職サイト2026年版【完全ガイド】</h3>
-        <p class="cc-desc">15資格×8転職サイトをマトリクスで比較。あなたに合うエージェントが必ず見つかる。</p>
-        <span class="cc-link">記事を読む →</span>
-      </div>
-    </div>
+  <div class="real-box">
+    <h4>Case 3：50歳・元営業職（神奈川）</h4>
+    <p>
+      早期退職を機にビルメン転職を目指す。<em>「4点セットを揃えて還暦までに正社員ビルメンになる」</em>が目標。乙4を最初の1枚に選び、ユーキャンの添削指導を活用しながら4ヶ月で合格。「年齢的に独学だと続かないので、添削で『誰かに見てもらえる』環境が心強かった。次はボイラーに挑みます」。
+    </p>
   </div>
 </section>
 
-<main>
-  <!-- ============ SISTER SITE BANNER ============ -->
-  <a href="#" class="sister">
-    <div class="sister-info">
-      <span class="sister-tag">🏢 SISTER MEDIA</span>
-      <h3 class="sister-title">
-        ビルメンに、本気で詳しいメディア。<br />
-        <span class="small">ビルメンアカデミー / bilumen.jp</span>
-      </h3>
-      <p class="sister-desc">
-        ビル管理の現場で20年。元主任が運営する、ビルメン4点セットから上位資格まで、ビルメン業界の「リアル」だけを発信する姉妹サイトです。
-      </p>
+<!-- 【7】キャリア -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">07</div>
+    <div class="cat-sec-title-block">
+      <div class="small">CAREER PATH</div>
+      <div class="big">取得後のキャリア・年収アップ事例</div>
     </div>
-    <div class="sister-btn">
-      bilumen.jp を見る →
-      <small>SISTER SITE</small>
-    </div>
-  </a>
+  </div>
 
-  <!-- ============ OUR STORY ============ -->
-  <section class="story">
-    <div class="story-visual">📖</div>
-    <div>
-      <div class="story-eyebrow">OUR STORY</div>
-      <h2>「もう遅い」が、口ぐせだった父と。</h2>
-      <p>
-        60歳を過ぎても新しい仕事を探す父と、AI時代に取り残されかけた私。二人で資格に挑戦するうちに、学び直しは何歳からでも始められると確信しました。
-      </p>
-      <p>
-        このサイトは、その記録と、同じことで悩む誰かへのお守りです。20代の挑戦も、50代のやり直しも、私たちは同じ熱量で応援します。
-      </p>
-      <p class="story-sign">— 資格Life 編集部 ／ 父さんとAIの記録より</p>
+  <p>
+    乙4はそれ単体でも資格手当の対象になりますが、本領を発揮するのは<em>「ビルメン4点セット」</em>として揃えたとき。電工2種・ボイラー2級・冷凍3種と組み合わせれば、未経験からのビルメン正社員転職が現実的になります。
+  </p>
+
+  <h3>業界別・年収アップ目安</h3>
+  <table style="width:100%; border-collapse: collapse; margin: 16px 0; font-size: 14px;">
+    <tr style="background: var(--blue-soft);">
+      <th style="padding: 10px; border: 1px solid var(--line); text-align: left;">業界</th>
+      <th style="padding: 10px; border: 1px solid var(--line); text-align: left;">想定年収</th>
+      <th style="padding: 10px; border: 1px solid var(--line); text-align: left;">資格手当</th>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid var(--line);">ビルメン（病院・ホテル）</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">300〜420万円</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">月3,000〜5,000円</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid var(--line);">ガソリンスタンド（店長候補）</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">280〜380万円</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">月5,000〜10,000円</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid var(--line);">化学プラント・工場</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">340〜480万円</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">月5,000〜8,000円</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid var(--line);">タンクローリー運転手</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">380〜520万円</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">月8,000〜15,000円</td>
+    </tr>
+  </table>
+
+  <h3>王道ルート：乙4 → ボイラー2級 → 電工2種 → 冷凍3種</h3>
+  <p>
+    ビルメンを目指す方の王道ルートは、<strong>乙4 → ボイラー2級 → 電工2種 → 冷凍3種</strong>の順。<em>難易度と勉強時間の少ない順</em>に並んでおり、最初に成功体験を積みやすい構成です。4枚揃えると<strong>「即戦力」として未経験でも正社員採用される確率が大幅アップ</strong>します。
+  </p>
+</section>
+
+<!-- 【8】FAQ -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">08</div>
+    <div class="cat-sec-title-block">
+      <div class="small">Q &amp; A</div>
+      <div class="big">よくある質問・読者からの声</div>
     </div>
-  </section>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">乙4は文系・未経験でも本当に取れますか？</div>
+    <p class="faq-a">取れます。乙4合格者の<em>7割以上が文系・未経験</em>とも言われており、ビルメン業界では「最初の1枚」として定番。物理化学で苦戦する人は多いですが、<strong>動画教材を併用すれば60〜80時間で合格圏</strong>に届きます。中学レベルの理科で十分です。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">独学で大丈夫ですか？通信講座は必要？</div>
+    <p class="faq-a">市販テキスト＋過去問題集の<em>合計3,200円</em>で合格可能です。ただし、<strong>「物理化学で1度落ちた」「短期間で確実に取りたい」</strong>方は、スタディング（7,920円）など低価格の動画講座が有効。ユーキャンは初心者向けの安心感、たのまなは中間層に最適です。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">何回くらい受験すれば合格できますか？</div>
+    <p class="faq-a">きちんと準備すれば<em>初回合格が普通</em>。失敗パターンの大半は「物理化学の勉強不足で足切り」。3科目それぞれ60%以上必要なので、<strong>苦手科目を作らないこと</strong>が最大のコツです。万一不合格でも、東京なら翌月再受験可能で挽回が早いです。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">免状の交付はどうやって申請しますか？</div>
+    <p class="faq-a">合格通知書が届いたら、<strong>都道府県の消防試験研究センター</strong>に免状交付申請を行います。手数料は<em>2,900円</em>。住民票・写真などを揃え、合格通知書とともに郵送提出。約2〜3週間で免状（パスポートサイズ）が届きます。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">乙4を取ったら、すぐにビルメン転職できますか？</div>
+    <p class="faq-a">乙4「単体」だと、転職市場での評価は限定的です。<em>4点セット（電工2種・ボイラー2級・冷凍3種・乙4）を揃える</em>ことで、未経験でもビルメン正社員転職の現実味が一気に増します。ただし、乙4＋ガソリンスタンド経験などの組み合わせなら、別業界ではすぐに評価されます。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">物理化学が苦手です。捨てて法令と性質で稼げますか？</div>
+    <p class="faq-a">残念ながら不可能です。<strong>3科目それぞれ60%以上の足切り制度</strong>があるため、物理化学10問中6問は必須。逆に言えば「6問取ればOK」なので、頻出の<em>燃焼3要素・引火点・酸化還元</em>に絞れば、文系でも到達可能です。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">複数の乙種を一度に受験できますか？</div>
+    <p class="faq-a">同じ試験日に<em>2科目まで併願受験可</em>です。さらに、乙4合格後は<strong>「法令」「物理化学」が免除</strong>されるため、他の乙種（1・2・3・5・6類）は「性質と消火」10問のみで受験できます。<em>乙4を起点に乙種全制覇</em>を目指す人も多いです。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">受験申込で気をつけることは？</div>
+    <p class="faq-a">電子申請なら24時間可能で楽ですが、<em>顔写真のアップロード規定</em>（背景・サイズ）に注意。書面申請は願書を消防署で入手し、写真貼付・収入印紙（5,300円分）が必要です。<strong>申込締切は試験日の約1ヶ月前</strong>なので、逆算してスケジュールを組みましょう。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">乙4は何年で更新が必要ですか？</div>
+    <p class="faq-a">免状自体に有効期限はありませんが、<strong>10年ごとに写真の書き換え</strong>が必要です（手数料1,600円）。また、危険物施設で実際に取扱者として勤務する方は、<em>3年に1回の保安講習</em>を受講する義務があります（4,700円）。</p>
+  </div>
+</section>
+
+<!-- 【9】姉妹サイト誘導 -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">09</div>
+    <div class="cat-sec-title-block">
+      <div class="small">DEEP DIVE</div>
+      <div class="big">過去問・教科書は「ビルメンアカデミー」で</div>
+    </div>
+  </div>
+
+  <p>
+    乙4の<strong>過去問・教科書・解説</strong>は、姉妹サイト「ビルメンアカデミー」（bilumen.jp）で<em>無料公開予定</em>です。
+  </p>
+  <ul>
+    <li>3科目別の教科書（法令・物理化学・性質消火）</li>
+    <li>過去問演習（5年分・分野別）</li>
+    <li>頻出物質の暗記カード</li>
+    <li>AI質問チャット（準備中）</li>
+  </ul>
+  <p>
+    元主任が監修した、現場の言葉で語る教科書です。試験合格までの<em>「もう一冊」</em>として、ぜひご活用ください。
+  </p>
+</section>
+
+<!-- CTA -->
+<div class="cat-cta">
+  <h3>乙4、今日から始めよう。</h3>
+  <p>1ヶ月で取れる国家資格。ビルメンへの「最初の1枚」を、今日この瞬間に。</p>
+  <div class="btn-row">
+    <a href="#" class="btn-primary">教材を比較する →</a>
+    <a href="https://bilumen.jp" class="btn-sub" target="_blank" rel="noopener">ビルメンアカデミーで深掘り →</a>
+  </div>
+</div>
+
+
 </main>
 
 <!-- ============ FOOTER ============ -->

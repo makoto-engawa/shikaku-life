@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=1280" />
-<title>資格Life｜資格で、人生を変える。AI時代の手に職を、応援するメディア。</title>
+<title>エネルギー管理士｜独学1年で合格する完全ガイド【2026年版】｜資格Life</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet" />
@@ -476,72 +476,6 @@
   .cat-lang   { background-image: url('images/cat-lang.png'); }
   .cat-med    { background-image: url('images/cat-med.png'); }
 
-  /* ===================== 資格名リスト（カテゴリ別） ===================== */
-  .shikaku-list-wrap {
-    margin-top: 24px;
-    padding: 28px 24px 20px;
-    background: #fff;
-    border: 1px solid var(--line);
-    border-radius: 10px;
-  }
-  .shikaku-list-title {
-    font-family: "Zen Maru Gothic", sans-serif;
-    font-weight: 900; font-size: 14px; color: var(--blue-deep);
-    margin: 0 0 18px;
-    letter-spacing: 0.05em;
-  }
-  .shikaku-list-title::before {
-    content: "📋 ";
-  }
-  .shikaku-list-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 18px;
-  }
-  @media (max-width: 1100px) { .shikaku-list-grid { grid-template-columns: repeat(3, 1fr); } }
-  @media (max-width: 720px)  { .shikaku-list-grid { grid-template-columns: repeat(2, 1fr); } }
-  .shikaku-list-col h4 {
-    font-family: "Zen Maru Gothic", sans-serif;
-    font-weight: 900; font-size: 13px;
-    color: var(--ink);
-    margin: 0 0 10px;
-    padding-bottom: 6px;
-    border-bottom: 2px solid var(--blue);
-    display: flex; align-items: center; gap: 6px;
-  }
-  .shikaku-list-col.lc-bilmen h4 { border-bottom-color: var(--green); }
-  .shikaku-list-col.lc-it h4     { border-bottom-color: var(--purple); }
-  .shikaku-list-col.lc-law h4    { border-bottom-color: var(--ink-strong, #1a2230); }
-  .shikaku-list-col.lc-fin h4    { border-bottom-color: var(--yellow); }
-  .shikaku-list-col.lc-lang h4   { border-bottom-color: var(--pink); }
-  .shikaku-list-col.lc-med h4    { border-bottom-color: var(--blue); }
-  .shikaku-list-col ul {
-    list-style: none;
-    padding: 0; margin: 0;
-  }
-  .shikaku-list-col li {
-    font-size: 12px;
-    color: var(--ink-soft);
-    line-height: 1.95;
-    padding-left: 12px;
-    position: relative;
-  }
-  .shikaku-list-col li::before {
-    content: "›";
-    position: absolute;
-    left: 0; top: 0;
-    color: var(--blue);
-    font-weight: 700;
-  }
-  .shikaku-list-col li a {
-    color: var(--ink-soft);
-    transition: color .15s;
-  }
-  .shikaku-list-col li a:hover {
-    color: var(--blue);
-    text-decoration: underline;
-  }
-
   /* ===================== SECTIONS / MAIN ===================== */
   main { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
 
@@ -911,6 +845,353 @@
     border-left: 3px solid var(--orange); padding-left: 10px;
   }
 
+  /* ===================== CATEGORY PAGE ===================== */
+  .cat-hero {
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    background:
+      linear-gradient(110deg, rgba(0,40,90,0.78) 0%, rgba(0,55,130,0.62) 50%, rgba(0,30,80,0.55) 100%),
+      url('images/bil-hero.png');
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+  .cat-hero-inner {
+    max-width: 1180px; margin: 0 auto;
+    padding: 60px 16px 50px;
+    position: relative; z-index: 1;
+  }
+  .cat-crumb {
+    font-size: 11px; letter-spacing: 0.08em;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 14px;
+  }
+  .cat-crumb a { color: rgba(255,255,255,0.85); text-decoration: underline; }
+  .cat-crumb a:hover { color: #ffd76a; }
+  .cat-hero h1 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 42px; line-height: 1.3;
+    margin: 0 0 14px;
+    text-shadow: 0 2px 16px rgba(0,30,80,0.4);
+  }
+  .cat-hero h1 .accent { color: #ffd76a; }
+  .cat-hero h1 .underline {
+    background: linear-gradient(transparent 70%, rgba(255,122,0,0.55) 70%);
+    padding: 0 4px;
+  }
+  .cat-hero .lead {
+    font-size: 15px; line-height: 1.8; max-width: 640px;
+    color: rgba(255,255,255,0.95);
+    text-shadow: 0 1px 6px rgba(0,30,80,0.5);
+  }
+  .cat-hero .meta-row {
+    display: flex; gap: 18px; flex-wrap: wrap;
+    margin-top: 22px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 12px;
+  }
+  .cat-hero .meta-row .item {
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(8px);
+    padding: 6px 14px; border-radius: 999px;
+    font-weight: 700;
+  }
+  .cat-hero .meta-row .item b { color: #ffd76a; margin-right: 4px; }
+
+  .cat-main { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
+  .cat-sec {
+    padding: 56px 0 12px;
+    border-bottom: 1px dashed var(--line);
+  }
+  .cat-sec:last-child { border-bottom: 0; }
+  .cat-sec-head {
+    display: flex; align-items: end; gap: 14px;
+    margin-bottom: 22px;
+  }
+  .cat-sec-num {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 48px;
+    color: var(--blue); line-height: 0.85;
+  }
+  .cat-sec-title-block .small {
+    font-size: 11px; color: var(--blue);
+    letter-spacing: 0.18em; font-weight: 700;
+  }
+  .cat-sec-title-block .big {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 26px; line-height: 1.3;
+    color: var(--ink); margin-top: 4px;
+  }
+  .cat-sec p {
+    font-size: 14px; line-height: 1.95; color: var(--ink-soft);
+    margin: 0 0 16px;
+  }
+  .cat-sec h3 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 18px;
+    color: var(--ink); margin: 28px 0 12px;
+    padding-left: 12px; border-left: 4px solid var(--blue);
+    line-height: 1.5;
+  }
+  .cat-sec h4 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 15px;
+    color: var(--ink); margin: 22px 0 10px;
+  }
+  .cat-sec ul, .cat-sec ol {
+    font-size: 14px; line-height: 1.9; color: var(--ink-soft);
+    margin: 0 0 16px; padding-left: 20px;
+  }
+  .cat-sec ul li, .cat-sec ol li { margin-bottom: 4px; }
+  .cat-sec strong { color: var(--ink); }
+  .cat-sec em { font-style: normal; color: var(--blue-deep); font-weight: 700; }
+
+  /* placeholder image box */
+  .cat-img-ph {
+    background: linear-gradient(135deg, var(--blue-soft), #fff);
+    border: 1px dashed var(--blue);
+    border-radius: 8px;
+    padding: 28px;
+    text-align: center;
+    color: var(--blue-deep);
+    font-size: 12px;
+    margin: 20px 0;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 700;
+  }
+  .cat-img-ph::before { content: "🖼  "; font-size: 18px; }
+  .cat-img-full {
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin: 24px auto;
+    box-shadow: 0 4px 18px rgba(0, 40, 100, 0.12);
+  }
+  .cat-img-cap {
+    font-size: 11px; color: var(--mute);
+    text-align: center;
+    margin: -16px 0 24px;
+    font-family: "Zen Maru Gothic", sans-serif;
+  }
+  .real-box .cat-img-full {
+    max-width: 540px;
+    margin: 18px auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  /* 8 shikaku grid */
+  .shikaku-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;
+    margin: 18px 0 8px;
+  }
+  @media (max-width: 720px) { .shikaku-grid { grid-template-columns: 1fr; } }
+  .shikaku-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--blue);
+    border-radius: 6px;
+    padding: 14px 16px;
+  }
+  .shikaku-item.lv-入門 { border-left-color: var(--green); }
+  .shikaku-item.lv-中級 { border-left-color: var(--blue); }
+  .shikaku-item.lv-上位 { border-left-color: var(--purple); }
+  .shikaku-name {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 16px; color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .shikaku-lv {
+    font-size: 10px; padding: 2px 8px; border-radius: 999px;
+    background: var(--blue-soft); color: var(--blue-deep);
+    margin-left: 8px; font-weight: 700; vertical-align: middle;
+  }
+  .shikaku-lv.lv-入門 { background: #e6f4ed; color: #1c8a5f; }
+  .shikaku-lv.lv-中級 { background: var(--blue-soft); color: var(--blue-deep); }
+  .shikaku-lv.lv-上位 { background: #efe7ff; color: #5b35d3; }
+  .shikaku-meta {
+    font-size: 11px; color: var(--mute);
+    font-family: "Zen Maru Gothic", sans-serif; font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .shikaku-meta span { margin-right: 10px; }
+  .shikaku-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.7; margin: 0; }
+
+  /* path cards (パターンA/B/C) */
+  .path-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+    margin: 18px 0;
+  }
+  @media (max-width: 720px) { .path-cards { grid-template-columns: 1fr; } }
+  .path-card {
+    background: #fff; border: 1px solid var(--line); border-radius: 10px;
+    padding: 22px 20px;
+    position: relative; overflow: hidden;
+  }
+  .path-card .pc-no {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 36px; font-weight: 900;
+    color: var(--blue); line-height: 1;
+    opacity: 0.85;
+  }
+  .path-card .pc-tgt {
+    font-size: 11px; color: var(--mute); font-weight: 700;
+    letter-spacing: 0.08em; margin: 6px 0 12px;
+  }
+  .path-card .pc-name {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 18px;
+    color: var(--ink); margin-bottom: 8px;
+  }
+  .path-card .pc-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.75; margin: 0; }
+
+  /* 比較表 */
+  .cat-table {
+    width: 100%; border-collapse: collapse;
+    font-size: 13px; margin: 14px 0;
+  }
+  .cat-table th, .cat-table td {
+    padding: 10px 12px; text-align: left;
+    border-bottom: 1px solid var(--line);
+  }
+  .cat-table th {
+    background: var(--blue-soft);
+    color: var(--blue-deep); font-weight: 700;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 12px;
+  }
+  .cat-table td { color: var(--ink-soft); }
+  .cat-table tr:hover td { background: #f7f9fc; }
+  .cat-table .highlight {
+    background: linear-gradient(90deg, #fff8e6, #fff);
+    font-weight: 700; color: var(--ink);
+  }
+
+  /* edu cards (3社比較) */
+  .edu-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+    margin: 18px 0;
+  }
+  @media (max-width: 720px) { .edu-cards { grid-template-columns: 1fr; } }
+  .edu-card {
+    background: #fff; border: 1px solid var(--line); border-radius: 10px;
+    padding: 20px 18px;
+    display: flex; flex-direction: column;
+  }
+  .edu-card .edu-name {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 17px; color: var(--ink);
+    margin-bottom: 4px;
+  }
+  .edu-card .edu-tag {
+    font-size: 10px; padding: 3px 8px; border-radius: 999px;
+    background: var(--orange); color: #fff; font-weight: 700;
+    display: inline-block; margin-bottom: 10px;
+    width: fit-content;
+  }
+  .edu-card .edu-price {
+    font-size: 18px; font-weight: 900; color: var(--blue-deep);
+    font-family: "Zen Maru Gothic", sans-serif;
+  }
+  .edu-card .edu-price .yen { font-size: 12px; }
+  .edu-card .edu-feat {
+    font-size: 13px; color: var(--ink-soft); line-height: 1.7;
+    margin: 10px 0 14px; flex: 1;
+  }
+  .edu-card .edu-cta {
+    display: block; text-align: center;
+    background: var(--orange); color: #fff;
+    padding: 10px 14px; border-radius: 6px;
+    font-weight: 700; font-size: 13px;
+    box-shadow: 0 1px 0 var(--orange-deep);
+  }
+  .edu-card .edu-cta:hover { background: var(--orange-deep); color: #fff; }
+
+  /* FAQ */
+  .faq-item {
+    background: #fff; border: 1px solid var(--line); border-radius: 8px;
+    padding: 16px 18px; margin-bottom: 10px;
+  }
+  .faq-item .faq-q {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 14px; color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .faq-item .faq-q::before {
+    content: "Q. "; color: var(--blue); font-weight: 900;
+  }
+  .faq-item .faq-a { font-size: 13px; color: var(--ink-soft); line-height: 1.8; margin: 0; }
+  .faq-item .faq-a::before {
+    content: "A. "; color: var(--orange); font-weight: 900;
+  }
+
+  /* 現場の話の強調ボックス */
+  .real-box {
+    background: linear-gradient(135deg, #fff8e6, #fffaf0);
+    border-left: 5px solid var(--orange);
+    border-radius: 8px;
+    padding: 22px 24px;
+    margin: 20px 0;
+  }
+  .real-box .real-tag {
+    display: inline-block;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 11px;
+    background: var(--orange); color: #fff;
+    padding: 4px 10px; border-radius: 4px;
+    margin-bottom: 12px;
+    letter-spacing: 0.08em;
+  }
+  .real-box h3 {
+    margin: 0 0 10px;
+    padding-left: 0;
+    border-left: 0;
+    color: var(--ink);
+    font-size: 19px;
+  }
+  .real-box p { font-size: 14px; line-height: 2; color: var(--ink); }
+  .real-box strong { color: var(--orange-deep); }
+
+  /* CTA bottom */
+  .cat-cta {
+    background: linear-gradient(135deg, var(--blue), var(--blue-deep));
+    color: #fff; border-radius: 14px;
+    padding: 36px 32px; text-align: center;
+    margin: 40px 0;
+  }
+  .cat-cta h3 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 24px;
+    margin: 0 0 8px; color: #fff;
+    border-left: 0; padding-left: 0;
+  }
+  .cat-cta p { font-size: 13px; color: rgba(255,255,255,0.92); margin: 0 0 20px; }
+  .cat-cta .btn-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .cat-cta .btn-primary {
+    background: var(--orange); color: #fff;
+    padding: 12px 26px; border-radius: 6px;
+    font-weight: 700; font-size: 14px;
+    box-shadow: 0 2px 0 var(--orange-deep);
+  }
+  .cat-cta .btn-primary:hover { background: var(--orange-deep); color: #fff; }
+  .cat-cta .btn-sub {
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.4);
+    color: #fff; padding: 12px 22px; border-radius: 6px;
+    font-weight: 700; font-size: 13px;
+  }
+  .cat-cta .btn-sub:hover { background: rgba(255,255,255,0.22); color: #fff; }
+
+  @media (max-width: 720px) {
+    .cat-hero h1 { font-size: 28px; }
+    .cat-sec-head { flex-wrap: wrap; }
+    .cat-sec-num { font-size: 36px; }
+    .cat-sec-title-block .big { font-size: 20px; }
+  }
+
   /* ===================== FOOTER ===================== */
   footer.site {
     background: #1a2230; color: #c5cbd6;
@@ -1072,487 +1353,415 @@
   </div>
 </nav>
 
-<!-- ============ HERO ============ -->
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-copy">
-      <div class="hero-eyebrow">📈 AI時代の手に職を、応援するメディア <b>NEW</b></div>
-      <h1>
-        資格で、<span class="underline">人生</span>を変える。<br />
-        <span class="accent">AI時代</span>の手に職を、<br />
-        応援するメディア。
-      </h1>
-      <p class="hero-sub">
-        20代の挑戦も、50代のやり直しも。AIに置き換わらない「現場の力」と「専門資格」を、<br />
-        独学・通信・通学のリアルな比較記事で、ゼロから応援します。
-      </p>
-      <div class="hero-illust">
-        <div class="person">👨‍💼<div class="person-label">20代・IT転職</div></div>
-        <div class="person b">👩‍⚕️<div class="person-label">30代・医療職</div></div>
-        <div class="person c">👨‍🔧<div class="person-label">50代・ビルメン</div></div>
-      </div>
+<!-- ============ ARTICLE HERO ============ -->
+<section class="cat-hero">
+  <div class="cat-hero-inner">
+    <div class="cat-crumb">
+      <a href="index.html">資格Life</a> ／ <a href="category-bilmen.html">ビルメン系</a> ／ エネルギー管理士
     </div>
-
-    <div class="hero-card">
-      <span class="hc-badge">📚 RESOURCES</span>
-      <h2 class="hc-title">資格Lifeの記事から、<br />あなたに合う一本を。</h2>
-      <p class="hc-count">資格カテゴリ別に、厳選記事を公開中</p>
-      <a href="articles.html" class="hc-cta">無料で記事を読む<span class="arr">→</span></a>
-      <p class="hc-sub">会員登録すると <b>気になる保存</b> ＆ <b>学習履歴管理</b> ができます</p>
+    <h1>
+      エネルギー管理士、<br />
+      <span class="underline">独学1年</span>で<span class="accent">一発合格</span>する完全ガイド。
+    </h1>
+    <p class="lead">
+      ビルメン業界の<em>「最難関級」</em>。省エネルギー化が国策となった今、需要急上昇中の超高待遇国家資格です。試験概要・受験ルート・学習法・教材まで、これ1ページですべて分かります。
+    </p>
+    <div class="meta-row">
+      <span class="item">難易度 <b>★★★★★</b></span>
+      <span class="item">学習時間 <b>400〜600時間</b></span>
+      <span class="item">合格率 <b>20〜30%</b></span>
+      <span class="item">年収UP <b>+80〜200万</b></span>
     </div>
   </div>
 </section>
 
-<!-- ============ SEARCH ============ -->
-<div class="search-wrap">
-  <div class="search-inner">
-    <div class="search-head">
-      <span class="lab">条件から資格を探す</span>
-      <span class="cnt">資格名・カテゴリで探す</span>
-    </div>
-    <div class="search-row">
-      <div class="sf">
-        <span class="sf-label">カテゴリ</span>
-        <span class="sf-val">すべて</span>
-        <span class="sf-arr">▼</span>
-      </div>
-      <div class="sf">
-        <span class="sf-label">難易度</span>
-        <span class="sf-val">指定なし</span>
-        <span class="sf-arr">▼</span>
-      </div>
-      <div class="sf">
-        <span class="sf-label">取得期間</span>
-        <span class="sf-val">指定なし</span>
-        <span class="sf-arr">▼</span>
-      </div>
-      <div class="sf">
-        <span class="sf-label">キーワード</span>
-        <input type="text" placeholder="例：宅建士、簿記2級、基本情報" />
-      </div>
-      <button class="btn-search">🔍 検索する</button>
-    </div>
-    <div class="search-tags">
-      <span class="tlab">人気タグ：</span>
-      <span class="stag">#宅建士</span>
-      <span class="stag">#基本情報技術者</span>
-      <span class="stag">#簿記2級</span>
-      <span class="stag">#FP3級</span>
-      <span class="stag">#ビル管理士</span>
-      <span class="stag">#TOEIC700</span>
-      <span class="stag">#介護福祉士</span>
-      <span class="stag">#G検定</span>
-      <span class="stag">#行政書士</span>
+<main class="cat-main">
+
+<!-- 【1】エネルギー管理士とは -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">01</div>
+    <div class="cat-sec-title-block">
+      <div class="small">WHAT IS ENE-KAN</div>
+      <div class="big">エネルギー管理士って、どんな資格？</div>
     </div>
   </div>
-</div>
 
-<!-- ============ CATEGORY ICONS ============ -->
-<div class="cats">
-  <div class="career-head">
-    <span class="num">01</span>
-    <div class="title-block">
-      <div class="small">FIND CERTIFICATIONS</div>
-      <div class="big">資格を探す。</div>
+  <p>
+    エネルギー管理士（通称：エネ管）は、<strong>「エネルギーの使用の合理化等に関する法律（省エネ法）」</strong>に基づき、<em>第一種エネルギー管理指定工場（年間エネルギー使用量3,000kL以上）</em>に選任義務がある国家資格です。経済産業省・各経済産業局が所管し、<strong>省エネ・脱炭素時代の最重要資格</strong>として、近年急速に需要が伸びています。
+  </p>
+
+  <p>
+    大型工場・大型商業施設・大学・病院など、<strong>大量のエネルギーを消費する事業所</strong>に1〜4名の選任義務があります。<em>「電気・熱」両方の知識が必要</em>な技術系国家資格で、ビルメン系・電気系の最終到達点の1つ。ビル管理士と並ぶ業界最高峰とも言われます。
+  </p>
+
+  <h3>主な業務内容</h3>
+  <ul>
+    <li><strong>エネルギー使用量の把握・分析</strong>：電気・熱の使用実態調査</li>
+    <li><strong>省エネ計画の立案・実行</strong>：年間目標と改善提案</li>
+    <li><strong>定期報告書の作成</strong>：経済産業局への年次提出</li>
+    <li><strong>中長期計画の作成</strong>：5年スパンの省エネ目標</li>
+    <li><strong>従業員への省エネ教育</strong>：意識改革と研修</li>
+  </ul>
+
+  <h3>「熱分野」と「電気分野」の2区分</h3>
+  <p>
+    エネルギー管理士には<strong>「熱分野」と「電気分野」の2区分</strong>がありますが、<em>取得後は両方の選任が可能</em>です。受験時にどちらか選ぶ仕組みで、<strong>ビルメン・電気系出身者は「電気分野」、ボイラー・冷凍系出身者は「熱分野」</strong>を選ぶのが一般的です。
+  </p>
+</section>
+
+<!-- 【2】試験概要 -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">02</div>
+    <div class="cat-sec-title-block">
+      <div class="small">EXAM OUTLINE</div>
+      <div class="big">試験概要：試験ルート・研修ルートの2つ</div>
     </div>
-    <p class="desc">
-      6分野から、あなたに合う資格を厳選して紹介します。
+  </div>
+
+  <p>
+    エネルギー管理士の取得には<strong>「試験ルート」と「研修ルート」</strong>の2つがあります。試験ルートは誰でも受験可能ですが、<em>免状交付には実務経験1年以上が必要</em>。研修ルートは実務経験3年以上が必須で受講料も高いですが、合格率は試験よりも高めです。
+  </p>
+
+  <h3>試験データ（2026年版・試験ルート）</h3>
+  <ul>
+    <li><strong>受験料</strong>：17,000円</li>
+    <li><strong>受験資格</strong>：なし（誰でも受験可）</li>
+    <li><strong>試験日</strong>：年1回・8月初旬</li>
+    <li><strong>試験時間</strong>：4課目・合計6時間</li>
+    <li><strong>出題形式</strong>：マークシート＋一部計算記述</li>
+    <li><strong>合格基準</strong>：各課目60%以上</li>
+    <li><strong>合格率</strong>：20〜30%</li>
+  </ul>
+
+  <h3>電気分野・4課目の内訳</h3>
+  <ul>
+    <li><strong>課目I：エネルギー総合管理及び法規</strong></li>
+    <li><strong>課目II：電気の基礎</strong></li>
+    <li><strong>課目III：電気設備及び機器</strong></li>
+    <li><strong>課目IV：電力応用</strong></li>
+  </ul>
+
+  <h3>熱分野・4課目の内訳</h3>
+  <ul>
+    <li><strong>課目I：エネルギー総合管理及び法規</strong>（共通）</li>
+    <li><strong>課目II：熱と流体の流れの基礎</strong></li>
+    <li><strong>課目III：燃料と燃焼</strong></li>
+    <li><strong>課目IV：熱利用設備及びその管理</strong></li>
+  </ul>
+
+  <p>
+    <em>注意点：4課目とも60%以上の足切り</em>。<strong>科目別合格制度</strong>があるため、合格した課目は3年間有効（翌年・翌々年は残課目のみ受験OK）。1年で全課目突破できなくても、戦略的に分割合格可能です。
+  </p>
+</section>
+
+<!-- 【3】取得メリット -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">03</div>
+    <div class="cat-sec-title-block">
+      <div class="small">5 MERITS</div>
+      <div class="big">エネルギー管理士を取る、5つの大きなメリット</div>
+    </div>
+  </div>
+
+  <h3>① 省エネ・脱炭素時代の「超高需要資格」</h3>
+  <p>
+    2050年カーボンニュートラル達成に向けて、<strong>省エネ法の対象事業所が拡大中</strong>。<em>「エネルギー管理指定工場」</em>の選任義務がますます強化される流れにあり、エネルギー管理士の需要は<strong>右肩上がりで急成長</strong>しています。
+  </p>
+
+  <h3>② 月20,000〜40,000円の資格手当</h3>
+  <p>
+    多くの企業で、エネルギー管理士には<strong>月20,000〜40,000円の資格手当</strong>。年間240,000〜480,000円のプラス。<em>大手電力会社・大手ビル管理会社</em>では月50,000円超のケースも珍しくありません。
+  </p>
+
+  <h3>③ 経営層・本社部門への昇進の決め手</h3>
+  <p>
+    エネルギー管理士は<strong>「現場技術者」から「経営管理層」へのジャンプ台</strong>。<em>「省エネ計画＝経営計画」</em>として、経営層が直接関心を持つテーマを扱います。<strong>50代で工場長・施設部長に昇格</strong>するケースが多数。
+  </p>
+
+  <h3>④ 独立コンサルタントとして年収1,000万円超も</h3>
+  <p>
+    エネルギー管理士＋実務経験で<strong>「省エネコンサルタント」</strong>として独立可能。<em>中小事業所の省エネ診断・補助金申請支援</em>を請け負い、年収1,000〜2,000万円の世界が見えます。エコ・ESG投資の流れで需要は今後さらに拡大。
+  </p>
+
+  <h3>⑤ 技術士・建築設備士へのステップアップ</h3>
+  <p>
+    エネルギー管理士は<strong>「技術士（電気・機械部門）」「建築設備士」</strong>などの上位資格への基礎となります。<em>「複数の最高峰資格を保有する希少人材」</em>として、生涯にわたって市場価値の高いキャリアが築けます。
+  </p>
+</section>
+
+<!-- 【4】学習ロードマップ -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">04</div>
+    <div class="cat-sec-title-block">
+      <div class="small">STUDY ROADMAP</div>
+      <div class="big">1年で合格する、52週間の学習プラン</div>
+    </div>
+  </div>
+
+  <p>
+    社会人で平日1〜2時間・休日3〜4時間を勉強に充てられる方向けの、現実的な1年プランです（電気分野想定）。<em>合計400〜600時間を目安に</em>長期戦の覚悟が必要。
+  </p>
+
+  <h3>第1〜4週：エネルギー総合管理及び法規（40時間）</h3>
+  <p>
+    最初の1ヶ月で<strong>「課目I（共通）」</strong>を一気に固めます。<em>省エネ法・指定工場制度・温対法・国際エネルギー情勢</em>などを学習。<strong>暗記中心の単元</strong>から始めると学習リズムが作りやすい。
+  </p>
+
+  <h3>第5〜20週：電気の基礎（130時間）</h3>
+  <p>
+    最大の山場<strong>「課目II：電気の基礎」</strong>。<em>三相交流回路・電気磁気学・電子回路・自動制御</em>など、電験3種に近い理論問題を学習。4ヶ月かけてじっくり理解。<strong>計算問題が中心</strong>で、数学的素養が必要。
+  </p>
+
+  <h3>第21〜36週：電気設備及び機器（140時間）</h3>
+  <p>
+    第二の山場<strong>「課目III：電気設備及び機器」</strong>。<em>変圧器・誘導電動機・パワーエレクトロニクス・電力系統</em>を体系的に学習。<strong>電工1種・電験3種の知識</strong>が大いに役立つ単元です。
+  </p>
+
+  <h3>第37〜48週：電力応用（100時間）</h3>
+  <p>
+    <strong>「課目IV：電力応用」</strong>では、<em>電動力応用・照明・電気加熱・電気化学</em>などを学習。<strong>応用問題が多く、実務知識</strong>が試される単元です。
+  </p>
+
+  <h3>第49〜52週：総合演習＋直前対策（30〜100時間）</h3>
+  <p>
+    過去問5年分を本試験形式で解き、<em>「各課目60%以上」</em>を安定させます。<strong>6時間の長丁場に体力的に慣れる練習</strong>も重要。模試を本番形式で複数回受験。
+  </p>
+</section>
+
+<!-- 【5】教材比較 -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">05</div>
+    <div class="cat-sec-title-block">
+      <div class="small">COMPARE COURSES</div>
+      <div class="big">教材を比較する（独学・通信・研修ルート）</div>
+    </div>
+  </div>
+
+  <p>
+    エネルギー管理士は<strong>独学合格者も多い</strong>ですが、<em>「4課目・6時間・合格率20〜30%」</em>の超難関を乗り切るには戦略的な教材選びが重要です（PR）。
+  </p>
+
+  <div class="edu-cards">
+    <div class="edu-card">
+      <div class="edu-card-head">
+        <div class="edu-name">SAT エネルギー管理士講座（電気分野）</div>
+        <div class="edu-price">86,680円</div>
+      </div>
+      <ul class="edu-feats">
+        <li>動画講義100時間以上</li>
+        <li>不合格時返金保証</li>
+        <li>スマホ・PC対応</li>
+        <li>過去問演習システム</li>
+      </ul>
+      <p class="edu-summary">「動画で理解したい」方に。<em>4課目すべての動画解説</em>があり、独学のつまずきを徹底防止。電験3種講座とのセット割もあり。</p>
+      <a href="#" class="btn-affil" rel="nofollow sponsored noopener" target="_blank">SATを見る →</a>
+    </div>
+
+    <div class="edu-card">
+      <div class="edu-card-head">
+        <div class="edu-name">不動弘幸 エネルギー管理士集中講習</div>
+        <div class="edu-price">74,800円</div>
+      </div>
+      <ul class="edu-feats">
+        <li>4日間の対面集中講習</li>
+        <li>過去問解説中心</li>
+        <li>合格率が大幅にUP</li>
+        <li>講師は元エネ管試験委員</li>
+      </ul>
+      <p class="edu-summary">「絶対1発で受かりたい」方の王道。<em>本試験の出題傾向を熟知</em>した講師による4日間集中型。電気・熱の両分野あり。</p>
+      <a href="#" class="btn-affil" rel="nofollow sponsored noopener" target="_blank">集中講習を見る →</a>
+    </div>
+
+    <div class="edu-card">
+      <div class="edu-card-head">
+        <div class="edu-name">省エネルギーセンター 公式研修</div>
+        <div class="edu-price">110,000円</div>
+      </div>
+      <ul class="edu-feats">
+        <li>7日間の集中研修</li>
+        <li>修了試験合格で資格取得</li>
+        <li>受講資格：実務3年以上</li>
+        <li>合格率が試験ルートより高め</li>
+      </ul>
+      <p class="edu-summary">「実務経験3年以上」がある方の選択肢。<em>試験ルートをスキップ</em>でき、7日間の研修＋修了試験で資格取得。</p>
+      <a href="#" class="btn-affil" rel="nofollow sponsored noopener" target="_blank">公式研修を見る →</a>
+    </div>
+  </div>
+
+  <p>
+    <em>市販テキスト派</em>には、<strong>「エネルギー管理士（電気）模範解答集」（電気書院／4,400円）</strong>＋<strong>「エネルギー管理士 過去問題集」（電気書院／3,300円）</strong>の組み合わせが業界の定番です。
+  </p>
+</section>
+
+<!-- 【6】合格体験談 -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">06</div>
+    <div class="cat-sec-title-block">
+      <div class="small">REAL STORIES</div>
+      <div class="big">合格者の声：現場の3人</div>
+    </div>
+  </div>
+
+  <div class="real-box">
+    <h4>Case 1：38歳・電気保安技術者（東京）</h4>
+    <p>
+      電工1種＋電験3種を取得後、エネルギー管理士に挑戦。<em>SAT動画講座を1年活用</em>し2年がかりで4課目すべて合格。「電験3種の知識があったので電気分野は何とかなった。<strong>合格後、年収が550万→680万円に</strong>。省エネコンサル業務も始めた」。
     </p>
   </div>
-  <div class="cats-grid">
-    <a class="cat cat-bilmen" href="category-bilmen.html">
-      <div class="cat-overlay">
-        <div class="cat-name">ビルメン系</div>
-        <div class="cat-cnt">8 資格</div>
-      </div>
-    </a>
-    <a class="cat cat-it" href="category-it-ai.html">
-      <div class="cat-overlay">
-        <div class="cat-name">IT・AI</div>
-        <div class="cat-cnt">6 資格</div>
-      </div>
-    </a>
-    <a class="cat cat-law" href="category-law.html">
-      <div class="cat-overlay">
-        <div class="cat-name">法律系</div>
-        <div class="cat-cnt">5 資格</div>
-      </div>
-    </a>
-    <a class="cat cat-fin" href="category-fin.html">
-      <div class="cat-overlay">
-        <div class="cat-name">金融</div>
-        <div class="cat-cnt">6 資格</div>
-      </div>
-    </a>
-    <a class="cat cat-lang" href="category-lang.html">
-      <div class="cat-overlay">
-        <div class="cat-name">語学</div>
-        <div class="cat-cnt">4 資格</div>
-      </div>
-    </a>
-    <a class="cat cat-med" href="category-med.html">
-      <div class="cat-overlay">
-        <div class="cat-name">医療・福祉系</div>
-        <div class="cat-cnt">13 資格</div>
-      </div>
-    </a>
-  </div>
 
-  <!-- 資格名リスト（カテゴリ別） -->
-  <div class="shikaku-list-wrap">
-    <p class="shikaku-list-title">カテゴリ別 主要資格一覧（42資格）</p>
-    <div class="shikaku-list-grid">
-      <div class="shikaku-list-col lc-bilmen">
-        <h4>ビルメン系</h4>
-        <ul>
-          <li><a href="denko2.html">第二種電気工事士</a></li>
-          <li><a href="otsu4.html">危険物乙4</a></li>
-          <li><a href="boiler2.html">2級ボイラー技士</a></li>
-          <li><a href="reito3.html">第三種冷凍機械</a></li>
-          <li><a href="denko1.html">第一種電気工事士</a></li>
-          <li><a href="shoubou4.html">消防設備士 甲4</a></li>
-          <li><a href="bilkan.html">ビル管理士</a></li>
-          <li><a href="enekan.html">エネルギー管理士</a></li>
-        </ul>
-      </div>
-      <div class="shikaku-list-col lc-it">
-        <h4>IT・AI</h4>
-        <ul>
-          <li><a href="category-it-ai.html">ITパスポート</a></li>
-          <li><a href="category-it-ai.html">MOS Excel</a></li>
-          <li><a href="category-it-ai.html">基本情報技術者</a></li>
-          <li><a href="category-it-ai.html">応用情報技術者</a></li>
-          <li><a href="category-it-ai.html">G検定</a></li>
-          <li><a href="category-it-ai.html">E資格</a></li>
-        </ul>
-      </div>
-      <div class="shikaku-list-col lc-law">
-        <h4>法律系</h4>
-        <ul>
-          <li><a href="category-law.html">FP3級</a></li>
-          <li><a href="category-law.html">宅地建物取引士</a></li>
-          <li><a href="category-law.html">FP2級</a></li>
-          <li><a href="category-law.html">行政書士</a></li>
-          <li><a href="category-law.html">社会保険労務士</a></li>
-        </ul>
-      </div>
-      <div class="shikaku-list-col lc-fin">
-        <h4>金融</h4>
-        <ul>
-          <li><a href="category-fin.html">簿記3級</a></li>
-          <li><a href="category-fin.html">FP3級</a></li>
-          <li><a href="category-fin.html">簿記2級</a></li>
-          <li><a href="category-fin.html">証券外務員 二種</a></li>
-          <li><a href="category-fin.html">簿記1級</a></li>
-          <li><a href="category-fin.html">中小企業診断士</a></li>
-        </ul>
-      </div>
-      <div class="shikaku-list-col lc-lang">
-        <h4>語学</h4>
-        <ul>
-          <li><a href="category-lang.html">TOEIC L&R</a></li>
-          <li><a href="category-lang.html">英検</a></li>
-          <li><a href="category-lang.html">TOEIC S&W</a></li>
-          <li><a href="category-lang.html">HSK・中国語検定</a></li>
-        </ul>
-      </div>
-      <div class="shikaku-list-col lc-med">
-        <h4>医療・福祉系</h4>
-        <ul>
-          <li><a href="category-med.html">医療事務</a></li>
-          <li><a href="category-med.html">登録販売者</a></li>
-          <li><a href="category-med.html">介護職員初任者研修</a></li>
-          <li><a href="category-med.html">介護福祉士</a></li>
-          <li><a href="category-med.html">保育士</a></li>
-          <li><a href="category-med.html">ケアマネジャー</a></li>
-          <li><a href="category-med.html">精神保健福祉士</a></li>
-          <li><a href="category-med.html">看護師</a></li>
-          <li><a href="category-med.html">准看護師</a></li>
-          <li><a href="category-med.html">診療放射線技師</a></li>
-          <li><a href="category-med.html">薬剤師</a></li>
-          <li><a href="category-med.html">臨床工学技士</a></li>
-          <li><a href="category-med.html">臨床検査技師</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<main>
-
-  <!-- ============ NEW + FEATURED ============ -->
-  <div class="career-head">
-    <span class="num">02</span>
-    <div class="title-block">
-      <div class="small">NEW ARTICLES</div>
-      <div class="big">新着の記事。</div>
-    </div>
-    <p class="desc">
-      資格と学び直し、キャリアアップの最新記事。週2回更新中。
+  <div class="real-box">
+    <h4>Case 2：45歳・大手食品工場の保全技士（神奈川）</h4>
+    <p>
+      食品工場のボイラー・冷凍機保全を15年。エネルギー管理士「熱分野」に挑戦。<em>不動弘幸先生の集中講習＋過去問</em>で1年勉強し、3課目1発合格、残り1課目を翌年合格。「<strong>工場長候補として、エネ管が決定打になった</strong>。50歳前で大きなキャリアアップ」。
     </p>
   </div>
 
-  <div class="two-col">
-    <div class="card-grid-4">
-      <article class="card">
-        <div class="card-thumb art-denko">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill bil">ビルメン系</span>
-          <h3 class="card-title">第二種電気工事士、独学6ヶ月で一発合格するための学習ロードマップ【2026年版】</h3>
-          <div class="card-meta"><span>2026.05.18</span><span class="read">⏱ 12分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-chatgpt">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill it">IT・AI</span>
-          <h3 class="card-title">ChatGPTで資格勉強を爆速化。実際に効いたプロンプト10選</h3>
-          <div class="card-meta"><span>2026.05.15</span><span class="read">⏱ 8分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-care">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill med">医療・福祉系</span>
-          <h3 class="card-title">介護福祉士は本当に「食いっぱぐれない」資格か。需給データで検証</h3>
-          <div class="card-meta"><span>2026.05.13</span><span class="read">⏱ 9分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-takken">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill law">法律系</span>
-          <h3 class="card-title">宅建、社会人が働きながら受かるには。通勤＋土日の300時間プラン</h3>
-          <div class="card-meta"><span>2026.05.12</span><span class="read">⏱ 10分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-boki">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill fin">金融</span>
-          <h3 class="card-title">簿記3級、最短2週間で合格する勉強法。最初の3日でやることを具体化</h3>
-          <div class="card-meta"><span>2026.05.09</span><span class="read">⏱ 7分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-toeic">
-          <span class="new">NEW</span><span class="fav on">♥</span>
-        </div>
-        <div class="card-body">
-          <span class="pill lang">語学</span>
-          <h3 class="card-title">TOEIC 600→800、半年で伸ばした朝活ルーティン</h3>
-          <div class="card-meta"><span>2026.05.05</span><span class="read">⏱ 9分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-otsu4">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill bil">ビルメン系</span>
-          <h3 class="card-title">危険物乙4、ビルメン入門に最適な理由。四点セットの「とっかかり」</h3>
-          <div class="card-meta"><span>2026.05.02</span><span class="read">⏱ 6分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-aidev">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill it">IT・AI</span>
-          <h3 class="card-title">父とAIで資格アプリを作った、夏のはなし。51日間の記録</h3>
-          <div class="card-meta"><span>2026.04.28</span><span class="read">⏱ 14分</span></div>
-        </div>
-      </article>
-    </div>
-
-    <aside class="feature-card">
-      <div class="feature-head">
-        <span class="jp">人気の特集</span>
-        <span class="en">FEATURED</span>
-      </div>
-      <div class="feature-list">
-        <div class="feat-item">
-          <span class="feat-rank">1</span>
-          <div>
-            <div class="feat-title">AI時代に「人が残る職」をくれる7つの資格</div>
-            <div class="feat-cat">SPECIAL / 全12記事</div>
-          </div>
-        </div>
-        <div class="feat-item">
-          <span class="feat-rank">2</span>
-          <div>
-            <div class="feat-title">40代からの資格挑戦、5つのリアル</div>
-            <div class="feat-cat">SPECIAL / 全8記事</div>
-          </div>
-        </div>
-        <div class="feat-item">
-          <span class="feat-rank">3</span>
-          <div>
-            <div class="feat-title">通信講座、結局どこが一番いい？大手3社徹底比較</div>
-            <div class="feat-cat">COMPARE / 全6記事</div>
-          </div>
-        </div>
-        <div class="feat-item">
-          <span class="feat-rank">4</span>
-          <div>
-            <div class="feat-title">スマホだけで合格できる時代の勉強法</div>
-            <div class="feat-cat">LIFE / 全10記事</div>
-          </div>
-        </div>
-        <div class="feat-item">
-          <span class="feat-rank">5</span>
-          <div>
-            <div class="feat-title">育児・介護をしながら勉強する人のための「スキマ時間術」</div>
-            <div class="feat-cat">LIFE / 全7記事</div>
-          </div>
-        </div>
-      </div>
-    </aside>
-  </div>
-
-  <!-- ============ POPULAR ============ -->
-  <section class="popular">
-    <div class="career-head">
-      <span class="num">03</span>
-      <div class="title-block">
-        <div class="small">MOST READ</div>
-        <div class="big">よく読まれている記事。</div>
-      </div>
-      <p class="desc">
-        編集部おすすめの定番記事。迷ったらここから。
-      </p>
-    </div>
-
-    <div class="card-grid-4">
-      <article class="card">
-        <div class="card-thumb"><span class="fav">♡</span>📊</div>
-        <div class="card-body">
-          <span class="pill fin">金融</span>
-          <h3 class="card-title">簿記2級は独学で何時間？合格者300人の平均勉強時間を公開</h3>
-          <div class="card-meta"><span>2026.05</span><span class="read">⏱ 8分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb"><span class="fav on">♥</span>🏠</div>
-        <div class="card-body">
-          <span class="pill law">法律系</span>
-          <h3 class="card-title">宅建士、合格ライン35点時代の最新傾向と対策【2026】</h3>
-          <div class="card-meta"><span>2026.05</span><span class="read">⏱ 10分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb"><span class="fav">♡</span>🧠</div>
-        <div class="card-body">
-          <span class="pill it">IT・AI</span>
-          <h3 class="card-title">ITパスポートとG検定、文系30代はどちらから取るべきか</h3>
-          <div class="card-meta"><span>2026.05</span><span class="read">⏱ 7分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb"><span class="fav">♡</span>🛠</div>
-        <div class="card-body">
-          <span class="pill bil">ビルメン系</span>
-          <h3 class="card-title">ビルメン4点セットの取得順序、現役主任が解説する最適ルート</h3>
-          <div class="card-meta"><span>2026.05</span><span class="read">⏱ 9分</span></div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-</main>
-
-<!-- ============ CAREER BAND ============ -->
-<section class="career-band">
-  <div class="career-band-inner">
-    <div class="career-head">
-      <span class="num">04</span>
-      <div class="title-block">
-        <div class="small">CAREER CHANGE</div>
-        <div class="big">資格を転職に活かす。</div>
-      </div>
-      <p class="desc">
-        資格を「年収」と「働き方」に変える、転職の比較記事。
-      </p>
-    </div>
-
-    <div class="career-cards">
-      <div class="career-card">
-        <div class="cc-img cc-img-compare"></div>
-        <div class="cc-num">01 / COMPARE</div>
-        <h3 class="cc-title">総合転職サイト徹底比較：求人数・サポート・年収UP実績で選ぶ</h3>
-        <p class="cc-desc">大手総合転職サイトを、求人数・スカウト機能・コンサルタントの質などの観点で比較しました。</p>
-        <span class="cc-link">記事を読む →</span>
-      </div>
-      <div class="career-card">
-        <div class="cc-img cc-img-it"></div>
-        <div class="cc-num">02 / IT</div>
-        <h3 class="cc-title">30代未経験からITエンジニア｜おすすめ転職エージェント</h3>
-        <p class="cc-desc">基本情報＋AI活用スキルを武器に転職した編集部員の実例と、効いたエージェント比較。</p>
-        <span class="cc-link">記事を読む →</span>
-      </div>
-      <div class="career-card">
-        <div class="cc-num">03 / MEDICAL</div>
-        <div class="cc-icon">🏥</div>
-        <h3 class="cc-title">医療事務から介護福祉士で再就職｜年収はどう変わる？</h3>
-        <p class="cc-desc">資格取得後の年収シミュレーションと、福祉系に強い転職サービスを徹底比較しました。</p>
-        <span class="cc-link">記事を読む →</span>
-      </div>
-      <div class="career-card">
-        <div class="cc-img cc-img-special"></div>
-        <div class="cc-num">04 / SPECIAL</div>
-        <h3 class="cc-title">資格別おすすめ転職サイト2026年版【完全ガイド】</h3>
-        <p class="cc-desc">15資格×8転職サイトをマトリクスで比較。あなたに合うエージェントが必ず見つかる。</p>
-        <span class="cc-link">記事を読む →</span>
-      </div>
-    </div>
+  <div class="real-box">
+    <h4>Case 3：52歳・元電力会社→ビルメン（埼玉）</h4>
+    <p>
+      電力会社で40年近く電気保安業務、定年後にビルメン会社に再就職。<em>「最後の1枚」</em>としてエネ管に挑戦。研修ルート（実務経験3年以上満たす）で受講料110,000円を会社負担で受講し合格。「<strong>還暦前にビル全体のエネルギー責任者に</strong>。技術屋人生の集大成」。
+    </p>
   </div>
 </section>
 
-<main>
-  <!-- ============ SISTER SITE BANNER ============ -->
-  <a href="#" class="sister">
-    <div class="sister-info">
-      <span class="sister-tag">🏢 SISTER MEDIA</span>
-      <h3 class="sister-title">
-        ビルメンに、本気で詳しいメディア。<br />
-        <span class="small">ビルメンアカデミー / bilumen.jp</span>
-      </h3>
-      <p class="sister-desc">
-        ビル管理の現場で20年。元主任が運営する、ビルメン4点セットから上位資格まで、ビルメン業界の「リアル」だけを発信する姉妹サイトです。
-      </p>
+<!-- 【7】キャリア -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">07</div>
+    <div class="cat-sec-title-block">
+      <div class="small">CAREER PATH</div>
+      <div class="big">取得後のキャリア・年収アップ事例</div>
     </div>
-    <div class="sister-btn">
-      bilumen.jp を見る →
-      <small>SISTER SITE</small>
-    </div>
-  </a>
+  </div>
 
-  <!-- ============ OUR STORY ============ -->
-  <section class="story">
-    <div class="story-visual">📖</div>
-    <div>
-      <div class="story-eyebrow">OUR STORY</div>
-      <h2>「もう遅い」が、口ぐせだった父と。</h2>
-      <p>
-        60歳を過ぎても新しい仕事を探す父と、AI時代に取り残されかけた私。二人で資格に挑戦するうちに、学び直しは何歳からでも始められると確信しました。
-      </p>
-      <p>
-        このサイトは、その記録と、同じことで悩む誰かへのお守りです。20代の挑戦も、50代のやり直しも、私たちは同じ熱量で応援します。
-      </p>
-      <p class="story-sign">— 資格Life 編集部 ／ 父さんとAIの記録より</p>
+  <p>
+    エネルギー管理士は、<em>「技術系国家資格の頂点」</em>の1つ。経営層・コンサルタント・本社技術部門など、多様なキャリアが開けます。
+  </p>
+
+  <h3>業界別・年収アップ目安</h3>
+  <table style="width:100%; border-collapse: collapse; margin: 16px 0; font-size: 14px;">
+    <tr style="background: var(--blue-soft);">
+      <th style="padding: 10px; border: 1px solid var(--line); text-align: left;">業界</th>
+      <th style="padding: 10px; border: 1px solid var(--line); text-align: left;">想定年収</th>
+      <th style="padding: 10px; border: 1px solid var(--line); text-align: left;">資格手当</th>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid var(--line);">大手ビル管理会社 本社技術部門</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">650〜850万円</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">月20,000〜40,000円</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid var(--line);">大型工場 エネルギー管理者</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">600〜800万円</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">月25,000〜50,000円</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid var(--line);">省エネコンサルティング</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">800〜1,500万円</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">—（事業主）</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid var(--line);">大学・研究機関</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">550〜750万円</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">月15,000〜30,000円</td>
+    </tr>
+  </table>
+
+  <h3>王道ルート：4点セット → ビル管理士 → エネ管／電験3種</h3>
+  <p>
+    ビルメン4点セット → 消設4 → ビル管理士の積み上げを経て、<strong>「エネルギー管理士」または「電験3種」</strong>に挑むのが王道。<em>「電験3種＋エネ管」の両方を持つビルメン管理職</em>は希少価値が非常に高く、年収700〜900万円のレンジが見えます。
+  </p>
+</section>
+
+<!-- 【8】FAQ -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">08</div>
+    <div class="cat-sec-title-block">
+      <div class="small">Q &amp; A</div>
+      <div class="big">よくある質問・読者からの声</div>
     </div>
-  </section>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">電験3種とエネルギー管理士、どっちが難しい？</div>
+    <p class="faq-a">学習時間は同等の<em>400〜600時間</em>ですが、<strong>電験3種の方が「電気理論」中心で難解</strong>。エネ管は<em>「省エネ・実務」</em>の比重が大きく、実務経験者には取り組みやすい構成。文系出身ならエネ管の方が取りやすいと言われます。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">電気分野と熱分野、どちらを選ぶべき？</div>
+    <p class="faq-a">電気系出身者（電工2種・電験3種など）は<em>「電気分野」</em>、ボイラー・冷凍系出身者は<em>「熱分野」</em>がおすすめ。<strong>取得後は両分野とも選任可能</strong>なので、自分の得意分野で受けて確実に取るのが定石。文系の方は熱分野の方が暗記中心で取りやすい場合も。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">「研修ルート」と「試験ルート」、どちらがおすすめ？</div>
+    <p class="faq-a">未経験〜実務3年未満は<em>「試験ルート」一択</em>。実務3年以上なら<strong>「研修ルート」</strong>も検討可。研修は受講料110,000円と高額ですが、合格率が試験より大幅に高め。会社が研修費を出してくれる場合は研修ルートが楽です。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">免状交付に「実務経験1年」が必要？</div>
+    <p class="faq-a">試験合格後、<em>「エネルギー使用合理化に関する実務経験1年以上」</em>を満たして経済産業大臣に申請。<strong>ビル管理・電気保安・省エネ業務</strong>などが該当します。試験合格後すぐに実務経験を満たすために、ビルメン会社に在籍していると有利です。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">合格率20〜30%は本当に難しい？</div>
+    <p class="faq-a">数字は厳しいですが、<em>「電工2種・冷凍3種・ボイラー2級など」</em>の前提知識がある人なら攻略可能。<strong>500時間以上の学習を覚悟</strong>すること、そして<em>科目別合格制度</em>を活用して3年計画で取る人も多いです。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">科目別合格制度って何ですか？</div>
+    <p class="faq-a">エネ管試験では、<em>「合格した課目は3年間有効」</em>。1年で4課目すべて受からなくても、合格した課目は翌年・翌々年は受験免除されます。<strong>「2年で2課目ずつ取る」「3年計画で全課目」</strong>など、戦略的に分割合格を狙うのが定石。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">エネルギー管理士は何年で更新が必要ですか？</div>
+    <p class="faq-a">免状自体に有効期限はありません。<em>「再講習」「更新」の義務もなし</em>。ただし、選任されている場合は<strong>「省エネ法に基づく講習会」</strong>を定期的に受講するのが一般的です（会社負担）。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">電験3種・ビル管理士と組み合わせるメリットは？</div>
+    <p class="faq-a"><strong>「電験3種＋エネ管」「ビル管＋エネ管」</strong>は、それぞれ年収100〜200万円の上乗せが期待できる組み合わせ。<em>「省エネ＋電気保安」「省エネ＋ビル衛生」</em>の希少人材として、本社昇格・転職市場で高評価が得られます。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">エネルギー管理士になった後、独立できる？</div>
+    <p class="faq-a">十分可能です。<em>「省エネコンサルタント」「補助金申請支援」「ESCO事業」</em>などで独立する先輩多数。<strong>中小事業所の省エネ診断＋改善提案</strong>を1件30〜100万円で請け負うスタイルが定番。年収1,000万円超も視野に入ります。</p>
+  </div>
+</section>
+
+<!-- 【9】姉妹サイト誘導 -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">09</div>
+    <div class="cat-sec-title-block">
+      <div class="small">DEEP DIVE</div>
+      <div class="big">過去問・教科書は「ビルメンアカデミー」で</div>
+    </div>
+  </div>
+
+  <p>
+    エネルギー管理士の<strong>過去問・教科書・解説</strong>は、姉妹サイト「ビルメンアカデミー」（bilumen.jp）で<em>無料公開予定</em>です。
+  </p>
+  <ul>
+    <li>4課目別の教科書（電気・熱の両分野）</li>
+    <li>過去問演習（5年分・分野別）</li>
+    <li>計算問題の動画解説</li>
+    <li>AI質問チャット（準備中）</li>
+  </ul>
+  <p>
+    元主任が監修した、現場の言葉で語る教科書です。試験合格までの<em>「もう一冊」</em>として、ぜひご活用ください。
+  </p>
+</section>
+
+<!-- CTA -->
+<div class="cat-cta">
+  <h3>エネルギー管理士、今日から始めよう。</h3>
+  <p>省エネ・脱炭素時代の超高待遇国家資格。年収・地位・希少価値の3拍子を手にしよう。</p>
+  <div class="btn-row">
+    <a href="#" class="btn-primary">教材を比較する →</a>
+    <a href="https://bilumen.jp" class="btn-sub" target="_blank" rel="noopener">ビルメンアカデミーで深掘り →</a>
+  </div>
+</div>
+
+
 </main>
 
 <!-- ============ FOOTER ============ -->

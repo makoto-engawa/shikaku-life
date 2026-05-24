@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=1280" />
-<title>資格Life｜資格で、人生を変える。AI時代の手に職を、応援するメディア。</title>
+<title>第三種冷凍機械責任者｜独学3ヶ月で合格する完全ガイド【2026年版】｜資格Life</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet" />
@@ -476,72 +476,6 @@
   .cat-lang   { background-image: url('images/cat-lang.png'); }
   .cat-med    { background-image: url('images/cat-med.png'); }
 
-  /* ===================== 資格名リスト（カテゴリ別） ===================== */
-  .shikaku-list-wrap {
-    margin-top: 24px;
-    padding: 28px 24px 20px;
-    background: #fff;
-    border: 1px solid var(--line);
-    border-radius: 10px;
-  }
-  .shikaku-list-title {
-    font-family: "Zen Maru Gothic", sans-serif;
-    font-weight: 900; font-size: 14px; color: var(--blue-deep);
-    margin: 0 0 18px;
-    letter-spacing: 0.05em;
-  }
-  .shikaku-list-title::before {
-    content: "📋 ";
-  }
-  .shikaku-list-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 18px;
-  }
-  @media (max-width: 1100px) { .shikaku-list-grid { grid-template-columns: repeat(3, 1fr); } }
-  @media (max-width: 720px)  { .shikaku-list-grid { grid-template-columns: repeat(2, 1fr); } }
-  .shikaku-list-col h4 {
-    font-family: "Zen Maru Gothic", sans-serif;
-    font-weight: 900; font-size: 13px;
-    color: var(--ink);
-    margin: 0 0 10px;
-    padding-bottom: 6px;
-    border-bottom: 2px solid var(--blue);
-    display: flex; align-items: center; gap: 6px;
-  }
-  .shikaku-list-col.lc-bilmen h4 { border-bottom-color: var(--green); }
-  .shikaku-list-col.lc-it h4     { border-bottom-color: var(--purple); }
-  .shikaku-list-col.lc-law h4    { border-bottom-color: var(--ink-strong, #1a2230); }
-  .shikaku-list-col.lc-fin h4    { border-bottom-color: var(--yellow); }
-  .shikaku-list-col.lc-lang h4   { border-bottom-color: var(--pink); }
-  .shikaku-list-col.lc-med h4    { border-bottom-color: var(--blue); }
-  .shikaku-list-col ul {
-    list-style: none;
-    padding: 0; margin: 0;
-  }
-  .shikaku-list-col li {
-    font-size: 12px;
-    color: var(--ink-soft);
-    line-height: 1.95;
-    padding-left: 12px;
-    position: relative;
-  }
-  .shikaku-list-col li::before {
-    content: "›";
-    position: absolute;
-    left: 0; top: 0;
-    color: var(--blue);
-    font-weight: 700;
-  }
-  .shikaku-list-col li a {
-    color: var(--ink-soft);
-    transition: color .15s;
-  }
-  .shikaku-list-col li a:hover {
-    color: var(--blue);
-    text-decoration: underline;
-  }
-
   /* ===================== SECTIONS / MAIN ===================== */
   main { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
 
@@ -911,6 +845,353 @@
     border-left: 3px solid var(--orange); padding-left: 10px;
   }
 
+  /* ===================== CATEGORY PAGE ===================== */
+  .cat-hero {
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    background:
+      linear-gradient(110deg, rgba(0,40,90,0.78) 0%, rgba(0,55,130,0.62) 50%, rgba(0,30,80,0.55) 100%),
+      url('images/bil-hero.png');
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+  .cat-hero-inner {
+    max-width: 1180px; margin: 0 auto;
+    padding: 60px 16px 50px;
+    position: relative; z-index: 1;
+  }
+  .cat-crumb {
+    font-size: 11px; letter-spacing: 0.08em;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 14px;
+  }
+  .cat-crumb a { color: rgba(255,255,255,0.85); text-decoration: underline; }
+  .cat-crumb a:hover { color: #ffd76a; }
+  .cat-hero h1 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 42px; line-height: 1.3;
+    margin: 0 0 14px;
+    text-shadow: 0 2px 16px rgba(0,30,80,0.4);
+  }
+  .cat-hero h1 .accent { color: #ffd76a; }
+  .cat-hero h1 .underline {
+    background: linear-gradient(transparent 70%, rgba(255,122,0,0.55) 70%);
+    padding: 0 4px;
+  }
+  .cat-hero .lead {
+    font-size: 15px; line-height: 1.8; max-width: 640px;
+    color: rgba(255,255,255,0.95);
+    text-shadow: 0 1px 6px rgba(0,30,80,0.5);
+  }
+  .cat-hero .meta-row {
+    display: flex; gap: 18px; flex-wrap: wrap;
+    margin-top: 22px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 12px;
+  }
+  .cat-hero .meta-row .item {
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(8px);
+    padding: 6px 14px; border-radius: 999px;
+    font-weight: 700;
+  }
+  .cat-hero .meta-row .item b { color: #ffd76a; margin-right: 4px; }
+
+  .cat-main { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
+  .cat-sec {
+    padding: 56px 0 12px;
+    border-bottom: 1px dashed var(--line);
+  }
+  .cat-sec:last-child { border-bottom: 0; }
+  .cat-sec-head {
+    display: flex; align-items: end; gap: 14px;
+    margin-bottom: 22px;
+  }
+  .cat-sec-num {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 48px;
+    color: var(--blue); line-height: 0.85;
+  }
+  .cat-sec-title-block .small {
+    font-size: 11px; color: var(--blue);
+    letter-spacing: 0.18em; font-weight: 700;
+  }
+  .cat-sec-title-block .big {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 26px; line-height: 1.3;
+    color: var(--ink); margin-top: 4px;
+  }
+  .cat-sec p {
+    font-size: 14px; line-height: 1.95; color: var(--ink-soft);
+    margin: 0 0 16px;
+  }
+  .cat-sec h3 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 18px;
+    color: var(--ink); margin: 28px 0 12px;
+    padding-left: 12px; border-left: 4px solid var(--blue);
+    line-height: 1.5;
+  }
+  .cat-sec h4 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 15px;
+    color: var(--ink); margin: 22px 0 10px;
+  }
+  .cat-sec ul, .cat-sec ol {
+    font-size: 14px; line-height: 1.9; color: var(--ink-soft);
+    margin: 0 0 16px; padding-left: 20px;
+  }
+  .cat-sec ul li, .cat-sec ol li { margin-bottom: 4px; }
+  .cat-sec strong { color: var(--ink); }
+  .cat-sec em { font-style: normal; color: var(--blue-deep); font-weight: 700; }
+
+  /* placeholder image box */
+  .cat-img-ph {
+    background: linear-gradient(135deg, var(--blue-soft), #fff);
+    border: 1px dashed var(--blue);
+    border-radius: 8px;
+    padding: 28px;
+    text-align: center;
+    color: var(--blue-deep);
+    font-size: 12px;
+    margin: 20px 0;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 700;
+  }
+  .cat-img-ph::before { content: "🖼  "; font-size: 18px; }
+  .cat-img-full {
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin: 24px auto;
+    box-shadow: 0 4px 18px rgba(0, 40, 100, 0.12);
+  }
+  .cat-img-cap {
+    font-size: 11px; color: var(--mute);
+    text-align: center;
+    margin: -16px 0 24px;
+    font-family: "Zen Maru Gothic", sans-serif;
+  }
+  .real-box .cat-img-full {
+    max-width: 540px;
+    margin: 18px auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  /* 8 shikaku grid */
+  .shikaku-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;
+    margin: 18px 0 8px;
+  }
+  @media (max-width: 720px) { .shikaku-grid { grid-template-columns: 1fr; } }
+  .shikaku-item {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--blue);
+    border-radius: 6px;
+    padding: 14px 16px;
+  }
+  .shikaku-item.lv-入門 { border-left-color: var(--green); }
+  .shikaku-item.lv-中級 { border-left-color: var(--blue); }
+  .shikaku-item.lv-上位 { border-left-color: var(--purple); }
+  .shikaku-name {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 16px; color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .shikaku-lv {
+    font-size: 10px; padding: 2px 8px; border-radius: 999px;
+    background: var(--blue-soft); color: var(--blue-deep);
+    margin-left: 8px; font-weight: 700; vertical-align: middle;
+  }
+  .shikaku-lv.lv-入門 { background: #e6f4ed; color: #1c8a5f; }
+  .shikaku-lv.lv-中級 { background: var(--blue-soft); color: var(--blue-deep); }
+  .shikaku-lv.lv-上位 { background: #efe7ff; color: #5b35d3; }
+  .shikaku-meta {
+    font-size: 11px; color: var(--mute);
+    font-family: "Zen Maru Gothic", sans-serif; font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .shikaku-meta span { margin-right: 10px; }
+  .shikaku-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.7; margin: 0; }
+
+  /* path cards (パターンA/B/C) */
+  .path-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+    margin: 18px 0;
+  }
+  @media (max-width: 720px) { .path-cards { grid-template-columns: 1fr; } }
+  .path-card {
+    background: #fff; border: 1px solid var(--line); border-radius: 10px;
+    padding: 22px 20px;
+    position: relative; overflow: hidden;
+  }
+  .path-card .pc-no {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 36px; font-weight: 900;
+    color: var(--blue); line-height: 1;
+    opacity: 0.85;
+  }
+  .path-card .pc-tgt {
+    font-size: 11px; color: var(--mute); font-weight: 700;
+    letter-spacing: 0.08em; margin: 6px 0 12px;
+  }
+  .path-card .pc-name {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 18px;
+    color: var(--ink); margin-bottom: 8px;
+  }
+  .path-card .pc-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.75; margin: 0; }
+
+  /* 比較表 */
+  .cat-table {
+    width: 100%; border-collapse: collapse;
+    font-size: 13px; margin: 14px 0;
+  }
+  .cat-table th, .cat-table td {
+    padding: 10px 12px; text-align: left;
+    border-bottom: 1px solid var(--line);
+  }
+  .cat-table th {
+    background: var(--blue-soft);
+    color: var(--blue-deep); font-weight: 700;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 12px;
+  }
+  .cat-table td { color: var(--ink-soft); }
+  .cat-table tr:hover td { background: #f7f9fc; }
+  .cat-table .highlight {
+    background: linear-gradient(90deg, #fff8e6, #fff);
+    font-weight: 700; color: var(--ink);
+  }
+
+  /* edu cards (3社比較) */
+  .edu-cards {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+    margin: 18px 0;
+  }
+  @media (max-width: 720px) { .edu-cards { grid-template-columns: 1fr; } }
+  .edu-card {
+    background: #fff; border: 1px solid var(--line); border-radius: 10px;
+    padding: 20px 18px;
+    display: flex; flex-direction: column;
+  }
+  .edu-card .edu-name {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 17px; color: var(--ink);
+    margin-bottom: 4px;
+  }
+  .edu-card .edu-tag {
+    font-size: 10px; padding: 3px 8px; border-radius: 999px;
+    background: var(--orange); color: #fff; font-weight: 700;
+    display: inline-block; margin-bottom: 10px;
+    width: fit-content;
+  }
+  .edu-card .edu-price {
+    font-size: 18px; font-weight: 900; color: var(--blue-deep);
+    font-family: "Zen Maru Gothic", sans-serif;
+  }
+  .edu-card .edu-price .yen { font-size: 12px; }
+  .edu-card .edu-feat {
+    font-size: 13px; color: var(--ink-soft); line-height: 1.7;
+    margin: 10px 0 14px; flex: 1;
+  }
+  .edu-card .edu-cta {
+    display: block; text-align: center;
+    background: var(--orange); color: #fff;
+    padding: 10px 14px; border-radius: 6px;
+    font-weight: 700; font-size: 13px;
+    box-shadow: 0 1px 0 var(--orange-deep);
+  }
+  .edu-card .edu-cta:hover { background: var(--orange-deep); color: #fff; }
+
+  /* FAQ */
+  .faq-item {
+    background: #fff; border: 1px solid var(--line); border-radius: 8px;
+    padding: 16px 18px; margin-bottom: 10px;
+  }
+  .faq-item .faq-q {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 14px; color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .faq-item .faq-q::before {
+    content: "Q. "; color: var(--blue); font-weight: 900;
+  }
+  .faq-item .faq-a { font-size: 13px; color: var(--ink-soft); line-height: 1.8; margin: 0; }
+  .faq-item .faq-a::before {
+    content: "A. "; color: var(--orange); font-weight: 900;
+  }
+
+  /* 現場の話の強調ボックス */
+  .real-box {
+    background: linear-gradient(135deg, #fff8e6, #fffaf0);
+    border-left: 5px solid var(--orange);
+    border-radius: 8px;
+    padding: 22px 24px;
+    margin: 20px 0;
+  }
+  .real-box .real-tag {
+    display: inline-block;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 11px;
+    background: var(--orange); color: #fff;
+    padding: 4px 10px; border-radius: 4px;
+    margin-bottom: 12px;
+    letter-spacing: 0.08em;
+  }
+  .real-box h3 {
+    margin: 0 0 10px;
+    padding-left: 0;
+    border-left: 0;
+    color: var(--ink);
+    font-size: 19px;
+  }
+  .real-box p { font-size: 14px; line-height: 2; color: var(--ink); }
+  .real-box strong { color: var(--orange-deep); }
+
+  /* CTA bottom */
+  .cat-cta {
+    background: linear-gradient(135deg, var(--blue), var(--blue-deep));
+    color: #fff; border-radius: 14px;
+    padding: 36px 32px; text-align: center;
+    margin: 40px 0;
+  }
+  .cat-cta h3 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 24px;
+    margin: 0 0 8px; color: #fff;
+    border-left: 0; padding-left: 0;
+  }
+  .cat-cta p { font-size: 13px; color: rgba(255,255,255,0.92); margin: 0 0 20px; }
+  .cat-cta .btn-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .cat-cta .btn-primary {
+    background: var(--orange); color: #fff;
+    padding: 12px 26px; border-radius: 6px;
+    font-weight: 700; font-size: 14px;
+    box-shadow: 0 2px 0 var(--orange-deep);
+  }
+  .cat-cta .btn-primary:hover { background: var(--orange-deep); color: #fff; }
+  .cat-cta .btn-sub {
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.4);
+    color: #fff; padding: 12px 22px; border-radius: 6px;
+    font-weight: 700; font-size: 13px;
+  }
+  .cat-cta .btn-sub:hover { background: rgba(255,255,255,0.22); color: #fff; }
+
+  @media (max-width: 720px) {
+    .cat-hero h1 { font-size: 28px; }
+    .cat-sec-head { flex-wrap: wrap; }
+    .cat-sec-num { font-size: 36px; }
+    .cat-sec-title-block .big { font-size: 20px; }
+  }
+
   /* ===================== FOOTER ===================== */
   footer.site {
     background: #1a2230; color: #c5cbd6;
@@ -1072,487 +1353,411 @@
   </div>
 </nav>
 
-<!-- ============ HERO ============ -->
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-copy">
-      <div class="hero-eyebrow">📈 AI時代の手に職を、応援するメディア <b>NEW</b></div>
-      <h1>
-        資格で、<span class="underline">人生</span>を変える。<br />
-        <span class="accent">AI時代</span>の手に職を、<br />
-        応援するメディア。
-      </h1>
-      <p class="hero-sub">
-        20代の挑戦も、50代のやり直しも。AIに置き換わらない「現場の力」と「専門資格」を、<br />
-        独学・通信・通学のリアルな比較記事で、ゼロから応援します。
-      </p>
-      <div class="hero-illust">
-        <div class="person">👨‍💼<div class="person-label">20代・IT転職</div></div>
-        <div class="person b">👩‍⚕️<div class="person-label">30代・医療職</div></div>
-        <div class="person c">👨‍🔧<div class="person-label">50代・ビルメン</div></div>
-      </div>
+<!-- ============ ARTICLE HERO ============ -->
+<section class="cat-hero">
+  <div class="cat-hero-inner">
+    <div class="cat-crumb">
+      <a href="index.html">資格Life</a> ／ <a href="category-bilmen.html">ビルメン系</a> ／ 第三種冷凍機械責任者
     </div>
-
-    <div class="hero-card">
-      <span class="hc-badge">📚 RESOURCES</span>
-      <h2 class="hc-title">資格Lifeの記事から、<br />あなたに合う一本を。</h2>
-      <p class="hc-count">資格カテゴリ別に、厳選記事を公開中</p>
-      <a href="articles.html" class="hc-cta">無料で記事を読む<span class="arr">→</span></a>
-      <p class="hc-sub">会員登録すると <b>気になる保存</b> ＆ <b>学習履歴管理</b> ができます</p>
+    <h1>
+      第三種冷凍機械責任者、<br />
+      <span class="underline">独学3ヶ月</span>で<span class="accent">一発合格</span>する完全ガイド。
+    </h1>
+    <p class="lead">
+      ビルメン4点セットの「最難関」。しかし科目免除制度を使えば、独学3ヶ月で取れる<em>「人生を変える」現場の必須資格</em>です。試験概要・講習制度・学習法まで、これ1ページですべて分かります。
+    </p>
+    <div class="meta-row">
+      <span class="item">難易度 <b>★★★★☆</b></span>
+      <span class="item">学習時間 <b>100〜150時間</b></span>
+      <span class="item">合格率 <b>20〜30%</b></span>
+      <span class="item">年収UP <b>+20〜50万</b></span>
     </div>
   </div>
 </section>
 
-<!-- ============ SEARCH ============ -->
-<div class="search-wrap">
-  <div class="search-inner">
-    <div class="search-head">
-      <span class="lab">条件から資格を探す</span>
-      <span class="cnt">資格名・カテゴリで探す</span>
-    </div>
-    <div class="search-row">
-      <div class="sf">
-        <span class="sf-label">カテゴリ</span>
-        <span class="sf-val">すべて</span>
-        <span class="sf-arr">▼</span>
-      </div>
-      <div class="sf">
-        <span class="sf-label">難易度</span>
-        <span class="sf-val">指定なし</span>
-        <span class="sf-arr">▼</span>
-      </div>
-      <div class="sf">
-        <span class="sf-label">取得期間</span>
-        <span class="sf-val">指定なし</span>
-        <span class="sf-arr">▼</span>
-      </div>
-      <div class="sf">
-        <span class="sf-label">キーワード</span>
-        <input type="text" placeholder="例：宅建士、簿記2級、基本情報" />
-      </div>
-      <button class="btn-search">🔍 検索する</button>
-    </div>
-    <div class="search-tags">
-      <span class="tlab">人気タグ：</span>
-      <span class="stag">#宅建士</span>
-      <span class="stag">#基本情報技術者</span>
-      <span class="stag">#簿記2級</span>
-      <span class="stag">#FP3級</span>
-      <span class="stag">#ビル管理士</span>
-      <span class="stag">#TOEIC700</span>
-      <span class="stag">#介護福祉士</span>
-      <span class="stag">#G検定</span>
-      <span class="stag">#行政書士</span>
+<main class="cat-main">
+
+<!-- 【1】冷凍3種とは -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">01</div>
+    <div class="cat-sec-title-block">
+      <div class="small">WHAT IS REITO-3</div>
+      <div class="big">第三種冷凍機械責任者って、どんな資格？</div>
     </div>
   </div>
-</div>
 
-<!-- ============ CATEGORY ICONS ============ -->
-<div class="cats">
-  <div class="career-head">
-    <span class="num">01</span>
-    <div class="title-block">
-      <div class="small">FIND CERTIFICATIONS</div>
-      <div class="big">資格を探す。</div>
+  <p>
+    第三種冷凍機械責任者（通称：冷凍3種・三冷）は、<strong>1日の冷凍能力100トン未満の冷凍設備</strong>を保安監督者として管理できる国家資格です。高圧ガス保安法に基づき、経済産業省・各都道府県が所管。<em>「高圧ガス保安協会」</em>が試験を実施し、ビルメン業界の<strong>「4点セットの最後の1枚」</strong>として定番の資格です。
+  </p>
+
+  <p>
+    病院・商業ビル・スーパー・冷凍倉庫など、<strong>大型空調・冷凍設備</strong>を持つあらゆる施設で必要とされる資格。<em>「冷媒・圧縮機・凝縮器・蒸発器」</em>といった冷凍サイクルの専門知識を扱うため、4点セットの中で最も理論的・専門的な内容になります。
+  </p>
+
+  <h3>主な業務内容</h3>
+  <ul>
+    <li><strong>冷凍機の保安監督</strong>：日常点検・運転状態確認</li>
+    <li><strong>異常時の指揮</strong>：警報・冷媒漏れ対応</li>
+    <li><strong>保安規定の作成・運用</strong></li>
+    <li><strong>定期自主検査・法定検査の立会い</strong></li>
+    <li><strong>運転員への教育・指示</strong></li>
+  </ul>
+
+  <h3>一冷・二冷・三冷の違い</h3>
+  <p>
+    冷凍機械責任者には<strong>第一種（一冷）・第二種（二冷）・第三種（三冷）</strong>の3種類。<em>三冷は100トン未満、二冷は300トン未満、一冷は無制限</em>。ビルメン業界では<strong>「まずは三冷から」</strong>が定石で、大型施設で経験を積んだ後、二冷・一冷にステップアップします。
+  </p>
+</section>
+
+<!-- 【2】試験概要 -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">02</div>
+    <div class="cat-sec-title-block">
+      <div class="small">EXAM OUTLINE</div>
+      <div class="big">試験概要：受験料・日程・科目免除制度</div>
     </div>
-    <p class="desc">
-      6分野から、あなたに合う資格を厳選して紹介します。
+  </div>
+
+  <p>
+    冷凍3種は<strong>年1回・11月</strong>のみ実施される国家試験です。受験資格はなく誰でも受験可能ですが、<em>合格率20〜30%と高い壁</em>。ただし<strong>「講習＋検定」を受けると、本試験で2科目のうち1科目が免除</strong>になる救済制度があります。
+  </p>
+
+  <h3>試験データ（2026年版）</h3>
+  <ul>
+    <li><strong>受験料</strong>：8,400円</li>
+    <li><strong>受験資格</strong>：なし（誰でも受験可）</li>
+    <li><strong>試験時間</strong>：2時間（法令60分＋保安管理技術90分）</li>
+    <li><strong>出題形式</strong>：マークシート</li>
+    <li><strong>科目</strong>：①法令（20問）／②保安管理技術（15問）</li>
+    <li><strong>合格基準</strong>：各科目60%以上</li>
+    <li><strong>合格率</strong>：20〜30%（科目免除なし）／50〜60%（科目免除あり）</li>
+  </ul>
+
+  <h3>「講習」で1科目免除する裏ルート</h3>
+  <p>
+    高圧ガス保安協会が実施する<strong>「第三種冷凍機械講習（3日間）」</strong>を受講し、修了検定に合格すると、<em>本試験の「保安管理技術」が免除</em>されます。残るは「法令」1科目のみで合格可能。<strong>合格率が一気に2〜3倍に跳ね上がる</strong>救済制度で、忙しい社会人にはおすすめのルートです。
+  </p>
+  <ul>
+    <li><strong>講習受講料</strong>：18,800円（テキスト代別途）</li>
+    <li><strong>検定試験料</strong>：8,300円</li>
+    <li><strong>講習日程</strong>：年2回（5月・9月頃）</li>
+    <li><strong>合計コスト</strong>：通常受験 8,400円 vs 講習ルート 約35,500円</li>
+  </ul>
+</section>
+
+<!-- 【3】取得メリット -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">03</div>
+    <div class="cat-sec-title-block">
+      <div class="small">5 MERITS</div>
+      <div class="big">冷凍3種を取る、5つの大きなメリット</div>
+    </div>
+  </div>
+
+  <h3>① ビルメン4点セット「完成の1枚」</h3>
+  <p>
+    冷凍3種は、4点セットの<strong>「ラスト1枚」</strong>として取得する人が圧倒的多数。<em>「電工2種＋乙4＋ボイラー2級＋冷凍3種」</em>が揃った瞬間、未経験でもビルメン正社員転職の道が大きく開けます。「4点セット保有者」というだけで、求人サイトでスカウトメールが届くこともあります。
+  </p>
+
+  <h3>② 大型施設・冷凍倉庫で需要急増</h3>
+  <p>
+    地球温暖化・物流の発展で、<strong>大型空調・冷凍倉庫の需要が拡大中</strong>。スーパー・コンビニの冷蔵食品取扱量増加、データセンターの冷却需要、医薬品・ワクチンの低温物流など、<em>冷凍冷蔵技術者の人手不足</em>が深刻化しています。
+  </p>
+
+  <h3>③ 二冷・一冷への明確なステップ</h3>
+  <p>
+    冷凍3種を取得すれば、<strong>二冷・一冷の「保安管理技術」が永久免除</strong>になります。<em>同じ理論を再学習する必要がなく、上位資格への道が一気に短縮</em>。「冷凍機械責任者一筋」で40代・50代の高年収キャリアを築く先輩も多数います。
+  </p>
+
+  <h3>④ 月3,000〜10,000円の資格手当</h3>
+  <p>
+    ビルメン会社の多くで、冷凍3種取得者には<strong>月3,000〜10,000円の資格手当</strong>。4点セット揃った状態では、合計月10,000〜25,000円の手当が標準的。<em>年間で120,000〜300,000円のプラス</em>になります。
+  </p>
+
+  <h3>⑤ 「物理・化学」の本格的な学習機会</h3>
+  <p>
+    冷凍3種の「保安管理技術」科目は、<em>冷凍サイクル・熱力学・伝熱の基本原理</em>を学べる、ビルメン4点セット中もっとも理論的な内容。<strong>「物理化学のリハビリ」として、上位資格（エネルギー管理士・電験など）への基礎にもなる</strong>のが大きな副次的メリットです。
+  </p>
+</section>
+
+<!-- 【4】学習ロードマップ -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">04</div>
+    <div class="cat-sec-title-block">
+      <div class="small">STUDY ROADMAP</div>
+      <div class="big">3ヶ月で合格する、12週間の学習プラン</div>
+    </div>
+  </div>
+
+  <p>
+    社会人で平日1〜2時間・休日3〜4時間を勉強に充てられる方向けの、現実的な12週間プランです。<em>合計100〜150時間で合格レベル到達</em>を目指します（科目免除なしルート）。
+  </p>
+
+  <h3>第1〜2週：高圧ガス保安法の概要（20時間）</h3>
+  <p>
+    最初の2週間で<strong>「① 法令（20問）」</strong>の全体像を把握。高圧ガス保安法・冷凍保安規則・容器保安規則の構造を理解。<em>暗記7割・理解3割</em>の科目で、文系でも対応しやすい単元です。
+  </p>
+
+  <h3>第3〜4週：許可・届出制度（20時間）</h3>
+  <p>
+    「製造の許可・届出」「指定設備」「冷凍保安責任者の選任」などの<strong>実務手続き</strong>を覚えます。<em>「第一種製造者」「第二種製造者」</em>の区分が頻出。
+  </p>
+
+  <h3>第5〜6週：冷凍サイクルの基礎（25時間）</h3>
+  <p>
+    最難関<strong>「② 保安管理技術（15問）」</strong>の核心。<em>「圧縮 → 凝縮 → 膨張 → 蒸発」</em>の4工程と、p-h線図（モリエル線図）の読み方を習得。<strong>YouTubeの解説動画と組み合わせると圧倒的に理解が早い</strong>です。
+  </p>
+
+  <h3>第7〜8週：冷媒・圧縮機・凝縮器（25時間）</h3>
+  <p>
+    フロン冷媒（HFC・HFO）、自然冷媒（CO2・アンモニア）の性質。圧縮機の種類（往復・スクリュー・スクロール）、凝縮器（水冷・空冷・蒸発式）の特徴。<em>図と数値の暗記が中心</em>。
+  </p>
+
+  <h3>第9〜10週：蒸発器・付属機器・冷凍油（20時間）</h3>
+  <p>
+    蒸発器・膨張弁・受液器・油分離器など<strong>付属機器の役割</strong>を整理。冷凍機油・潤滑・保安装置（高圧遮断装置・安全弁）の知識も。
+  </p>
+
+  <h3>第11〜12週：総合演習＋直前対策（20時間）</h3>
+  <p>
+    過去問5年分を本試験形式で解き、<em>「各科目60%以上」</em>を安定させます。<strong>p-h線図の作図問題は必ず1問は出る</strong>ので、最後にもう一度復習。
+  </p>
+</section>
+
+<!-- 【5】教材比較 -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">05</div>
+    <div class="cat-sec-title-block">
+      <div class="small">COMPARE COURSES</div>
+      <div class="big">教材を比較する（独学・通信・公式講習）</div>
+    </div>
+  </div>
+
+  <p>
+    冷凍3種は、<strong>「公式講習＋検定」ルート</strong>を使うと合格率が大きく上がります。独学派は市販テキスト＋動画教材の組み合わせがおすすめです（PR）。
+  </p>
+
+  <div class="edu-cards">
+    <div class="edu-card">
+      <div class="edu-card-head">
+        <div class="edu-name">ユーキャン 第3種冷凍機械責任者講座</div>
+        <div class="edu-price">39,000円</div>
+      </div>
+      <ul class="edu-feats">
+        <li>添削指導付き（3回）</li>
+        <li>標準学習期間：6ヶ月</li>
+        <li>テキスト＋過去問解説</li>
+        <li>初心者向け図解が豊富</li>
+      </ul>
+      <p class="edu-summary">「冷凍サイクルが理解できない」方に。<em>添削＋丁寧な図解</em>で独学のつまずきを防げます。</p>
+      <a href="#" class="btn-affil" rel="nofollow sponsored noopener" target="_blank">ユーキャンの詳細を見る →</a>
+    </div>
+
+    <div class="edu-card">
+      <div class="edu-card-head">
+        <div class="edu-name">SAT 第3種冷凍機械責任者講座</div>
+        <div class="edu-price">31,460円</div>
+      </div>
+      <ul class="edu-feats">
+        <li>動画講義20時間以上</li>
+        <li>3Dアニメで冷凍サイクル解説</li>
+        <li>不合格時の返金保証</li>
+        <li>スマホ・PC対応</li>
+      </ul>
+      <p class="edu-summary">「視覚的に理解したい」方に。<em>3Dアニメで冷凍サイクルが動く</em>講義は他にない強み。</p>
+      <a href="#" class="btn-affil" rel="nofollow sponsored noopener" target="_blank">SATを見る →</a>
+    </div>
+
+    <div class="edu-card">
+      <div class="edu-card-head">
+        <div class="edu-name">高圧ガス保安協会 公式講習</div>
+        <div class="edu-price">27,100円</div>
+      </div>
+      <ul class="edu-feats">
+        <li>3日間の対面講習</li>
+        <li>合格すれば「保安管理技術」免除</li>
+        <li>公式テキスト付き</li>
+        <li>合格率が大幅にUP</li>
+      </ul>
+      <p class="edu-summary">「絶対1発で受かりたい」方の王道。<em>本試験で1科目免除</em>される救済ルート。年2回開催。</p>
+      <a href="#" class="btn-affil" rel="nofollow sponsored noopener" target="_blank">高圧ガス保安協会を見る →</a>
+    </div>
+  </div>
+
+  <p>
+    <em>市販テキスト派</em>には、<strong>「らくらく突破 第3種冷凍機械責任者試験」（技術評論社／2,178円）</strong>＋<strong>「第3種冷凍機械責任者 試験問題と解答例」（高圧ガス保安協会／2,420円）</strong>の組み合わせがビルメン業界の定番です。
+  </p>
+</section>
+
+<!-- 【6】合格体験談 -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">06</div>
+    <div class="cat-sec-title-block">
+      <div class="small">REAL STORIES</div>
+      <div class="big">合格者の声：現場の3人</div>
+    </div>
+  </div>
+
+  <div class="real-box">
+    <h4>Case 1：35歳・元飲食店員（神奈川）</h4>
+    <p>
+      ビルメン4点セットの最後として冷凍3種に挑戦。<em>公式講習を活用</em>して「保安管理技術」を免除。法令1科目のみに集中し、過去問3周で<strong>一発合格</strong>。「公式講習に8万円弱かけたけど、合格できなければ意味なし。年1回しかない試験なので、確実性を取りました」。
     </p>
   </div>
-  <div class="cats-grid">
-    <a class="cat cat-bilmen" href="category-bilmen.html">
-      <div class="cat-overlay">
-        <div class="cat-name">ビルメン系</div>
-        <div class="cat-cnt">8 資格</div>
-      </div>
-    </a>
-    <a class="cat cat-it" href="category-it-ai.html">
-      <div class="cat-overlay">
-        <div class="cat-name">IT・AI</div>
-        <div class="cat-cnt">6 資格</div>
-      </div>
-    </a>
-    <a class="cat cat-law" href="category-law.html">
-      <div class="cat-overlay">
-        <div class="cat-name">法律系</div>
-        <div class="cat-cnt">5 資格</div>
-      </div>
-    </a>
-    <a class="cat cat-fin" href="category-fin.html">
-      <div class="cat-overlay">
-        <div class="cat-name">金融</div>
-        <div class="cat-cnt">6 資格</div>
-      </div>
-    </a>
-    <a class="cat cat-lang" href="category-lang.html">
-      <div class="cat-overlay">
-        <div class="cat-name">語学</div>
-        <div class="cat-cnt">4 資格</div>
-      </div>
-    </a>
-    <a class="cat cat-med" href="category-med.html">
-      <div class="cat-overlay">
-        <div class="cat-name">医療・福祉系</div>
-        <div class="cat-cnt">13 資格</div>
-      </div>
-    </a>
-  </div>
 
-  <!-- 資格名リスト（カテゴリ別） -->
-  <div class="shikaku-list-wrap">
-    <p class="shikaku-list-title">カテゴリ別 主要資格一覧（42資格）</p>
-    <div class="shikaku-list-grid">
-      <div class="shikaku-list-col lc-bilmen">
-        <h4>ビルメン系</h4>
-        <ul>
-          <li><a href="denko2.html">第二種電気工事士</a></li>
-          <li><a href="otsu4.html">危険物乙4</a></li>
-          <li><a href="boiler2.html">2級ボイラー技士</a></li>
-          <li><a href="reito3.html">第三種冷凍機械</a></li>
-          <li><a href="denko1.html">第一種電気工事士</a></li>
-          <li><a href="shoubou4.html">消防設備士 甲4</a></li>
-          <li><a href="bilkan.html">ビル管理士</a></li>
-          <li><a href="enekan.html">エネルギー管理士</a></li>
-        </ul>
-      </div>
-      <div class="shikaku-list-col lc-it">
-        <h4>IT・AI</h4>
-        <ul>
-          <li><a href="category-it-ai.html">ITパスポート</a></li>
-          <li><a href="category-it-ai.html">MOS Excel</a></li>
-          <li><a href="category-it-ai.html">基本情報技術者</a></li>
-          <li><a href="category-it-ai.html">応用情報技術者</a></li>
-          <li><a href="category-it-ai.html">G検定</a></li>
-          <li><a href="category-it-ai.html">E資格</a></li>
-        </ul>
-      </div>
-      <div class="shikaku-list-col lc-law">
-        <h4>法律系</h4>
-        <ul>
-          <li><a href="category-law.html">FP3級</a></li>
-          <li><a href="category-law.html">宅地建物取引士</a></li>
-          <li><a href="category-law.html">FP2級</a></li>
-          <li><a href="category-law.html">行政書士</a></li>
-          <li><a href="category-law.html">社会保険労務士</a></li>
-        </ul>
-      </div>
-      <div class="shikaku-list-col lc-fin">
-        <h4>金融</h4>
-        <ul>
-          <li><a href="category-fin.html">簿記3級</a></li>
-          <li><a href="category-fin.html">FP3級</a></li>
-          <li><a href="category-fin.html">簿記2級</a></li>
-          <li><a href="category-fin.html">証券外務員 二種</a></li>
-          <li><a href="category-fin.html">簿記1級</a></li>
-          <li><a href="category-fin.html">中小企業診断士</a></li>
-        </ul>
-      </div>
-      <div class="shikaku-list-col lc-lang">
-        <h4>語学</h4>
-        <ul>
-          <li><a href="category-lang.html">TOEIC L&R</a></li>
-          <li><a href="category-lang.html">英検</a></li>
-          <li><a href="category-lang.html">TOEIC S&W</a></li>
-          <li><a href="category-lang.html">HSK・中国語検定</a></li>
-        </ul>
-      </div>
-      <div class="shikaku-list-col lc-med">
-        <h4>医療・福祉系</h4>
-        <ul>
-          <li><a href="category-med.html">医療事務</a></li>
-          <li><a href="category-med.html">登録販売者</a></li>
-          <li><a href="category-med.html">介護職員初任者研修</a></li>
-          <li><a href="category-med.html">介護福祉士</a></li>
-          <li><a href="category-med.html">保育士</a></li>
-          <li><a href="category-med.html">ケアマネジャー</a></li>
-          <li><a href="category-med.html">精神保健福祉士</a></li>
-          <li><a href="category-med.html">看護師</a></li>
-          <li><a href="category-med.html">准看護師</a></li>
-          <li><a href="category-med.html">診療放射線技師</a></li>
-          <li><a href="category-med.html">薬剤師</a></li>
-          <li><a href="category-med.html">臨床工学技士</a></li>
-          <li><a href="category-med.html">臨床検査技師</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<main>
-
-  <!-- ============ NEW + FEATURED ============ -->
-  <div class="career-head">
-    <span class="num">02</span>
-    <div class="title-block">
-      <div class="small">NEW ARTICLES</div>
-      <div class="big">新着の記事。</div>
-    </div>
-    <p class="desc">
-      資格と学び直し、キャリアアップの最新記事。週2回更新中。
+  <div class="real-box">
+    <h4>Case 2：48歳・元電機メーカー営業（東京）</h4>
+    <p>
+      早期退職を機にビルメン4点セット制覇。<strong>「物理化学が苦手」</strong>と最初は弱気だったが、SATの3Dアニメ講義で冷凍サイクルを理解、<em>独学3ヶ月で一発合格</em>。「ビルメン業界で4点セット揃ったことで、年収380万円の現場で正社員になれました。50歳前で人生を変えられた」。
     </p>
   </div>
 
-  <div class="two-col">
-    <div class="card-grid-4">
-      <article class="card">
-        <div class="card-thumb art-denko">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill bil">ビルメン系</span>
-          <h3 class="card-title">第二種電気工事士、独学6ヶ月で一発合格するための学習ロードマップ【2026年版】</h3>
-          <div class="card-meta"><span>2026.05.18</span><span class="read">⏱ 12分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-chatgpt">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill it">IT・AI</span>
-          <h3 class="card-title">ChatGPTで資格勉強を爆速化。実際に効いたプロンプト10選</h3>
-          <div class="card-meta"><span>2026.05.15</span><span class="read">⏱ 8分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-care">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill med">医療・福祉系</span>
-          <h3 class="card-title">介護福祉士は本当に「食いっぱぐれない」資格か。需給データで検証</h3>
-          <div class="card-meta"><span>2026.05.13</span><span class="read">⏱ 9分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-takken">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill law">法律系</span>
-          <h3 class="card-title">宅建、社会人が働きながら受かるには。通勤＋土日の300時間プラン</h3>
-          <div class="card-meta"><span>2026.05.12</span><span class="read">⏱ 10分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-boki">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill fin">金融</span>
-          <h3 class="card-title">簿記3級、最短2週間で合格する勉強法。最初の3日でやることを具体化</h3>
-          <div class="card-meta"><span>2026.05.09</span><span class="read">⏱ 7分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-toeic">
-          <span class="new">NEW</span><span class="fav on">♥</span>
-        </div>
-        <div class="card-body">
-          <span class="pill lang">語学</span>
-          <h3 class="card-title">TOEIC 600→800、半年で伸ばした朝活ルーティン</h3>
-          <div class="card-meta"><span>2026.05.05</span><span class="read">⏱ 9分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-otsu4">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill bil">ビルメン系</span>
-          <h3 class="card-title">危険物乙4、ビルメン入門に最適な理由。四点セットの「とっかかり」</h3>
-          <div class="card-meta"><span>2026.05.02</span><span class="read">⏱ 6分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb art-aidev">
-          <span class="new">NEW</span><span class="fav">♡</span>
-        </div>
-        <div class="card-body">
-          <span class="pill it">IT・AI</span>
-          <h3 class="card-title">父とAIで資格アプリを作った、夏のはなし。51日間の記録</h3>
-          <div class="card-meta"><span>2026.04.28</span><span class="read">⏱ 14分</span></div>
-        </div>
-      </article>
-    </div>
-
-    <aside class="feature-card">
-      <div class="feature-head">
-        <span class="jp">人気の特集</span>
-        <span class="en">FEATURED</span>
-      </div>
-      <div class="feature-list">
-        <div class="feat-item">
-          <span class="feat-rank">1</span>
-          <div>
-            <div class="feat-title">AI時代に「人が残る職」をくれる7つの資格</div>
-            <div class="feat-cat">SPECIAL / 全12記事</div>
-          </div>
-        </div>
-        <div class="feat-item">
-          <span class="feat-rank">2</span>
-          <div>
-            <div class="feat-title">40代からの資格挑戦、5つのリアル</div>
-            <div class="feat-cat">SPECIAL / 全8記事</div>
-          </div>
-        </div>
-        <div class="feat-item">
-          <span class="feat-rank">3</span>
-          <div>
-            <div class="feat-title">通信講座、結局どこが一番いい？大手3社徹底比較</div>
-            <div class="feat-cat">COMPARE / 全6記事</div>
-          </div>
-        </div>
-        <div class="feat-item">
-          <span class="feat-rank">4</span>
-          <div>
-            <div class="feat-title">スマホだけで合格できる時代の勉強法</div>
-            <div class="feat-cat">LIFE / 全10記事</div>
-          </div>
-        </div>
-        <div class="feat-item">
-          <span class="feat-rank">5</span>
-          <div>
-            <div class="feat-title">育児・介護をしながら勉強する人のための「スキマ時間術」</div>
-            <div class="feat-cat">LIFE / 全7記事</div>
-          </div>
-        </div>
-      </div>
-    </aside>
-  </div>
-
-  <!-- ============ POPULAR ============ -->
-  <section class="popular">
-    <div class="career-head">
-      <span class="num">03</span>
-      <div class="title-block">
-        <div class="small">MOST READ</div>
-        <div class="big">よく読まれている記事。</div>
-      </div>
-      <p class="desc">
-        編集部おすすめの定番記事。迷ったらここから。
-      </p>
-    </div>
-
-    <div class="card-grid-4">
-      <article class="card">
-        <div class="card-thumb"><span class="fav">♡</span>📊</div>
-        <div class="card-body">
-          <span class="pill fin">金融</span>
-          <h3 class="card-title">簿記2級は独学で何時間？合格者300人の平均勉強時間を公開</h3>
-          <div class="card-meta"><span>2026.05</span><span class="read">⏱ 8分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb"><span class="fav on">♥</span>🏠</div>
-        <div class="card-body">
-          <span class="pill law">法律系</span>
-          <h3 class="card-title">宅建士、合格ライン35点時代の最新傾向と対策【2026】</h3>
-          <div class="card-meta"><span>2026.05</span><span class="read">⏱ 10分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb"><span class="fav">♡</span>🧠</div>
-        <div class="card-body">
-          <span class="pill it">IT・AI</span>
-          <h3 class="card-title">ITパスポートとG検定、文系30代はどちらから取るべきか</h3>
-          <div class="card-meta"><span>2026.05</span><span class="read">⏱ 7分</span></div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-thumb"><span class="fav">♡</span>🛠</div>
-        <div class="card-body">
-          <span class="pill bil">ビルメン系</span>
-          <h3 class="card-title">ビルメン4点セットの取得順序、現役主任が解説する最適ルート</h3>
-          <div class="card-meta"><span>2026.05</span><span class="read">⏱ 9分</span></div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-</main>
-
-<!-- ============ CAREER BAND ============ -->
-<section class="career-band">
-  <div class="career-band-inner">
-    <div class="career-head">
-      <span class="num">04</span>
-      <div class="title-block">
-        <div class="small">CAREER CHANGE</div>
-        <div class="big">資格を転職に活かす。</div>
-      </div>
-      <p class="desc">
-        資格を「年収」と「働き方」に変える、転職の比較記事。
-      </p>
-    </div>
-
-    <div class="career-cards">
-      <div class="career-card">
-        <div class="cc-img cc-img-compare"></div>
-        <div class="cc-num">01 / COMPARE</div>
-        <h3 class="cc-title">総合転職サイト徹底比較：求人数・サポート・年収UP実績で選ぶ</h3>
-        <p class="cc-desc">大手総合転職サイトを、求人数・スカウト機能・コンサルタントの質などの観点で比較しました。</p>
-        <span class="cc-link">記事を読む →</span>
-      </div>
-      <div class="career-card">
-        <div class="cc-img cc-img-it"></div>
-        <div class="cc-num">02 / IT</div>
-        <h3 class="cc-title">30代未経験からITエンジニア｜おすすめ転職エージェント</h3>
-        <p class="cc-desc">基本情報＋AI活用スキルを武器に転職した編集部員の実例と、効いたエージェント比較。</p>
-        <span class="cc-link">記事を読む →</span>
-      </div>
-      <div class="career-card">
-        <div class="cc-num">03 / MEDICAL</div>
-        <div class="cc-icon">🏥</div>
-        <h3 class="cc-title">医療事務から介護福祉士で再就職｜年収はどう変わる？</h3>
-        <p class="cc-desc">資格取得後の年収シミュレーションと、福祉系に強い転職サービスを徹底比較しました。</p>
-        <span class="cc-link">記事を読む →</span>
-      </div>
-      <div class="career-card">
-        <div class="cc-img cc-img-special"></div>
-        <div class="cc-num">04 / SPECIAL</div>
-        <h3 class="cc-title">資格別おすすめ転職サイト2026年版【完全ガイド】</h3>
-        <p class="cc-desc">15資格×8転職サイトをマトリクスで比較。あなたに合うエージェントが必ず見つかる。</p>
-        <span class="cc-link">記事を読む →</span>
-      </div>
-    </div>
+  <div class="real-box">
+    <h4>Case 3：29歳・元工場勤務（埼玉）</h4>
+    <p>
+      工場勤務で冷凍機を扱う立場から、上位資格として三冷に挑戦。<em>独学・市販テキストのみ</em>で2ヶ月学習し合格。「現場で実機を触っている強みは大きかった。教科書の用語が全部『あれか』と腑に落ちる感覚」。合格後、保安監督者に任命され月8,000円の手当を獲得。
+    </p>
   </div>
 </section>
 
-<main>
-  <!-- ============ SISTER SITE BANNER ============ -->
-  <a href="#" class="sister">
-    <div class="sister-info">
-      <span class="sister-tag">🏢 SISTER MEDIA</span>
-      <h3 class="sister-title">
-        ビルメンに、本気で詳しいメディア。<br />
-        <span class="small">ビルメンアカデミー / bilumen.jp</span>
-      </h3>
-      <p class="sister-desc">
-        ビル管理の現場で20年。元主任が運営する、ビルメン4点セットから上位資格まで、ビルメン業界の「リアル」だけを発信する姉妹サイトです。
-      </p>
+<!-- 【7】キャリア -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">07</div>
+    <div class="cat-sec-title-block">
+      <div class="small">CAREER PATH</div>
+      <div class="big">取得後のキャリア・年収アップ事例</div>
     </div>
-    <div class="sister-btn">
-      bilumen.jp を見る →
-      <small>SISTER SITE</small>
-    </div>
-  </a>
+  </div>
 
-  <!-- ============ OUR STORY ============ -->
-  <section class="story">
-    <div class="story-visual">📖</div>
-    <div>
-      <div class="story-eyebrow">OUR STORY</div>
-      <h2>「もう遅い」が、口ぐせだった父と。</h2>
-      <p>
-        60歳を過ぎても新しい仕事を探す父と、AI時代に取り残されかけた私。二人で資格に挑戦するうちに、学び直しは何歳からでも始められると確信しました。
-      </p>
-      <p>
-        このサイトは、その記録と、同じことで悩む誰かへのお守りです。20代の挑戦も、50代のやり直しも、私たちは同じ熱量で応援します。
-      </p>
-      <p class="story-sign">— 資格Life 編集部 ／ 父さんとAIの記録より</p>
+  <p>
+    冷凍3種は、ビルメン4点セット完成の象徴であり、<em>「上位資格への入り口」</em>。二冷・一冷・エネルギー管理士へのステップアップの起点になります。
+  </p>
+
+  <h3>業界別・年収アップ目安</h3>
+  <table style="width:100%; border-collapse: collapse; margin: 16px 0; font-size: 14px;">
+    <tr style="background: var(--blue-soft);">
+      <th style="padding: 10px; border: 1px solid var(--line); text-align: left;">業界</th>
+      <th style="padding: 10px; border: 1px solid var(--line); text-align: left;">想定年収</th>
+      <th style="padding: 10px; border: 1px solid var(--line); text-align: left;">資格手当</th>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid var(--line);">病院・大型ビルビルメン</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">340〜480万円</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">月5,000〜10,000円</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid var(--line);">冷凍倉庫・低温物流</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">360〜520万円</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">月7,000〜12,000円</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid var(--line);">食品工場（冷凍ライン）</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">340〜460万円</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">月5,000〜8,000円</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid var(--line);">スーパー・小売チェーン本部</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">380〜520万円</td>
+      <td style="padding: 10px; border: 1px solid var(--line);">月8,000〜15,000円</td>
+    </tr>
+  </table>
+
+  <h3>王道ルート：三冷 → 二冷 → 一冷 → エネルギー管理士</h3>
+  <p>
+    冷凍3種を起点に<strong>「二冷 → 一冷 → エネルギー管理士」</strong>へとステップアップ。<em>「保安管理技術」が永久免除</em>なので、上位試験の負担は法令科目に集中できます。年収500万円超のビルメン管理職を目指すなら、必須のキャリアパスです。
+  </p>
+</section>
+
+<!-- 【8】FAQ -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">08</div>
+    <div class="cat-sec-title-block">
+      <div class="small">Q &amp; A</div>
+      <div class="big">よくある質問・読者からの声</div>
     </div>
-  </section>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">公式講習は受けるべきですか？</div>
+    <p class="faq-a"><em>初学者は受けた方が圧倒的に合格しやすい</em>です。費用は約35,500円かかりますが、本試験で「保安管理技術」が免除されるため、<strong>合格率が20%台→50%台に跳ね上がります</strong>。年1回しかない試験なので、確実性を取るなら講習ルート、コスト重視なら独学ルート。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">冷凍3種は本当に難しいですか？</div>
+    <p class="faq-a">合格率20〜30%と数字は厳しいですが、<em>「公式講習活用＋過去問徹底」</em>で対策すれば対応可能。<strong>「保安管理技術」が冷凍サイクル・熱力学の理論問題</strong>で、文系には壁になりやすいです。物理化学に苦手意識があるなら講習ルートが安全。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">試験は年に何回ありますか？</div>
+    <p class="faq-a"><strong>年1回・11月の第2日曜日</strong>のみ。落ちると1年待ちになるため、計画的な学習が必須です。出願は8〜9月、結果発表は翌年1月。<em>「絶対1発合格したい」なら、講習ルート＋過去問3周以上</em>が定石です。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">p-h線図（モリエル線図）って何ですか？</div>
+    <p class="faq-a">冷凍サイクルの<em>圧力（p）と比エンタルピー（h）</em>を表すグラフです。冷媒の状態変化を視覚的に表現でき、<strong>「保安管理技術」では必ず1問は出題</strong>されます。最初は意味不明でも、3Dアニメ動画やSATの教材で10分見れば理解できる定番の図です。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">電工2種・乙4・ボイラー2級と、どの順番で取るのが良い？</div>
+    <p class="faq-a">ビルメン業界の王道は<em>「乙4 → ボイラー2級 → 電工2種 → 冷凍3種」</em>。<strong>冷凍3種は最難関なので最後</strong>に取るのがおすすめ。乙4・ボイラーで「燃焼・熱」、電工2種で「電気」の基礎ができてから挑むと、冷凍3種の理解が圧倒的に速いです。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">免状の交付はどうやって申請しますか？</div>
+    <p class="faq-a">合格後、<strong>住んでいる都道府県の知事</strong>に免状交付申請を行います。手数料は<em>3,500円</em>。住民票・写真などを揃え、合格通知書とともに提出。約1ヶ月で「冷凍機械責任者免状」が届きます。<strong>都道府県によって申請窓口が異なる</strong>ので、各自治体のHPで確認を。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">高圧ガスってフロン以外も対象ですか？</div>
+    <p class="faq-a">冷凍3種は<em>「不活性ガス」</em>を対象とした冷凍機械の保安監督者資格です。フロン（HFC・HFO）、CO2、空気などが対象。<strong>アンモニアやプロパンなど「可燃性・毒性ガス」を扱う場合は二冷・一冷</strong>が必要で、三冷では監督者になれません。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">冷凍3種を取れば、エアコン工事もできる？</div>
+    <p class="faq-a"><em>家庭用エアコンの工事には別資格が必要</em>です（電工2種・冷媒回収技術者など）。冷凍3種は「業務用大型冷凍設備の保安監督」が職務範囲。工事系の資格と組み合わせると活躍の幅が大きく広がります。</p>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">冷凍3種を取った後、すぐに二冷を受けるべき？</div>
+    <p class="faq-a"><strong>三冷取得後すぐに二冷</strong>は理にかなった戦略です。<em>「保安管理技術」が免除されている間に挑戦</em>すれば、二冷は「法令」と「学識」の2科目のみ。ビルメン管理職を目指すなら、三冷取得から1〜2年以内の二冷挑戦がおすすめです。</p>
+  </div>
+</section>
+
+<!-- 【9】姉妹サイト誘導 -->
+<section class="cat-sec">
+  <div class="cat-sec-head">
+    <div class="cat-sec-num">09</div>
+    <div class="cat-sec-title-block">
+      <div class="small">DEEP DIVE</div>
+      <div class="big">過去問・教科書は「ビルメンアカデミー」で</div>
+    </div>
+  </div>
+
+  <p>
+    冷凍3種の<strong>過去問・教科書・解説</strong>は、姉妹サイト「ビルメンアカデミー」（bilumen.jp）で<em>無料公開予定</em>です。
+  </p>
+  <ul>
+    <li>2科目別の教科書（法令・保安管理技術）</li>
+    <li>過去問演習（5年分・分野別）</li>
+    <li>p-h線図の動画解説</li>
+    <li>AI質問チャット（準備中）</li>
+  </ul>
+  <p>
+    元主任が監修した、現場の言葉で語る教科書です。試験合格までの<em>「もう一冊」</em>として、ぜひご活用ください。
+  </p>
+</section>
+
+<!-- CTA -->
+<div class="cat-cta">
+  <h3>冷凍3種、今日から始めよう。</h3>
+  <p>ビルメン4点セット「完成の1枚」。年1回の試験を確実に獲りに行こう。</p>
+  <div class="btn-row">
+    <a href="#" class="btn-primary">教材を比較する →</a>
+    <a href="https://bilumen.jp" class="btn-sub" target="_blank" rel="noopener">ビルメンアカデミーで深掘り →</a>
+  </div>
+</div>
+
+
 </main>
 
 <!-- ============ FOOTER ============ -->
