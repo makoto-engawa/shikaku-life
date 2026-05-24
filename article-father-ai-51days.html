@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>父とAIで資格アプリを作った、夏のはなし。51日間の記録｜資格Life</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .article-wrap { padding: 28px 0 64px; }
+  .article-layout { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 56px; margin-top: 28px; }
+  @media (max-width: 980px) { .article-layout { grid-template-columns: 1fr; } }
+
+  .a-head .crumbs { margin-bottom: 18px; }
+  .a-head .pr-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 18px; }
+  .a-head h1 { font-size: 38px; line-height: 1.5; margin: 12px 0 22px; }
+  @media (max-width: 720px) { .a-head h1 { font-size: 28px; } }
+  .a-meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; font-family: var(--font-heading); font-size: 13px; color: var(--soft); padding: 14px 0 22px; border-bottom: 1.5px solid var(--rule); }
+  .a-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--muted); }
+  .a-meta .author { display: inline-flex; align-items: center; gap: 8px; }
+  .a-meta .avatar { width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(135deg, var(--orange-soft), var(--mint-soft)); display: grid; place-items: center; font-size: 18px; border: 2px solid #fff; box-shadow: 0 0 0 1.5px var(--rule); }
+
+  .eyecatch { aspect-ratio: 16 / 9; border-radius: var(--radius-xl); background-size: cover; background-position: center; background-repeat: no-repeat; margin: 24px 0 36px; box-shadow: var(--shadow-md); }
+
+  .lede-block { background: var(--orange-soft); border-left: 5px solid var(--orange); border-radius: 14px; padding: 22px 26px; margin: 0 0 32px; }
+  .lede-block p { margin: 0; line-height: 1.95; }
+  .lede-block strong { color: var(--orange-deep); }
+
+  .toc { background: #fff; border: 1.5px solid var(--rule); border-radius: var(--radius-lg); padding: 22px 26px; margin-bottom: 36px; }
+  .toc summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 10px; font-family: var(--font-heading); font-weight: 700; font-size: 15px; color: var(--ink-strong); }
+  .toc summary::-webkit-details-marker { display: none; }
+  .toc summary::after { content: "▾"; margin-left: auto; color: var(--muted); transition: transform .2s ease; }
+  .toc[open] summary::after { transform: rotate(180deg); }
+  .toc ol { margin: 16px 0 0; padding-left: 22px; color: var(--ink); line-height: 1.9; }
+  .toc ol ol { margin: 4px 0 6px; padding-left: 18px; color: var(--soft); font-size: 14px; }
+  .toc a { color: var(--ink); }
+  .toc a:hover { color: var(--primary-deep); }
+
+  .a-body { font-size: 17px; line-height: 2.05; }
+  .a-body h2 { font-size: 26px; margin-top: 56px; margin-bottom: 18px; padding-left: 18px; border-left: 6px solid var(--primary); line-height: 1.5; }
+  .a-body h3 { font-size: 19px; margin-top: 36px; margin-bottom: 12px; color: var(--primary-deep); }
+  .a-body p { margin-bottom: 1.4em; }
+  .a-body ul, .a-body ol { padding-left: 1.4em; margin-bottom: 1.4em; line-height: 1.95; }
+  .a-body li { margin-bottom: .4em; }
+  .a-body blockquote { margin: 1.5em 0; padding: 18px 26px; background: var(--primary-soft); border-left: 5px solid var(--primary); border-radius: 12px; color: var(--ink); line-height: 1.9; font-style: italic; }
+  .a-body blockquote p:last-child { margin-bottom: 0; }
+  .a-body em { font-style: normal; color: var(--orange-deep); font-weight: 600; }
+  .callout { background: var(--mint-soft); border-radius: 14px; padding: 20px 24px; margin: 1.6em 0; display: flex; gap: 14px; align-items: flex-start; }
+  .callout .ico { font-size: 28px; flex: none; }
+  .callout p { margin: 0; }
+  .callout strong { color: #1c8a64; }
+
+  .chapter-mark { display: flex; align-items: center; gap: 14px; margin-top: 56px; margin-bottom: 8px; }
+  .chapter-mark .day { font-family: var(--font-heading); font-weight: 900; color: var(--orange-deep); background: var(--orange-soft); border-radius: 999px; padding: 6px 14px; font-size: 13px; letter-spacing: .1em; }
+  .chapter-mark .when { font-family: var(--font-heading); font-size: 12px; color: var(--soft); letter-spacing: .12em; }
+
+  .epilogue {
+    background: linear-gradient(160deg, var(--primary-soft), #fff 80%);
+    border: 1.5px solid var(--primary);
+    border-radius: var(--radius-xl);
+    padding: 36px 44px;
+    margin: 56px 0 24px;
+  }
+  @media (max-width: 720px) { .epilogue { padding: 24px; } }
+  .epilogue h3 { margin-top: 0; color: var(--primary-deep); font-size: 22px; }
+  .epilogue p { font-size: 16px; line-height: 2.0; }
+  .epilogue .sign { text-align: right; font-family: var(--font-heading); font-weight: 700; color: var(--soft); margin-top: 12px; }
+
+  .sister-cta {
+    background: linear-gradient(160deg, var(--orange-soft), #fff 90%);
+    border: 1.5px solid var(--orange);
+    border-radius: var(--radius-xl);
+    padding: 28px 32px;
+    margin: 32px 0;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+  }
+  @media (max-width: 720px) { .sister-cta { flex-direction: column; text-align: center; } }
+  .sister-cta .ico { font-size: 48px; flex: none; }
+  .sister-cta h4 { margin: 0 0 4px; font-size: 18px; color: var(--orange-deep); }
+  .sister-cta p { margin: 0 0 12px; font-size: 14px; color: var(--ink); line-height: 1.8; }
+  .sister-cta .btn {
+    background: var(--orange); color: #fff;
+    padding: 10px 20px; border-radius: 999px;
+    font-family: var(--font-heading); font-weight: 700; font-size: 13px;
+    display: inline-block;
+  }
+  .sister-cta .btn:hover { background: var(--orange-deep); text-decoration: none; color: #fff; }
+
+  .author-box { display: flex; gap: 18px; align-items: flex-start; background: var(--primary-soft); border-radius: var(--radius-lg); padding: 22px 26px; margin: 40px 0; }
+  .author-box .avatar { width: 64px; height: 64px; border-radius: 50%; background: #fff; display: grid; place-items: center; font-size: 32px; flex: none; }
+  .author-box h4 { margin: 0 0 6px; font-size: 16px; }
+  .author-box p { font-size: 14px; line-height: 1.8; margin: 0; color: var(--soft); }
+
+  .side { position: sticky; top: 96px; align-self: start; display: flex; flex-direction: column; gap: 20px; }
+  .side .panel { background: #fff; border: 1.5px solid var(--rule); border-radius: var(--radius-lg); padding: 20px; }
+  .side .panel h4 { font-size: 13px; letter-spacing: .15em; color: var(--soft); margin: 0 0 14px; text-transform: uppercase; font-family: var(--font-heading); }
+  .side .panel ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+  .side .panel li { font-size: 13px; line-height: 1.5; }
+  .side .panel li a { color: var(--ink); }
+  .side .side-cta { background: linear-gradient(160deg, var(--orange) 0%, var(--orange-deep) 100%); color: #fff; border: 0; text-align: center; }
+  .side .side-cta h4 { color: #fff; opacity: .9; }
+  .side .side-cta .copy { font-family: var(--font-heading); font-weight: 700; font-size: 17px; line-height: 1.5; margin-bottom: 14px; }
+  .side .side-cta a { display: block; background: #fff; color: var(--orange-deep); border-radius: 999px; padding: 10px 14px; font-family: var(--font-heading); font-weight: 700; font-size: 14px; }
+
+  .related { margin-top: 56px; }
+  .progress-bar { position: fixed; top: 72px; left: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--orange)); width: 0%; z-index: 40; transition: width .12s linear; }
+</style>
+</head>
+<body data-screen-label="Article: Father & AI 51 days">
+
+<div id="header-slot"></div>
+<div class="progress-bar" id="progress"></div>
+
+<div class="article-wrap container">
+  <div class="article-layout">
+    <article>
+      <header class="a-head">
+        <nav class="crumbs">
+          <a href="index.html">ホーム</a>
+          <span class="sep">›</span>
+          <a href="story.html">物語・コラム</a>
+          <span class="sep">›</span>
+          <span>父とAIで資格アプリを作った、夏のはなし</span>
+        </nav>
+
+        <div class="pr-row">
+          <span class="cat-pill cat-it">🤖 IT・AI</span>
+          <span class="pr-badge">※当記事にはアフィリエイト広告（PR）が含まれます</span>
+        </div>
+
+        <h1>父とAIで資格アプリを作った、夏のはなし。<em>51日間</em>の記録</h1>
+
+        <div class="a-meta">
+          <span class="author"><span class="avatar">📝</span><span>資格Life編集部</span></span>
+          <span class="dot"></span>
+          <span>2026年4月28日 公開</span>
+          <span class="dot"></span>
+          <span>読了 約14分</span>
+          <span class="dot"></span>
+          <span>更新 2026年5月22日</span>
+        </div>
+
+        <div class="eyecatch" aria-hidden="true" style="background-image: url('images/art-aidev.png');"></div>
+
+        <div class="lede-block">
+          <p>
+            これは、<strong>60歳を過ぎた父と、AIで資格学習アプリを作った51日間</strong>の記録です。<br>
+            プログラミング経験ゼロ・「もう遅い」が口ぐせだった父が、AIと並んで席に座ったところから始まります。<br>
+            技術の話というより、<em>ふつうの親子が、ふつうの夏に、ちょっと普通じゃないことをやった話</em>。<br>
+            学び直しを諦めかけている誰かに、たまたま届けばと思って書いています。
+          </p>
+        </div>
+
+        <details class="toc" open>
+          <summary>📑 目次（タップで開閉）</summary>
+          <ol>
+            <li><a href="#chap-1">Day 1：「電工2種、取れんかな」</a></li>
+            <li><a href="#chap-2">Day 2〜7：AIと父が、はじめて並んだ</a></li>
+            <li><a href="#chap-3">Day 8〜20：失敗の山と、ちいさな勝ち</a></li>
+            <li><a href="#chap-4">Day 21〜40：アプリが「育って」きた</a></li>
+            <li><a href="#chap-5">Day 41〜51：世に出すまで</a></li>
+            <li><a href="#chap-6">エピローグ：もう遅いことは、なかった</a></li>
+          </ol>
+        </details>
+      </header>
+
+      <div class="a-body">
+
+        <div class="chapter-mark">
+          <span class="day">DAY 1</span>
+          <span class="when">― きっかけの夜</span>
+        </div>
+        <h2 id="chap-1">「電工2種、取れんかな」</h2>
+        <p>
+          始まりは、台所で父が言った一言でした。
+        </p>
+        <blockquote>
+          <p>「電気工事士、取れんかな。60超えてからやけど」</p>
+        </blockquote>
+        <p>
+          父は60歳を過ぎていました。
+          手に職をつけたい、もう少し体が動くうちに何かを残しておきたい――言葉にはしなかったけれど、
+          そういう気持ちが台所の灯りの下でこぼれているのが、なんとなく分かりました。
+        </p>
+        <p>
+          「教科書、買ってこようか」と返したら、
+          「教科書はもうある。覚えられんのが問題や」と笑われました。
+          そのとき、ふと思いつきました。
+        </p>
+        <p>
+          ――AIに、勉強アプリを作らせてみるのはどうだろう。
+        </p>
+
+        <div class="chapter-mark">
+          <span class="day">DAY 2〜7</span>
+          <span class="when">― はじめての並走</span>
+        </div>
+        <h2 id="chap-2">Day 2〜7：AIと父が、はじめて並んだ</h2>
+        <p>
+          翌日、父の隣にノートパソコンを置いて、AIを立ち上げました。
+          父はマウスをぎこちなく握り、画面の中の文字を読みながら、こう打ちました。
+        </p>
+        <blockquote>
+          <p>「電気工事士の第二種を勉強したい。アプリで一問一答を作りたい。」</p>
+        </blockquote>
+        <p>
+          AIは、ものすごく丁寧に、いくつか質問を返してきました。
+          「どんな機能が必要ですか？」「問題は何問必要ですか？」「スマホでも使いますか？」――
+          父はひとつひとつ、子どもみたいに律儀に答えていきました。
+        </p>
+        <p>
+          AIは、Pythonというものを使ってアプリを作ろうと提案してきました。
+          父はPythonが何かも知りませんでしたが、<em>AIが書いたコードを、言われた通りにコピー＆貼り付けする</em>――
+          それだけで、画面に問題と選択肢が表示されました。
+        </p>
+        <p>
+          「お、できた」と父は言いました。
+          私はその<strong>「お、できた」</strong>の声を、今でも覚えています。
+        </p>
+
+        <div class="callout">
+          <span class="ico">💡</span>
+          <p>
+            <strong>気づき：</strong>
+            AI時代の学び直しは、「全部理解してから始める」必要がありません。
+            <em>分からないまま、まず動かす</em>。動いてから少しずつ分かっていく――それがいちばん早い。
+          </p>
+        </div>
+
+        <div class="chapter-mark">
+          <span class="day">DAY 8〜20</span>
+          <span class="when">― 試行錯誤の日々</span>
+        </div>
+        <h2 id="chap-3">Day 8〜20：失敗の山と、ちいさな勝ち</h2>
+        <p>
+          1週目は順調でしたが、2週目から壁が来ました。
+        </p>
+        <p>
+          コードがエラーを出す。なぜ動かないか分からない。
+          AIに聞き直しても、ちぐはぐな返事ばかり――父はだんだん黙り込み、私は隣で焦り始めました。
+        </p>
+        <p>
+          そのうち、私たちはひとつのコツを覚えました。
+          <strong>エラーメッセージを、そのままAIに貼って聞く</strong>。
+          ただそれだけで、AIは原因と対策を3行で答えてくれる。
+          父はメモ用紙に、ボールペンで太く書きました。
+        </p>
+        <blockquote>
+          <p>「エラーが出たら、まずコピー」</p>
+        </blockquote>
+        <p>
+          このメモは、今もキッチンの壁に貼ってあります。
+        </p>
+
+        <h3>「教科書を、まるごとアプリに入れる」</h3>
+        <p>
+          Day 15ごろ、父が言いました。
+          「教科書の章ごとに、解説と問題が出るようにできんかな。最後にテストもしたい」
+        </p>
+        <p>
+          これがアプリの大きな転機でした。
+          AIに章ごとの要約と一問一答を作らせ、それをアプリに流し込む。
+          最初は1章だけだったものが、3章になり、10章になり、ある日<em>全58章</em>になりました。
+          画面に「第58章」と並んだ夜、父は黙って小さくうなずきました。
+        </p>
+
+        <div class="chapter-mark">
+          <span class="day">DAY 21〜40</span>
+          <span class="when">― 加速</span>
+        </div>
+        <h2 id="chap-4">Day 21〜40：アプリが「育って」きた</h2>
+        <p>
+          3週目を過ぎたあたりから、アプリが<em>育ってきた</em>感覚がありました。
+          機能を足すたびに、父の生活が少しずつ変わるのが分かりました。
+        </p>
+        <ul>
+          <li>朝の散歩のあと、コーヒーを飲みながら問題を解く</li>
+          <li>昼ごはんのあと、間違えた問題だけもう一度</li>
+          <li>夜、私と二人で「今日はどこが伸びたか」を見る</li>
+        </ul>
+        <p>
+          父の声から「もう遅い」が消えていきました。
+          代わりに増えてきたのは、<strong>「次はこの機能、付けられるかな」</strong>でした。
+        </p>
+
+        <blockquote>
+          <p>「アプリって、毎日少しずつ大きくなるんやな。ぼくみたいや」</p>
+        </blockquote>
+
+        <p>
+          Day 35のあたりで、父が一発目の過去問演習を試しました。
+          点数は60点台。合格ラインは60点。<em>ぎりぎり、届いていました</em>。
+        </p>
+
+        <div class="chapter-mark">
+          <span class="day">DAY 41〜51</span>
+          <span class="when">― 公開へ</span>
+        </div>
+        <h2 id="chap-5">Day 41〜51：世に出すまで</h2>
+        <p>
+          残り10日は、アプリを世に出す準備に充てました。
+          ドメインを取り、サーバーに乗せ、トップページを整え、SNSのアカウントを作り――
+          AIに教わりながら、父と二人でひとつずつ片付けていきました。
+        </p>
+        <p>
+          ドメインを取った夜、父はぼそっと言いました。
+        </p>
+        <blockquote>
+          <p>「これ、ぼく以外の人も使えるんやな」</p>
+        </blockquote>
+        <p>
+          ええ、使えます。
+          同じように「もう遅いかも」と思っている、誰かに届くかもしれない――そう答えたとき、
+          父はマグカップを両手で包んで、少しだけ照れたように笑いました。
+        </p>
+
+        <h3>51日目、サイトが世に出た</h3>
+        <p>
+          51日目の深夜、サイトを公開しました。
+          特別なオープニングセレモニーはなく、コーヒーが冷めただけの台所で、
+          ブラウザのアドレスバーに新しいURLが表示されただけです。
+        </p>
+        <p>
+          それでも、父と私のあいだに、はっきりとした<em>節目</em>がありました。
+          私たちは黙って、画面をじっと見ていました。
+        </p>
+
+        <div class="sister-cta">
+          <span class="ico">🔧</span>
+          <div>
+            <h4>そのアプリ、いま世に出ています。</h4>
+            <p>
+              この夏に父とAIで作った第二種電気工事士の学習アプリは、現在「ビルメンアカデミー（bilumen.jp）」として公開中。
+              全58章＋292問、ビルメン業界の入口資格を、無料で学習できます。
+            </p>
+            <a class="btn" href="https://bilumen.jp" target="_blank" rel="noopener">bilumen.jp を見る →</a>
+          </div>
+        </div>
+
+        <h2 id="chap-6">エピローグ：もう遅いことは、なかった</h2>
+
+        <div class="epilogue">
+          <h3>誰かの背中を、少しだけ押せたら。</h3>
+          <p>
+            51日間で分かったことは、シンプルでした。
+          </p>
+          <p>
+            <strong>「もう遅い」は、口ぐせでしかなかった。</strong><br>
+            60歳でも、AIと並んで座れば、自分の手で何かを作ることができる。
+            プログラミングの知識がなくても、英語が読めなくても、コピー＆貼り付けと「お、できた」さえあれば、
+            生活はちゃんと変わっていく。
+          </p>
+          <p>
+            この資格Lifeというサイトも、同じ気持ちで運営しています。
+            20代の挑戦も、50代のやり直しも、同じ重さで応援したい。
+            あなたのキッチンにも、いつか「お、できた」がやってきますように。
+          </p>
+          <p class="sign">― 資格Life編集部 ／ 父とAIの記録より</p>
+        </div>
+
+        <div class="author-box">
+          <span class="avatar">📝</span>
+          <div>
+            <h4>資格Life編集部</h4>
+            <p>
+              資格取得とキャリアアップに役立つ情報を発信するメディアです。
+              試験データ・教材比較・受験者の体験談をもとに、合格までの最短ルートをわかりやすくお伝えします。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section class="related">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">RELATED</span>
+            <h2>合わせて読みたい</h2>
+          </div>
+        </div>
+        <div class="article-grid">
+          <a class="article-card card" href="article-denko2-roadmap.html">
+            <div class="thumb t-mint">⚡<span class="cat-pill cat-bilmen badge">ビルメン系</span></div>
+            <div class="body">
+              <h3>第二種電気工事士、独学6ヶ月ロードマップ</h3>
+              <p class="excerpt">父が挑戦した資格。独学で受かるための学習計画。</p>
+              <div class="meta"><span>読了 12分</span></div>
+            </div>
+          </a>
+          <a class="article-card card" href="article-chatgpt-prompts.html">
+            <div class="thumb">🤖<span class="cat-pill cat-it badge">IT・AI</span></div>
+            <div class="body">
+              <h3>ChatGPTで資格勉強を爆速化</h3>
+              <p class="excerpt">この51日間で実際に効いたプロンプト10選。</p>
+              <div class="meta"><span>読了 8分</span></div>
+            </div>
+          </a>
+          <a class="article-card card" href="article-otsu4-bilmen.html">
+            <div class="thumb t-orange">⛽<span class="cat-pill cat-bilmen badge">ビルメン系</span></div>
+            <div class="body">
+              <h3>危険物乙4、ビルメン入門に最適な理由</h3>
+              <p class="excerpt">電工2種の前後で取りたい、もう1枚の入口資格。</p>
+              <div class="meta"><span>読了 6分</span></div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </article>
+
+    <aside class="side">
+      <div class="panel side-cta">
+        <h4>SISTER SITE</h4>
+        <p class="copy">父とAIで作った、<br>ビルメンの学習サイト。</p>
+        <a href="https://bilumen.jp" target="_blank" rel="noopener">bilumen.jp →</a>
+      </div>
+
+      <div class="panel">
+        <h4>POPULAR</h4>
+        <ul>
+          <li><a href="article-denko2-roadmap.html">電工2種 独学6ヶ月ロードマップ</a></li>
+          <li><a href="article-chatgpt-prompts.html">ChatGPTで資格勉強を爆速化</a></li>
+          <li><a href="article-otsu4-bilmen.html">危険物乙4、ビルメン入門</a></li>
+          <li><a href="article-boki3-2weeks.html">簿記3級 2週間合格法</a></li>
+          <li><a href="article-toeic-800.html">TOEIC 800の朝活ルーティン</a></li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h4>CATEGORIES</h4>
+        <ul>
+          <li><a href="story.html">📔 物語・コラム</a></li>
+          <li><a href="category-it-ai.html">🤖 IT・AI</a></li>
+          <li><a href="category-bilmen.html">🔧 ビルメン系</a></li>
+          <li><a href="category-law.html">⚖️ 法律系</a></li>
+          <li><a href="category-fin.html">💰 金融</a></li>
+          <li><a href="category-med.html">🏥 医療・福祉系</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<div id="footer-slot"></div>
+
+<script src="partials.js"></script>
+<script>
+  SL.mountHeader('articles');
+  SL.mountFooter();
+
+  const bar = document.getElementById('progress');
+  function updateProgress() {
+    const h = document.documentElement;
+    const scrollTop = h.scrollTop || document.body.scrollTop;
+    const scrollHeight = h.scrollHeight - h.clientHeight;
+    const pct = Math.min(100, Math.max(0, (scrollTop / scrollHeight) * 100));
+    bar.style.width = pct + '%';
+  }
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+</script>
+</body>
+</html>

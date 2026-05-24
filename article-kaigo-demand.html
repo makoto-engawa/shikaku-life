@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>介護福祉士は本当に「食いっぱぐれない」資格か。需給データで検証｜資格Life</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .article-wrap { padding: 28px 0 64px; }
+  .article-layout { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 56px; margin-top: 28px; }
+  @media (max-width: 980px) { .article-layout { grid-template-columns: 1fr; } }
+
+  .a-head .crumbs { margin-bottom: 18px; }
+  .a-head .pr-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 18px; }
+  .a-head h1 { font-size: 38px; line-height: 1.5; margin: 12px 0 22px; }
+  @media (max-width: 720px) { .a-head h1 { font-size: 28px; } }
+  .a-meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; font-family: var(--font-heading); font-size: 13px; color: var(--soft); padding: 14px 0 22px; border-bottom: 1.5px solid var(--rule); }
+  .a-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--muted); }
+  .a-meta .author { display: inline-flex; align-items: center; gap: 8px; }
+  .a-meta .avatar { width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(135deg, var(--orange-soft), var(--mint-soft)); display: grid; place-items: center; font-size: 18px; border: 2px solid #fff; box-shadow: 0 0 0 1.5px var(--rule); }
+
+  .eyecatch { aspect-ratio: 16 / 9; border-radius: var(--radius-xl); background-size: cover; background-position: center; background-repeat: no-repeat; margin: 24px 0 36px; box-shadow: var(--shadow-md); }
+
+  .lede-block { background: var(--orange-soft); border-left: 5px solid var(--orange); border-radius: 14px; padding: 22px 26px; margin: 0 0 32px; }
+  .lede-block p { margin: 0; line-height: 1.95; }
+  .lede-block strong { color: var(--orange-deep); }
+
+  .toc { background: #fff; border: 1.5px solid var(--rule); border-radius: var(--radius-lg); padding: 22px 26px; margin-bottom: 36px; }
+  .toc summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 10px; font-family: var(--font-heading); font-weight: 700; font-size: 15px; color: var(--ink-strong); }
+  .toc summary::-webkit-details-marker { display: none; }
+  .toc summary::after { content: "▾"; margin-left: auto; color: var(--muted); transition: transform .2s ease; }
+  .toc[open] summary::after { transform: rotate(180deg); }
+  .toc ol { margin: 16px 0 0; padding-left: 22px; color: var(--ink); line-height: 1.9; }
+  .toc ol ol { margin: 4px 0 6px; padding-left: 18px; color: var(--soft); font-size: 14px; }
+  .toc a { color: var(--ink); }
+  .toc a:hover { color: var(--primary-deep); }
+
+  .a-body { font-size: 17px; line-height: 2.05; }
+  .a-body h2 { font-size: 26px; margin-top: 56px; margin-bottom: 18px; padding-left: 18px; border-left: 6px solid var(--primary); line-height: 1.5; }
+  .a-body h3 { font-size: 19px; margin-top: 36px; margin-bottom: 12px; color: var(--primary-deep); }
+  .a-body p { margin-bottom: 1.4em; }
+  .a-body ul, .a-body ol { padding-left: 1.4em; margin-bottom: 1.4em; line-height: 1.95; }
+  .a-body li { margin-bottom: .4em; }
+  .a-body blockquote { margin: 1.5em 0; padding: 18px 26px; background: var(--primary-soft); border-left: 5px solid var(--primary); border-radius: 12px; color: var(--ink); line-height: 1.9; }
+  .a-body blockquote p:last-child { margin-bottom: 0; }
+  .callout { background: var(--mint-soft); border-radius: 14px; padding: 20px 24px; margin: 1.6em 0; display: flex; gap: 14px; align-items: flex-start; }
+  .callout .ico { font-size: 28px; flex: none; }
+  .callout p { margin: 0; }
+  .callout strong { color: #1c8a64; }
+
+  .data-table { width: 100%; border-collapse: collapse; margin: 1.6em 0; font-size: 14px; background: #fff; border-radius: 12px; overflow: hidden; border: 1.5px solid var(--rule); }
+  .data-table th, .data-table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--rule); }
+  .data-table thead th { background: var(--primary-soft); color: var(--primary-deep); font-family: var(--font-heading); font-weight: 700; font-size: 13px; }
+  .data-table tbody tr:last-child td { border-bottom: 0; }
+  .data-table td.num { font-family: var(--font-heading); font-weight: 700; color: var(--orange-deep); text-align: right; }
+
+  .mid-cta { background: linear-gradient(180deg, var(--orange-soft) 0%, #fff 80%); border: 1.5px solid #f8d4b3; border-radius: var(--radius-xl); padding: 32px 32px 28px; margin: 56px 0; }
+  .mid-cta .head { text-align: center; margin-bottom: 24px; }
+  .mid-cta .head .label { font-family: var(--font-heading); font-weight: 900; font-size: 12px; letter-spacing: .25em; color: var(--orange-deep); background: #fff; border: 1.5px dashed var(--orange); border-radius: 999px; padding: 4px 16px; display: inline-block; }
+  .mid-cta h3 { font-size: 22px; margin: 14px 0 4px; color: var(--ink-strong); }
+  .mid-cta .sub { color: var(--soft); margin: 0; font-size: 14px; }
+  .mid-cta .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 26px; }
+  @media (max-width: 880px) { .mid-cta .cards { grid-template-columns: 1fr; } }
+  .mid-cta .p-card { background: #fff; border-radius: var(--radius-lg); padding: 22px 22px 24px; border: 1.5px solid var(--rule); display: flex; flex-direction: column; gap: 10px; transition: all .2s ease; position: relative; }
+  .mid-cta .p-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--orange); }
+  .mid-cta .p-card .tag { position: absolute; top: -10px; left: 16px; background: var(--ink-strong); color: #fff; border-radius: 999px; padding: 3px 12px; font-family: var(--font-heading); font-size: 11px; font-weight: 700; letter-spacing: .1em; }
+  .mid-cta .p-card .tag.t-best { background: var(--orange); }
+  .mid-cta .p-card .tag.t-cheap { background: var(--mint); color: #053b29; }
+  .mid-cta .p-card h4 { margin: 4px 0 0; font-size: 19px; }
+  .mid-cta .p-card .feat { color: var(--soft); font-size: 14px; margin: 0; line-height: 1.7; }
+  .mid-cta .p-card .price { font-family: var(--font-heading); font-weight: 900; color: var(--orange-deep); font-size: 22px; }
+  .mid-cta .p-card .price .yen { font-size: 14px; margin-left: 2px; }
+  .mid-cta .p-card .price .note { font-size: 12px; color: var(--soft); font-weight: 500; margin-left: 6px; }
+  .mid-cta .p-card .pros { font-size: 13px; color: var(--soft); margin: 6px 0; padding-left: 18px; list-style: none; }
+  .mid-cta .p-card .pros li { position: relative; padding-left: 4px; margin-bottom: 4px; }
+  .mid-cta .p-card .pros li::before { content: "✓"; color: var(--mint); font-weight: 900; position: absolute; left: -16px; }
+  .mid-cta .p-card .cta-btn { margin-top: auto; background: var(--orange); color: #fff; text-align: center; border-radius: 999px; padding: 12px 16px; font-family: var(--font-heading); font-weight: 700; font-size: 14px; box-shadow: var(--shadow-cta); transition: all .15s; }
+  .mid-cta .p-card .cta-btn:hover { background: var(--orange-deep); text-decoration: none; color: #fff; transform: translateY(-2px); }
+  .mid-cta .pr-foot { text-align: center; font-size: 11px; color: var(--muted); margin-top: 18px; }
+
+  .author-box { display: flex; gap: 18px; align-items: flex-start; background: var(--primary-soft); border-radius: var(--radius-lg); padding: 22px 26px; margin: 40px 0; }
+  .author-box .avatar { width: 64px; height: 64px; border-radius: 50%; background: #fff; display: grid; place-items: center; font-size: 32px; flex: none; }
+  .author-box h4 { margin: 0 0 6px; font-size: 16px; }
+  .author-box p { font-size: 14px; line-height: 1.8; margin: 0; color: var(--soft); }
+
+  .side { position: sticky; top: 96px; align-self: start; display: flex; flex-direction: column; gap: 20px; }
+  .side .panel { background: #fff; border: 1.5px solid var(--rule); border-radius: var(--radius-lg); padding: 20px; }
+  .side .panel h4 { font-size: 13px; letter-spacing: .15em; color: var(--soft); margin: 0 0 14px; text-transform: uppercase; font-family: var(--font-heading); }
+  .side .panel ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+  .side .panel li { font-size: 13px; line-height: 1.5; }
+  .side .panel li a { color: var(--ink); }
+  .side .side-cta { background: linear-gradient(160deg, var(--orange) 0%, var(--orange-deep) 100%); color: #fff; border: 0; text-align: center; }
+  .side .side-cta h4 { color: #fff; opacity: .9; }
+  .side .side-cta .copy { font-family: var(--font-heading); font-weight: 700; font-size: 17px; line-height: 1.5; margin-bottom: 14px; }
+  .side .side-cta a { display: block; background: #fff; color: var(--orange-deep); border-radius: 999px; padding: 10px 14px; font-family: var(--font-heading); font-weight: 700; font-size: 14px; }
+
+  .related { margin-top: 56px; }
+  .progress-bar { position: fixed; top: 72px; left: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--orange)); width: 0%; z-index: 40; transition: width .12s linear; }
+</style>
+</head>
+<body data-screen-label="Article: Kaigo Demand">
+
+<div id="header-slot"></div>
+<div class="progress-bar" id="progress"></div>
+
+<div class="article-wrap container">
+  <div class="article-layout">
+    <article>
+      <header class="a-head">
+        <nav class="crumbs">
+          <a href="index.html">ホーム</a>
+          <span class="sep">›</span>
+          <a href="category-med.html">医療・福祉系</a>
+          <span class="sep">›</span>
+          <span>介護福祉士は本当に「食いっぱぐれない」資格か</span>
+        </nav>
+
+        <div class="pr-row">
+          <span class="cat-pill cat-med">🏥 医療・福祉系</span>
+          <span class="pr-badge">※当記事にはアフィリエイト広告（PR）が含まれます</span>
+        </div>
+
+        <h1>介護福祉士は本当に「<em>食いっぱぐれない</em>」資格か。需給データで検証</h1>
+
+        <div class="a-meta">
+          <span class="author"><span class="avatar">📝</span><span>資格Life編集部</span></span>
+          <span class="dot"></span>
+          <span>2026年5月13日 公開</span>
+          <span class="dot"></span>
+          <span>読了 約9分</span>
+          <span class="dot"></span>
+          <span>更新 2026年5月22日</span>
+        </div>
+
+        <div class="eyecatch" aria-hidden="true" style="background-image: url('images/art-care.png');"></div>
+
+        <div class="lede-block">
+          <p>
+            「介護福祉士は<strong>食いっぱぐれない</strong>」――よく聞くこの言葉、本当でしょうか。<br>
+            この記事では、有効求人倍率・離職率・平均年収・将来推計など、<em>感情ではなく数字</em>で検証します。
+            これから取るか迷っている方が、自分の頭で判断できるように整理しました。
+          </p>
+        </div>
+
+        <details class="toc" open>
+          <summary>📑 目次（タップで開閉）</summary>
+          <ol>
+            <li><a href="#chap-1">そもそも「食いっぱぐれない」とは何か</a></li>
+            <li><a href="#chap-2">需給データで検証する4つの指標</a>
+              <ol>
+                <li><a href="#chap-2-1">有効求人倍率：圧倒的な売り手市場</a></li>
+                <li><a href="#chap-2-2">離職率：実は全産業平均並み</a></li>
+                <li><a href="#chap-2-3">平均年収：低いが処遇改善は進行中</a></li>
+                <li><a href="#chap-2-4">将来推計：2040年までの不足見通し</a></li>
+              </ol>
+            </li>
+            <li><a href="#chap-3">「食いっぱぐれない」の正体</a></li>
+            <li><a href="#chap-4">この資格が向く人・向かない人</a></li>
+            <li><a href="#chap-5">最短ルートで取るための教材選び</a></li>
+          </ol>
+        </details>
+      </header>
+
+      <div class="a-body">
+
+        <h2 id="chap-1">そもそも「食いっぱぐれない」とは何か</h2>
+        <p>
+          「食いっぱぐれない資格」と言うとき、私たちは漠然と次の3つを期待しています。
+        </p>
+        <ol>
+          <li><strong>いつでも仕事がある</strong>（求人が枯れない）</li>
+          <li><strong>食べていける収入がある</strong>（最低限の年収）</li>
+          <li><strong>将来も需要が消えない</strong>（10〜20年後も残る）</li>
+        </ol>
+        <p>
+          ここから、介護福祉士がこの3条件を<em>どれだけ満たすか</em>を順番に見ていきます。
+          感想ではなく、公開されているデータで判断します。
+        </p>
+
+        <div class="callout">
+          <span class="ico">💡</span>
+          <p>
+            <strong>前提：</strong>
+            介護福祉士は国家資格で、無資格の「介護職員」とは別物。資格手当で月5,000〜2万円の差が出るのが一般的です。
+          </p>
+        </div>
+
+        <h2 id="chap-2">需給データで検証する4つの指標</h2>
+
+        <h3 id="chap-2-1">①有効求人倍率：圧倒的な売り手市場</h3>
+        <p>
+          厚生労働省の職業安定業務統計によると、介護関連職種の有効求人倍率は<strong>3倍超</strong>で推移しています。
+          全産業平均（おおむね1.2倍前後）と比べて、求人の出方が桁違いに多い分野です。
+        </p>
+        <table class="data-table">
+          <thead><tr><th>区分</th><th>有効求人倍率（直近）</th><th>備考</th></tr></thead>
+          <tbody>
+            <tr><td>全産業平均</td><td class="num">約 1.2</td><td>景気変動の影響を受けやすい</td></tr>
+            <tr><td>介護関連職種</td><td class="num">約 3.5</td><td>長期にわたって3倍超で推移</td></tr>
+            <tr><td>ホームヘルパー</td><td class="num">約 14</td><td>慢性的に強い人手不足</td></tr>
+          </tbody>
+        </table>
+        <p class="soft" style="font-size:13px;color:var(--muted);margin-top:-8px;">出典：厚生労働省「職業安定業務統計」（数値は概算、年度により変動）</p>
+
+        <h3 id="chap-2-2">②離職率：実は全産業平均並み</h3>
+        <p>
+          「介護は離職率が高い」というイメージがあります。
+          ただ、介護労働安定センターの調査では、<em>離職率は約14〜15%で、全産業平均（約15%前後）とほぼ同水準</em>。
+          イメージほど飛び抜けて高くはありません。
+        </p>
+        <p>
+          特に、介護福祉士（資格保有者）に限定すると、<strong>無資格より離職率が低い</strong>のが特徴。
+          資格を取ると「仕事のミスマッチ」が減り、長く続けられる傾向があります。
+        </p>
+
+        <h3 id="chap-2-3">③平均年収：低いが処遇改善は進行中</h3>
+        <p>
+          介護福祉士の平均年収は、おおよそ<strong>350万〜400万円台</strong>。
+          全産業平均（約460万円）と比べると確かに低いですが、近年は処遇改善加算により上昇傾向にあります。
+        </p>
+        <table class="data-table">
+          <thead><tr><th>役職・経験</th><th>年収目安</th></tr></thead>
+          <tbody>
+            <tr><td>未経験ヘルパー</td><td class="num">280〜320万円</td></tr>
+            <tr><td>介護福祉士（経験3〜5年）</td><td class="num">350〜400万円</td></tr>
+            <tr><td>介護福祉士＋ケアマネ</td><td class="num">400〜480万円</td></tr>
+            <tr><td>サービス提供責任者・管理職</td><td class="num">450〜550万円</td></tr>
+          </tbody>
+        </table>
+        <p class="soft" style="font-size:13px;color:var(--muted);margin-top:-8px;">※ 事業所規模・地域・夜勤回数で大きく変動。あくまで目安。</p>
+
+        <blockquote>
+          <p>「年収だけ見ると見劣りするが、資格手当・夜勤手当・処遇改善加算を足すと、無資格よりは確実に上がる」――現場の声で最も多いのがこの意見です。</p>
+        </blockquote>
+
+        <h3 id="chap-2-4">④将来推計：2040年までの不足見通し</h3>
+        <p>
+          厚生労働省の推計によると、<strong>2040年には介護人材が約69万人不足する</strong>と予測されています。
+          団塊世代がすべて後期高齢者になる2025年以降、介護需要は構造的に増え続けます。
+        </p>
+        <p>
+          この「需要側の構造的な伸び」こそが、介護福祉士という資格を<em>長期で価値が残る資格</em>たらしめている最大の根拠です。
+        </p>
+      </div>
+
+      <!-- ======================= 中間CTA: 通信講座 ======================= -->
+      <section class="mid-cta" aria-labelledby="mid-cta-title">
+        <div class="head">
+          <span class="label">★ 介護福祉士に強い通信講座 ★</span>
+          <h3 id="mid-cta-title">「介護福祉士 実務者研修」から始めたい人へ</h3>
+          <p class="sub">介護福祉士受験の前提となる実務者研修を、自宅学習＋スクーリングで取れる3社</p>
+        </div>
+        <div class="cards">
+          <a class="p-card" href="/go/u-can-kaigo" rel="nofollow sponsored noopener" target="_blank">
+            <span class="tag t-best">王道で安心</span>
+            <h4>ユーキャン</h4>
+            <p class="feat">通信講座の代名詞。在宅学習＋スクーリング数日で実務者研修が取れる。</p>
+            <ul class="pros">
+              <li>添削・質問サポート</li>
+              <li>分割払いに対応</li>
+              <li>受講期間 最大6ヶ月</li>
+            </ul>
+            <div class="price">88,000<span class="yen">円〜</span><span class="note">（税込）</span></div>
+            <div class="cta-btn">公式サイトを見る →</div>
+          </a>
+          <a class="p-card" href="/go/nihon-iryo-kaigo" rel="nofollow sponsored noopener" target="_blank">
+            <span class="tag">大手介護スクール</span>
+            <h4>日本医療事務協会</h4>
+            <p class="feat">医療・介護分野に特化した大手スクール。通学コースの併用がしやすい。</p>
+            <ul class="pros">
+              <li>地方都市にもスクール網</li>
+              <li>就職支援つき</li>
+              <li>受講期間 最大9ヶ月</li>
+            </ul>
+            <div class="price">98,000<span class="yen">円〜</span><span class="note">（税込）</span></div>
+            <div class="cta-btn">公式サイトを見る →</div>
+          </a>
+          <a class="p-card" href="/go/sankei-gakuen" rel="nofollow sponsored noopener" target="_blank">
+            <span class="tag t-cheap">コスパ重視</span>
+            <h4>三幸福祉カレッジ</h4>
+            <p class="feat">介護福祉士・実務者研修・初任者研修に強い専門校。価格が抑えめ。</p>
+            <ul class="pros">
+              <li>福祉専門スクールの実績</li>
+              <li>スクーリング会場が多い</li>
+              <li>初任者研修からの段階受講可</li>
+            </ul>
+            <div class="price">79,800<span class="yen">円〜</span><span class="note">（税込）</span></div>
+            <div class="cta-btn">公式サイトを見る →</div>
+          </a>
+        </div>
+        <p class="pr-foot">※ 価格・サービス内容は 2026年5月時点。最新情報は各公式サイトでご確認ください。</p>
+      </section>
+
+      <div class="a-body">
+        <h2 id="chap-3">「食いっぱぐれない」の正体</h2>
+        <p>
+          ここまでのデータを総合すると、介護福祉士の「食いっぱぐれなさ」の正体はこうです。
+        </p>
+        <ul>
+          <li>◎ 求人は常にある（有効求人倍率 約3.5倍）</li>
+          <li>◎ 需要は2040年まで構造的に増える</li>
+          <li>◯ 離職率は全産業平均並み（イメージほど高くない）</li>
+          <li>△ 年収は平均より低めだが、処遇改善で上昇傾向</li>
+        </ul>
+        <p>
+          つまり「<strong>仕事は絶対に消えないが、年収を上げるには上位資格やマネジメントへの展開が必要</strong>」というのが、データから見える結論です。
+        </p>
+
+        <h2 id="chap-4">この資格が向く人・向かない人</h2>
+        <h3>向いている人</h3>
+        <ul>
+          <li>長く安定した雇用を求める人</li>
+          <li>人と関わる仕事にやりがいを感じる人</li>
+          <li>将来的にケアマネ・施設管理職にステップアップしたい人</li>
+        </ul>
+        <h3>慎重に考えたほうがいい人</h3>
+        <ul>
+          <li>年収500万以上を最短で取りに行きたい人</li>
+          <li>身体的負担を避けたい人</li>
+          <li>定型業務だけで完結する仕事を望む人</li>
+        </ul>
+
+        <h2 id="chap-5">最短ルートで取るための教材選び</h2>
+        <p>
+          介護福祉士の国家試験を受けるには、原則として<strong>実務経験3年＋実務者研修の修了</strong>が必要です。
+          まず実務者研修を取得し、現場での経験を積みながら国家試験対策を進めるのが王道。
+          通信＋スクーリングで取得できる上記の3社が、編集部が公式情報を比較したうえでの第一候補です。
+        </p>
+        <p>
+          資格の全体像をもう少し広く比較したい方は、<a href="kaigo.html">介護福祉士 個別ページ</a>もあわせて参考にしてください。
+        </p>
+
+        <div class="author-box">
+          <span class="avatar">📝</span>
+          <div>
+            <h4>資格Life編集部</h4>
+            <p>
+              資格取得とキャリアアップに役立つ情報を発信するメディアです。
+              試験データ・教材比較・受験者の体験談をもとに、合格までの最短ルートをわかりやすくお伝えします。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======================= 関連記事 ======================= -->
+      <section class="related">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">RELATED</span>
+            <h2>合わせて読みたい</h2>
+          </div>
+        </div>
+        <div class="article-grid">
+          <a class="article-card card" href="kaigo.html">
+            <div class="thumb t-mint">🏥<span class="cat-pill cat-med badge">医療・福祉系</span></div>
+            <div class="body">
+              <h3>介護福祉士 個別ページ</h3>
+              <p class="excerpt">試験概要・難易度・合格率・教材比較を1ページで網羅。</p>
+              <div class="meta"><span>読了 10分</span></div>
+            </div>
+          </a>
+          <a class="article-card card" href="caremanager.html">
+            <div class="thumb">📋<span class="cat-pill cat-med badge">医療・福祉系</span></div>
+            <div class="body">
+              <h3>ケアマネジャー、介護福祉士からの最短ルート</h3>
+              <p class="excerpt">年収アップを狙うなら、介護福祉士の次はここ。</p>
+              <div class="meta"><span>読了 9分</span></div>
+            </div>
+          </a>
+          <a class="article-card card" href="iryojimu.html">
+            <div class="thumb t-orange">💼<span class="cat-pill cat-med badge">医療・福祉系</span></div>
+            <div class="body">
+              <h3>医療事務、家庭と両立しやすい資格として</h3>
+              <p class="excerpt">同じ医療・福祉系で身体負担が少ないルート。</p>
+              <div class="meta"><span>読了 8分</span></div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </article>
+
+    <aside class="side">
+      <div class="panel side-cta">
+        <h4>SPONSORED</h4>
+        <p class="copy">介護系の通信講座を、一覧で比較。</p>
+        <a href="comparison.html">比較ページを見る →</a>
+      </div>
+
+      <div class="panel">
+        <h4>POPULAR</h4>
+        <ul>
+          <li><a href="kaigo.html">介護福祉士 個別ページ</a></li>
+          <li><a href="caremanager.html">ケアマネジャー</a></li>
+          <li><a href="iryojimu.html">医療事務</a></li>
+          <li><a href="tohan.html">登録販売者</a></li>
+          <li><a href="hoiku.html">保育士</a></li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h4>CATEGORIES</h4>
+        <ul>
+          <li><a href="category-med.html">🏥 医療・福祉系</a></li>
+          <li><a href="category-bilmen.html">🔧 ビルメン系</a></li>
+          <li><a href="category-it-ai.html">🤖 IT・AI</a></li>
+          <li><a href="category-law.html">⚖️ 法律系</a></li>
+          <li><a href="category-fin.html">💰 金融</a></li>
+          <li><a href="category-lang.html">🗣️ 語学</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<div id="footer-slot"></div>
+
+<script src="partials.js"></script>
+<script>
+  SL.mountHeader('articles');
+  SL.mountFooter();
+
+  const bar = document.getElementById('progress');
+  function updateProgress() {
+    const h = document.documentElement;
+    const scrollTop = h.scrollTop || document.body.scrollTop;
+    const scrollHeight = h.scrollHeight - h.clientHeight;
+    const pct = Math.min(100, Math.max(0, (scrollTop / scrollHeight) * 100));
+    bar.style.width = pct + '%';
+  }
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+</script>
+</body>
+</html>
