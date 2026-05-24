@@ -476,6 +476,72 @@
   .cat-lang   { background-image: url('images/cat-lang.png'); }
   .cat-med    { background-image: url('images/cat-med.png'); }
 
+  /* ===================== 資格名リスト（カテゴリ別） ===================== */
+  .shikaku-list-wrap {
+    margin-top: 24px;
+    padding: 28px 24px 20px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+  }
+  .shikaku-list-title {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 14px; color: var(--blue-deep);
+    margin: 0 0 18px;
+    letter-spacing: 0.05em;
+  }
+  .shikaku-list-title::before {
+    content: "📋 ";
+  }
+  .shikaku-list-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 18px;
+  }
+  @media (max-width: 1100px) { .shikaku-list-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 720px)  { .shikaku-list-grid { grid-template-columns: repeat(2, 1fr); } }
+  .shikaku-list-col h4 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900; font-size: 13px;
+    color: var(--ink);
+    margin: 0 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--blue);
+    display: flex; align-items: center; gap: 6px;
+  }
+  .shikaku-list-col.lc-bilmen h4 { border-bottom-color: var(--green); }
+  .shikaku-list-col.lc-it h4     { border-bottom-color: var(--purple); }
+  .shikaku-list-col.lc-law h4    { border-bottom-color: var(--ink-strong, #1a2230); }
+  .shikaku-list-col.lc-fin h4    { border-bottom-color: var(--yellow); }
+  .shikaku-list-col.lc-lang h4   { border-bottom-color: var(--pink); }
+  .shikaku-list-col.lc-med h4    { border-bottom-color: var(--blue); }
+  .shikaku-list-col ul {
+    list-style: none;
+    padding: 0; margin: 0;
+  }
+  .shikaku-list-col li {
+    font-size: 12px;
+    color: var(--ink-soft);
+    line-height: 1.95;
+    padding-left: 12px;
+    position: relative;
+  }
+  .shikaku-list-col li::before {
+    content: "›";
+    position: absolute;
+    left: 0; top: 0;
+    color: var(--blue);
+    font-weight: 700;
+  }
+  .shikaku-list-col li a {
+    color: var(--ink-soft);
+    transition: color .15s;
+  }
+  .shikaku-list-col li a:hover {
+    color: var(--blue);
+    text-decoration: underline;
+  }
+
   /* ===================== SECTIONS / MAIN ===================== */
   main { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
 
@@ -958,7 +1024,7 @@
 <!-- ============ HEADER ============ -->
 <header class="site">
   <div class="header-inner">
-    <a href="#" class="logo">
+    <a href="index.html" class="logo">
       <span class="logo-mark">資</span>
       <span class="logo-text">
         <strong>資格Life</strong>
@@ -1130,6 +1196,85 @@
         <div class="cat-cnt">13 資格</div>
       </div>
     </a>
+  </div>
+
+  <!-- 資格名リスト（カテゴリ別） -->
+  <div class="shikaku-list-wrap">
+    <p class="shikaku-list-title">カテゴリ別 主要資格一覧（42資格）</p>
+    <div class="shikaku-list-grid">
+      <div class="shikaku-list-col lc-bilmen">
+        <h4>ビルメン系</h4>
+        <ul>
+          <li><a href="category-bilmen.html">第二種電気工事士</a></li>
+          <li><a href="category-bilmen.html">危険物乙4</a></li>
+          <li><a href="category-bilmen.html">2級ボイラー技士</a></li>
+          <li><a href="category-bilmen.html">第三種冷凍機械</a></li>
+          <li><a href="category-bilmen.html">第一種電気工事士</a></li>
+          <li><a href="category-bilmen.html">消防設備士 甲4</a></li>
+          <li><a href="category-bilmen.html">ビル管理士</a></li>
+          <li><a href="category-bilmen.html">エネルギー管理士</a></li>
+        </ul>
+      </div>
+      <div class="shikaku-list-col lc-it">
+        <h4>IT・AI</h4>
+        <ul>
+          <li><a href="category-it-ai.html">ITパスポート</a></li>
+          <li><a href="category-it-ai.html">MOS Excel</a></li>
+          <li><a href="category-it-ai.html">基本情報技術者</a></li>
+          <li><a href="category-it-ai.html">応用情報技術者</a></li>
+          <li><a href="category-it-ai.html">G検定</a></li>
+          <li><a href="category-it-ai.html">E資格</a></li>
+        </ul>
+      </div>
+      <div class="shikaku-list-col lc-law">
+        <h4>法律系</h4>
+        <ul>
+          <li><a href="category-law.html">FP3級</a></li>
+          <li><a href="category-law.html">宅地建物取引士</a></li>
+          <li><a href="category-law.html">FP2級</a></li>
+          <li><a href="category-law.html">行政書士</a></li>
+          <li><a href="category-law.html">社会保険労務士</a></li>
+        </ul>
+      </div>
+      <div class="shikaku-list-col lc-fin">
+        <h4>金融</h4>
+        <ul>
+          <li><a href="category-fin.html">簿記3級</a></li>
+          <li><a href="category-fin.html">FP3級</a></li>
+          <li><a href="category-fin.html">簿記2級</a></li>
+          <li><a href="category-fin.html">証券外務員 二種</a></li>
+          <li><a href="category-fin.html">簿記1級</a></li>
+          <li><a href="category-fin.html">中小企業診断士</a></li>
+        </ul>
+      </div>
+      <div class="shikaku-list-col lc-lang">
+        <h4>語学</h4>
+        <ul>
+          <li><a href="category-lang.html">TOEIC L&R</a></li>
+          <li><a href="category-lang.html">英検</a></li>
+          <li><a href="category-lang.html">TOEIC S&W</a></li>
+          <li><a href="category-lang.html">HSK・中国語検定</a></li>
+        </ul>
+      </div>
+      <div class="shikaku-list-col lc-med">
+        <h4>医療・福祉系</h4>
+        <ul>
+          <li><a href="category-med.html">医療事務</a></li>
+          <li><a href="category-med.html">登録販売者</a></li>
+          <li><a href="category-med.html">介護職員初任者研修</a></li>
+          <li><a href="category-med.html">介護福祉士</a></li>
+          <li><a href="category-med.html">保育士</a></li>
+          <li><a href="category-med.html">ケアマネジャー</a></li>
+          <li><a href="category-med.html">精神保健福祉士</a></li>
+          <li><a href="category-med.html">看護師</a></li>
+          <li><a href="category-med.html">准看護師</a></li>
+          <li><a href="category-med.html">診療放射線技師</a></li>
+          <li><a href="category-med.html">薬剤師</a></li>
+          <li><a href="category-med.html">臨床工学技士</a></li>
+          <li><a href="category-med.html">臨床検査技師</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 
