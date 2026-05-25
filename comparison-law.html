@@ -119,6 +119,30 @@
   .cmp-cta .btn-row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
   .cmp-cta .btn-cta { background: #3b82f6; color:#fff; padding: 14px 28px; border-radius: 999px; text-decoration: none; font-weight: 700; font-size: 15px; }
   .cmp-cta .btn-cta.outline { background:#fff; color: #3b82f6; border: 1.5px solid #3b82f6; }
+
+  /* === Footer === */
+  footer.site { background: #1a2230; color: #c5cbd6; padding: 36px 0 0; margin-top: 40px; font-size: 12px; }
+  .foot-inner { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
+  .foot-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 28px; padding-bottom: 28px; }
+  @media (max-width: 720px) { .foot-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 480px) { .foot-grid { grid-template-columns: 1fr; } }
+  .foot-brand-mark { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .foot-brand-mark .logo-mark { box-shadow: none; width: 32px; height: 32px; object-fit: contain; }
+  .foot-brand-mark strong { font-family: "Zen Maru Gothic", sans-serif; font-weight: 900; font-size: 20px; color: #fff; }
+  .foot-brand p { font-size: 11px; line-height: 1.8; color: #8b94a5; margin: 0 0 14px; }
+  .foot-social { display: flex; gap: 8px; }
+  .fsoc { width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,0.08); display: grid; place-items: center; font-size: 13px; color: #c5cbd6; text-decoration: none; }
+  .fsoc:hover { background: #3b82f6; color: #fff; }
+  .foot-col h4 { font-family: "Zen Maru Gothic", sans-serif; font-weight: 700; font-size: 13px; color: #fff; margin: 0 0 12px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .foot-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+  .foot-col li { font-size: 11px; color: #c5cbd6; }
+  .foot-col li a { color: #c5cbd6; text-decoration: none; }
+  .foot-col li a:hover { color: #3b82f6; }
+  .foot-col li::before { content: "›"; color: #3b82f6; margin-right: 6px; }
+  .foot-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding: 16px 0; display: flex; justify-content: space-between; align-items: center; font-size: 10px; color: #6e7787; flex-wrap: wrap; gap: 10px; }
+  .foot-bottom .links { display: flex; gap: 18px; flex-wrap: wrap; }
+  .foot-bottom .links a { color: #6e7787; text-decoration: none; }
+  .foot-bottom .links a:hover { color: #3b82f6; }
 </style>
 </head>
 <body data-screen-label="比較・法律系">
