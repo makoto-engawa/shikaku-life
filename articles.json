@@ -8,7 +8,7 @@
     "category_label": "物語",
     "icon": "📔",
     "thumb_color": "t-orange",
-    "thumb_image": "images/art-aidev.png",
+    "thumb_image": "images/art-aidev.webp",
     "read_minutes": 14,
     "popular_rank": 5
   },
@@ -21,7 +21,7 @@
     "category_label": "IT・AI",
     "icon": "🤖",
     "thumb_color": "t-violet",
-    "thumb_image": "images/art-ai-shikaku-app.png",
+    "thumb_image": "images/art-ai-shikaku-app.webp",
     "read_minutes": 12,
     "popular_rank": 3
   },
@@ -34,7 +34,7 @@
     "category_label": "ビルメン系",
     "icon": "🛠",
     "thumb_color": "t-mint",
-    "thumb_image": "images/art-denko.png",
+    "thumb_image": "images/art-denko.webp",
     "read_minutes": 9,
     "popular_rank": 2
   },
@@ -47,7 +47,7 @@
     "category_label": "医療・介護",
     "icon": "🏥",
     "thumb_color": "t-teal",
-    "thumb_image": "images/art-care.png",
+    "thumb_image": "images/art-care.webp",
     "read_minutes": 10,
     "popular_rank": 4
   },
@@ -60,7 +60,7 @@
     "category_label": "ビルメン系",
     "icon": "⚡",
     "thumb_color": "t-mint",
-    "thumb_image": "images/art-denko.png",
+    "thumb_image": "images/art-denko.webp",
     "read_minutes": 12,
     "popular_rank": 6
   },
@@ -73,7 +73,7 @@
     "category_label": "IT・AI",
     "icon": "💬",
     "thumb_color": "t-violet",
-    "thumb_image": "images/art-chatgpt.png",
+    "thumb_image": "images/art-chatgpt.webp",
     "read_minutes": 8,
     "popular_rank": 7
   },
@@ -86,7 +86,7 @@
     "category_label": "法律系",
     "icon": "🏠",
     "thumb_color": "t-orange",
-    "thumb_image": "images/art-takken.png",
+    "thumb_image": "images/art-takken.webp",
     "read_minutes": 10,
     "popular_rank": 1
   },
@@ -99,7 +99,7 @@
     "category_label": "金融",
     "icon": "📊",
     "thumb_color": "t-yellow",
-    "thumb_image": "images/art-boki.png",
+    "thumb_image": "images/art-boki.webp",
     "read_minutes": 8,
     "popular_rank": 8
   },
@@ -112,7 +112,7 @@
     "category_label": "語学",
     "icon": "🗣️",
     "thumb_color": "t-pink",
-    "thumb_image": "images/art-toeic.png",
+    "thumb_image": "images/art-toeic.webp",
     "read_minutes": 9,
     "popular_rank": 9
   },
@@ -125,7 +125,7 @@
     "category_label": "ビルメン系",
     "icon": "🔥",
     "thumb_color": "t-mint",
-    "thumb_image": "images/art-otsu4.png",
+    "thumb_image": "images/art-otsu4.webp",
     "read_minutes": 6,
     "popular_rank": 10
   }

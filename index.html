@@ -676,6 +676,7 @@
   .card-thumb.art-toeic   { background-image: url('images/art-toeic.webp'); }
   .card-thumb.art-otsu4   { background-image: url('images/art-otsu4.webp'); }
   .card-thumb.art-aidev   { background-image: url('images/art-aidev.webp'); }
+  .card-thumb.art-ai-app  { background-image: url('images/art-ai-shikaku-app.webp'); }
   .card-thumb .new {
     position: absolute; top: 8px; left: 8px;
     background: var(--pink); color: #fff;
@@ -771,10 +772,7 @@
   .feat-cat { font-size: 9px; color: var(--mute); margin-top: 3px; }
 
   /* ===================== POPULAR ===================== */
-  .popular .card-grid-4 .card:nth-child(1) .card-thumb { background: linear-gradient(135deg, #e6f4ed, #c5e7d4); } /* ビルメン */
-  .popular .card-grid-4 .card:nth-child(2) .card-thumb { background: linear-gradient(135deg, #efe7ff, #d5c4ff); } /* IT・AI */
-  .popular .card-grid-4 .card:nth-child(3) .card-thumb { background: linear-gradient(135deg, #d6f5f1, #a7f3d0); } /* 医療・介護 */
-  .popular .card-grid-4 .card:nth-child(4) .card-thumb { background: linear-gradient(135deg, #ffe1e7, #ffc1cd); } /* 語学 */
+  /* 各カードは .art-XXX クラスで背景画像を持つ（絵文字フォールバックなし）*/
 
   /* ===================== CAREER SECTION ===================== */
   .career-band {
@@ -1539,7 +1537,7 @@
 
     <div class="card-grid-4">
       <a class="card" href="article-bilmen-4set.html">
-        <div class="card-thumb"><span class="fav">♡</span>🛠</div>
+        <div class="card-thumb art-denko"><span class="fav">♡</span></div>
         <div class="card-body">
           <span class="pill bil">ビルメン系</span>
           <h3 class="card-title">ビルメン4点セット、取得順序の決定版【2026年版】</h3>
@@ -1547,7 +1545,7 @@
         </div>
       </a>
       <a class="card" href="article-ai-shikaku-app.html">
-        <div class="card-thumb"><span class="fav on">♥</span>🤖</div>
+        <div class="card-thumb art-ai-app"><span class="fav on">♥</span></div>
         <div class="card-body">
           <span class="pill it">IT・AI</span>
           <h3 class="card-title">AIだけで「自分専用の資格勉強アプリ」を作る、15分の手順【2026最新】</h3>
@@ -1555,7 +1553,7 @@
         </div>
       </a>
       <a class="card" href="article-kaigo-demand.html">
-        <div class="card-thumb"><span class="fav">♡</span>🏥</div>
+        <div class="card-thumb art-care"><span class="fav">♡</span></div>
         <div class="card-body">
           <span class="pill medical">医療・介護</span>
           <h3 class="card-title">介護福祉士はなぜ今、需要が伸びているのか</h3>
@@ -1563,7 +1561,7 @@
         </div>
       </a>
       <a class="card" href="article-toeic-800.html">
-        <div class="card-thumb"><span class="fav">♡</span>🗣️</div>
+        <div class="card-thumb art-toeic"><span class="fav">♡</span></div>
         <div class="card-body">
           <span class="pill lang">語学</span>
           <h3 class="card-title">TOEIC 600→800、半年で伸ばした朝活ルーティン</h3>
