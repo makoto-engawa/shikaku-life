@@ -63,18 +63,33 @@ html, body {
 
 body { word-break: auto-phrase; line-break: strict; }
 
-/* ===== 美容ページ等の独自ヘッダーナビ：モバイル横スクロール ===== */
+/* ===== iOS overscroll/上部余白対策：html背景を bg と揃える ===== */
+html { background: var(--bg); }
+
+/* ===== 美容ページ等の独自ヘッダーナビ：モバイルは2段ラップで全項目表示 ===== */
 @media (max-width: 768px) {
-  body .header-nav {
-    overflow-x: auto !important;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    max-width: 100%;
-    flex-wrap: nowrap !important;
-    padding-right: 8px;
+  body .header-inner {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    padding: 10px 14px !important;
   }
-  body .header-nav::-webkit-scrollbar { display: none; }
-  body .header-inner { overflow: hidden; }
+  body .header-nav {
+    margin-left: 0 !important;
+    width: 100%;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    padding: 0 !important;
+  }
+  body .header-nav a {
+    font-size: 11px !important;
+    padding: 4px 10px !important;
+    white-space: nowrap;
+  }
+  body .header-nav .header-contact {
+    font-size: 10px !important;
+    padding: 4px 8px !important;
+  }
 }
 
 a { color: var(--primary-deep); text-decoration: none; }
