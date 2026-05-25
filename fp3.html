@@ -68,6 +68,29 @@
     padding: 12px 16px;
     gap: 24px;
   }
+  .header-nav {
+    display: flex; align-items: center; gap: 22px;
+    margin-left: auto;
+  }
+  .header-nav a {
+    color: var(--ink); font-size: 13px;
+    font-family: "Zen Maru Gothic", sans-serif; font-weight: 700;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color .15s;
+  }
+  .header-nav a:hover { color: var(--blue); }
+  .header-nav .header-contact {
+    background: var(--orange); color: #fff;
+    padding: 8px 16px; border-radius: 999px;
+    font-size: 12px; box-shadow: 0 1px 0 var(--orange-deep);
+  }
+  .header-nav .header-contact:hover { background: var(--orange-deep); color: #fff; }
+  @media (max-width: 768px) {
+    .header-nav { gap: 14px; }
+    .header-nav a { font-size: 12px; }
+    .header-nav .header-contact { padding: 6px 12px; font-size: 11px; }
+  }
   .logo {
     display: flex; align-items: center; gap: 10px;
     flex-shrink: 0;
@@ -1285,23 +1308,6 @@
 </head>
 <body data-screen-label="01 資格Life Top">
 
-<!-- ============ UTILITY ============ -->
-<div class="util">
-  <div class="util-inner">
-    <div class="util-left">
-      <a href="#">資格Lifeとは</a>
-      <a href="#">運営者情報</a>
-      <a href="#">編集ポリシー</a>
-      <a href="#">お問い合わせ</a>
-    </div>
-    <div class="util-right">
-      <a href="#">📞 0120-000-000（受付10:00-19:00）</a>
-      <a href="#">プレスリリース</a>
-      <a href="#">採用情報</a>
-    </div>
-  </div>
-</div>
-
 <!-- ============ HEADER ============ -->
 <header class="site">
   <div class="header-inner">
@@ -1313,45 +1319,15 @@
       </span>
     </a>
 
-    <div class="header-search">
-      <input type="text" placeholder="資格名・職種・キーワードで検索" />
-      <button>🔍</button>
-    </div>
-
-    <div class="header-icons">
-      <div class="hicon"><span class="ic">🕐</span>閲覧履歴</div>
-      <div class="hicon"><span class="ic">♡</span>気になる</div>
-      <div class="hicon"><span class="ic">📘</span>学習履歴</div>
-    </div>
-
-    <div class="header-cta">
-      <button class="btn-login">ログイン</button>
-      <button class="btn-register">会員登録（無料）</button>
-    </div>
+    <nav class="header-nav">
+      <a href="index.html">ホーム</a>
+      <a href="articles.html">記事一覧</a>
+      <a href="comparison.html">教材比較</a>
+      <a href="passion.html">やりたいを仕事に</a>
+      <a href="about.html#contact" class="header-contact">問い合わせ</a>
+    </nav>
   </div>
 </header>
-
-<!-- ============ TAB NAV ============ -->
-<nav class="tabs">
-  <div class="tabs-inner">
-    <a href="#" class="tab active">
-      <div class="tab-jp">資格を探す</div>
-      <span class="tab-en">FIND CERTIFICATIONS</span>
-    </a>
-    <a href="#" class="tab">
-      <div class="tab-jp">教材を比較する</div>
-      <span class="tab-en">COMPARE COURSES</span>
-    </a>
-    <a href="#" class="tab">
-      <div class="tab-jp">知りたい・聞きたい</div>
-      <span class="tab-en">Q & A</span>
-    </a>
-    <a href="#" class="tab">
-      <div class="tab-jp">転職を考える</div>
-      <span class="tab-en">CAREER CHANGE</span>
-    </a>
-  </div>
-</nav>
 
 <!-- ============ ARTICLE HERO ============ -->
 <section class="cat-hero">
@@ -1545,7 +1521,7 @@
         <li>初心者向けの定番ブランド</li>
       </ul>
       <p class="edu-summary">「お金の話が全く分からない」方に。<em>添削指導と質問サポート</em>で独学のつまずきを防げます。</p>
-      <a href="#" class="btn-affil" rel="nofollow sponsored noopener" target="_blank">ユーキャンの詳細を見る →</a>
+      <a href="comparison.html" class="btn-affil">ユーキャンの詳細を比較する →</a>
     </div>
 
     <div class="edu-card">
@@ -1560,7 +1536,7 @@
         <li>圧倒的低価格でコスパ最強</li>
       </ul>
       <p class="edu-summary">通勤時間にスマホで学習したい方に。<em>5,000円以下で動画＋過去問アプリ</em>が揃う、社会人の定番。</p>
-      <a href="#" class="btn-affil" rel="nofollow sponsored noopener" target="_blank">スタディングを見る →</a>
+      <a href="comparison.html" class="btn-affil">スタディングを比較する →</a>
     </div>
 
     <div class="edu-card">
@@ -1575,7 +1551,7 @@
         <li>合格率の高さで定評</li>
       </ul>
       <p class="edu-summary">「動画＋紙テキスト両方欲しい」方に。<em>視覚的に分かりやすいフルカラー教材</em>が定評。</p>
-      <a href="#" class="btn-affil" rel="nofollow sponsored noopener" target="_blank">フォーサイトを見る →</a>
+      <a href="comparison.html" class="btn-affil">フォーサイトを比較する →</a>
     </div>
   </div>
 
@@ -1742,7 +1718,7 @@
   <h3>FP3級、今日から始めよう。</h3>
   <p>お金の全体地図を手に入れる。社会人マネーリテラシーの基礎を、今日この瞬間に。</p>
   <div class="btn-row">
-    <a href="#" class="btn-primary">教材を比較する →</a>
+    <a href="comparison.html" class="btn-primary">教材を比較する →</a>
     <a href="category-law.html" class="btn-sub">法律系カテゴリを見る →</a>
   </div>
 </div>
@@ -1764,46 +1740,43 @@
           shikaku-life.jp は、独学・通信・通学・転職まで、資格にまつわる選択を伴走するメディアです。
         </p>
         <div class="foot-social">
-          <a href="#" class="fsoc">𝕏</a>
-          <a href="#" class="fsoc">f</a>
-          <a href="#" class="fsoc">▶</a>
-          <a href="#" class="fsoc">in</a>
+          <a href="https://x.com/shikakulife" class="fsoc" target="_blank" rel="noopener">𝕏</a>
+          <a href="https://x.com/bilumen_academy" class="fsoc" target="_blank" rel="noopener" title="姉妹サイトX">⚙</a>
         </div>
       </div>
 
       <div class="foot-col">
         <h4>資格カテゴリ</h4>
         <ul>
-          <li>ビルメン系</li>
-          <li>IT・AI</li>
-          <li>法律系</li>
-          <li>金融</li>
-          <li>語学</li>
-          <li>医療・福祉系</li>
+          <li><a href="category-bilmen.html">🔧 ビルメン系</a></li>
+          <li><a href="category-it-ai.html">🤖 IT・AI</a></li>
+          <li><a href="category-law.html">⚖️ 法律系</a></li>
+          <li><a href="category-fin.html">💰 金融</a></li>
+          <li><a href="category-lang.html">🗣️ 語学</a></li>
+          <li><a href="category-med.html">💊 医療・福祉系</a></li>
         </ul>
       </div>
 
       <div class="foot-col">
         <h4>コンテンツ</h4>
         <ul>
-          <li>新着記事</li>
-          <li>人気の特集</li>
-          <li>教材を比較する</li>
-          <li>転職を考える</li>
-          <li>Q&amp;A</li>
-          <li>編集部の連載</li>
+          <li><a href="articles.html">新着記事</a></li>
+          <li><a href="comparison.html">教材を比較する</a></li>
+          <li><a href="passion.html">やりたいを仕事に</a></li>
+          <li><a href="story.html">物語・コラム</a></li>
+          <li><a href="index.html#career-band">転職を考える</a></li>
         </ul>
       </div>
 
       <div class="foot-col">
         <h4>運営・サービス</h4>
         <ul>
-          <li>資格Lifeとは</li>
-          <li>運営者情報</li>
-          <li>編集ポリシー</li>
-          <li>姉妹サイト bilumen.jp</li>
-          <li>広告掲載のご案内</li>
-          <li>お問い合わせ</li>
+          <li><a href="about.html#about">資格Lifeとは</a></li>
+          <li><a href="about.html#about">運営者情報</a></li>
+          <li><a href="about.html#ad-policy">編集ポリシー</a></li>
+          <li><a href="https://bilumen.jp" target="_blank" rel="noopener">姉妹サイト bilumen.jp</a></li>
+          <li><a href="about.html#ad-policy">広告掲載のご案内</a></li>
+          <li><a href="about.html#contact">お問い合わせ</a></li>
         </ul>
       </div>
     </div>
@@ -1811,10 +1784,10 @@
     <div class="foot-bottom">
       <span>© 2026 SHIKAKU-LIFE.JP All Rights Reserved.</span>
       <div class="links">
-        <a href="#">利用規約</a>
-        <a href="#">プライバシーポリシー</a>
-        <a href="#">特定商取引法</a>
-        <a href="#">サイトマップ</a>
+        <a href="about.html#terms">利用規約</a>
+        <a href="about.html#privacy">プライバシーポリシー</a>
+        <a href="about.html#ad-policy">広告掲載ポリシー</a>
+        <a href="articles.html">サイトマップ</a>
       </div>
     </div>
   </div>
