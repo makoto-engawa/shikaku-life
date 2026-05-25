@@ -227,9 +227,17 @@ em {
     padding: 16px 24px 24px;
     box-shadow: var(--shadow-md);
     transform: translateY(-110%);
-    transition: transform .25s ease;
+    transition: transform .25s ease, visibility .25s, opacity .25s;
+    visibility: hidden;       /* 閉じてる時は完全に非表示 */
+    opacity: 0;
+    pointer-events: none;     /* 透明領域のクリック受付を切る */
   }
-  .site-nav.is-open { transform: translateY(0); }
+  .site-nav.is-open {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
   .site-nav a { padding: 14px 16px; border-radius: 12px; }
   .nav-toggle { display: inline-flex; }
 }
