@@ -58,9 +58,24 @@ html, body {
   -webkit-font-smoothing: antialiased;
   word-break: auto-phrase;
   line-break: strict;
+  overflow-x: hidden;     /* 美容ページのナビ等の横はみ出しで全体スクロールを起こさない */
 }
 
 body { word-break: auto-phrase; line-break: strict; }
+
+/* ===== 美容ページ等の独自ヘッダーナビ：モバイル横スクロール ===== */
+@media (max-width: 768px) {
+  body .header-nav {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    max-width: 100%;
+    flex-wrap: nowrap !important;
+    padding-right: 8px;
+  }
+  body .header-nav::-webkit-scrollbar { display: none; }
+  body .header-inner { overflow: hidden; }
+}
 
 a { color: var(--primary-deep); text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
