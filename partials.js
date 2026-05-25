@@ -5,7 +5,7 @@
     <header class="site-header site-header--sticky">
       <div class="container inner">
         <a href="index.html" class="brand">
-          <img src="images/logo-shikakulife.png" alt="資格Life" class="brand-mark">
+          <img src="images/logo-shikakulife.webp" alt="資格Life" class="brand-mark">
           <span>
             資格Life
             <span class="sub">SHIKAKU-LIFE</span>
@@ -29,7 +29,7 @@
         <div class="grid">
           <div>
             <a href="index.html" class="brand">
-              <img src="images/logo-shikakulife.png" alt="資格Life" class="brand-mark">
+              <img src="images/logo-shikakulife.webp" alt="資格Life" class="brand-mark">
               <span>資格Life<span class="sub">SHIKAKU-LIFE</span></span>
             </a>
             <p class="tagline">
