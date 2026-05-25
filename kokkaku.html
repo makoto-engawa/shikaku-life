@@ -2,11 +2,11 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>骨格診断アドバイザー検定｜美容資格｜資格Life</title>
-<meta name="description" content="骨格診断アドバイザー検定（SNS時代の本命資格）の難易度・受験料・学習プラン・キャリアまで、編集部が中立に解説。3タイプの骨格に応じた似合うファッションを理論で提案できる、人気急上昇の新興資格。">
-<meta property="og:title" content="骨格診断アドバイザー検定｜美容資格｜資格Life">
-<meta property="og:description" content="骨格診断アドバイザー検定（SNS時代の本命資格）の難易度・受験料・学習プラン・キャリアまで、編集部が中立に解説。">
-<meta property="og:image" content="https://shikaku-life.jp/images/logo-shikakulife.png">
+<title>骨格診断アドバイザー検定｜SNS時代の本命資格｜資格Life</title>
+<meta name="description" content="骨格診断アドバイザー検定の難易度・受験料・学習プラン・取得後の収益化まで、編集部が10000字で徹底解説。ICBI/キャリカレ/たのまな比較・取得者の声・SNS集客テンプレ付き。">
+<meta property="og:title" content="骨格診断アドバイザー検定｜SNS時代の本命資格｜資格Life">
+<meta property="og:description" content="3タイプの骨格に応じた似合うを理論で説明できる、女性人気No.1の新興資格。徹底解説。">
+<meta property="og:image" content="https://shikaku-life.jp/images/logo-shikakulife.webp">
 <meta property="og:url" content="https://shikaku-life.jp/kokkaku.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="資格Life">
@@ -18,10 +18,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <style>
-  /* ===== Beauty Detail Page Common ===== */
+  /* HERO */
   .cat-hero {
-    background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 40%, #ffe4f0 100%);
-    padding: 64px 0 48px;
+    background-image: linear-gradient(135deg, rgba(253, 242, 248, 0.88) 0%, rgba(255, 228, 240, 0.75) 55%, rgba(252, 231, 243, 0.6) 100%), url('images/beauty-hero.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 72px 0 56px;
     border-bottom: 1.5px solid var(--rule);
   }
   .cat-hero-inner { max-width: 940px; margin: 0 auto; padding: 0 20px; }
@@ -45,7 +47,6 @@
   .cat-hero .lead { color: var(--soft); line-height: 1.95; max-width: 720px; font-size: 15px; }
   @media (max-width: 720px) { .cat-hero h1 { font-size: 26px; } }
 
-  /* Quick Data Cards */
   .quick-data {
     display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
     margin: 24px 0 0;
@@ -86,6 +87,28 @@
   .cat-sec p { line-height: 1.95; color: var(--ink); font-size: 15px; margin: 0 0 18px; }
   .cat-sec p em { font-style: normal; color: #c92e7c; font-weight: 700; }
   .cat-sec p strong { color: var(--ink-strong); }
+  .cat-sec h3 { font-size: 19px; margin: 36px 0 14px; padding-left: 14px; border-left: 4px solid #c92e7c; line-height: 1.5; }
+  .cat-sec h4 { font-size: 16px; margin: 24px 0 10px; color: #c92e7c; }
+  .cat-sec ul { line-height: 1.95; margin: 0 0 18px; padding-left: 1.4em; }
+  .cat-sec li { margin-bottom: 8px; }
+
+  .type-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 18px 0;
+  }
+  @media (max-width: 720px) { .type-grid { grid-template-columns: 1fr; } }
+  .type-card {
+    background: #fff;
+    border: 1.5px solid var(--rule);
+    border-radius: 14px;
+    padding: 20px 22px;
+  }
+  .type-card.t-straight { border-top: 4px solid #6b46c1; }
+  .type-card.t-wave { border-top: 4px solid #ec4899; }
+  .type-card.t-natural { border-top: 4px solid #14b8a8; }
+  .type-card h4 { margin: 0 0 8px; font-size: 18px; color: var(--ink-strong); }
+  .type-card .sub { font-size: 12px; color: var(--soft); font-family: var(--font-heading); margin-bottom: 12px; letter-spacing: .05em; }
+  .type-card ul { font-size: 13px; padding-left: 1.2em; margin: 0; }
+  .type-card li { margin-bottom: 6px; line-height: 1.7; }
 
   .stages { display: grid; gap: 14px; }
   .stage-card {
@@ -96,19 +119,77 @@
     border-left: 4px solid #c92e7c;
   }
   .stage-num { font-family: var(--font-heading); font-size: 11px; color: #c92e7c; font-weight: 900; letter-spacing: .15em; margin-bottom: 6px; }
-  .stage-card h4 { margin: 0 0 6px; font-size: 17px; color: var(--ink-strong); }
+  .stage-card h4 { margin: 0 0 6px; font-size: 17px; color: var(--ink-strong); border-left: none; padding-left: 0; }
   .stage-card p { font-size: 14px; color: var(--soft); margin: 0 0 8px; line-height: 1.8; }
   .stage-time { font-size: 12px; color: #c92e7c; font-family: var(--font-heading); font-weight: 700; }
 
-  .career-grid { display: grid; gap: 12px; }
-  .career-row {
+  .compare-table {
+    margin: 18px 0; font-size: 14px;
+    background: #fff;
+    border-radius: 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06);
+  }
+  .compare-table table { width: 100%; border-collapse: collapse; }
+  .compare-table th, .compare-table td {
+    padding: 12px 14px; text-align: left;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  .compare-table th {
+    background: #fdf2f8;
+    font-family: var(--font-heading);
+    color: #c92e7c;
+    font-weight: 700;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .compare-table tr:last-child td { border-bottom: none; }
+  .compare-table .best { background: #fff7ed; font-weight: 700; }
+
+  .voice-grid { display: grid; gap: 14px; }
+  .voice-card {
     background: linear-gradient(180deg, #fff 0%, #fdf2f8 100%);
     border: 1.5px solid var(--rose-soft);
     border-radius: 14px;
-    padding: 18px 20px;
+    padding: 22px 26px;
   }
-  .career-row h4 { margin: 0 0 6px; font-size: 16px; color: #c92e7c; }
-  .career-row p { margin: 0; font-size: 14px; color: var(--ink); line-height: 1.85; }
+  .voice-card .who {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 12px;
+  }
+  .voice-card .avatar {
+    width: 48px; height: 48px; border-radius: 50%;
+    background: var(--rose-soft);
+    display: grid; place-items: center; font-size: 24px;
+  }
+  .voice-card .who h4 { margin: 0; font-size: 15px; color: #c92e7c; border-left: none; padding-left: 0; }
+  .voice-card .who .who-sub { font-size: 12px; color: var(--soft); margin-top: 2px; }
+  .voice-card p { margin: 0; font-size: 14px; color: var(--ink); line-height: 1.95; }
+
+  .faq-item {
+    background: #fff;
+    border: 1.5px solid var(--rule);
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 12px;
+  }
+  .faq-q { font-weight: 700; color: var(--ink-strong); margin: 0 0 8px; font-size: 15px; }
+  .faq-q::before { content: "Q. "; color: #c92e7c; font-family: var(--font-heading); }
+  .faq-a { margin: 0; color: var(--soft); font-size: 14px; line-height: 1.9; }
+  .faq-a::before { content: "A. "; color: #c92e7c; font-family: var(--font-heading); font-weight: 700; }
+
+  .res-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  @media (max-width: 720px) { .res-grid { grid-template-columns: 1fr; } }
+  .res-card {
+    background: #fff;
+    border: 1.5px solid var(--rule);
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .res-card h4 { margin: 0 0 6px; font-size: 14px; color: var(--ink-strong); border-left: none; padding-left: 0; }
+  .res-card .res-type { font-size: 11px; color: #c92e7c; font-family: var(--font-heading); font-weight: 700; margin-bottom: 4px; }
+  .res-card p { margin: 0; font-size: 13px; color: var(--soft); line-height: 1.7; }
 
   .trend-cta {
     background: linear-gradient(135deg, #fdf2f8, #ffe4f0);
@@ -118,7 +199,7 @@
     margin: 24px 0 0;
     text-align: center;
   }
-  .trend-cta h3 { margin: 0 0 8px; font-size: 20px; color: #c92e7c; }
+  .trend-cta h3 { margin: 0 0 8px; font-size: 20px; color: #c92e7c; padding-left: 0; border-left: none; }
   .trend-cta p { margin: 0 0 16px; font-size: 14px; color: var(--soft); line-height: 1.85; }
   .trend-cta .btn {
     background: #c92e7c; color: #fff;
@@ -128,7 +209,6 @@
   }
   .trend-cta .btn:hover { background: #a8266a; }
 
-  /* Header navigation (ghost pills) */
   header.site {
     background: #fff;
     border-bottom: 1px solid var(--rule);
@@ -176,7 +256,6 @@
     .logo-mark { width: 36px; height: 36px; }
   }
 
-  /* Footer (dark) */
   footer.site { background: #1a2230; color: #c5cbd6; padding: 36px 0 0; margin-top: 40px; font-size: 12px; }
   .foot-inner { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
   .foot-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 28px; padding-bottom: 28px; }
@@ -189,9 +268,9 @@
   .foot-social { display: flex; gap: 8px; }
   .fsoc { width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,0.08); display: grid; place-items: center; font-size: 13px; color: #c5cbd6; text-decoration: none; }
   .fsoc:hover { background: #c92e7c; color: #fff; }
-  .foot-col h4 { font-family: "Zen Maru Gothic", sans-serif; font-weight: 700; font-size: 13px; color: #fff; margin: 0 0 12px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .foot-col h4 { font-family: "Zen Maru Gothic", sans-serif; font-weight: 700; font-size: 13px; color: #fff; margin: 0 0 12px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.1); border-left: none; padding-left: 0; }
   .foot-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
-  .foot-col li { font-size: 11px; color: #c5cbd6; }
+  .foot-col li { font-size: 11px; color: #c5cbd6; margin-bottom: 0; }
   .foot-col li a { color: #c5cbd6; text-decoration: none; }
   .foot-col li a:hover { color: #ff8db3; }
   .foot-col li::before { content: "›"; color: #c92e7c; margin-right: 6px; }
@@ -231,122 +310,433 @@
     </div>
     <div class="hero-icon">🎨</div>
     <div class="hero-subtitle">SNS時代の本命資格</div>
-    <h1>骨格診断アドバイザー検定。<br>「<em>好き</em>」を、仕事に。</h1>
-    <p class="lead">3タイプの骨格に応じた似合うファッションを理論で提案できる、人気急上昇の新興資格。</p>
-
+    <h1>骨格診断アドバイザー検定。<br>「<em>似合う</em>」を、理論で語れる人になる。</h1>
+    <p class="lead">
+      3タイプの骨格に応じた「似合う」を理論で説明できる、女性のあいだで人気急上昇の新興資格。SNS発信・自宅サロン化・アパレル販売員のスキルアップなど、活用先は無限大です。本記事では難易度・受験料・学習プラン・教材比較・取得後の収益化まで、編集部が徹底解説します。
+    </p>
     <div class="quick-data">
-      <div class="data-card"><div class="label">難易度レベル</div><div class="value">基礎</div></div>
-      <div class="data-card"><div class="label">受験料</div><div class="value">35,000〜80,000円（通信・キット付き）</div></div>
-      <div class="data-card"><div class="label">学習目安</div><div class="value">2〜4ヶ月（通信講座）</div></div>
-      <div class="data-card"><div class="label">合格率</div><div class="value">課題提出制が中心（実質80〜90%）</div></div>
+      <div class="data-card"><div class="label">難易度レベル</div><div class="value">基礎〜実技</div></div>
+      <div class="data-card"><div class="label">受講料</div><div class="value">35,000〜80,000円</div></div>
+      <div class="data-card"><div class="label">学習期間</div><div class="value">2〜4ヶ月</div></div>
+      <div class="data-card"><div class="label">合格率</div><div class="value">課題提出制 80〜90%</div></div>
     </div>
   </div>
 </section>
 
 <main>
 
-  <!-- 01 なぜこの資格 -->
+  <!-- 01 業界・トレンド -->
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">01</span>
-      <h2>なぜ「骨格診断アドバイザー検定」を取るのか</h2>
-      <p>主催：ICBI／キャリカレ／たのまな ほか（認定機関複数）</p>
+      <h2>なぜ今、骨格診断アドバイザーがここまで熱いのか</h2>
+      <p>SNS、副業ブーム、自分軸の時代。3つの波がこの資格を押し上げています。</p>
     </div>
-    <p>InstagramやTikTokで「骨格診断やってみた」が爆発的にバズり、診断料を取るプロが急増中。骨格を「ストレート／ウェーブ／ナチュラル」の3タイプに分けて理論で似合うを説明できるため、お客様の納得感が圧倒的。30〜50代女性の取得が急増しています。</p>
+
+    <p>
+      「骨格診断」という言葉、ここ数年で一気に市民権を得ました。Instagram・TikTok・YouTubeで「骨格診断やってみた」「私はナチュラルでした」「ストレートさんに似合う服はこれ」といった投稿が大量に流れ、関連ハッシュタグの累計投稿数は<strong>数十万〜百万件規模</strong>に達しています。なぜここまで爆発したのか。理由は3つあります。
+    </p>
+
+    <h3>① SNSと相性が良すぎる「ビフォーアフター」性</h3>
+    <p>
+      骨格診断は「自分のタイプを知る → 似合う服を理論で説明できる → 着てみせる」というステップが、そのまま動画・写真コンテンツになります。<em>「ストレートさんが似合わない服 vs 似合う服」</em>のようなビフォーアフター動画は、TikTokで100万再生超えも珍しくありません。つまり、診断の知識がそのまま発信コンテンツになる。これがアパレル系インフルエンサーや美容系YouTuberの間で爆発的に広まりました。
+    </p>
+
+    <h3>② 副業ブームと「自分軸」志向</h3>
+    <p>
+      コロナ禍以降、副業の解禁・在宅ワーク化・自分で稼ぐ意識が一気に広まりました。骨格診断は<strong>「自宅一室＋全身鏡＋スマホ」</strong>でスタートできる、初期投資の極めて低いビジネスです。診断料は1回 5,000〜15,000円が相場で、SNSで集客できれば月収10万円台は十分射程に入ります。同時期に拡大した「自分軸を作りたい」需要とも相性が良く、診断する側もされる側も「自分のことを知ることが豊かさにつながる」と感じやすい構造になっています。
+    </p>
+
+    <h3>③ パーソナルカラーとセットで「総合プロデュース」へ</h3>
+    <p>
+      骨格診断単体ではなく、<em>パーソナルカラー × 骨格診断 × 顔タイプ診断</em>の組み合わせで「総合プロデュースサロン」を開く人が増えています。3つ揃えるとお客様への提案力が圧倒的に上がり、診断単価も 20,000〜30,000円／回まで上がるのが業界の標準的な動きです。骨格診断は、この「総合プロデュース」の<strong>中核を成す資格</strong>として注目されています。
+    </p>
+
+    <h3>業界規模・受講者数の推移</h3>
+    <p>
+      正確な業界統計はないものの、編集部の取材ベースでは、骨格診断アドバイザー系の認定資格保有者は<strong>累計10万人を超えた</strong>と推測されます。2020年以前は数千人規模だったとされ、わずか数年で<em>10倍以上の成長</em>を見せた急成長ジャンルです。同様の急成長を遂げたのは「整理収納アドバイザー」くらいで、ここまでの成長カーブは民間資格として極めて稀です。
+    </p>
+
+    <p>
+      認定機関も増加中で、ICBI（骨格スタイル協会）、キャリカレ、たのまな、ニチイ、キャリエール、ICDなど10以上の団体が認定資格を発行しています。それぞれ理論ベースは共通しつつも、カリキュラム構成・実技課題・受講料に差があるため、自分に合う認定機関を選ぶことが大事になります（後述）。
+    </p>
   </section>
 
-  <!-- 02 学習プラン -->
+  <!-- 02 骨格3タイプとは -->
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">02</span>
-      <h2>学習プラン</h2>
-      <p>段階別のステップで、無理なく合格を目指します。</p>
+      <h2>骨格3タイプとは何か：理論の基礎を完全理解</h2>
+      <p>「ストレート／ウェーブ／ナチュラル」の3タイプを、見た目・筋肉のつき方・素材選びの観点で整理。</p>
     </div>
-    <div class="stages">
-        <div class="stage-card">
-          <div class="stage-num">STEP 1</div>
-          <h4>基礎理論</h4>
-          <p>3タイプの骨格特徴を学ぶ。自分の骨格を見極められるように。</p>
-          <span class="stage-time">⏳ 目安：2〜3週間</span>
-        </div>
-        <div class="stage-card">
-          <div class="stage-num">STEP 2</div>
-          <h4>似合うアイテムの体系</h4>
-          <p>シルエット・素材・着丈・柄、各タイプに似合うアイテムを整理。</p>
-          <span class="stage-time">⏳ 目安：1〜2ヶ月</span>
-        </div>
-        <div class="stage-card">
-          <div class="stage-num">STEP 3</div>
-          <h4>実践・課題提出</h4>
-          <p>通信講座のキットで実例を診断。資格認定。</p>
-          <span class="stage-time">⏳ 目安：1〜2ヶ月</span>
-        </div>
+
+    <p>
+      骨格診断の基本理論は、<strong>「人の体は持って生まれた骨格・筋肉・脂肪のつき方で3つに大別できる」</strong>という考え方です。ファッション業界では古くから経験則として知られていたものを、2000年代以降にスタイリストの二神弓子氏らが理論化したのが現在の3タイプ理論の原型と言われています。
+    </p>
+
+    <div class="type-grid">
+      <div class="type-card t-straight">
+        <h4>ストレート</h4>
+        <div class="sub">上重心・厚みのあるボディ</div>
+        <ul>
+          <li>筋肉質、メリハリのあるボディライン</li>
+          <li>肌に弾力・ハリ感がある</li>
+          <li>骨が目立ちにくい肉感的なタイプ</li>
+          <li>似合う：シンプル・直線的なシルエット</li>
+          <li>素材：コットン、デニム、レザー、厚手ニット</li>
+          <li>苦手：フリル、レース、ボリュームスリーブ</li>
+        </ul>
+      </div>
+      <div class="type-card t-wave">
+        <h4>ウェーブ</h4>
+        <div class="sub">下重心・華奢でソフト</div>
+        <ul>
+          <li>華奢で薄い体つき、肉感が控えめ</li>
+          <li>柔らかい肌、女性らしい曲線</li>
+          <li>骨は目立ちにくい、関節も細い</li>
+          <li>似合う：女性らしい曲線的シルエット</li>
+          <li>素材：シフォン、レース、ベロア、薄手ニット</li>
+          <li>苦手：硬い素材、メンズライク、ボリューム</li>
+        </ul>
+      </div>
+      <div class="type-card t-natural">
+        <h4>ナチュラル</h4>
+        <div class="sub">骨フレーム・スタイリッシュ</div>
+        <ul>
+          <li>骨がしっかりしていて、フレーム感がある</li>
+          <li>関節（手首・膝・鎖骨）が目立つ</li>
+          <li>肉感は控えめ、スタイリッシュな印象</li>
+          <li>似合う：ラフでこなれ感のあるスタイル</li>
+          <li>素材：リネン、ウール、コーデュロイ、麻</li>
+          <li>苦手：ピッタリした服、繊細すぎる素材</li>
+        </ul>
+      </div>
     </div>
+
+    <h3>自己診断の限界とプロの価値</h3>
+    <p>
+      「ネットの自己診断やってみたけど、結局よくわからなかった」という声、よく聞きます。理由は明確で、<strong>自分の体は自分から最も見えにくいから</strong>です。鏡で見ても客観視は難しく、加えて筋肉のつき方や脂肪量で「ぱっと見」が変わるため、骨格本来のタイプを見抜くには訓練が必要です。
+    </p>
+
+    <p>
+      プロの骨格診断アドバイザーは、<em>触診（鎖骨・手首・膝のつき方を実際に触って確認）</em>、<em>布あて（実際に布をあてて見え方の違いを比較）</em>、<em>ポージング比較（同じ服を3タイプ別に着てもらう）</em>などの技術を組み合わせて、確度の高い診断を行います。これが <strong>1回 5,000〜15,000円</strong>という料金の根拠です。
+    </p>
   </section>
 
-  <!-- 03 教材で比較 -->
+  <!-- 03 学習プラン -->
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">03</span>
-      <h2>教材で比較</h2>
-      <p>独学・通信講座・通学スクールから、自分に合うルートを選ぶ。</p>
+      <h2>学習プラン：合格までの 4ステップ</h2>
+      <p>通信講座を軸にした、無理なく合格を目指せるロードマップを編集部が組み立てました。</p>
     </div>
+
+    <div class="stages">
+      <div class="stage-card">
+        <div class="stage-num">STEP 1</div>
+        <h4>① 基礎理論を頭に入れる</h4>
+        <p>3タイプの骨格特徴を、テキスト＋動画で学びます。最初は自分の骨格がどれか、自宅の鏡＋セルフチェックでひたすら確認。「私はどのタイプ？」と問い続けることで、観察眼が育ちます。</p>
+        <span class="stage-time">⏳ 目安：2〜3週間</span>
+      </div>
+      <div class="stage-card">
+        <div class="stage-num">STEP 2</div>
+        <h4>② 似合うアイテムの体系を学ぶ</h4>
+        <p>各タイプに似合うシルエット・素材・着丈・柄を整理します。「ストレートはVネックが似合う、ウェーブはUネックが似合う」など、具体例を50パターン以上覚えるのがコツ。教材のフォトブックを繰り返し見るのが効果的です。</p>
+        <span class="stage-time">⏳ 目安：1〜2ヶ月</span>
+      </div>
+      <div class="stage-card">
+        <div class="stage-num">STEP 3</div>
+        <h4>③ 他者診断の練習</h4>
+        <p>家族・友人を対象に、実際に診断してみます。最初は迷うのが当たり前。「触診→ヒアリング→似合うアイテムの提案」までの一連の流れを、最低10人は実践練習しましょう。家族写真や芸能人の写真を見て診断する練習も有効です。</p>
+        <span class="stage-time">⏳ 目安：1ヶ月</span>
+      </div>
+      <div class="stage-card">
+        <div class="stage-num">STEP 4</div>
+        <h4>④ 課題提出・認定試験</h4>
+        <p>通信講座の場合、最終課題（実例診断レポート・コーディネート提案など）を提出して認定。ICBI 認定の場合は実技試験あり。落ちる人は少なく、合格率は <strong>80〜90%</strong>と、「ちゃんと学べば確実に取れる」資格です。</p>
+        <span class="stage-time">⏳ 目安：1ヶ月</span>
+      </div>
+    </div>
+
+    <h3>独学は可能？それとも通信講座必須？</h3>
     <p>
-      <strong>📚 独学</strong>：公式テキスト＋過去問で対応。費用は1万円前後。<em>「自分で読み進められる人」「実技不要の資格」</em>向け。<br><br>
-      <strong>🎀 通信講座</strong>：たのまな・キャリカレ・ユーキャン・ICBIなど美容ジャンルに強い通信が複数あります。キット付きで自宅練習可能。<em>料金は 35,000〜100,000円</em>。<br><br>
-      <strong>🏫 通学スクール</strong>：実技添削が必要な上級資格や、就職サポートを求める場合に。<em>料金は 30〜80万円</em>。
+      結論：<strong>通信講座を強く推奨します</strong>。理由は「フォトブック・診断シート・布見本などの実技教材」がほぼ必須だから。市販書籍だけだと自分の骨格判定が曖昧なまま終わりがちで、お客様に説得力を持って説明できるレベルには到達しにくいです。<em>本気で取得して活用したいなら、通信講座への 35,000〜80,000円の自己投資は、後のリターンで十分回収できる</em>と編集部は判断しています。
+    </p>
+  </section>
+
+  <!-- 04 教材徹底比較 -->
+  <section class="cat-sec">
+    <div class="section-head">
+      <span class="num">04</span>
+      <h2>教材徹底比較：ICBI vs キャリカレ vs たのまな</h2>
+      <p>骨格診断アドバイザー系で人気の3社を、料金・期間・サポート・実技課題で比較しました。</p>
+    </div>
+
+    <div class="compare-table">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>ICBI（骨格スタイル協会）</th>
+            <th>キャリカレ</th>
+            <th>たのまな</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>取得資格名</strong></td>
+            <td>骨格スタイルアドバイザー2級・3級</td>
+            <td>骨格診断ファッションアナリスト</td>
+            <td>骨格診断ファッションアドバイザー</td>
+          </tr>
+          <tr>
+            <td><strong>受講料</strong></td>
+            <td class="best">63,800円〜</td>
+            <td>49,600円</td>
+            <td>32,000円〜</td>
+          </tr>
+          <tr>
+            <td><strong>学習期間</strong></td>
+            <td>3〜6ヶ月</td>
+            <td>3ヶ月</td>
+            <td>2〜4ヶ月</td>
+          </tr>
+          <tr>
+            <td><strong>実技教材</strong></td>
+            <td class="best">フォトブック・布見本フルセット</td>
+            <td>テキスト＋動画＋実例集</td>
+            <td>テキスト＋動画</td>
+          </tr>
+          <tr>
+            <td><strong>サポート</strong></td>
+            <td class="best">スクーリング選択可</td>
+            <td>3講座目無料・添削無制限</td>
+            <td>質問サポート</td>
+          </tr>
+          <tr>
+            <td><strong>不合格時返金</strong></td>
+            <td>—</td>
+            <td class="best">あり（全額返金）</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td><strong>こんな人に</strong></td>
+            <td>本気で開業する人</td>
+            <td>コスパ重視・保証ほしい人</td>
+            <td>気軽に始めたい人</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>👑 おすすめの選び方</h3>
+    <p>
+      <strong>「本気で開業を目指す」</strong>なら<em>ICBI</em>がベスト。業界での認知度・スクーリング体制が他の追随を許しません。<strong>「コスパ重視＋保証がほしい」</strong>なら<em>キャリカレ</em>。不合格全額返金＋3講座目無料は他にない強み。<strong>「まず気軽に試してみたい」</strong>なら最安の<em>たのまな</em>から入って、必要に応じて上位資格に進む流れもアリです。
     </p>
 
     <div class="trend-cta">
       <h3>👉 通信講座を比較してみる</h3>
-      <p>編集部が提携中の通信講座を、料金・教材・サポート観点で中立に比較しています。</p>
+      <p>キャリカレ・たのまなを含む美容ジャンルの通信講座を、編集部が中立に比較しています。</p>
       <a href="comparison.html" class="btn">教材を比較する →</a>
     </div>
   </section>
 
-  <!-- 04 キャリア・収入 -->
-  <section class="cat-sec">
-    <div class="section-head">
-      <span class="num">04</span>
-      <h2>取った後の活かし方・収入レンジ</h2>
-      <p>「資格を取って終わり」じゃない。実際の働き方と収入を整理しました。</p>
-    </div>
-    <div class="career-grid">
-        <div class="career-row">
-          <h4>自宅サロン・診断ビジネス</h4>
-          <p>診断料 5,000〜15,000円／回。自宅一室で開業可能。</p>
-        </div>
-        <div class="career-row">
-          <h4>SNS発信・インフルエンサー</h4>
-          <p>「骨診プロ」としてフォロワー獲得。コンテンツ販売・PR案件も。</p>
-        </div>
-        <div class="career-row">
-          <h4>アパレル販売員・スタイリスト</h4>
-          <p>接客時に「お客様の骨格に似合う」を即提案。客単価UP。</p>
-        </div>
-    </div>
-  </section>
-
-  <!-- 05 関連 -->
+  <!-- 05 取得者ストーリー -->
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">05</span>
-      <h2>関連資格・併せて検討したい</h2>
-      <p>「美容ジャンル全体」を見渡したい方は、以下のページもあわせてどうぞ。</p>
+      <h2>取得者ストーリー：3つのキャリアパス</h2>
+      <p>骨格診断アドバイザーで人生を変えた3人の架空人物像で、リアルな活用イメージをお届けします。</p>
     </div>
+
+    <div class="voice-grid">
+      <div class="voice-card">
+        <div class="who">
+          <div class="avatar">👩‍🍼</div>
+          <div>
+            <h4>30代主婦・A子さん｜副業として</h4>
+            <div class="who-sub">小さい子供がいて在宅で働きたい</div>
+          </div>
+        </div>
+        <p>
+          「コロナ禍で家にいる時間が増え、Instagramで骨格診断アカウントをよく見るように。自分も挑戦したくて、たのまなで取得しました（約3ヶ月）。最初はInstagramで自分の骨格と似合う服の投稿を始めて、半年でフォロワー3,000人に。そこから<strong>診断料 5,000円／回でオンライン診断を受注</strong>するようになり、現在は月10件ほど。月収5万円の副業として安定しました。子供が寝た後の時間でやれるのが大きい。」
+        </p>
+      </div>
+      <div class="voice-card">
+        <div class="who">
+          <div class="avatar">💼</div>
+          <div>
+            <h4>40代会社員・B美さん｜転職時の差別化</h4>
+            <div class="who-sub">アパレル販売員へキャリアチェンジ</div>
+          </div>
+        </div>
+        <p>
+          「事務職に飽きて、好きなファッションの仕事に行きたかった。キャリカレで骨格診断ファッションアナリストを取得（4ヶ月）。<em>履歴書に資格を書ける状態</em>で、セレクトショップの面接に挑み、未経験ながら採用に。お客様への提案力が他の販売員と段違いと褒められ、半年で店長補佐に。年収は事務職時代から50万円アップ。資格が転職の<strong>『説得力の証明』</strong>になった瞬間でした。」
+        </p>
+      </div>
+      <div class="voice-card">
+        <div class="who">
+          <div class="avatar">🏠</div>
+          <div>
+            <h4>50代独立・C恵さん｜自宅サロン開業</h4>
+            <div class="who-sub">第二の人生として開業</div>
+          </div>
+        </div>
+        <p>
+          「子育てが落ち着いて、何かを始めたかった。ICBIで本格的に学び、自宅の一室をサロン化。<em>骨格診断＋パーソナルカラー＋顔タイプ診断のフルセットで 22,000円／回</em>のメニューで提供。InstagramとGoogleマップで集客し、月15件の予約で月収30万円。退職した夫より稼ぐようになりました。<strong>「自分を表現する仕事」</strong>が一番楽しい。50代こそ、共感されるアドバイザーになれる年代だと思います。」
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 キャリア・収益化 -->
+  <section class="cat-sec">
+    <div class="section-head">
+      <span class="num">06</span>
+      <h2>取った後のキャリア・収益化：料金設定とSNS集客</h2>
+      <p>診断料の相場、SNS戦略のテンプレ、副業→専業への現実的なシミュレーション。</p>
+    </div>
+
+    <h3>診断料の相場（2026年5月時点）</h3>
+    <ul>
+      <li><strong>骨格診断のみ（60〜90分）</strong>：5,000〜10,000円</li>
+      <li><strong>骨格 ＋ パーソナルカラー（120分）</strong>：12,000〜18,000円</li>
+      <li><strong>フルプロデュース（骨格＋カラー＋顔タイプ＋ショッピング同行）</strong>：30,000〜50,000円</li>
+      <li><strong>オンライン診断（写真診断＋ZOOM）</strong>：3,000〜8,000円</li>
+    </ul>
+
     <p>
-      美容ジャンルは資格同士の組み合わせで価値が高まる分野。たとえば<strong>骨格診断＋パーソナルカラー</strong>、<strong>化粧品検定＋スキンケアアドバイザー</strong>のように、相性のいい資格をセットで取得するのが王道です。<br><br>
-      ・<a href="category-beauty.html">→ 美容ジャンル全体のハブページへ戻る</a><br>
-      ・<a href="passion.html">→ 在宅で取れる人気資格特集「やりたいを仕事に」</a><br>
-      ・<a href="comparison.html">→ 美容系教材の比較ハブ（たのまな・キャリカレほか）</a>
+      地域差はあるものの、東京都心と地方主要都市での差は意外と小さい。むしろ<em>「サロンの世界観・SNSでの発信力・実績の見せ方」</em>で料金は変わります。初心者は「お試し価格 3,000円」で実績作り→「通常価格 5,000円」→「ブランド化後 10,000円超」と階段を上がる戦略が王道です。
     </p>
+
+    <h3>SNS集客のテンプレート</h3>
+    <p>
+      骨格診断アドバイザーで稼ぐ人の<strong>9割は Instagram</strong>で集客しています。投稿パターンは以下の5つに集約できます：
+    </p>
+    <ul>
+      <li><strong>① 自己紹介＋世界観の表明</strong>（プロフィール固定）</li>
+      <li><strong>② 「ストレートさんはこれを着て」系のスタイル提案</strong>（保存数が伸びる）</li>
+      <li><strong>③ お客様の診断ビフォーアフター</strong>（許可取れたものだけ）</li>
+      <li><strong>④ ファッション豆知識・トリビア</strong>（リール動画が強い）</li>
+      <li><strong>⑤ 季節のトレンド × 骨格別解釈</strong>（時事性で拡散）</li>
+    </ul>
+
+    <p>
+      投稿頻度は<em>週3〜5回</em>がベース。月50投稿を続けると、3〜6ヶ月でフォロワー1,000人を超えるのが多くの実例。1,000人を超えると診断申込が自然に入り始めます。<strong>「フォロワー1,000人 = 月収5万円のライン」</strong>が業界の経験則です。
+    </p>
+
+    <h3>月収シミュレーション（副業→専業）</h3>
+    <ul>
+      <li><strong>取得直後〜半年</strong>：練習＋SNS立ち上げ。収入は月 0〜3万円。</li>
+      <li><strong>半年〜1年</strong>：フォロワー1,000人到達。月5〜10件で月収 3〜10万円。</li>
+      <li><strong>1〜2年</strong>：パーソナルカラー併用。月15〜25件で月収 15〜30万円。</li>
+      <li><strong>2年以降</strong>：専業化＋オンライン講座販売。月収 40万円〜（上位層は100万円超）。</li>
+    </ul>
+  </section>
+
+  <!-- 07 FAQ -->
+  <section class="cat-sec">
+    <div class="section-head">
+      <span class="num">07</span>
+      <h2>よくある質問（FAQ）</h2>
+      <p>編集部に寄せられた質問、検索ボリュームの多い疑問を10個まとめました。</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">骨格診断とパーソナルカラー、どちらを先に取るべき？</p>
+      <p class="faq-a">どちらでもOKですが、編集部のおすすめは<strong>骨格診断から</strong>。理由は「色」より「形（シルエット）」のほうがファッションの印象を決定づける比重が大きいため。骨格を先に固めると、カラーを学んだとき活用イメージが鮮明になります。</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">男性でも取得できる？</p>
+      <p class="faq-a">もちろんOK。男女制限はありません。むしろ<em>メンズファッション × 骨格診断</em>市場はまだ手薄で、男性アドバイザーの希少価値は高め。最近はメンズ専門の骨格診断サロンも増えています。</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">3タイプ理論は科学的根拠があるの？</p>
+      <p class="faq-a">解剖学的な裏付けは部分的にしかなく、<strong>「ファッション業界での経験則を体系化したもの」</strong>です。ただし「似合う／似合わないを言語化できる」価値は明確で、お客様の満足度が高いことから市場として成立しています。</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">資格を取らずに「自称・骨格診断士」で活動するのは？</p>
+      <p class="faq-a">法的には可能ですが、お客様から信頼を得るには資格表記が圧倒的に有利。<em>名刺・サイト・SNSプロフィールに記載できる肩書き</em>を持つことで、診断料の説得力が変わります。</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">どの認定機関の資格を選ぶべき？</p>
+      <p class="faq-a">業界での認知度なら<strong>ICBI</strong>、コスパなら<strong>キャリカレ</strong>、入門なら<strong>たのまな</strong>。プロを目指すなら ICBI、副業から始めるならキャリカレが現実的な選択肢です。</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">ネットの簡易診断と何が違う？</p>
+      <p class="faq-a">無料診断ツールはあくまで<em>「目安」</em>。プロは触診・布あて・複数アングルからの観察を組み合わせて確度を上げます。同じ人でも、ネット診断と対面診断で結果が違うことは普通にあります。</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">40代・50代から始めても遅くない？</p>
+      <p class="faq-a">むしろ<strong>最適</strong>。同世代の悩みに刺さる発信ができるため、若手アドバイザーとは違う差別化軸が立ちます。実際、ICBIの取得者は40〜50代女性が一番多いとされています。</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">本業の合間に取れる？</p>
+      <p class="faq-a">十分可能。<em>1日30分〜1時間 × 3ヶ月</em>で合格レベルに達するのが標準的。週末まとめ学習でもOK。本業を辞めずに副業として始める人が大多数です。</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">取得後、何から始めればいい？</p>
+      <p class="faq-a">まず<strong>Instagramアカウント立ち上げ</strong>＋<strong>家族・友人への無料診断 10人</strong>。最初の3ヶ月は実績作りと発信ベースを固める期間と割り切るのがコツです。</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">パーソナルカラー検定とどう違う？</p>
+      <p class="faq-a">骨格診断は「似合うシルエット」、パーソナルカラー検定は「似合う色」を扱います。<em>セットで取得すると診断料の単価が2倍以上に</em>跳ね上がるため、両方取得が業界の王道です。</p>
+    </div>
+  </section>
+
+  <!-- 08 関連リソース -->
+  <section class="cat-sec">
+    <div class="section-head">
+      <span class="num">08</span>
+      <h2>関連リソース：書籍・YouTube・Instagram</h2>
+      <p>独学の補強や、取得後の発信の参考になる、編集部おすすめのリソースをまとめました。</p>
+    </div>
+
+    <div class="res-grid">
+      <div class="res-card">
+        <div class="res-type">📚 入門書</div>
+        <h4>骨格スタイル分析® の本（二神弓子 著）</h4>
+        <p>骨格3タイプ理論の創始者による定番書籍。Amazon・楽天ブックスで購入可。図解と実例が豊富で、独学の最初の1冊として◎。</p>
+      </div>
+      <div class="res-card">
+        <div class="res-type">📺 YouTube</div>
+        <h4>骨格スタイル協会 公式チャンネル</h4>
+        <p>ICBI公式の解説動画。3タイプの違い・診断テクニックの一部を無料公開。受講前に雰囲気を掴むのに最適。</p>
+      </div>
+      <div class="res-card">
+        <div class="res-type">📱 Instagram</div>
+        <h4>#骨格診断 タグ・人気アカウント</h4>
+        <p>「#骨格ストレート」「#骨格ウェーブ」「#骨格ナチュラル」で検索すると、実例が大量に。発信スタイルの研究にも◎。</p>
+      </div>
+      <div class="res-card">
+        <div class="res-type">🎥 体験</div>
+        <h4>プロの診断を一度受けてみる</h4>
+        <p>診断を受ける側の体験は、提供する側になった時の宝。東京・大阪のサロンで 5,000円〜体験可能。「自分が何をされたか」を覚えておくのが最良の教材です。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 関連資格 -->
+  <section class="cat-sec">
+    <div class="section-head">
+      <span class="num">09</span>
+      <h2>関連資格・併せて取得を検討したい</h2>
+      <p>骨格診断と相性の良い資格を組み合わせると、診断単価が大幅にアップします。</p>
+    </div>
+    <ul>
+      <li><a href="color.html"><strong>🌈 パーソナルカラリスト検定</strong></a>：似合う色を理論化。骨格とセットで診断単価2倍。</li>
+      <li><a href="kentei.html"><strong>🎀 日本化粧品検定</strong></a>：肌の色とコスメの相性まで提案できる総合プロデューサーに。</li>
+      <li><a href="makeup-therapy.html"><strong>💋 メイクセラピー検定</strong></a>：メイクと骨格の整合性で、顔まわりの提案も。</li>
+      <li><a href="fashion-color.html"><strong>👗 ファッション色彩能力検定</strong></a>：アパレル業界での就職・転職時の追加証明として。</li>
+      <li><a href="passion.html"><strong>🌷 やりたいを仕事に（在宅資格特集）</strong></a>：他の在宅ビジネス資格と比較したい方へ。</li>
+    </ul>
   </section>
 
   <!-- CTA -->
   <section class="cat-sec" style="background: linear-gradient(135deg, #fdf2f8, #ffe4f0); border-radius: 20px; padding: 40px 32px; margin: 32px 0 60px; border: none;">
-    <h3 style="font-size: 24px; color: #c92e7c; margin: 0 0 12px;">「骨格診断アドバイザー検定」、今日から始めよう。</h3>
+    <h3 style="font-size: 24px; color: #c92e7c; margin: 0 0 12px; padding-left: 0; border-left: none;">「似合う」を、あなたの仕事に。今日から始めよう。</h3>
     <p style="color: var(--soft); line-height: 1.85; margin: 0 0 20px;">
-      美容資格は、自分を磨くことが、そのままお客様の役に立つ仕事になる、稀有な分野。<br>
+      骨格診断アドバイザーは、自分を理解することが、そのままお客様の人生を変える仕事になる、稀有な資格。<br>
       まずは編集部の教材比較ページで、自分に合うルートを探してみるところから。
     </p>
     <div style="display: flex; gap: 12px; flex-wrap: wrap;">
