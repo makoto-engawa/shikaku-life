@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <title>ネイリスト技能検定試験｜美容資格｜資格Life</title>
-<meta name="description" content="ネイリスト技能検定試験（在宅サロン開業の登竜門）の難易度・受験料・学習プラン・キャリアまで、編集部が中立に解説。JNEC主催 3級〜1級。在宅ネイルサロン開業に直結する実技資格の王道。">
+<meta name="description" content="ネイリスト技能検定試験（JNEC ／ 在宅サロン開業の登竜門）の難易度・受験料・学習プラン・キャリアまで、編集部が7000字で徹底解説。取得者ストーリー・教材比較・FAQ付き。">
 <meta property="og:title" content="ネイリスト技能検定試験｜美容資格｜資格Life">
-<meta property="og:description" content="ネイリスト技能検定試験（在宅サロン開業の登竜門）の難易度・受験料・学習プラン・キャリアまで、編集部が中立に解説。">
-<meta property="og:image" content="https://shikaku-life.jp/images/logo-shikakulife.png">
+<meta property="og:description" content="ネイリスト技能検定試験を徹底解説。難易度・受験料・学習プラン・キャリア・収益化まで。">
+<meta property="og:image" content="https://shikaku-life.jp/images/logo-shikakulife.webp">
 <meta property="og:url" content="https://shikaku-life.jp/nail.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="資格Life">
@@ -18,140 +18,91 @@
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <style>
-  /* ===== Beauty Detail Page Common ===== */
-  .cat-hero {
-    background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 40%, #ffe4f0 100%);
-    padding: 64px 0 48px;
-    border-bottom: 1.5px solid var(--rule);
-  }
+  .cat-hero { background-image: linear-gradient(135deg, rgba(253, 242, 248, 0.88) 0%, rgba(255, 228, 240, 0.75) 55%, rgba(252, 231, 243, 0.6) 100%), url('images/beauty-hero.webp'); background-size: cover; background-position: center; padding: 72px 0 56px; border-bottom: 1.5px solid var(--rule); }
   .cat-hero-inner { max-width: 940px; margin: 0 auto; padding: 0 20px; }
   .cat-crumb { font-size: 13px; color: var(--soft); margin-bottom: 14px; }
   .cat-crumb a { color: var(--soft); text-decoration: none; }
   .cat-crumb a:hover { color: #c92e7c; }
-  .hero-icon {
-    width: 80px; height: 80px;
-    background: #fff; border-radius: 24px;
-    display: grid; place-items: center;
-    font-size: 44px;
-    margin-bottom: 18px;
-    box-shadow: 0 4px 16px rgba(201,46,124,.12);
-  }
+  .hero-icon { width: 80px; height: 80px; background: #fff; border-radius: 24px; display: grid; place-items: center; font-size: 44px; margin-bottom: 18px; box-shadow: 0 4px 16px rgba(201,46,124,.12); }
   .hero-subtitle { font-size: 14px; color: #c92e7c; font-family: var(--font-heading); font-weight: 700; letter-spacing: .06em; margin-bottom: 8px; }
-  .cat-hero h1 {
-    font-size: 36px; line-height: 1.4; margin: 0 0 14px;
-    color: var(--ink-strong);
-  }
+  .cat-hero h1 { font-size: 36px; line-height: 1.4; margin: 0 0 14px; color: var(--ink-strong); }
   .cat-hero h1 em { font-style: normal; color: #c92e7c; }
   .cat-hero .lead { color: var(--soft); line-height: 1.95; max-width: 720px; font-size: 15px; }
   @media (max-width: 720px) { .cat-hero h1 { font-size: 26px; } }
-
-  /* Quick Data Cards */
-  .quick-data {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
-    margin: 24px 0 0;
-  }
+  .quick-data { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 24px 0 0; }
   @media (max-width: 720px) { .quick-data { grid-template-columns: repeat(2, 1fr); } }
-  .data-card {
-    background: #fff;
-    border: 1.5px solid var(--rule);
-    border-radius: 12px;
-    padding: 14px 16px;
-  }
+  .data-card { background: #fff; border: 1.5px solid var(--rule); border-radius: 12px; padding: 14px 16px; }
   .data-card .label { font-size: 11px; color: var(--soft); font-family: var(--font-heading); font-weight: 700; letter-spacing: .05em; margin-bottom: 4px; }
   .data-card .value { font-size: 14px; color: var(--ink-strong); font-weight: 700; line-height: 1.4; }
-
   main { max-width: 940px; margin: 0 auto; padding: 0 16px; }
-
-  @media (max-width: 720px) {
-    main { padding: 0 20px; }
-    h2 { font-size: 20px !important; line-height: 1.5; }
-    h3, h4 { font-size: 17px !important; }
-    p, li { font-size: 15px !important; line-height: 1.85; }
-  }
-
+  @media (max-width: 720px) { main { padding: 0 20px; } h2 { font-size: 20px !important; line-height: 1.5; } h3, h4 { font-size: 17px !important; } p, li { font-size: 15px !important; line-height: 1.85; } }
   .cat-sec { padding: 48px 0; border-bottom: 1px dashed var(--rule); }
   .cat-sec:last-child { border-bottom: none; }
   .section-head { display: block !important; margin-bottom: 24px; text-align: left; }
-  .section-head .num {
-    display: inline-block;
-    background: #c92e7c; color: #fff;
-    font-family: var(--font-heading); font-weight: 900;
-    font-size: 12px; padding: 4px 12px; border-radius: 999px;
-    letter-spacing: .12em;
-    margin-bottom: 12px;
-  }
+  .section-head .num { display: inline-block; background: #c92e7c; color: #fff; font-family: var(--font-heading); font-weight: 900; font-size: 12px; padding: 4px 12px; border-radius: 999px; letter-spacing: .12em; margin-bottom: 12px; }
   .section-head h2 { font-size: 26px; margin: 0; line-height: 1.5; text-align: left; }
   .section-head p { color: var(--soft); margin: 6px 0 0; line-height: 1.9; font-size: 15px; text-align: left; }
-
   .cat-sec p { line-height: 1.95; color: var(--ink); font-size: 15px; margin: 0 0 18px; }
   .cat-sec p em { font-style: normal; color: #c92e7c; font-weight: 700; }
   .cat-sec p strong { color: var(--ink-strong); }
-
+  .cat-sec h3 { font-size: 19px; margin: 36px 0 14px; padding-left: 14px; border-left: 4px solid #c92e7c; line-height: 1.5; }
+  .cat-sec h4 { font-size: 16px; margin: 24px 0 10px; color: #c92e7c; }
+  .cat-sec ul { line-height: 1.95; margin: 0 0 18px; padding-left: 1.4em; }
+  .cat-sec li { margin-bottom: 8px; }
+  .type-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 18px 0; }
+  @media (max-width: 720px) { .type-grid { grid-template-columns: 1fr; } }
+  .type-card { background: #fff; border: 1.5px solid var(--rule); border-radius: 14px; padding: 20px 22px; }
+  .type-card.t-1 { border-top: 4px solid #14b8a8; }
+  .type-card.t-2 { border-top: 4px solid #ec4899; }
+  .type-card.t-3 { border-top: 4px solid #6b46c1; }
+  .type-card.t-4 { border-top: 4px solid #f97316; }
+  .type-card h4 { margin: 0 0 8px; font-size: 18px; color: var(--ink-strong); border-left: none; padding-left: 0; }
+  .type-card .sub { font-size: 12px; color: var(--soft); font-family: var(--font-heading); margin-bottom: 12px; letter-spacing: .05em; }
+  .type-card ul { font-size: 13px; padding-left: 1.2em; margin: 0; }
+  .type-card li { margin-bottom: 6px; line-height: 1.7; }
   .stages { display: grid; gap: 14px; }
-  .stage-card {
-    background: #fff;
-    border: 1.5px solid var(--rule);
-    border-radius: 16px;
-    padding: 20px 24px;
-    border-left: 4px solid #c92e7c;
-  }
+  .stage-card { background: #fff; border: 1.5px solid var(--rule); border-radius: 16px; padding: 20px 24px; border-left: 4px solid #c92e7c; }
   .stage-num { font-family: var(--font-heading); font-size: 11px; color: #c92e7c; font-weight: 900; letter-spacing: .15em; margin-bottom: 6px; }
-  .stage-card h4 { margin: 0 0 6px; font-size: 17px; color: var(--ink-strong); }
+  .stage-card h4 { margin: 0 0 6px; font-size: 17px; color: var(--ink-strong); border-left: none; padding-left: 0; }
   .stage-card p { font-size: 14px; color: var(--soft); margin: 0 0 8px; line-height: 1.8; }
   .stage-time { font-size: 12px; color: #c92e7c; font-family: var(--font-heading); font-weight: 700; }
-
-  .career-grid { display: grid; gap: 12px; }
-  .career-row {
-    background: linear-gradient(180deg, #fff 0%, #fdf2f8 100%);
-    border: 1.5px solid var(--rose-soft);
-    border-radius: 14px;
-    padding: 18px 20px;
-  }
-  .career-row h4 { margin: 0 0 6px; font-size: 16px; color: #c92e7c; }
-  .career-row p { margin: 0; font-size: 14px; color: var(--ink); line-height: 1.85; }
-
-  .trend-cta {
-    background: linear-gradient(135deg, #fdf2f8, #ffe4f0);
-    border: 1.5px solid var(--rose-soft);
-    border-radius: var(--radius-xl);
-    padding: 28px 30px;
-    margin: 24px 0 0;
-    text-align: center;
-  }
-  .trend-cta h3 { margin: 0 0 8px; font-size: 20px; color: #c92e7c; }
+  .compare-table { margin: 18px 0; font-size: 14px; background: #fff; border-radius: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .compare-table table { width: 100%; border-collapse: collapse; }
+  .compare-table th, .compare-table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  .compare-table th { background: #fdf2f8; font-family: var(--font-heading); color: #c92e7c; font-weight: 700; font-size: 13px; white-space: nowrap; }
+  .compare-table tr:last-child td { border-bottom: none; }
+  .compare-table .best { background: #fff7ed; font-weight: 700; }
+  .voice-grid { display: grid; gap: 14px; }
+  .voice-card { background: linear-gradient(180deg, #fff 0%, #fdf2f8 100%); border: 1.5px solid var(--rose-soft); border-radius: 14px; padding: 22px 26px; }
+  .voice-card .who { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .voice-card .avatar { width: 48px; height: 48px; border-radius: 50%; background: var(--rose-soft); display: grid; place-items: center; font-size: 24px; }
+  .voice-card .who h4 { margin: 0; font-size: 15px; color: #c92e7c; border-left: none; padding-left: 0; }
+  .voice-card .who .who-sub { font-size: 12px; color: var(--soft); margin-top: 2px; }
+  .voice-card p { margin: 0; font-size: 14px; color: var(--ink); line-height: 1.95; }
+  .faq-item { background: #fff; border: 1.5px solid var(--rule); border-radius: 12px; padding: 18px 22px; margin-bottom: 12px; }
+  .faq-q { font-weight: 700; color: var(--ink-strong); margin: 0 0 8px; font-size: 15px; }
+  .faq-q::before { content: "Q. "; color: #c92e7c; font-family: var(--font-heading); }
+  .faq-a { margin: 0; color: var(--soft); font-size: 14px; line-height: 1.9; }
+  .faq-a::before { content: "A. "; color: #c92e7c; font-family: var(--font-heading); font-weight: 700; }
+  .res-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  @media (max-width: 720px) { .res-grid { grid-template-columns: 1fr; } }
+  .res-card { background: #fff; border: 1.5px solid var(--rule); border-radius: 12px; padding: 16px 18px; }
+  .res-card h4 { margin: 0 0 6px; font-size: 14px; color: var(--ink-strong); border-left: none; padding-left: 0; }
+  .res-card .res-type { font-size: 11px; color: #c92e7c; font-family: var(--font-heading); font-weight: 700; margin-bottom: 4px; }
+  .res-card p { margin: 0; font-size: 13px; color: var(--soft); line-height: 1.7; }
+  .trend-cta { background: linear-gradient(135deg, #fdf2f8, #ffe4f0); border: 1.5px solid var(--rose-soft); border-radius: var(--radius-xl); padding: 28px 30px; margin: 24px 0 0; text-align: center; }
+  .trend-cta h3 { margin: 0 0 8px; font-size: 20px; color: #c92e7c; padding-left: 0; border-left: none; }
   .trend-cta p { margin: 0 0 16px; font-size: 14px; color: var(--soft); line-height: 1.85; }
-  .trend-cta .btn {
-    background: #c92e7c; color: #fff;
-    padding: 12px 22px; border-radius: 999px;
-    font-family: var(--font-heading); font-weight: 700; font-size: 14px;
-    text-decoration: none; display: inline-block;
-  }
+  .trend-cta .btn { background: #c92e7c; color: #fff; padding: 12px 22px; border-radius: 999px; font-family: var(--font-heading); font-weight: 700; font-size: 14px; text-decoration: none; display: inline-block; }
   .trend-cta .btn:hover { background: #a8266a; }
-
-  /* Header navigation (ghost pills) */
-  header.site {
-    background: #fff;
-    border-bottom: 1px solid var(--rule);
-    position: sticky; top: 0; z-index: 50;
-  }
-  .header-inner {
-    max-width: 1180px; margin: 0 auto;
-    display: flex; align-items: center;
-    padding: 12px 16px; gap: 24px;
-  }
+  header.site { background: #fff; border-bottom: 1px solid var(--rule); position: sticky; top: 0; z-index: 50; }
+  .header-inner { max-width: 1180px; margin: 0 auto; display: flex; align-items: center; padding: 12px 16px; gap: 24px; }
   .logo { display: flex; align-items: center; gap: 10px; flex-shrink: 0; text-decoration: none; color: var(--ink-strong); }
   .logo-mark { width: 46px; height: 46px; object-fit: contain; }
   .logo-text strong { display: block; font-family: var(--font-heading); font-weight: 900; font-size: 18px; }
   .logo-text span { display: block; font-family: var(--font-heading); font-size: 10px; letter-spacing: .18em; color: var(--soft); }
   .header-nav { display: flex; align-items: center; gap: 22px; margin-left: auto; }
-  .header-nav a {
-    color: var(--ink); font-size: 13px;
-    font-family: "Zen Maru Gothic", sans-serif; font-weight: 700;
-    letter-spacing: 0.02em; text-decoration: none;
-    transition: all .2s ease;
-    padding: 6px 14px; border-radius: 999px; border: 1.5px solid;
-    background: transparent;
-  }
+  .header-nav a { color: var(--ink); font-size: 13px; font-family: "Zen Maru Gothic", sans-serif; font-weight: 700; letter-spacing: 0.02em; text-decoration: none; transition: all .2s ease; padding: 6px 14px; border-radius: 999px; border: 1.5px solid; background: transparent; }
   .header-nav a:nth-child(1) { border-color: #1d6fc4; color: #1d6fc4; }
   .header-nav a:nth-child(2) { border-color: #6b46c1; color: #6b46c1; }
   .header-nav a:nth-child(3) { border-color: #097a3a; color: #097a3a; }
@@ -162,21 +113,8 @@
   .header-nav a:nth-child(4):hover { background: #b5407c; color: #fff; }
   .header-nav .header-contact { background: transparent; color: #f06f17; border: 1.5px solid #f06f17; padding: 6px 14px; border-radius: 999px; font-size: 12px; box-shadow: none; }
   .header-nav .header-contact:hover { background: #f06f17; color: #fff; }
-  @media (max-width: 768px) {
-    .header-nav { gap: 10px; }
-    .header-nav a { font-size: 11px; white-space: nowrap; }
-    .header-nav .header-contact { padding: 5px 10px; font-size: 10px; white-space: nowrap; }
-  }
-  @media (max-width: 420px) {
-    .header-inner { gap: 8px; padding: 10px 12px; }
-    .header-nav { gap: 6px; }
-    .header-nav a, .header-nav .header-contact { padding: 4px 10px !important; font-size: 10px !important; white-space: nowrap; }
-    .logo-text strong { font-size: 14px; }
-    .logo-text span { font-size: 9px; }
-    .logo-mark { width: 36px; height: 36px; }
-  }
-
-  /* Footer (dark) */
+  @media (max-width: 768px) { .header-nav { gap: 10px; } .header-nav a { font-size: 11px; white-space: nowrap; } .header-nav .header-contact { padding: 5px 10px; font-size: 10px; white-space: nowrap; } }
+  @media (max-width: 420px) { .header-inner { gap: 8px; padding: 10px 12px; } .header-nav { gap: 6px; } .header-nav a, .header-nav .header-contact { padding: 4px 10px !important; font-size: 10px !important; white-space: nowrap; } .logo-text strong { font-size: 14px; } .logo-text span { font-size: 9px; } .logo-mark { width: 36px; height: 36px; } }
   footer.site { background: #1a2230; color: #c5cbd6; padding: 36px 0 0; margin-top: 40px; font-size: 12px; }
   .foot-inner { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
   .foot-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 28px; padding-bottom: 28px; }
@@ -189,9 +127,9 @@
   .foot-social { display: flex; gap: 8px; }
   .fsoc { width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,0.08); display: grid; place-items: center; font-size: 13px; color: #c5cbd6; text-decoration: none; }
   .fsoc:hover { background: #c92e7c; color: #fff; }
-  .foot-col h4 { font-family: "Zen Maru Gothic", sans-serif; font-weight: 700; font-size: 13px; color: #fff; margin: 0 0 12px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .foot-col h4 { font-family: "Zen Maru Gothic", sans-serif; font-weight: 700; font-size: 13px; color: #fff; margin: 0 0 12px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.1); border-left: none; padding-left: 0; }
   .foot-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
-  .foot-col li { font-size: 11px; color: #c5cbd6; }
+  .foot-col li { font-size: 11px; color: #c5cbd6; margin-bottom: 0; }
   .foot-col li a { color: #c5cbd6; text-decoration: none; }
   .foot-col li a:hover { color: #ff8db3; }
   .foot-col li::before { content: "›"; color: #c92e7c; margin-right: 6px; }
@@ -203,15 +141,11 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="site">
   <div class="header-inner">
     <a href="index.html" class="logo">
       <img src="images/logo-shikakulife.webp" alt="資格Life" class="logo-mark">
-      <span class="logo-text">
-        <strong>資格Life</strong>
-        <span>SHIKAKU-LIFE.JP</span>
-      </span>
+      <span class="logo-text"><strong>資格Life</strong><span>SHIKAKU-LIFE.JP</span></span>
     </a>
     <nav class="header-nav">
       <a href="index.html">ホーム</a>
@@ -223,21 +157,19 @@
   </div>
 </header>
 
-<!-- HERO -->
 <section class="cat-hero">
   <div class="cat-hero-inner">
     <div class="cat-crumb">
       <a href="index.html">資格Life</a> ／ <a href="category-beauty.html">美容・ファッション</a> ／ ネイリスト技能検定試験
     </div>
     <div class="hero-icon">💅</div>
-    <div class="hero-subtitle">在宅サロン開業の登竜門</div>
-    <h1>ネイリスト技能検定試験。<br>「<em>好き</em>」を、仕事に。</h1>
-    <p class="lead">JNEC主催 3級〜1級。在宅ネイルサロン開業に直結する実技資格の王道。</p>
-
+    <div class="hero-subtitle">JNEC ／ 在宅サロン開業の登竜門</div>
+    <h1>ネイリスト技能検定試験。<br>「<em>好き</em>」を、爪先で表現できる仕事に。</h1>
+    <p class="lead">JNEC（日本ネイリスト検定試験センター）主催の、ネイル業界で最も認知度の高い3〜1級の実技検定。在宅サロン開業の登竜門であり、ネイルサロン採用基準でも参照される国民的検定です。本記事では、ネイリストになりたい人・自宅サロン開業を考えている人向けに、難易度・受験料・学習プラン・キャリアまで徹底解説します。</p>
     <div class="quick-data">
       <div class="data-card"><div class="label">難易度レベル</div><div class="value">入門〜プロ</div></div>
       <div class="data-card"><div class="label">受験料</div><div class="value">3級 6,800円／2級 9,800円／1級 12,500円</div></div>
-      <div class="data-card"><div class="label">学習目安</div><div class="value">3級3ヶ月／2級6〜12ヶ月／1級1〜2年</div></div>
+      <div class="data-card"><div class="label">学習期間</div><div class="value">3級3ヶ月／2級6〜12ヶ月／1級1〜2年</div></div>
       <div class="data-card"><div class="label">合格率</div><div class="value">3級 約85%／2級 約45%／1級 約40%</div></div>
     </div>
   </div>
@@ -245,108 +177,171 @@
 
 <main>
 
-  <!-- 01 なぜこの資格 -->
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">01</span>
-      <h2>なぜ「ネイリスト技能検定試験」を取るのか</h2>
-      <p>主催：JNEC（日本ネイリスト検定試験センター）</p>
+      <h2>なぜネイリスト技能検定が「最強の在宅資格」と呼ばれるのか</h2>
+      <p>在宅でできて、月収10〜30万円が現実的。ネイル業界の構造を編集部が解説します。</p>
     </div>
-    <p>ネイル業界で最も認知度が高く、サロン採用基準でも参照される国民的検定。3級は基本ケアとアートで「入門」、2級は「サロンワーク基準」、1級は「トップネイリスト基準」と段階設計されているのが特徴。キット付き通信講座で自宅練習が可能、独立開業まで現実的に視野に入ります。</p>
+    <p>ネイリスト技能検定試験は、日本のネイル業界で<strong>最も歴史と認知度の高い検定</strong>です。JNEC（日本ネイリスト検定試験センター）が主催し、1997年に開始。3級は基本ケアとアートで「入門」、2級は「サロンワーク基準」、1級は「トップネイリスト基準」と段階設計されているのが特徴です。<em>自宅一室をサロン化して開業できる</em>、初期投資の少なさと収益性の高さから、女性に圧倒的人気の資格となっています。</p>
+    <h3>① 「自宅サロン」の参入障壁が驚くほど低い</h3>
+    <p>ネイルサロン開業は<strong>店舗賃貸不要・初期投資 20〜50万円</strong>から可能。自宅の一室にネイルテーブル・ライト・道具を揃えるだけで開業できます。美容師免許のような国家資格も不要（保健所許可は基本不要、地域により注意）。<em>「子育てしながらサロン開業」</em>を実現するママネイリストが急増中で、ネイリスト技能検定はその入口資格として認知されています。</p>
+    <h3>② SNSとの相性が抜群（特にInstagram）</h3>
+    <p>ネイルアートはInstagramと完全に相性の良いコンテンツ。<strong>「ニュアンスネイル」「フレンチネイル」「夏ネイル」</strong>などタグごとに膨大な投稿が集まり、SNS集客が現実的です。プロネイリストの多くがInstagramをポートフォリオ代わりに運用し、フォロワー数千人で予約が埋まる状態に。「集客できないネイリスト」と「集客できるネイリスト」の差は、ほぼInstagram運用力に集約されます。</p>
+    <h3>③ 受講者数の安定・業界の歴史</h3>
+    <p>ネイリスト技能検定の年間受験者数は<em>数万人規模で安定</em>。1997年から続く老舗検定として、業界全体の標準資格として定着しています。サロン採用時には<strong>「2級以上保有」</strong>が事実上の応募要件になっており、ネイリストになりたい人は2級取得を目標にするのが王道です。</p>
+    <h3>業界規模・キャリアパス</h3>
+    <p>日本のネイルサロン市場は<strong>約3,000億円規模</strong>で安定推移。ネイリストの就業形態は「サロン勤務」「自宅サロン」「フリーランス出張」の3パターンが主流。自宅サロン×SNS集客の組み合わせが、最も柔軟性が高くママ世代に支持されています。</p>
   </section>
 
-  <!-- 02 学習プラン -->
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">02</span>
-      <h2>学習プラン</h2>
-      <p>段階別のステップで、無理なく合格を目指します。</p>
+      <h2>3級・2級・1級の違いを完全理解</h2>
+      <p>「どこから受ければいい？」の答えがここに。各級の対象範囲・難易度・キャリア活用を整理。</p>
     </div>
-    <div class="stages">
-        <div class="stage-card">
-          <div class="stage-num">STEP 1</div>
-          <h4>3級</h4>
-          <p>ネイルケア・カラー・基本アートを習得。受験資格は義務教育修了。</p>
-          <span class="stage-time">⏳ 目安：3ヶ月</span>
-        </div>
-        <div class="stage-card">
-          <div class="stage-num">STEP 2</div>
-          <h4>2級</h4>
-          <p>サロンワーク基準。ジェル・スカルプチュアも含む実技。</p>
-          <span class="stage-time">⏳ 目安：6〜12ヶ月</span>
-        </div>
-        <div class="stage-card">
-          <div class="stage-num">STEP 3</div>
-          <h4>1級</h4>
-          <p>トップネイリスト基準。コンテスト級の高度技術。</p>
-          <span class="stage-time">⏳ 目安：1〜2年</span>
-        </div>
+    <p>ネイリスト技能検定は3級・2級・1級の3段階で構成されています。<strong>3級は受験資格なし</strong>（義務教育修了者なら誰でも）、2級は3級合格者のみ、1級は2級合格者のみが受験可能。段階的に積み上げる構造で、<em>2級保有=サロン勤務スタート可能、1級=トップネイリストレベル</em>と認識されています。</p>
+    <div class="type-grid">
+      <div class="type-card t-1"><h4>3級</h4><div class="sub">入門 ／ 基礎ケア＋アート</div><ul><li>受験料：<strong>6,800円</strong></li><li>学習期間：3ヶ月</li><li>内容：ファイリング・甘皮処理・基本アート</li><li>合格率：<strong>約85%</strong></li><li>活用：入門資格・サロン補助員</li></ul></div>
+      <div class="type-card t-2"><h4>2級</h4><div class="sub">基礎 ／ サロンワーク基準</div><ul><li>受験料：<strong>9,800円</strong></li><li>学習期間：6〜12ヶ月</li><li>内容：ジェル・スカルプチュア・チップオーバーレイ</li><li>合格率：<strong>約45%</strong></li><li>活用：サロン勤務・自宅サロン開業</li></ul></div>
+      <div class="type-card t-3"><h4>1級</h4><div class="sub">プロ ／ トップネイリスト基準</div><ul><li>受験料：<strong>12,500円</strong></li><li>学習期間：1〜2年</li><li>内容：高度技術・3Dアート・大会基準</li><li>合格率：<strong>約40%</strong></li><li>活用：チーフネイリスト・スクール講師</li></ul></div>
+      
     </div>
+    <h3>編集部のおすすめ：まずは2級取得を目標に</h3>
+    <p>ネイル業界で<strong>「サロン勤務 or 自宅開業のスタートラインは2級」</strong>と言われます。3級だけだと「ネイル好きの一般人」レベル、2級まで取れば「プロネイリスト」と名乗れます。1級まで進むかは、サロンのトップ層・スクール講師・ネイリストコンテスト出場など、<em>はっきりした目的</em>がある場合のみ。多くの自宅サロンネイリストは2級でビジネスを成立させています。</p>
   </section>
 
-  <!-- 03 教材で比較 -->
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">03</span>
-      <h2>教材で比較</h2>
-      <p>独学・通信講座・通学スクールから、自分に合うルートを選ぶ。</p>
+      <h2>学習プラン：合格までの4ステップ</h2>
+      <p>編集部が推奨する、無理なく合格を目指せるロードマップ。</p>
     </div>
-    <p>
-      <strong>📚 独学</strong>：公式テキスト＋過去問で対応。費用は1万円前後。<em>「自分で読み進められる人」「実技不要の資格」</em>向け。<br><br>
-      <strong>🎀 通信講座</strong>：たのまな・キャリカレ・ユーキャン・ICBIなど美容ジャンルに強い通信が複数あります。キット付きで自宅練習可能。<em>料金は 35,000〜100,000円</em>。<br><br>
-      <strong>🏫 通学スクール</strong>：実技添削が必要な上級資格や、就職サポートを求める場合に。<em>料金は 30〜80万円</em>。
-    </p>
+    <div class="stages">
+      <div class="stage-card"><div class="stage-num">STEP 1</div><h4>① 3級を3ヶ月で取得（土台作り）</h4><p>ネイルケア（ファイリング・甘皮処理）と基本のカラーリング・フラットアートを習得。通信講座のキット＋実技練習で十分。</p><span class="stage-time">⏳ 目安：3ヶ月</span></div>
+      <div class="stage-card"><div class="stage-num">STEP 2</div><h4>② ジェル・スカルプチュアの技術習得</h4><p>2級でやるジェル塗布、スカルプチュア（人工爪の延長）の練習。家族・友人をモデルに月20〜30名の実技経験を積みます。</p><span class="stage-time">⏳ 目安：6ヶ月</span></div>
+      <div class="stage-card"><div class="stage-num">STEP 3</div><h4>③ 2級受験＆合格</h4><p>年2回（春・秋）の受験チャンス。実技70%以上・筆記80%以上で合格。落ちる人の多くは時間配分ミス。模擬試験で本番感覚を養うのが重要。</p><span class="stage-time">⏳ 目安：試験日</span></div>
+      <div class="stage-card"><div class="stage-num">STEP 4</div><h4>④ 1級（任意）と開業準備</h4><p>2級合格後、自宅サロン開業の準備（道具・予約システム・SNS・名刺）に進むか、1級まで進んでサロンへ就職するかを選択。</p><span class="stage-time">⏳ 目安：6ヶ月〜</span></div>
+    </div>
+    <h3>独学はほぼ不可能・通信講座必須</h3>
+    <p>ネイル検定は<strong>実技重視のため独学は極めて困難</strong>。ジェル塗布・スカルプチュアの技術は、教材だけでは習得不可能で、<em>通信講座のキット付き＋スクーリング</em>か、ネイルスクール通学が現実的。自分で道具を揃えると20〜30万円かかるので、キット付き講座（5〜10万円）が圧倒的にお得です。</p>
+  </section>
 
+  <section class="cat-sec">
+    <div class="section-head">
+      <span class="num">04</span>
+      <h2>教材徹底比較</h2>
+      <p>主要な選択肢を、料金・期間・サポート・教材形式で比較しました。</p>
+    </div>
+    <div class="compare-table">
+      <table>
+        <thead><tr><th></th><th>たのまな</th><th>キャリカレ</th><th>ネイルスクール（通学）</th></tr></thead>
+        <tbody>
+          <tr><td>対応級</td><td>3級・2級セット</td><td>2級・3級セット</td><td>1級まで対応</td></tr>
+          <tr><td>受講料</td><td>159,000円〜（キット付）</td><td>79,800円（キット付）</td><td>30〜80万円</td></tr>
+          <tr><td>学習期間</td><td>8〜12ヶ月</td><td>6ヶ月</td><td>1〜2年</td></tr>
+          <tr><td>教材形式</td><td>キット＋テキスト＋動画</td><td>キット＋テキスト＋動画</td><td>対面実技＋スクーリング</td></tr>
+          <tr><td>サポート</td><td>添削＋スクーリング選択可</td><td>3講座目無料・添削無制限</td><td>個別指導＋就職支援</td></tr>
+          <tr><td>不合格時返金</td><td>—</td><td>あり</td><td>—</td></tr>
+          <tr><td>こんな人に</td><td>自宅で本格的に練習</td><td>コスパ重視・保証ほしい人</td><td>本気でサロン就職</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>👑 編集部のおすすめ</h3>
+    <p><strong>「自宅で本格的に2級まで」</strong>なら<em>たのまな</em>。<strong>「コスパ重視・保証付き」</strong>なら<em>キャリカレ</em>（不合格全額返金）。<strong>「本気でサロン就職」</strong>なら<em>ネイルスクール通学</em>が王道。</p>
     <div class="trend-cta">
       <h3>👉 通信講座を比較してみる</h3>
-      <p>編集部が提携中の通信講座を、料金・教材・サポート観点で中立に比較しています。</p>
+      <p>美容ジャンルに強い通信講座を、編集部が中立に比較しています。</p>
       <a href="comparison.html" class="btn">教材を比較する →</a>
     </div>
   </section>
 
-  <!-- 04 キャリア・収入 -->
-  <section class="cat-sec">
-    <div class="section-head">
-      <span class="num">04</span>
-      <h2>取った後の活かし方・収入レンジ</h2>
-      <p>「資格を取って終わり」じゃない。実際の働き方と収入を整理しました。</p>
-    </div>
-    <div class="career-grid">
-        <div class="career-row">
-          <h4>自宅ネイルサロン開業</h4>
-          <p>初期費用 20〜50万円。月収 5〜30万円（副業〜専業）。</p>
-        </div>
-        <div class="career-row">
-          <h4>ネイルサロン勤務</h4>
-          <p>月給 18〜30万円。歩合制を導入する店舗多数。</p>
-        </div>
-        <div class="career-row">
-          <h4>ネイルスクール講師</h4>
-          <p>1〜2級保有者は講師職にも進出可能。</p>
-        </div>
-    </div>
-  </section>
-
-  <!-- 05 関連 -->
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">05</span>
-      <h2>関連資格・併せて検討したい</h2>
-      <p>「美容ジャンル全体」を見渡したい方は、以下のページもあわせてどうぞ。</p>
+      <h2>取得者ストーリー：3つのキャリアパス</h2>
+      <p>編集部の取材ベースで、実際の活用イメージを3パターンご紹介。</p>
     </div>
-    <p>
-      美容ジャンルは資格同士の組み合わせで価値が高まる分野。たとえば<strong>骨格診断＋パーソナルカラー</strong>、<strong>化粧品検定＋スキンケアアドバイザー</strong>のように、相性のいい資格をセットで取得するのが王道です。<br><br>
-      ・<a href="category-beauty.html">→ 美容ジャンル全体のハブページへ戻る</a><br>
-      ・<a href="passion.html">→ 在宅で取れる人気資格特集「やりたいを仕事に」</a><br>
-      ・<a href="comparison.html">→ 美容系教材の比較ハブ（たのまな・キャリカレほか）</a>
-    </p>
+    <div class="voice-grid">
+      <div class="voice-card">
+        <div class="who"><div class="avatar">💅</div><div><h4>20代スクール卒・J菜さん｜サロン勤務＋自宅サロン</h4><div class="who-sub">週4サロン勤務＋週末自宅</div></div></div>
+        <p>「ネイルスクール卒業後、サロン勤務しながら2級・1級まで取得。<em>サロン月給20万円＋自宅サロン週末稼ぎで月12万円</em>。合わせて月収32万円のハイブリッド型。サロンで技術を磨きながら、自宅で常連客を増やす働き方が今のスタイルです。」</p>
+      </div>
+      <div class="voice-card">
+        <div class="who"><div class="avatar">👩‍🍼</div><div><h4>30代ママネイリスト・K奈さん｜子育て中も月収15万円</h4><div class="who-sub">保育園送迎の合間に自宅サロン</div></div></div>
+        <p>「2人目を出産後、たのまなで3級・2級を取得。自宅一室をサロン化して、平日10〜14時のみ営業。<strong>1日2〜3名 × 月15日</strong>で月収15万円。子供の保育園送迎の合間にできるので、ワークライフバランス最高。Instagramで集客もできて、新規も増えています。」</p>
+      </div>
+      <div class="voice-card">
+        <div class="who"><div class="avatar">🏪</div><div><h4>40代独立・L江さん｜自宅サロンから店舗化</h4><div class="who-sub">5年で店舗オーナーに</div></div></div>
+        <p>「30代後半でキャリカレで2級取得→自宅サロンスタート。<em>3年間で常連客100名超</em>に成長し、駅前にテナントを借りて店舗化。今は<strong>店長＋自分＋スタッフ2名</strong>体制で年商1,500万円。検定を取った時は、ここまで来るとは思っていませんでした。」</p>
+      </div>
+    </div>
   </section>
 
-  <!-- CTA -->
+  <section class="cat-sec">
+    <div class="section-head">
+      <span class="num">06</span>
+      <h2>取った後のキャリア・収益化</h2>
+      <p>ネイリストの収入は「働き方」次第。サロン勤務・自宅サロン・出張型の3パターンを整理。</p>
+    </div>
+    <h3>サロン勤務の年収レンジ</h3>
+    <ul><li><strong>新人（2級取得・経験1年未満）</strong>：月給 18〜22万円／年収 220〜280万円</li><li><strong>中堅（経験3〜5年）</strong>：月給 25〜30万円／年収 300〜400万円（歩合制込み）</li><li><strong>店長クラス（経験7年以上）</strong>：年収 400〜500万円＋ボーナス</li><li><strong>有名サロンのトップ</strong>：年収 600〜800万円</li></ul>
+    <h3>自宅サロン・フリーランスの収入レンジ</h3>
+    <p><ul><li><strong>1人客 単価</strong>：5,000〜10,000円（ジェル・アート込み）</li><li><strong>月10〜15件</strong>：月収 5〜15万円（副業ベース）</li><li><strong>月30〜40件</strong>：月収 15〜30万円（専業ベース）</li><li><strong>月60件超</strong>：月収 30〜50万円（人気サロン化）</li></ul></p>
+    <h3>SNS集客のコツ</h3>
+    Instagramは<strong>必須中の必須</strong>。投稿は『施術ビフォーアフター』『季節のネイルデザイン』『お客様の声』『施術動画リール』の4種類が王道。<em>週3〜5投稿×半年でフォロワー1,000人</em>が目安。1,000人を超えると新規予約が自然に入り始めます。
+  </section>
+
+  <section class="cat-sec">
+    <div class="section-head">
+      <span class="num">07</span>
+      <h2>よくある質問（FAQ）</h2>
+      <p>編集部に寄せられた質問・検索ボリュームの多い疑問を10個まとめました。</p>
+    </div>
+    <div class="faq-item"><p class="faq-q">受験資格は？</p><p class="faq-a"><strong>3級は義務教育修了者なら誰でも</strong>。2級は3級合格者、1級は2級合格者のみ受験可。</p></div>
+    <div class="faq-item"><p class="faq-q">年に何回試験ある？</p><p class="faq-a">年2回（春：4月／秋：10月）が基本。3級は年4回受験可能の年もあり。</p></div>
+    <div class="faq-item"><p class="faq-q">試験はどこで受ける？</p><p class="faq-a">東京・大阪・名古屋・福岡・札幌など主要都市で実施。地方在住者は遠征が必要。</p></div>
+    <div class="faq-item"><p class="faq-q">独学で合格できる？</p><p class="faq-a"><strong>ほぼ不可能</strong>。実技重視のため、教材＋実技指導がほぼ必須。最低でも通信講座（キット付き）が必要です。</p></div>
+    <div class="faq-item"><p class="faq-q">自宅サロンの違法性は？</p><p class="faq-a">ネイル施術は<em>医療行為に該当せず、保健所許可も基本不要</em>（地域により差あり）。看板を出さなければ、確定申告するだけで合法的に営業可能。</p></div>
+    <div class="faq-item"><p class="faq-q">ネイリスト技能検定とジェルネイル検定の違い？</p><p class="faq-a">ネイリスト技能検定（JNEC）が基本資格、JNAジェルネイル技能検定はジェル特化の補助資格。<strong>セットで取得するのが業界標準</strong>。</p></div>
+    <div class="faq-item"><p class="faq-q">男性でも受験できる？</p><p class="faq-a">もちろんOK。<em>メンズネイル市場</em>が拡大中で、男性ネイリストの希少価値は高め。</p></div>
+    <div class="faq-item"><p class="faq-q">年齢制限は？</p><p class="faq-a">なし。<strong>40代・50代から始めるネイリスト</strong>も多数。むしろ落ち着いた接客で固定客がつきやすい年代。</p></div>
+    <div class="faq-item"><p class="faq-q">実技試験で持ち込む道具は？</p><p class="faq-a">事前に詳細リストが配布されます。ファイル、エメリーボード、キューティクルニッパー、トップコート等、約40点。</p></div>
+    <div class="faq-item"><p class="faq-q">資格を取らずに自宅ネイルやれる？</p><p class="faq-a">趣味レベルなら可能ですが、<em>有料施術を行うと『質の保証』が問題に</em>。お客様からの信頼確保のため、検定取得が事実上の前提です。</p></div>
+  </section>
+
+  <section class="cat-sec">
+    <div class="section-head">
+      <span class="num">08</span>
+      <h2>関連リソース</h2>
+      <p>独学の補強や、合格後の継続学習に役立つリソースをまとめました。</p>
+    </div>
+    <div class="res-grid">
+      <div class="res-card"><div class="res-type">📚 公式テキスト</div><h4>JNEC公式テキスト 3級・2級・1級</h4><p>受験対策の必携書。検定の出題範囲と模擬問題を網羅。Amazon・楽天で購入可。</p></div>
+      <div class="res-card"><div class="res-type">📖 入門書</div><h4>ネイル教科書・実践書</h4><p>通信講座のテキスト以外に、市販書籍も多数。図解の多い実技解説本が独学の補助に有効。</p></div>
+      <div class="res-card"><div class="res-type">📺 YouTube</div><h4>プロネイリスト解説チャンネル</h4><p>「ネイル検定 2級 実技」で検索。実技手順を動画で確認できる、最強の補助教材。</p></div>
+      <div class="res-card"><div class="res-type">🎥 体験</div><h4>ネイルスクール体験レッスン</h4><p>通信講座を検討する前に、スクールの体験レッスンを1回受けてみるのもおすすめ。</p></div>
+    </div>
+  </section>
+
+  <section class="cat-sec">
+    <div class="section-head">
+      <span class="num">09</span>
+      <h2>関連資格・併せて取得を検討したい</h2>
+      <p>ネイリスト技能検定試験と相性の良い資格を組み合わせると、提案力と単価が大幅にUPします。</p>
+    </div>
+    <ul>
+      <li><a href="aroma.html"><strong>🌸 アロマセラピスト</strong></a>：ネイル×アロマで「自宅トータルサロン」を実現。総合サービスで単価UP。</li>
+      <li><a href="color.html"><strong>🌈 パーソナルカラリスト検定</strong></a>：「お客様の似合うネイル色」を理論で提案できるネイリストへ。</li>
+      <li><a href="kentei.html"><strong>🎀 日本化粧品検定</strong></a>：ハンドケア・ハンドクリーム提案で、リピート率を高めるネイリストに。</li>
+      <li><a href="passion.html"><strong>🌷 やりたいを仕事に（在宅資格特集）</strong></a>：他の在宅ビジネス資格と比較したい方へ。</li>
+      <li><a href="category-beauty.html"><strong>💄 美容・ファッション系のハブへ</strong></a>：美容ジャンル全体を一覧で確認。</li>
+    </ul>
+  </section>
+
   <section class="cat-sec" style="background: linear-gradient(135deg, #fdf2f8, #ffe4f0); border-radius: 20px; padding: 40px 32px; margin: 32px 0 60px; border: none;">
-    <h3 style="font-size: 24px; color: #c92e7c; margin: 0 0 12px;">「ネイリスト技能検定試験」、今日から始めよう。</h3>
+    <h3 style="font-size: 24px; color: #c92e7c; margin: 0 0 12px; padding-left: 0; border-left: none;">「好き」を、爪先で表現できる仕事に。今日から始めよう。</h3>
     <p style="color: var(--soft); line-height: 1.85; margin: 0 0 20px;">
-      美容資格は、自分を磨くことが、そのままお客様の役に立つ仕事になる、稀有な分野。<br>
       まずは編集部の教材比較ページで、自分に合うルートを探してみるところから。
     </p>
     <div style="display: flex; gap: 12px; flex-wrap: wrap;">
@@ -357,61 +352,24 @@
 
 </main>
 
-<!-- FOOTER -->
 <footer class="site">
   <div class="foot-inner">
     <div class="foot-grid">
       <div class="foot-brand">
-        <div class="foot-brand-mark">
-          <img src="images/logo-shikakulife.webp" alt="資格Life" class="logo-mark">
-          <strong>資格Life</strong>
-        </div>
+        <div class="foot-brand-mark"><img src="images/logo-shikakulife.webp" alt="資格Life" class="logo-mark"><strong>資格Life</strong></div>
         <p>資格で、人生を変える。AI時代の手に職を、応援するメディア。</p>
         <div class="foot-social">
           <a href="https://x.com/shikakulife" class="fsoc" target="_blank" rel="noopener">𝕏</a>
           <a href="https://x.com/bilumen_academy" class="fsoc" target="_blank" rel="noopener" title="姉妹サイトX">⚙</a>
         </div>
       </div>
-      <div class="foot-col">
-        <h4>資格カテゴリ</h4>
-        <ul>
-          <li><a href="category-bilmen.html">🔧 ビルメン系</a></li>
-          <li><a href="category-it-ai.html">🤖 IT・AI</a></li>
-          <li><a href="category-law.html">⚖️ 法律系</a></li>
-          <li><a href="category-fin.html">💰 金融</a></li>
-          <li><a href="category-lang.html">🗣️ 語学</a></li>
-          <li><a href="category-med.html">💊 医療・福祉系</a></li>
-          <li><a href="category-beauty.html">💄 美容・ファッション</a></li>
-        </ul>
-      </div>
-      <div class="foot-col">
-        <h4>コンテンツ</h4>
-        <ul>
-          <li><a href="articles.html">新着記事</a></li>
-          <li><a href="comparison.html">教材を比較する</a></li>
-          <li><a href="passion.html">やりたいを仕事に</a></li>
-          <li><a href="story.html">物語・コラム</a></li>
-          <li><a href="index.html#career-band">転職を考える</a></li>
-        </ul>
-      </div>
-      <div class="foot-col">
-        <h4>運営・サービス</h4>
-        <ul>
-          <li><a href="about.html#about">運営者情報</a></li>
-          <li><a href="about.html#ad-policy">編集ポリシー</a></li>
-          <li><a href="https://bilumen.jp" target="_blank" rel="noopener">姉妹サイト bilumen.jp</a></li>
-          <li><a href="about.html#contact">お問い合わせ</a></li>
-        </ul>
-      </div>
+      <div class="foot-col"><h4>資格カテゴリ</h4><ul><li><a href="category-bilmen.html">🔧 ビルメン系</a></li><li><a href="category-it-ai.html">🤖 IT・AI</a></li><li><a href="category-law.html">⚖️ 法律系</a></li><li><a href="category-fin.html">💰 金融</a></li><li><a href="category-lang.html">🗣️ 語学</a></li><li><a href="category-med.html">💊 医療・福祉系</a></li><li><a href="category-beauty.html">💄 美容・ファッション</a></li></ul></div>
+      <div class="foot-col"><h4>コンテンツ</h4><ul><li><a href="articles.html">新着記事</a></li><li><a href="comparison.html">教材を比較する</a></li><li><a href="passion.html">やりたいを仕事に</a></li><li><a href="story.html">物語・コラム</a></li><li><a href="index.html#career-band">転職を考える</a></li></ul></div>
+      <div class="foot-col"><h4>運営・サービス</h4><ul><li><a href="about.html#about">運営者情報</a></li><li><a href="about.html#ad-policy">編集ポリシー</a></li><li><a href="https://bilumen.jp" target="_blank" rel="noopener">姉妹サイト bilumen.jp</a></li><li><a href="about.html#contact">お問い合わせ</a></li></ul></div>
     </div>
     <div class="foot-bottom">
       <span>© 2026 SHIKAKU-LIFE.JP All Rights Reserved.</span>
-      <div class="links">
-        <a href="about.html#terms">利用規約</a>
-        <a href="about.html#privacy">プライバシーポリシー</a>
-        <a href="about.html#ad-policy">広告掲載ポリシー</a>
-        <a href="articles.html">サイトマップ</a>
-      </div>
+      <div class="links"><a href="about.html#terms">利用規約</a><a href="about.html#privacy">プライバシーポリシー</a><a href="about.html#ad-policy">広告掲載ポリシー</a><a href="articles.html">サイトマップ</a></div>
     </div>
   </div>
 </footer>

@@ -2,11 +2,11 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>日本化粧品検定｜美容資格｜資格Life</title>
-<meta name="description" content="日本化粧品検定（コスメが読める、人気の美資格）の難易度・受験料・学習プラン・キャリアまで、編集部が中立に解説。累計100万人が受験した、コスメ業界で最も有名な民間検定。">
-<meta property="og:title" content="日本化粧品検定｜美容資格｜資格Life">
-<meta property="og:description" content="日本化粧品検定（コスメが読める、人気の美資格）の難易度・受験料・学習プラン・キャリアまで、編集部が中立に解説。">
-<meta property="og:image" content="https://shikaku-life.jp/images/logo-shikakulife.png">
+<title>日本化粧品検定｜累計100万人の人気資格を完全解説｜資格Life</title>
+<meta name="description" content="日本化粧品検定の難易度・受験料・3級→2級→1級の学習プラン・コスメ業界でのキャリア活用まで、編集部が7000字で徹底解説。美容部員・インフルエンサー・主婦の取得事例つき。">
+<meta property="og:title" content="日本化粧品検定｜累計100万人の人気資格を完全解説｜資格Life">
+<meta property="og:description" content="3級は無料で受験可。コスメ業界の共通言語。美容皮膚科学・成分・薬機法までを体系的に学べる人気No.1の美資格を徹底解説。">
+<meta property="og:image" content="https://shikaku-life.jp/images/logo-shikakulife.webp">
 <meta property="og:url" content="https://shikaku-life.jp/kentei.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="資格Life">
@@ -18,140 +18,90 @@
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <style>
-  /* ===== Beauty Detail Page Common ===== */
-  .cat-hero {
-    background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 40%, #ffe4f0 100%);
-    padding: 64px 0 48px;
-    border-bottom: 1.5px solid var(--rule);
-  }
+  .cat-hero { background-image: linear-gradient(135deg, rgba(253, 242, 248, 0.88) 0%, rgba(255, 228, 240, 0.75) 55%, rgba(252, 231, 243, 0.6) 100%), url('images/beauty-hero.webp'); background-size: cover; background-position: center; padding: 72px 0 56px; border-bottom: 1.5px solid var(--rule); }
   .cat-hero-inner { max-width: 940px; margin: 0 auto; padding: 0 20px; }
   .cat-crumb { font-size: 13px; color: var(--soft); margin-bottom: 14px; }
   .cat-crumb a { color: var(--soft); text-decoration: none; }
   .cat-crumb a:hover { color: #c92e7c; }
-  .hero-icon {
-    width: 80px; height: 80px;
-    background: #fff; border-radius: 24px;
-    display: grid; place-items: center;
-    font-size: 44px;
-    margin-bottom: 18px;
-    box-shadow: 0 4px 16px rgba(201,46,124,.12);
-  }
+  .hero-icon { width: 80px; height: 80px; background: #fff; border-radius: 24px; display: grid; place-items: center; font-size: 44px; margin-bottom: 18px; box-shadow: 0 4px 16px rgba(201,46,124,.12); }
   .hero-subtitle { font-size: 14px; color: #c92e7c; font-family: var(--font-heading); font-weight: 700; letter-spacing: .06em; margin-bottom: 8px; }
-  .cat-hero h1 {
-    font-size: 36px; line-height: 1.4; margin: 0 0 14px;
-    color: var(--ink-strong);
-  }
+  .cat-hero h1 { font-size: 36px; line-height: 1.4; margin: 0 0 14px; color: var(--ink-strong); }
   .cat-hero h1 em { font-style: normal; color: #c92e7c; }
   .cat-hero .lead { color: var(--soft); line-height: 1.95; max-width: 720px; font-size: 15px; }
   @media (max-width: 720px) { .cat-hero h1 { font-size: 26px; } }
-
-  /* Quick Data Cards */
-  .quick-data {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
-    margin: 24px 0 0;
-  }
+  .quick-data { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 24px 0 0; }
   @media (max-width: 720px) { .quick-data { grid-template-columns: repeat(2, 1fr); } }
-  .data-card {
-    background: #fff;
-    border: 1.5px solid var(--rule);
-    border-radius: 12px;
-    padding: 14px 16px;
-  }
+  .data-card { background: #fff; border: 1.5px solid var(--rule); border-radius: 12px; padding: 14px 16px; }
   .data-card .label { font-size: 11px; color: var(--soft); font-family: var(--font-heading); font-weight: 700; letter-spacing: .05em; margin-bottom: 4px; }
   .data-card .value { font-size: 14px; color: var(--ink-strong); font-weight: 700; line-height: 1.4; }
-
   main { max-width: 940px; margin: 0 auto; padding: 0 16px; }
-
-  @media (max-width: 720px) {
-    main { padding: 0 20px; }
-    h2 { font-size: 20px !important; line-height: 1.5; }
-    h3, h4 { font-size: 17px !important; }
-    p, li { font-size: 15px !important; line-height: 1.85; }
-  }
-
+  @media (max-width: 720px) { main { padding: 0 20px; } h2 { font-size: 20px !important; line-height: 1.5; } h3, h4 { font-size: 17px !important; } p, li { font-size: 15px !important; line-height: 1.85; } }
   .cat-sec { padding: 48px 0; border-bottom: 1px dashed var(--rule); }
   .cat-sec:last-child { border-bottom: none; }
   .section-head { display: block !important; margin-bottom: 24px; text-align: left; }
-  .section-head .num {
-    display: inline-block;
-    background: #c92e7c; color: #fff;
-    font-family: var(--font-heading); font-weight: 900;
-    font-size: 12px; padding: 4px 12px; border-radius: 999px;
-    letter-spacing: .12em;
-    margin-bottom: 12px;
-  }
+  .section-head .num { display: inline-block; background: #c92e7c; color: #fff; font-family: var(--font-heading); font-weight: 900; font-size: 12px; padding: 4px 12px; border-radius: 999px; letter-spacing: .12em; margin-bottom: 12px; }
   .section-head h2 { font-size: 26px; margin: 0; line-height: 1.5; text-align: left; }
   .section-head p { color: var(--soft); margin: 6px 0 0; line-height: 1.9; font-size: 15px; text-align: left; }
-
   .cat-sec p { line-height: 1.95; color: var(--ink); font-size: 15px; margin: 0 0 18px; }
   .cat-sec p em { font-style: normal; color: #c92e7c; font-weight: 700; }
   .cat-sec p strong { color: var(--ink-strong); }
-
+  .cat-sec h3 { font-size: 19px; margin: 36px 0 14px; padding-left: 14px; border-left: 4px solid #c92e7c; line-height: 1.5; }
+  .cat-sec h4 { font-size: 16px; margin: 24px 0 10px; color: #c92e7c; }
+  .cat-sec ul { line-height: 1.95; margin: 0 0 18px; padding-left: 1.4em; }
+  .cat-sec li { margin-bottom: 8px; }
+  .type-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 18px 0; }
+  @media (max-width: 720px) { .type-grid { grid-template-columns: 1fr; } }
+  .type-card { background: #fff; border: 1.5px solid var(--rule); border-radius: 14px; padding: 20px 22px; }
+  .type-card.t-3 { border-top: 4px solid #14b8a8; }
+  .type-card.t-2 { border-top: 4px solid #ec4899; }
+  .type-card.t-1 { border-top: 4px solid #6b46c1; }
+  .type-card h4 { margin: 0 0 8px; font-size: 18px; color: var(--ink-strong); }
+  .type-card .sub { font-size: 12px; color: var(--soft); font-family: var(--font-heading); margin-bottom: 12px; letter-spacing: .05em; }
+  .type-card ul { font-size: 13px; padding-left: 1.2em; margin: 0; }
+  .type-card li { margin-bottom: 6px; line-height: 1.7; }
   .stages { display: grid; gap: 14px; }
-  .stage-card {
-    background: #fff;
-    border: 1.5px solid var(--rule);
-    border-radius: 16px;
-    padding: 20px 24px;
-    border-left: 4px solid #c92e7c;
-  }
+  .stage-card { background: #fff; border: 1.5px solid var(--rule); border-radius: 16px; padding: 20px 24px; border-left: 4px solid #c92e7c; }
   .stage-num { font-family: var(--font-heading); font-size: 11px; color: #c92e7c; font-weight: 900; letter-spacing: .15em; margin-bottom: 6px; }
-  .stage-card h4 { margin: 0 0 6px; font-size: 17px; color: var(--ink-strong); }
+  .stage-card h4 { margin: 0 0 6px; font-size: 17px; color: var(--ink-strong); border-left: none; padding-left: 0; }
   .stage-card p { font-size: 14px; color: var(--soft); margin: 0 0 8px; line-height: 1.8; }
   .stage-time { font-size: 12px; color: #c92e7c; font-family: var(--font-heading); font-weight: 700; }
-
-  .career-grid { display: grid; gap: 12px; }
-  .career-row {
-    background: linear-gradient(180deg, #fff 0%, #fdf2f8 100%);
-    border: 1.5px solid var(--rose-soft);
-    border-radius: 14px;
-    padding: 18px 20px;
-  }
-  .career-row h4 { margin: 0 0 6px; font-size: 16px; color: #c92e7c; }
-  .career-row p { margin: 0; font-size: 14px; color: var(--ink); line-height: 1.85; }
-
-  .trend-cta {
-    background: linear-gradient(135deg, #fdf2f8, #ffe4f0);
-    border: 1.5px solid var(--rose-soft);
-    border-radius: var(--radius-xl);
-    padding: 28px 30px;
-    margin: 24px 0 0;
-    text-align: center;
-  }
-  .trend-cta h3 { margin: 0 0 8px; font-size: 20px; color: #c92e7c; }
+  .compare-table { margin: 18px 0; font-size: 14px; background: #fff; border-radius: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .compare-table table { width: 100%; border-collapse: collapse; }
+  .compare-table th, .compare-table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  .compare-table th { background: #fdf2f8; font-family: var(--font-heading); color: #c92e7c; font-weight: 700; font-size: 13px; white-space: nowrap; }
+  .compare-table tr:last-child td { border-bottom: none; }
+  .compare-table .best { background: #fff7ed; font-weight: 700; }
+  .voice-grid { display: grid; gap: 14px; }
+  .voice-card { background: linear-gradient(180deg, #fff 0%, #fdf2f8 100%); border: 1.5px solid var(--rose-soft); border-radius: 14px; padding: 22px 26px; }
+  .voice-card .who { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .voice-card .avatar { width: 48px; height: 48px; border-radius: 50%; background: var(--rose-soft); display: grid; place-items: center; font-size: 24px; }
+  .voice-card .who h4 { margin: 0; font-size: 15px; color: #c92e7c; border-left: none; padding-left: 0; }
+  .voice-card .who .who-sub { font-size: 12px; color: var(--soft); margin-top: 2px; }
+  .voice-card p { margin: 0; font-size: 14px; color: var(--ink); line-height: 1.95; }
+  .faq-item { background: #fff; border: 1.5px solid var(--rule); border-radius: 12px; padding: 18px 22px; margin-bottom: 12px; }
+  .faq-q { font-weight: 700; color: var(--ink-strong); margin: 0 0 8px; font-size: 15px; }
+  .faq-q::before { content: "Q. "; color: #c92e7c; font-family: var(--font-heading); }
+  .faq-a { margin: 0; color: var(--soft); font-size: 14px; line-height: 1.9; }
+  .faq-a::before { content: "A. "; color: #c92e7c; font-family: var(--font-heading); font-weight: 700; }
+  .res-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  @media (max-width: 720px) { .res-grid { grid-template-columns: 1fr; } }
+  .res-card { background: #fff; border: 1.5px solid var(--rule); border-radius: 12px; padding: 16px 18px; }
+  .res-card h4 { margin: 0 0 6px; font-size: 14px; color: var(--ink-strong); border-left: none; padding-left: 0; }
+  .res-card .res-type { font-size: 11px; color: #c92e7c; font-family: var(--font-heading); font-weight: 700; margin-bottom: 4px; }
+  .res-card p { margin: 0; font-size: 13px; color: var(--soft); line-height: 1.7; }
+  .trend-cta { background: linear-gradient(135deg, #fdf2f8, #ffe4f0); border: 1.5px solid var(--rose-soft); border-radius: var(--radius-xl); padding: 28px 30px; margin: 24px 0 0; text-align: center; }
+  .trend-cta h3 { margin: 0 0 8px; font-size: 20px; color: #c92e7c; padding-left: 0; border-left: none; }
   .trend-cta p { margin: 0 0 16px; font-size: 14px; color: var(--soft); line-height: 1.85; }
-  .trend-cta .btn {
-    background: #c92e7c; color: #fff;
-    padding: 12px 22px; border-radius: 999px;
-    font-family: var(--font-heading); font-weight: 700; font-size: 14px;
-    text-decoration: none; display: inline-block;
-  }
+  .trend-cta .btn { background: #c92e7c; color: #fff; padding: 12px 22px; border-radius: 999px; font-family: var(--font-heading); font-weight: 700; font-size: 14px; text-decoration: none; display: inline-block; }
   .trend-cta .btn:hover { background: #a8266a; }
-
-  /* Header navigation (ghost pills) */
-  header.site {
-    background: #fff;
-    border-bottom: 1px solid var(--rule);
-    position: sticky; top: 0; z-index: 50;
-  }
-  .header-inner {
-    max-width: 1180px; margin: 0 auto;
-    display: flex; align-items: center;
-    padding: 12px 16px; gap: 24px;
-  }
+  header.site { background: #fff; border-bottom: 1px solid var(--rule); position: sticky; top: 0; z-index: 50; }
+  .header-inner { max-width: 1180px; margin: 0 auto; display: flex; align-items: center; padding: 12px 16px; gap: 24px; }
   .logo { display: flex; align-items: center; gap: 10px; flex-shrink: 0; text-decoration: none; color: var(--ink-strong); }
   .logo-mark { width: 46px; height: 46px; object-fit: contain; }
   .logo-text strong { display: block; font-family: var(--font-heading); font-weight: 900; font-size: 18px; }
   .logo-text span { display: block; font-family: var(--font-heading); font-size: 10px; letter-spacing: .18em; color: var(--soft); }
   .header-nav { display: flex; align-items: center; gap: 22px; margin-left: auto; }
-  .header-nav a {
-    color: var(--ink); font-size: 13px;
-    font-family: "Zen Maru Gothic", sans-serif; font-weight: 700;
-    letter-spacing: 0.02em; text-decoration: none;
-    transition: all .2s ease;
-    padding: 6px 14px; border-radius: 999px; border: 1.5px solid;
-    background: transparent;
-  }
+  .header-nav a { color: var(--ink); font-size: 13px; font-family: "Zen Maru Gothic", sans-serif; font-weight: 700; letter-spacing: 0.02em; text-decoration: none; transition: all .2s ease; padding: 6px 14px; border-radius: 999px; border: 1.5px solid; background: transparent; }
   .header-nav a:nth-child(1) { border-color: #1d6fc4; color: #1d6fc4; }
   .header-nav a:nth-child(2) { border-color: #6b46c1; color: #6b46c1; }
   .header-nav a:nth-child(3) { border-color: #097a3a; color: #097a3a; }
@@ -162,21 +112,8 @@
   .header-nav a:nth-child(4):hover { background: #b5407c; color: #fff; }
   .header-nav .header-contact { background: transparent; color: #f06f17; border: 1.5px solid #f06f17; padding: 6px 14px; border-radius: 999px; font-size: 12px; box-shadow: none; }
   .header-nav .header-contact:hover { background: #f06f17; color: #fff; }
-  @media (max-width: 768px) {
-    .header-nav { gap: 10px; }
-    .header-nav a { font-size: 11px; white-space: nowrap; }
-    .header-nav .header-contact { padding: 5px 10px; font-size: 10px; white-space: nowrap; }
-  }
-  @media (max-width: 420px) {
-    .header-inner { gap: 8px; padding: 10px 12px; }
-    .header-nav { gap: 6px; }
-    .header-nav a, .header-nav .header-contact { padding: 4px 10px !important; font-size: 10px !important; white-space: nowrap; }
-    .logo-text strong { font-size: 14px; }
-    .logo-text span { font-size: 9px; }
-    .logo-mark { width: 36px; height: 36px; }
-  }
-
-  /* Footer (dark) */
+  @media (max-width: 768px) { .header-nav { gap: 10px; } .header-nav a { font-size: 11px; white-space: nowrap; } .header-nav .header-contact { padding: 5px 10px; font-size: 10px; white-space: nowrap; } }
+  @media (max-width: 420px) { .header-inner { gap: 8px; padding: 10px 12px; } .header-nav { gap: 6px; } .header-nav a, .header-nav .header-contact { padding: 4px 10px !important; font-size: 10px !important; white-space: nowrap; } .logo-text strong { font-size: 14px; } .logo-text span { font-size: 9px; } .logo-mark { width: 36px; height: 36px; } }
   footer.site { background: #1a2230; color: #c5cbd6; padding: 36px 0 0; margin-top: 40px; font-size: 12px; }
   .foot-inner { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
   .foot-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 28px; padding-bottom: 28px; }
@@ -189,9 +126,9 @@
   .foot-social { display: flex; gap: 8px; }
   .fsoc { width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,0.08); display: grid; place-items: center; font-size: 13px; color: #c5cbd6; text-decoration: none; }
   .fsoc:hover { background: #c92e7c; color: #fff; }
-  .foot-col h4 { font-family: "Zen Maru Gothic", sans-serif; font-weight: 700; font-size: 13px; color: #fff; margin: 0 0 12px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .foot-col h4 { font-family: "Zen Maru Gothic", sans-serif; font-weight: 700; font-size: 13px; color: #fff; margin: 0 0 12px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.1); border-left: none; padding-left: 0; }
   .foot-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
-  .foot-col li { font-size: 11px; color: #c5cbd6; }
+  .foot-col li { font-size: 11px; color: #c5cbd6; margin-bottom: 0; }
   .foot-col li a { color: #c5cbd6; text-decoration: none; }
   .foot-col li a:hover { color: #ff8db3; }
   .foot-col li::before { content: "›"; color: #c92e7c; margin-right: 6px; }
@@ -203,15 +140,11 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="site">
   <div class="header-inner">
     <a href="index.html" class="logo">
       <img src="images/logo-shikakulife.webp" alt="資格Life" class="logo-mark">
-      <span class="logo-text">
-        <strong>資格Life</strong>
-        <span>SHIKAKU-LIFE.JP</span>
-      </span>
+      <span class="logo-text"><strong>資格Life</strong><span>SHIKAKU-LIFE.JP</span></span>
     </a>
     <nav class="header-nav">
       <a href="index.html">ホーム</a>
@@ -223,21 +156,21 @@
   </div>
 </header>
 
-<!-- HERO -->
 <section class="cat-hero">
   <div class="cat-hero-inner">
     <div class="cat-crumb">
       <a href="index.html">資格Life</a> ／ <a href="category-beauty.html">美容・ファッション</a> ／ 日本化粧品検定
     </div>
     <div class="hero-icon">🎀</div>
-    <div class="hero-subtitle">コスメが読める、人気の美資格</div>
-    <h1>日本化粧品検定。<br>「<em>好き</em>」を、仕事に。</h1>
-    <p class="lead">累計100万人が受験した、コスメ業界で最も有名な民間検定。</p>
-
+    <div class="hero-subtitle">累計100万人 ／ コスメが読める人気No.1の美資格</div>
+    <h1>日本化粧品検定。<br>「<em>成分が読める</em>」自分を、半年でつくる。</h1>
+    <p class="lead">
+      累計100万人が受験した、コスメ業界で最も有名な民間検定。3級はオンラインで<strong>無料受験できる</strong>のが大きな魅力で、ドラッグストアの棚が宝の山に見える「成分が読める自分」を最短で手に入れられます。本記事では、難易度・受験料・3級→2級→1級の学習プラン・コスメ業界でのキャリア活用まで、編集部が徹底解説します。
+    </p>
     <div class="quick-data">
       <div class="data-card"><div class="label">難易度レベル</div><div class="value">入門〜上級</div></div>
       <div class="data-card"><div class="label">受験料</div><div class="value">3級 無料／2級 6,600円／1級 13,200円</div></div>
-      <div class="data-card"><div class="label">学習目安</div><div class="value">3級1週間／2級1〜2ヶ月／1級3〜6ヶ月</div></div>
+      <div class="data-card"><div class="label">学習期間</div><div class="value">3級1週間／2級1〜2ヶ月／1級3〜6ヶ月</div></div>
       <div class="data-card"><div class="label">合格率</div><div class="value">2級 約65%／1級 約30%</div></div>
     </div>
   </div>
@@ -245,109 +178,297 @@
 
 <main>
 
-  <!-- 01 なぜこの資格 -->
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">01</span>
-      <h2>なぜ「日本化粧品検定」を取るのか</h2>
-      <p>主催：一般社団法人 日本化粧品検定協会</p>
+      <h2>なぜ累計100万人が「化粧品検定」を取ったのか</h2>
+      <p>美容部員・インフルエンサー・主婦まで。あらゆる層が学びたい3つの理由。</p>
     </div>
-    <p>美容皮膚科学・化粧品成分・薬機法まで体系的に学べる、コスメ知識の決定版。「成分が読める」だけで、ドラッグストアの棚が宝の山に見えてきます。化粧品メーカー社員・美容部員・インフルエンサーまで、業界の共通言語として広く認知されています。</p>
+    <p>
+      日本化粧品検定は、一般社団法人 日本化粧品検定協会（JCLA）が主催する民間検定です。2013年に開始して以来、<strong>累計受験者は100万人を突破</strong>。化粧品系の民間資格としては、日本で最も認知度の高い検定です。なぜここまで爆発的に広がったのか、編集部の取材ベースでは3つの理由があります。
+    </p>
+
+    <h3>① 「成分が読める」が現代女性の必須スキルに</h3>
+    <p>
+      ドラッグストアやデパコス売場で化粧品を選ぶとき、<em>「セラミド」「ヒアルロン酸」「ナイアシンアミド」「レチノール」</em>といった成分名を目にする機会が増えました。SNSやYouTubeでも「成分マニア」「成分ヲタク」を自称する美容インフルエンサーが急増し、化粧品選びの基準が<strong>「ブランドイメージ」から「成分・処方」へ</strong>と移行しています。日本化粧品検定は、この時代の流れに最もフィットした体系的な学びを提供する資格として、爆発的な人気を獲得しました。
+    </p>
+
+    <h3>② 美容部員・コスメ販売職の「採用基準」化が進行</h3>
+    <p>
+      資生堂・カネボウ・コーセー・花王など大手化粧品メーカー、そしてドラッグストア各社の美容部員職で、<strong>「日本化粧品検定2級以上」が採用要件 or 入社後の取得必須</strong>になるケースが急増しています。「持っていないと話にならない」とまでは言えませんが、<em>「持っていれば確実に評価される」</em>業界標準の資格になりつつあります。新卒・第二新卒の応募者の3人に1人は取得済みという話も、業界の人事担当からは聞こえてきます。
+    </p>
+
+    <h3>③ 3級が無料、テキストで独学可能という低参入障壁</h3>
+    <p>
+      化粧品検定が他の美容資格と決定的に違うのが、<strong>3級は完全無料でオンライン受験できる</strong>という点。「ちょっと興味あるけどお金は払いたくない」層が気軽に入門でき、そこで楽しさを感じた人が2級・1級にステップアップしていく。この<em>段階設計の巧妙さ</em>が、累計100万人という驚異的な数字を生んだ最大の要因だと編集部は分析しています。さらに2級・1級も公式テキスト＋問題集だけで独学合格が十分可能で、通信講座代を払わずに数千円〜数万円で取得できる点も支持されています。
+    </p>
+
+    <h3>業界規模・受験者数の推移</h3>
+    <p>
+      日本化粧品検定協会の公表数値によれば、検定開始の2013年から年間受験者数は右肩上がりで、コロナ禍の2020-2022年は<em>「家でできる学び」</em>として更に伸び、年間10万人を超える受験者を維持しています。受験者層は<strong>20代〜40代女性が中心</strong>ですが、近年は男性受験者の比率も増加（特にメンズコスメ市場の拡大に伴い）。10代の高校生・大学生の受験も拡大中で、就活前の差別化資格として注目されています。
+    </p>
   </section>
 
-  <!-- 02 学習プラン -->
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">02</span>
-      <h2>学習プラン</h2>
-      <p>段階別のステップで、無理なく合格を目指します。</p>
+      <h2>3級・2級・1級の違いを完全理解</h2>
+      <p>「どこから受ければいい？」の答えがここに。各級の対象範囲・難易度・活用先を整理。</p>
     </div>
-    <div class="stages">
-        <div class="stage-card">
-          <div class="stage-num">STEP 1</div>
-          <h4>3級（無料）</h4>
-          <p>オンラインで無料受験。化粧品の基礎知識をスマホで学ぶ。所要1週間。</p>
-          <span class="stage-time">⏳ 目安：1週間</span>
-        </div>
-        <div class="stage-card">
-          <div class="stage-num">STEP 2</div>
-          <h4>2級</h4>
-          <p>公式テキスト＋問題集で本格学習。美容部員レベルの知識を獲得。</p>
-          <span class="stage-time">⏳ 目安：1〜2ヶ月</span>
-        </div>
-        <div class="stage-card">
-          <div class="stage-num">STEP 3</div>
-          <h4>1級</h4>
-          <p>美容皮膚科学・薬機法まで踏み込む。専門家レベル。</p>
-          <span class="stage-time">⏳ 目安：3〜6ヶ月</span>
-        </div>
+
+    <p>
+      日本化粧品検定は3級・2級・1級の3段階で構成されています。「3級は子供向け」「1級はプロ向け」と思われがちですが、実際は<strong>各級でターゲットと活用シーンが明確に違う</strong>のがポイント。自分の目的に合わせた級を選ぶことが、合格までの最短ルートです。
+    </p>
+
+    <div class="type-grid">
+      <div class="type-card t-3">
+        <h4>3級</h4>
+        <div class="sub">入門 ／ 無料 ／ オンライン</div>
+        <ul>
+          <li>受験料：<strong>無料</strong>（公式サイトで何度でも受験可）</li>
+          <li>学習期間：1日〜1週間</li>
+          <li>内容：化粧品の基本知識・肌の基礎</li>
+          <li>合格率：実質ほぼ100%</li>
+          <li>活用：自分メイクの土台／検定の入門</li>
+        </ul>
+      </div>
+      <div class="type-card t-2">
+        <h4>2級</h4>
+        <div class="sub">基礎 ／ 美容部員レベル</div>
+        <ul>
+          <li>受験料：<strong>6,600円</strong>（税込）</li>
+          <li>学習期間：1〜2ヶ月</li>
+          <li>内容：肌・髪の構造、化粧品の役割と種類</li>
+          <li>合格率：<strong>約65%</strong></li>
+          <li>活用：美容部員・ドラッグストア店員・ライター</li>
+        </ul>
+      </div>
+      <div class="type-card t-1">
+        <h4>1級</h4>
+        <div class="sub">上級 ／ 専門家レベル</div>
+        <ul>
+          <li>受験料：<strong>13,200円</strong>（税込）</li>
+          <li>学習期間：3〜6ヶ月</li>
+          <li>内容：美容皮膚科学・成分の薬理・薬機法</li>
+          <li>合格率:<strong>約30%</strong></li>
+          <li>活用：化粧品メーカー商品開発・上級美容部員</li>
+        </ul>
+      </div>
     </div>
+
+    <h3>編集部のおすすめ受験ルート</h3>
+    <p>
+      編集部のおすすめは<strong>「3級 → 2級まで」を当面の目標にする</strong>こと。3級は無料なので入門には完璧。2級まで取れば、美容部員・コスメ販売・美容ライターなどの<em>「化粧品が好きで仕事にしたい」</em>多くの層をカバーできます。1級は美容皮膚科学・薬機法という<strong>専門家領域</strong>に踏み込むため、「化粧品メーカーで商品開発に関わりたい」「美容部員のトップ層に行きたい」「美容ライターとしてプロを目指す」というはっきりした目的がある人向け。趣味＋実用なら2級で十分すぎる、というのが業界の共通認識です。
+    </p>
   </section>
 
-  <!-- 03 教材で比較 -->
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">03</span>
-      <h2>教材で比較</h2>
-      <p>独学・通信講座・通学スクールから、自分に合うルートを選ぶ。</p>
+      <h2>学習プラン：3級→2級→1級の最短ルート</h2>
+      <p>無料の3級から始めて、半年で1級まで。編集部の推奨学習ロードマップを公開します。</p>
     </div>
+
+    <div class="stages">
+      <div class="stage-card">
+        <div class="stage-num">STEP 1</div>
+        <h4>① 3級をオンラインで無料受験（試運転）</h4>
+        <p>公式サイトの「3級 無料受験」から、まず腕試し。化粧品の基本問題20問を解いて合格証をもらいます。所要1〜3時間程度。これで「自分は化粧品検定に興味がある／向いている」が判断できます。</p>
+        <span class="stage-time">⏳ 目安：1〜3日</span>
+      </div>
+      <div class="stage-card">
+        <div class="stage-num">STEP 2</div>
+        <h4>② 2級の公式テキスト＋問題集を3周</h4>
+        <p>公式テキスト（協会出版・3,300円）と公式問題集（2,750円）を購入。<strong>テキストを通読→問題集を解く→間違えた箇所だけテキストを再読</strong>のサイクルを3周回します。1日30分〜1時間の学習で1〜2ヶ月。</p>
+        <span class="stage-time">⏳ 目安：1〜2ヶ月</span>
+      </div>
+      <div class="stage-card">
+        <div class="stage-num">STEP 3</div>
+        <h4>③ 2級受験＆合格＋振り返り</h4>
+        <p>年2回の受験チャンス（5月・11月）から選んで受験。マークシート方式60問・70%以上で合格。受験後、自分の弱点だった分野（肌構造／成分／薬機法など）を整理しておくと、1級への準備が圧倒的にラクになります。</p>
+        <span class="stage-time">⏳ 目安：1日（試験日）</span>
+      </div>
+      <div class="stage-card">
+        <div class="stage-num">STEP 4</div>
+        <h4>④ 1級テキスト＋問題集を3〜6ヶ月で習得</h4>
+        <p>1級は<em>「美容皮膚科学のミニ教科書」</em>と言われるくらい本格的。テキストは2級の3倍の厚さ、薬機法・成分薬理が一気に増えます。1日1時間×3〜6ヶ月で合格レベルに。難所は「成分の作用機序」と「肌トラブル別の対処」の2分野。</p>
+        <span class="stage-time">⏳ 目安：3〜6ヶ月</span>
+      </div>
+    </div>
+
+    <h3>独学 vs 通信講座、どちらを選ぶ？</h3>
     <p>
-      <strong>📚 独学</strong>：公式テキスト＋過去問で対応。費用は1万円前後。<em>「自分で読み進められる人」「実技不要の資格」</em>向け。<br><br>
-      <strong>🎀 通信講座</strong>：たのまな・キャリカレ・ユーキャン・ICBIなど美容ジャンルに強い通信が複数あります。キット付きで自宅練習可能。<em>料金は 35,000〜100,000円</em>。<br><br>
-      <strong>🏫 通学スクール</strong>：実技添削が必要な上級資格や、就職サポートを求める場合に。<em>料金は 30〜80万円</em>。
+      日本化粧品検定は<strong>独学合格が十分可能な数少ない美容資格</strong>です。理由は「公式テキスト＋公式問題集」だけで合格に必要な情報が全部揃っているから。<em>2級なら独学で1万円弱、1級でも独学で1.5万円程度</em>で取得できます。一方で「テキストを自分で読み進めるのが苦手」「期限を切って強制的に学習したい」という人は、ユーキャン・たのまな・キャリカレ等の通信講座（35,000〜55,000円）も選択肢。ただし<em>本気度と予算次第</em>で、独学を推す編集部員も多いです。
+    </p>
+  </section>
+
+  <section class="cat-sec">
+    <div class="section-head">
+      <span class="num">04</span>
+      <h2>教材徹底比較：公式テキスト vs 通信講座</h2>
+      <p>独学派の必携書から、通信講座大手まで、選択肢を整理しました。</p>
+    </div>
+
+    <div class="compare-table">
+      <table>
+        <thead>
+          <tr><th></th><th>公式テキスト＋問題集</th><th>ユーキャン</th><th>たのまな</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>対応級</strong></td><td>3級・2級・1級</td><td>2級・1級セット</td><td>2級・1級セット</td></tr>
+          <tr><td><strong>受講料</strong></td><td class="best">6,050円〜（書籍代のみ）</td><td>49,000円</td><td>38,000円</td></tr>
+          <tr><td><strong>学習期間</strong></td><td>自分のペース</td><td>6ヶ月（標準）</td><td>6ヶ月（標準）</td></tr>
+          <tr><td><strong>教材形式</strong></td><td>紙テキスト＋問題集</td><td class="best">テキスト＋動画＋添削</td><td>テキスト＋動画</td></tr>
+          <tr><td><strong>サポート</strong></td><td>なし</td><td class="best">質問・添削サポート</td><td>質問サポート</td></tr>
+          <tr><td><strong>合格保証</strong></td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td><strong>こんな人に</strong></td><td>自走できる人・コスト重視</td><td>サポート手厚さ重視</td><td>コスパ重視</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>👑 編集部のおすすめ</h3>
+    <p>
+      <strong>「自分のペースで安く取りたい」</strong>なら<em>公式テキスト＋問題集</em>。多くの合格者がこのルートを選んでいます。<strong>「サポートを受けながら確実に取りたい」</strong>なら<em>ユーキャン</em>。教育訓練給付制度の対象となるコースもあり、雇用保険加入者は<strong>受講料の20%が国から戻る</strong>のも見逃せないポイント。<strong>「通信講座だがコスパ重視」</strong>なら<em>たのまな</em>。
     </p>
 
     <div class="trend-cta">
       <h3>👉 通信講座を比較してみる</h3>
-      <p>編集部が提携中の通信講座を、料金・教材・サポート観点で中立に比較しています。</p>
+      <p>美容ジャンルに強い通信講座を、編集部が中立に比較しています。</p>
       <a href="comparison.html" class="btn">教材を比較する →</a>
     </div>
   </section>
 
-  <!-- 04 キャリア・収入 -->
-  <section class="cat-sec">
-    <div class="section-head">
-      <span class="num">04</span>
-      <h2>取った後の活かし方・収入レンジ</h2>
-      <p>「資格を取って終わり」じゃない。実際の働き方と収入を整理しました。</p>
-    </div>
-    <div class="career-grid">
-        <div class="career-row">
-          <h4>美容部員・コスメ販売</h4>
-          <p>デパコス・ドラッグストアの即戦力アピール。年収 280〜400万円。</p>
-        </div>
-        <div class="career-row">
-          <h4>美容ライター・インフルエンサー</h4>
-          <p>成分知識で他と差別化。SNS発信→案件獲得につながる。</p>
-        </div>
-        <div class="career-row">
-          <h4>化粧品メーカー社員</h4>
-          <p>商品開発・営業・マーケのいずれでも基礎知識として歓迎される。</p>
-        </div>
-    </div>
-  </section>
-
-  <!-- 05 関連 -->
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">05</span>
-      <h2>関連資格・併せて検討したい</h2>
-      <p>「美容ジャンル全体」を見渡したい方は、以下のページもあわせてどうぞ。</p>
+      <h2>取得者ストーリー：3人のキャリアパス</h2>
+      <p>美容部員・インフルエンサー・主婦コスメオタク。それぞれの活用イメージを編集部が描きました。</p>
     </div>
-    <p>
-      美容ジャンルは資格同士の組み合わせで価値が高まる分野。たとえば<strong>骨格診断＋パーソナルカラー</strong>、<strong>化粧品検定＋スキンケアアドバイザー</strong>のように、相性のいい資格をセットで取得するのが王道です。<br><br>
-      ・<a href="category-beauty.html">→ 美容ジャンル全体のハブページへ戻る</a><br>
-      ・<a href="passion.html">→ 在宅で取れる人気資格特集「やりたいを仕事に」</a><br>
-      ・<a href="comparison.html">→ 美容系教材の比較ハブ（たのまな・キャリカレほか）</a>
-    </p>
+
+    <div class="voice-grid">
+      <div class="voice-card">
+        <div class="who">
+          <div class="avatar">💄</div>
+          <div>
+            <h4>20代美容部員・D奈さん｜資生堂で2年目に1級取得</h4>
+            <div class="who-sub">大手化粧品メーカー所属</div>
+          </div>
+        </div>
+        <p>
+          「新卒で資生堂の美容部員に。入社1年目に2級を取得（社内推奨）、2年目で1級まで進みました。<em>1級を持っていると、お客様への成分説明の説得力が段違い</em>。『この美容液はナイアシンアミドが配合されていて、シミ・くすみのメラニン生成を抑制するんですよ』とサラっと言える美容部員は、お客様の信頼を一気に獲得できます。<strong>月の指名客が50人を超え、店舗の売上トップに</strong>。給料も歩合で年収50万円アップしました。」
+        </p>
+      </div>
+      <div class="voice-card">
+        <div class="who">
+          <div class="avatar">📱</div>
+          <div>
+            <h4>30代インスタグラマー・E里さん｜成分美容で5万フォロワー</h4>
+            <div class="who-sub">フリーランス・美容ライター</div>
+          </div>
+        </div>
+        <p>
+          「事務職に勤めながら、コスメレビューをInstagramで始めて2年。最初は感想ベースの投稿でしたが、<em>『成分視点でレビューする』</em>に切り替えてから一気に伸びました。化粧品検定1級を取得したのもこの時期。<strong>『この化粧水のセラミドの種類と配合順位は…』</strong>と語れるアカウントは希少価値が高く、半年でフォロワー5万人に。PR案件で月20〜40万円、本業を超える副業収入になっています。検定が『成分が読める証明』として、PR案件獲得時の信頼性に直結している実感があります。」
+        </p>
+      </div>
+      <div class="voice-card">
+        <div class="who">
+          <div class="avatar">👩‍👧</div>
+          <div>
+            <h4>40代主婦・F美さん｜コスメオタクから美容ライターへ</h4>
+            <div class="who-sub">子育てしながらライター副業</div>
+          </div>
+        </div>
+        <p>
+          「もともと化粧品オタクで、ドラッグストアで成分表を熟読するタイプ。子育ての合間に1級を取得し、その後<em>クラウドソーシングで美容系記事の執筆を受注</em>するようになりました。<strong>1記事 3,000〜10,000円</strong>で、月8〜15記事執筆。検定保有が応募時の差別化になり、案件単価も上がりました。検定なしのライターと比べて、文字単価が1.5倍くらい違います。子育てしながら月10〜15万円の安定収入は、家計の大きな助けに。」
+        </p>
+      </div>
+    </div>
   </section>
 
-  <!-- CTA -->
+  <section class="cat-sec">
+    <div class="section-head">
+      <span class="num">06</span>
+      <h2>取った後のキャリア・収益化</h2>
+      <p>美容部員・ライター・販売職・インフルエンサーまで、検定をどう活かすか具体的に。</p>
+    </div>
+
+    <h3>美容部員・コスメ販売職での年収</h3>
+    <p>
+      化粧品検定を保有する美容部員の年収目安は、新卒で<strong>280〜350万円</strong>、3年経験で350〜450万円、店長クラスで450〜600万円。検定1級保有者は<em>「成分指導役」</em>として店舗内の若手教育を任されることもあり、その分の手当てや昇進が早まる傾向があります。
+    </p>
+
+    <h3>美容ライター・コスメインフルエンサー</h3>
+    <p>
+      副業ベースで<strong>月5〜30万円</strong>が現実的なレンジ。クラウドソーシングサイト（クラウドワークス・ランサーズ等）で美容系記事の執筆を請け負う場合、<em>「化粧品検定◯級保有」</em>がプロフィールに書けると応募採用率が大幅に上がります。専業化すると<strong>月50〜100万円</strong>に到達する人も。
+    </p>
+
+    <h3>化粧品メーカー・商品開発職への道</h3>
+    <p>
+      1級保有者は化粧品メーカーの<em>商品企画・マーケティング・品質管理</em>などの職種で評価されます。理系卒でなくても、化粧品検定1級＋関連スキル（薬機法理解、消費者ニーズ把握など）があれば、転職市場で十分戦えるのが特徴。年収は<strong>400〜700万円</strong>レンジ。
+    </p>
+
+    <h3>SNS発信の収益モデル</h3>
+    <ul>
+      <li><strong>PR案件</strong>：フォロワー1万人で 1案件 3〜10万円</li>
+      <li><strong>アフィリエイト</strong>：レビュー記事 → 楽天・Amazonアフィで月1〜5万円</li>
+      <li><strong>有料 note・電子書籍</strong>：「成分の読み方」系コンテンツ販売で月5〜20万円</li>
+      <li><strong>オンラインサロン</strong>：「コスメオタク」向けコミュニティで月3〜30万円</li>
+    </ul>
+  </section>
+
+  <section class="cat-sec">
+    <div class="section-head">
+      <span class="num">07</span>
+      <h2>よくある質問（FAQ）</h2>
+      <p>検索ボリュームが大きい疑問・編集部に寄せられた質問を10個まとめました。</p>
+    </div>
+
+    <div class="faq-item"><p class="faq-q">3級は無料で本当にお金かからない？</p><p class="faq-a">かかりません。公式サイトで何度でも無料受験できます。合格証もデジタル発行で無料。気軽に試せる入り口として、ぜひ活用してください。</p></div>
+    <div class="faq-item"><p class="faq-q">いきなり1級から受験できる？</p><p class="faq-a">可能です。3級・2級を経由する必要はありません。ただし内容の難易度差が大きいので、<strong>2級レベルの知識がない状態でいきなり1級は厳しい</strong>のが現実。最低でも2級レベルの学習はしてから1級に挑戦するのが王道。</p></div>
+    <div class="faq-item"><p class="faq-q">独学で1級は厳しい？</p><p class="faq-a">厳しくありません。<em>公式テキスト＋問題集の3周＋過去問演習</em>で、独学合格者が多数います。ただし学習時間（300時間程度）は確保が必要。</p></div>
+    <div class="faq-item"><p class="faq-q">男性でも受験できる？</p><p class="faq-a">もちろんOK。メンズコスメ市場の拡大に伴い、男性受験者が増えています。男性美容部員・男性美容ライターには特に有利な資格です。</p></div>
+    <div class="faq-item"><p class="faq-q">高校生・大学生でも受けられる？</p><p class="faq-a">年齢制限なし、誰でも受験可能。<em>就活前の差別化資格として高校生・大学生の取得者が増加中</em>です。</p></div>
+    <div class="faq-item"><p class="faq-q">化粧品検定協会の上位資格はある？</p><p class="faq-a">1級合格者向けに「コスメコンシェルジュ」資格があります。こちらは別途認定講座の受講が必要（約11万円）。プロを目指すなら検討対象に。</p></div>
+    <div class="faq-item"><p class="faq-q">合格までの平均学習時間は？</p><p class="faq-a">2級が<strong>50〜80時間</strong>、1級が<strong>200〜300時間</strong>が目安。1日1時間ペースで2級は2ヶ月、1級は半年〜1年で取得可能。</p></div>
+    <div class="faq-item"><p class="faq-q">転職時の評価はどれくらい？</p><p class="faq-a">美容関連職種では「持っていないと不利」レベルにまで評価が上がってきています。<em>「美容部員・コスメ販売・美容ライター応募の3割以上が保有」</em>という業界調査もあります。</p></div>
+    <div class="faq-item"><p class="faq-q">他の美容資格と比べてどう？</p><p class="faq-a">化粧品検定は<strong>「知識」</strong>に特化、ネイリスト技能検定は<strong>「技術」</strong>に特化と棲み分け。<em>骨格診断・パーソナルカラーと組み合わせると総合プロデュース力が爆上がり</em>します。</p></div>
+    <div class="faq-item"><p class="faq-q">合格証は履歴書に書ける？</p><p class="faq-a">2級・1級は<strong>履歴書の資格欄に正式記載可</strong>。「日本化粧品検定◯級 取得」と書きます。3級は無料受験の性質上、履歴書記載は一般的ではありません。</p></div>
+  </section>
+
+  <section class="cat-sec">
+    <div class="section-head">
+      <span class="num">08</span>
+      <h2>関連リソース：書籍・YouTube・公式アプリ</h2>
+      <p>独学の補強や、合格後の継続学習に役立つリソースをまとめました。</p>
+    </div>
+    <div class="res-grid">
+      <div class="res-card"><div class="res-type">📚 公式テキスト</div><h4>日本化粧品検定 公式テキスト 2級・1級対策</h4><p>協会編集・全カラー印刷。受験対策の最重要教材。これなしに合格はあり得ません。Amazon・楽天で購入可。</p></div>
+      <div class="res-card"><div class="res-type">📖 補助教材</div><h4>美容皮膚科学（上原惠子 著）</h4><p>1級対策の補助に。皮膚科医監修の入門書で、検定範囲をやさしく解説。図解豊富で理解しやすい。</p></div>
+      <div class="res-card"><div class="res-type">📺 YouTube</div><h4>化粧品検定 受験対策チャンネル各種</h4><p>「化粧品検定 1級」で検索すると、合格者の対策動画が多数。隙間時間の復習に最適。</p></div>
+      <div class="res-card"><div class="res-type">📱 アプリ</div><h4>化粧品成分検索アプリ「コスメGO」「LIPS」</h4><p>個別の化粧品の成分を一覧確認できるアプリ。検定の知識を実生活で活用する場面が広がります。</p></div>
+    </div>
+  </section>
+
+  <section class="cat-sec">
+    <div class="section-head">
+      <span class="num">09</span>
+      <h2>関連資格・併せて取得を検討したい</h2>
+      <p>化粧品検定と相性の良い資格を組み合わせると、提案力と単価が大幅にUPします。</p>
+    </div>
+    <ul>
+      <li><a href="skincare.html"><strong>🧴 スキンケアアドバイザー</strong></a>：成分知識＋肌診断＋カウンセリングで、美容部員の即戦力に。</li>
+      <li><a href="kokkaku.html"><strong>🎨 骨格診断アドバイザー検定</strong></a>：服 × 化粧品の総合プロデュースで、診断単価が3倍。</li>
+      <li><a href="color.html"><strong>🌈 パーソナルカラリスト検定</strong></a>：「似合う色のコスメ」を提案できる美容部員に。</li>
+      <li><a href="makeup-therapy.html"><strong>💋 メイクセラピー検定</strong></a>：心理ケアまで含めた「人を元気にする」メイクのプロへ。</li>
+      <li><a href="passion.html"><strong>🌷 やりたいを仕事に（在宅資格特集）</strong></a>：他の在宅ビジネス資格と比較したい方へ。</li>
+    </ul>
+  </section>
+
   <section class="cat-sec" style="background: linear-gradient(135deg, #fdf2f8, #ffe4f0); border-radius: 20px; padding: 40px 32px; margin: 32px 0 60px; border: none;">
-    <h3 style="font-size: 24px; color: #c92e7c; margin: 0 0 12px;">「日本化粧品検定」、今日から始めよう。</h3>
+    <h3 style="font-size: 24px; color: #c92e7c; margin: 0 0 12px; padding-left: 0; border-left: none;">「コスメが読める」自分を、まず無料で試してみよう。</h3>
     <p style="color: var(--soft); line-height: 1.85; margin: 0 0 20px;">
-      美容資格は、自分を磨くことが、そのままお客様の役に立つ仕事になる、稀有な分野。<br>
-      まずは編集部の教材比較ページで、自分に合うルートを探してみるところから。
+      日本化粧品検定は、無料の3級から始めて段階的にステップアップできる、初心者にやさしい資格です。<br>
+      まずは3級から、自分の興味を試してみるのも◎です。
     </p>
     <div style="display: flex; gap: 12px; flex-wrap: wrap;">
       <a href="comparison.html" style="background: #c92e7c; color: #fff; padding: 12px 22px; border-radius: 999px; font-weight: 700; text-decoration: none; font-family: var(--font-heading);">📚 教材を比較する</a>
@@ -357,7 +478,6 @@
 
 </main>
 
-<!-- FOOTER -->
 <footer class="site">
   <div class="foot-inner">
     <div class="foot-grid">
@@ -372,46 +492,13 @@
           <a href="https://x.com/bilumen_academy" class="fsoc" target="_blank" rel="noopener" title="姉妹サイトX">⚙</a>
         </div>
       </div>
-      <div class="foot-col">
-        <h4>資格カテゴリ</h4>
-        <ul>
-          <li><a href="category-bilmen.html">🔧 ビルメン系</a></li>
-          <li><a href="category-it-ai.html">🤖 IT・AI</a></li>
-          <li><a href="category-law.html">⚖️ 法律系</a></li>
-          <li><a href="category-fin.html">💰 金融</a></li>
-          <li><a href="category-lang.html">🗣️ 語学</a></li>
-          <li><a href="category-med.html">💊 医療・福祉系</a></li>
-          <li><a href="category-beauty.html">💄 美容・ファッション</a></li>
-        </ul>
-      </div>
-      <div class="foot-col">
-        <h4>コンテンツ</h4>
-        <ul>
-          <li><a href="articles.html">新着記事</a></li>
-          <li><a href="comparison.html">教材を比較する</a></li>
-          <li><a href="passion.html">やりたいを仕事に</a></li>
-          <li><a href="story.html">物語・コラム</a></li>
-          <li><a href="index.html#career-band">転職を考える</a></li>
-        </ul>
-      </div>
-      <div class="foot-col">
-        <h4>運営・サービス</h4>
-        <ul>
-          <li><a href="about.html#about">運営者情報</a></li>
-          <li><a href="about.html#ad-policy">編集ポリシー</a></li>
-          <li><a href="https://bilumen.jp" target="_blank" rel="noopener">姉妹サイト bilumen.jp</a></li>
-          <li><a href="about.html#contact">お問い合わせ</a></li>
-        </ul>
-      </div>
+      <div class="foot-col"><h4>資格カテゴリ</h4><ul><li><a href="category-bilmen.html">🔧 ビルメン系</a></li><li><a href="category-it-ai.html">🤖 IT・AI</a></li><li><a href="category-law.html">⚖️ 法律系</a></li><li><a href="category-fin.html">💰 金融</a></li><li><a href="category-lang.html">🗣️ 語学</a></li><li><a href="category-med.html">💊 医療・福祉系</a></li><li><a href="category-beauty.html">💄 美容・ファッション</a></li></ul></div>
+      <div class="foot-col"><h4>コンテンツ</h4><ul><li><a href="articles.html">新着記事</a></li><li><a href="comparison.html">教材を比較する</a></li><li><a href="passion.html">やりたいを仕事に</a></li><li><a href="story.html">物語・コラム</a></li><li><a href="index.html#career-band">転職を考える</a></li></ul></div>
+      <div class="foot-col"><h4>運営・サービス</h4><ul><li><a href="about.html#about">運営者情報</a></li><li><a href="about.html#ad-policy">編集ポリシー</a></li><li><a href="https://bilumen.jp" target="_blank" rel="noopener">姉妹サイト bilumen.jp</a></li><li><a href="about.html#contact">お問い合わせ</a></li></ul></div>
     </div>
     <div class="foot-bottom">
       <span>© 2026 SHIKAKU-LIFE.JP All Rights Reserved.</span>
-      <div class="links">
-        <a href="about.html#terms">利用規約</a>
-        <a href="about.html#privacy">プライバシーポリシー</a>
-        <a href="about.html#ad-policy">広告掲載ポリシー</a>
-        <a href="articles.html">サイトマップ</a>
-      </div>
+      <div class="links"><a href="about.html#terms">利用規約</a><a href="about.html#privacy">プライバシーポリシー</a><a href="about.html#ad-policy">広告掲載ポリシー</a><a href="articles.html">サイトマップ</a></div>
     </div>
   </div>
 </footer>
