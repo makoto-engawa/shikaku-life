@@ -26,6 +26,8 @@
   --violet-soft: #ecebff;
   --teal: #10b8a8;
   --teal-soft: #d6f5f1;
+  --rose: #e94e9c;
+  --rose-soft: #ffe4f0;
   --rule: #dde7f1;
   --rule-strong: #c9d6e4;
 
@@ -317,6 +319,7 @@ em {
 .cat-pill.cat-lang   { background: var(--pink-soft); color: #b5407c; }
 .cat-pill.cat-story  { background: var(--orange-soft); color: var(--orange-deep); }
 .cat-pill.cat-medical{ background: var(--teal-soft); color: #097a72; }
+.cat-pill.cat-beauty { background: var(--rose-soft); color: #c92e7c; }
 .cat-pill.cat-career { background: var(--primary-soft); color: var(--primary-deep); }
 
 /* ========== Article cards ========== */
@@ -363,6 +366,7 @@ em {
 .article-card .thumb.t-pink   { background: linear-gradient(135deg, var(--pink-soft), #fff 70%); }
 .article-card .thumb.t-yellow { background: linear-gradient(135deg, var(--yellow-soft), #fff 70%); }
 .article-card .thumb.t-teal   { background: linear-gradient(135deg, var(--teal-soft), #fff 70%); }
+.article-card .thumb.t-rose   { background: linear-gradient(135deg, var(--rose-soft), #fff 70%); }
 .article-card .thumb.has-image {
   background-size: cover !important;
   background-position: center !important;

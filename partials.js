@@ -50,12 +50,13 @@
           <div>
             <h4>カテゴリ</h4>
             <ul>
-              <li><a href="categories.html">🔧 ビルメン系</a></li>
-              <li><a href="categories.html">🤖 IT・AI</a></li>
-              <li><a href="categories.html">⚖️ 法律系</a></li>
-              <li><a href="categories.html">💰 金融</a></li>
-              <li><a href="categories.html">🗣️ 語学</a></li>
-              <li><a href="categories.html">📔 物語・コラム</a></li>
+              <li><a href="category-bilmen.html">🔧 ビルメン系</a></li>
+              <li><a href="category-it-ai.html">🤖 IT・AI</a></li>
+              <li><a href="category-law.html">⚖️ 法律系</a></li>
+              <li><a href="category-fin.html">💰 金融</a></li>
+              <li><a href="category-lang.html">🗣️ 語学</a></li>
+              <li><a href="category-med.html">💊 医療・福祉系</a></li>
+              <li><a href="category-beauty.html">💄 美容・ファッション</a></li>
             </ul>
           </div>
           <div>

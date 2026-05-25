@@ -477,7 +477,7 @@
     padding: 24px 16px 8px;
   }
   .cats-grid {
-    display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px;
+    display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px;
   }
   .cat {
     background: #fff;
@@ -533,6 +533,10 @@
   .cat-fin    { background-image: url('images/cat-fin.png'); }
   .cat-lang   { background-image: url('images/cat-lang.png'); }
   .cat-med    { background-image: url('images/cat-med.png'); }
+  .cat-beauty {
+    background: linear-gradient(135deg, #fdf2f8 0%, #ffe4f0 50%, #fce7f3 100%);
+  }
+  .cat-beauty .cat-overlay { background: rgba(201, 46, 124, 0.7); }
 
   /* ===================== 資格名リスト（カテゴリ別） ===================== */
   .shikaku-list-wrap {
@@ -1258,11 +1262,17 @@
         <div class="cat-cnt">13 資格</div>
       </div>
     </a>
+    <a class="cat cat-beauty" href="category-beauty.html">
+      <div class="cat-overlay">
+        <div class="cat-name">💄 美容・ファッション</div>
+        <div class="cat-cnt">8 資格 NEW</div>
+      </div>
+    </a>
   </div>
 
   <!-- 資格名リスト（カテゴリ別） -->
   <div class="shikaku-list-wrap">
-    <p class="shikaku-list-title">カテゴリ別 主要資格一覧（42資格）</p>
+    <p class="shikaku-list-title">カテゴリ別 主要資格一覧（50資格）</p>
     <div class="shikaku-list-grid">
       <div class="shikaku-list-col lc-bilmen">
         <h4>ビルメン系</h4>
@@ -1334,6 +1344,19 @@
           <li><a href="yakuzaishi.html">薬剤師</a></li>
           <li><a href="me.html">臨床工学技士</a></li>
           <li><a href="kensa.html">臨床検査技師</a></li>
+        </ul>
+      </div>
+      <div class="shikaku-list-col lc-beauty">
+        <h4>💄 美容・ファッション <span style="background:#c92e7c;color:#fff;font-size:9px;padding:2px 6px;border-radius:8px;margin-left:4px;">NEW</span></h4>
+        <ul>
+          <li><a href="category-beauty.html">日本化粧品検定</a></li>
+          <li><a href="category-beauty.html">骨格診断アドバイザー</a></li>
+          <li><a href="category-beauty.html">パーソナルカラリスト</a></li>
+          <li><a href="category-beauty.html">メイクセラピー検定</a></li>
+          <li><a href="category-beauty.html">ネイリスト技能検定</a></li>
+          <li><a href="category-beauty.html">アロマセラピスト</a></li>
+          <li><a href="category-beauty.html">スキンケアアドバイザー</a></li>
+          <li><a href="category-beauty.html">ファッション色彩能力検定</a></li>
         </ul>
       </div>
     </div>
