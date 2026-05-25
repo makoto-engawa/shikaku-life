@@ -708,6 +708,7 @@
   .pill.law { background: #e8eaef; color: #1a2230; }
   .pill.fin { background: #fff4d6; color: #b07c00; }
   .pill.lang { background: #ffe1e7; color: #cc324f; }
+  .pill.medical { background: #d6f5f1; color: #097a72; }
   .pill.med { background: var(--blue-soft); color: var(--blue); }
   .card-title {
     font-family: "Zen Maru Gothic", sans-serif;
@@ -768,10 +769,10 @@
   .feat-cat { font-size: 9px; color: var(--mute); margin-top: 3px; }
 
   /* ===================== POPULAR ===================== */
-  .popular .card-grid-4 .card-thumb { background: linear-gradient(135deg, #fff4d6, #ffe2a0); }
-  .popular .card-grid-4 .card:nth-child(2) .card-thumb { background: linear-gradient(135deg, #e6f4ed, #c5e7d4); }
-  .popular .card-grid-4 .card:nth-child(3) .card-thumb { background: linear-gradient(135deg, #efe7ff, #d5c4ff); }
-  .popular .card-grid-4 .card:nth-child(4) .card-thumb { background: linear-gradient(135deg, #ffe1e7, #ffc1cd); }
+  .popular .card-grid-4 .card:nth-child(1) .card-thumb { background: linear-gradient(135deg, #e6f4ed, #c5e7d4); } /* ビルメン */
+  .popular .card-grid-4 .card:nth-child(2) .card-thumb { background: linear-gradient(135deg, #efe7ff, #d5c4ff); } /* IT・AI */
+  .popular .card-grid-4 .card:nth-child(3) .card-thumb { background: linear-gradient(135deg, #d6f5f1, #a7f3d0); } /* 医療・介護 */
+  .popular .card-grid-4 .card:nth-child(4) .card-thumb { background: linear-gradient(135deg, #ffe1e7, #ffc1cd); } /* 語学 */
 
   /* ===================== CAREER SECTION ===================== */
   .career-band {
@@ -870,6 +871,48 @@
     display: flex; align-items: center; gap: 4px;
     position: relative; z-index: 1;
   }
+
+  /* === Career Card 強化（クリック可能化・CTA・LIVEバッジ） === */
+  a.career-card {
+    display: flex; flex-direction: column;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  a.career-card:hover { text-decoration: none; }
+  .career-card.career-card-main {
+    border: 2px solid var(--orange);
+    background: linear-gradient(180deg, #fff7ed 0%, #fff 60%);
+    position: relative;
+  }
+  .live-badge {
+    background: #d4f5dd; color: #097a3a;
+    padding: 4px 12px; border-radius: 999px;
+    font-size: 11px; font-weight: 700;
+    display: inline-block; margin-bottom: 8px;
+    font-family: var(--font-heading);
+    letter-spacing: .05em;
+    align-self: flex-start;
+    position: relative; z-index: 1;
+  }
+  .cc-cta {
+    background: var(--orange); color: #fff;
+    padding: 10px 18px; border-radius: 999px;
+    text-align: center; font-weight: 700;
+    display: inline-block; margin-top: 14px;
+    font-family: var(--font-heading); font-size: 13px;
+    transition: background .15s;
+    align-self: stretch;
+    position: relative; z-index: 1;
+    box-shadow: 0 2px 0 var(--orange-deep, #c25410);
+  }
+  a.career-card:hover .cc-cta { background: #c25410; }
+  .cc-cta-sub {
+    background: #fff; color: #1d6fc4;
+    border: 1.5px solid #1d6fc4;
+    box-shadow: none;
+  }
+  a.career-card:hover .cc-cta-sub { background: #e3f1ff; color: #1d6fc4; }
 
   /* ===================== SISTER BANNER ===================== */
   .sister {
@@ -1474,35 +1517,35 @@
     </div>
 
     <div class="card-grid-4">
-      <a class="card" href="article-boki3-2weeks.html">
-        <div class="card-thumb"><span class="fav">♡</span>📊</div>
+      <a class="card" href="article-bilmen-4set.html">
+        <div class="card-thumb"><span class="fav">♡</span>🛠</div>
         <div class="card-body">
-          <span class="pill fin">金融</span>
-          <h3 class="card-title">簿記3級、最短2週間で合格する勉強法。最初の3日でやることを具体化</h3>
-          <div class="card-meta"><span>2026.05</span><span class="read">⏱ 8分</span></div>
-        </div>
-      </a>
-      <a class="card" href="article-takken-300hr.html">
-        <div class="card-thumb"><span class="fav on">♥</span>🏠</div>
-        <div class="card-body">
-          <span class="pill law">法律系</span>
-          <h3 class="card-title">宅建、社会人が働きながら受かるには。通勤＋土日の300時間プラン</h3>
-          <div class="card-meta"><span>2026.05</span><span class="read">⏱ 10分</span></div>
+          <span class="pill bil">ビルメン系</span>
+          <h3 class="card-title">ビルメン4点セット、取得順序の決定版【2026年版】</h3>
+          <div class="card-meta"><span>2026.05</span><span class="read">⏱ 9分</span></div>
         </div>
       </a>
       <a class="card" href="article-ai-shikaku-app.html">
-        <div class="card-thumb"><span class="fav">♡</span>🤖</div>
+        <div class="card-thumb"><span class="fav on">♥</span>🤖</div>
         <div class="card-body">
           <span class="pill it">IT・AI</span>
           <h3 class="card-title">AIだけで「自分専用の資格勉強アプリ」を作る、15分の手順【2026最新】</h3>
           <div class="card-meta"><span>2026.05</span><span class="read">⏱ 12分</span></div>
         </div>
       </a>
-      <a class="card" href="article-bilmen-4set.html">
-        <div class="card-thumb"><span class="fav">♡</span>🛠</div>
+      <a class="card" href="article-kaigo-demand.html">
+        <div class="card-thumb"><span class="fav">♡</span>🏥</div>
         <div class="card-body">
-          <span class="pill bil">ビルメン系</span>
-          <h3 class="card-title">ビルメン4点セット、取得順序の決定版【2026年版】</h3>
+          <span class="pill medical">医療・介護</span>
+          <h3 class="card-title">介護福祉士はなぜ今、需要が伸びているのか</h3>
+          <div class="card-meta"><span>2026.05</span><span class="read">⏱ 10分</span></div>
+        </div>
+      </a>
+      <a class="card" href="article-toeic-800.html">
+        <div class="card-thumb"><span class="fav">♡</span>🗣️</div>
+        <div class="card-body">
+          <span class="pill lang">語学</span>
+          <h3 class="card-title">TOEIC 600→800、半年で伸ばした朝活ルーティン</h3>
           <div class="card-meta"><span>2026.05</span><span class="read">⏱ 9分</span></div>
         </div>
       </a>
@@ -1526,34 +1569,38 @@
     </div>
 
     <div class="career-cards">
-      <div class="career-card">
+      <a class="career-card career-card-main" href="https://af.moshimo.com/af/c/click?a_id=5583458&p_id=6451&pc_id=18215&pl_id=82585" target="_blank" rel="sponsored noopener">
+        <span class="live-badge">⭐ LIVE提携中</span>
         <div class="cc-img cc-img-compare"></div>
-        <div class="cc-num">01 / COMPARE</div>
-        <h3 class="cc-title">総合転職サイト徹底比較：求人数・サポート・年収UP実績で選ぶ</h3>
-        <p class="cc-desc">大手総合転職サイトを、求人数・スカウト機能・コンサルタントの質などの観点で比較しました。</p>
-        <span class="cc-link">記事を読む →</span>
-      </div>
-      <div class="career-card">
+        <div class="cc-num">01 / FEATURED</div>
+        <h3 class="cc-title">会計士・税理士の転職は、業界特化のエージェントへ</h3>
+        <p class="cc-desc">「ツインプロ」は会計・税務に特化した転職エージェント。会計事務所・税理士法人の<em>非公開求人</em>が豊富。無料キャリア面談から。</p>
+        <span class="cc-cta">無料キャリア面談へ →</span>
+      </a>
+
+      <a class="career-card" href="article-ai-shikaku-app.html">
         <div class="cc-img cc-img-it"></div>
-        <div class="cc-num">02 / IT</div>
-        <h3 class="cc-title">30代未経験からITエンジニア｜おすすめ転職エージェント</h3>
-        <p class="cc-desc">基本情報＋AI活用スキルを武器に転職した編集部員の実例と、効いたエージェント比較。</p>
-        <span class="cc-link">記事を読む →</span>
-      </div>
-      <div class="career-card">
+        <div class="cc-num">02 / IT・AI</div>
+        <h3 class="cc-title">AIで武器を増やしてからITエンジニアへ転職</h3>
+        <p class="cc-desc">基本情報＋AI活用スキルを揃えた30代未経験から、ITエンジニア転職する方法。まず「自分専用ツール」を作るところから。</p>
+        <span class="cc-cta cc-cta-sub">関連記事を読む →</span>
+      </a>
+
+      <a class="career-card" href="article-kaigo-demand.html">
         <div class="cc-num">03 / MEDICAL</div>
         <div class="cc-icon">🏥</div>
-        <h3 class="cc-title">医療事務から介護福祉士で再就職｜年収はどう変わる？</h3>
-        <p class="cc-desc">資格取得後の年収シミュレーションと、福祉系に強い転職サービスを徹底比較しました。</p>
-        <span class="cc-link">記事を読む →</span>
-      </div>
-      <div class="career-card">
+        <h3 class="cc-title">介護福祉士はなぜ今、需要が伸びているのか</h3>
+        <p class="cc-desc">2025年問題で求人が急増。資格取得ルート・年収・働き方の選択肢を整理しました。医療事務からの再就職にも対応。</p>
+        <span class="cc-cta cc-cta-sub">記事を読む →</span>
+      </a>
+
+      <a class="career-card" href="comparison.html#career-partners">
         <div class="cc-img cc-img-special"></div>
-        <div class="cc-num">04 / SPECIAL</div>
-        <h3 class="cc-title">資格別おすすめ転職サイト2026年版【完全ガイド】</h3>
-        <p class="cc-desc">15資格×8転職サイトをマトリクスで比較。あなたに合うエージェントが必ず見つかる。</p>
-        <span class="cc-link">記事を読む →</span>
-      </div>
+        <div class="cc-num">04 / PARTNERS</div>
+        <h3 class="cc-title">資格Lifeの転職パートナー一覧</h3>
+        <p class="cc-desc">編集部が提携している転職・キャリアサービスをまとめてご紹介。資格を取った後、どう活かすかまで伴走します。</p>
+        <span class="cc-cta cc-cta-sub">提携パートナーを見る →</span>
+      </a>
     </div>
   </div>
 </section>
