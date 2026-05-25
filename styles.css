@@ -363,6 +363,12 @@ em {
 .article-card .thumb.t-pink   { background: linear-gradient(135deg, var(--pink-soft), #fff 70%); }
 .article-card .thumb.t-yellow { background: linear-gradient(135deg, var(--yellow-soft), #fff 70%); }
 .article-card .thumb.t-teal   { background: linear-gradient(135deg, var(--teal-soft), #fff 70%); }
+.article-card .thumb.has-image {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat;
+  font-size: 0;
+}
 .article-card .thumb .badge {
   position: absolute;
   top: 12px; left: 12px;

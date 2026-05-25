@@ -163,16 +163,21 @@
     if (list.length === 0) {
       grid.innerHTML = '<p style="grid-column:1/-1; text-align:center; color:var(--soft); padding:40px;">このカテゴリの記事はまだありません。</p>';
     } else {
-      grid.innerHTML = list.map(a => `
+      grid.innerHTML = list.map(a => {
+        const hasImg = !!a.thumb_image;
+        const thumbStyle = hasImg ? `style="background-image:url('${a.thumb_image}')"` : '';
+        const thumbContent = hasImg ? '' : a.icon;
+        const thumbClass = `thumb ${a.thumb_color}${hasImg ? ' has-image' : ''}`;
+        return `
         <a class="article-card card" data-cat="${a.category}" href="article-${a.slug}.html">
-          <div class="thumb ${a.thumb_color}">${a.icon}<span class="cat-pill cat-${a.category} badge">${a.category_label}</span></div>
+          <div class="${thumbClass}" ${thumbStyle}>${thumbContent}<span class="cat-pill cat-${a.category} badge">${a.category_label}</span></div>
           <div class="body">
             <h3>${a.title}</h3>
             <p class="excerpt">${a.excerpt}</p>
             <div class="meta"><span>${a.date.replace(/-/g, '.')}</span><span class="dot"></span><span>読了 ${a.read_minutes}分</span></div>
           </div>
         </a>
-      `).join('');
+      `;}).join('');
     }
     document.getElementById('article-count').textContent = list.length;
   }
