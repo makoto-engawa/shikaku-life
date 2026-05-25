@@ -164,9 +164,18 @@
   }
   .header-nav .header-contact:hover { background: var(--orange-deep); color: #fff; }
   @media (max-width: 768px) {
-    .header-nav { gap: 14px; }
-    .header-nav a { font-size: 12px; }
-    .header-nav .header-contact { padding: 6px 12px; font-size: 11px; }
+    .header-nav { gap: 10px; }
+    .header-nav a { font-size: 11px; white-space: nowrap; }
+    .header-nav .header-contact { padding: 5px 10px; font-size: 10px; white-space: nowrap; }
+  }
+  @media (max-width: 420px) {
+    .header-inner { gap: 8px; padding: 10px 12px; }
+    .header-nav { gap: 6px; }
+    .header-nav a { font-size: 10px; }
+    .header-nav .header-contact { padding: 4px 8px; font-size: 9px; }
+    .logo-text strong { font-size: 14px; }
+    .logo-text span { font-size: 9px; }
+    .logo-mark { width: 36px; height: 36px; }
   }
 
   /* ===================== TAB NAV ===================== */
