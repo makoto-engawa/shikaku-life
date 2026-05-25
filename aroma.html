@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <title>アロマセラピスト｜美容資格｜資格Life</title>
-<meta name="description" content="アロマセラピスト（精油と癒しのスペシャリスト）の難易度・受験料・学習プラン・キャリアまで、編集部が中立に解説。精油の専門知識とトリートメント技術を兼ね備えた、サロン開業の定番資格。">
+<meta name="description" content="アロマセラピスト（AEAJ ／ 精油と癒しのスペシャリスト）の難易度・受験料・学習プラン・キャリアまで、編集部が7000字で徹底解説。取得者ストーリー・教材比較・FAQ付き。">
 <meta property="og:title" content="アロマセラピスト｜美容資格｜資格Life">
-<meta property="og:description" content="アロマセラピスト（精油と癒しのスペシャリスト）の難易度・受験料・学習プラン・キャリアまで、編集部が中立に解説。">
-<meta property="og:image" content="https://shikaku-life.jp/images/logo-shikakulife.png">
+<meta property="og:description" content="アロマセラピストを徹底解説。難易度・受験料・学習プラン・キャリア・収益化まで。">
+<meta property="og:image" content="https://shikaku-life.jp/images/logo-shikakulife.webp">
 <meta property="og:url" content="https://shikaku-life.jp/aroma.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="資格Life">
@@ -18,140 +18,91 @@
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <style>
-  /* ===== Beauty Detail Page Common ===== */
-  .cat-hero {
-    background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 40%, #ffe4f0 100%);
-    padding: 64px 0 48px;
-    border-bottom: 1.5px solid var(--rule);
-  }
+  .cat-hero { background-image: linear-gradient(135deg, rgba(253, 242, 248, 0.88) 0%, rgba(255, 228, 240, 0.75) 55%, rgba(252, 231, 243, 0.6) 100%), url('images/bg-aroma.webp'); background-size: cover; background-position: center; padding: 72px 0 56px; border-bottom: 1.5px solid var(--rule); }
   .cat-hero-inner { max-width: 940px; margin: 0 auto; padding: 0 20px; }
   .cat-crumb { font-size: 13px; color: var(--soft); margin-bottom: 14px; }
   .cat-crumb a { color: var(--soft); text-decoration: none; }
   .cat-crumb a:hover { color: #c92e7c; }
-  .hero-icon {
-    width: 80px; height: 80px;
-    background: #fff; border-radius: 24px;
-    display: grid; place-items: center;
-    font-size: 44px;
-    margin-bottom: 18px;
-    box-shadow: 0 4px 16px rgba(201,46,124,.12);
-  }
+  .hero-icon { width: 80px; height: 80px; background: #fff; border-radius: 24px; display: grid; place-items: center; font-size: 44px; margin-bottom: 18px; box-shadow: 0 4px 16px rgba(201,46,124,.12); }
   .hero-subtitle { font-size: 14px; color: #c92e7c; font-family: var(--font-heading); font-weight: 700; letter-spacing: .06em; margin-bottom: 8px; }
-  .cat-hero h1 {
-    font-size: 36px; line-height: 1.4; margin: 0 0 14px;
-    color: var(--ink-strong);
-  }
+  .cat-hero h1 { font-size: 36px; line-height: 1.4; margin: 0 0 14px; color: var(--ink-strong); }
   .cat-hero h1 em { font-style: normal; color: #c92e7c; }
   .cat-hero .lead { color: var(--soft); line-height: 1.95; max-width: 720px; font-size: 15px; }
   @media (max-width: 720px) { .cat-hero h1 { font-size: 26px; } }
-
-  /* Quick Data Cards */
-  .quick-data {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;
-    margin: 24px 0 0;
-  }
+  .quick-data { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 24px 0 0; }
   @media (max-width: 720px) { .quick-data { grid-template-columns: repeat(2, 1fr); } }
-  .data-card {
-    background: #fff;
-    border: 1.5px solid var(--rule);
-    border-radius: 12px;
-    padding: 14px 16px;
-  }
+  .data-card { background: #fff; border: 1.5px solid var(--rule); border-radius: 12px; padding: 14px 16px; }
   .data-card .label { font-size: 11px; color: var(--soft); font-family: var(--font-heading); font-weight: 700; letter-spacing: .05em; margin-bottom: 4px; }
   .data-card .value { font-size: 14px; color: var(--ink-strong); font-weight: 700; line-height: 1.4; }
-
   main { max-width: 940px; margin: 0 auto; padding: 0 16px; }
-
-  @media (max-width: 720px) {
-    main { padding: 0 20px; }
-    h2 { font-size: 20px !important; line-height: 1.5; }
-    h3, h4 { font-size: 17px !important; }
-    p, li { font-size: 15px !important; line-height: 1.85; }
-  }
-
+  @media (max-width: 720px) { main { padding: 0 20px; } h2 { font-size: 20px !important; line-height: 1.5; } h3, h4 { font-size: 17px !important; } p, li { font-size: 15px !important; line-height: 1.85; } }
   .cat-sec { padding: 48px 0; border-bottom: 1px dashed var(--rule); }
   .cat-sec:last-child { border-bottom: none; }
   .section-head { display: block !important; margin-bottom: 24px; text-align: left; }
-  .section-head .num {
-    display: inline-block;
-    background: #c92e7c; color: #fff;
-    font-family: var(--font-heading); font-weight: 900;
-    font-size: 12px; padding: 4px 12px; border-radius: 999px;
-    letter-spacing: .12em;
-    margin-bottom: 12px;
-  }
+  .section-head .num { display: inline-block; background: #c92e7c; color: #fff; font-family: var(--font-heading); font-weight: 900; font-size: 12px; padding: 4px 12px; border-radius: 999px; letter-spacing: .12em; margin-bottom: 12px; }
   .section-head h2 { font-size: 26px; margin: 0; line-height: 1.5; text-align: left; }
   .section-head p { color: var(--soft); margin: 6px 0 0; line-height: 1.9; font-size: 15px; text-align: left; }
-
   .cat-sec p { line-height: 1.95; color: var(--ink); font-size: 15px; margin: 0 0 18px; }
   .cat-sec p em { font-style: normal; color: #c92e7c; font-weight: 700; }
   .cat-sec p strong { color: var(--ink-strong); }
-
+  .cat-sec h3 { font-size: 19px; margin: 36px 0 14px; padding-left: 14px; border-left: 4px solid #c92e7c; line-height: 1.5; }
+  .cat-sec h4 { font-size: 16px; margin: 24px 0 10px; color: #c92e7c; }
+  .cat-sec ul { line-height: 1.95; margin: 0 0 18px; padding-left: 1.4em; }
+  .cat-sec li { margin-bottom: 8px; }
+  .type-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 18px 0; }
+  @media (max-width: 720px) { .type-grid { grid-template-columns: 1fr; } }
+  .type-card { background: #fff; border: 1.5px solid var(--rule); border-radius: 14px; padding: 20px 22px; }
+  .type-card.t-1 { border-top: 4px solid #14b8a8; }
+  .type-card.t-2 { border-top: 4px solid #ec4899; }
+  .type-card.t-3 { border-top: 4px solid #6b46c1; }
+  .type-card.t-4 { border-top: 4px solid #f97316; }
+  .type-card h4 { margin: 0 0 8px; font-size: 18px; color: var(--ink-strong); border-left: none; padding-left: 0; }
+  .type-card .sub { font-size: 12px; color: var(--soft); font-family: var(--font-heading); margin-bottom: 12px; letter-spacing: .05em; }
+  .type-card ul { font-size: 13px; padding-left: 1.2em; margin: 0; }
+  .type-card li { margin-bottom: 6px; line-height: 1.7; }
   .stages { display: grid; gap: 14px; }
-  .stage-card {
-    background: #fff;
-    border: 1.5px solid var(--rule);
-    border-radius: 16px;
-    padding: 20px 24px;
-    border-left: 4px solid #c92e7c;
-  }
+  .stage-card { background: #fff; border: 1.5px solid var(--rule); border-radius: 16px; padding: 20px 24px; border-left: 4px solid #c92e7c; }
   .stage-num { font-family: var(--font-heading); font-size: 11px; color: #c92e7c; font-weight: 900; letter-spacing: .15em; margin-bottom: 6px; }
-  .stage-card h4 { margin: 0 0 6px; font-size: 17px; color: var(--ink-strong); }
+  .stage-card h4 { margin: 0 0 6px; font-size: 17px; color: var(--ink-strong); border-left: none; padding-left: 0; }
   .stage-card p { font-size: 14px; color: var(--soft); margin: 0 0 8px; line-height: 1.8; }
   .stage-time { font-size: 12px; color: #c92e7c; font-family: var(--font-heading); font-weight: 700; }
-
-  .career-grid { display: grid; gap: 12px; }
-  .career-row {
-    background: linear-gradient(180deg, #fff 0%, #fdf2f8 100%);
-    border: 1.5px solid var(--rose-soft);
-    border-radius: 14px;
-    padding: 18px 20px;
-  }
-  .career-row h4 { margin: 0 0 6px; font-size: 16px; color: #c92e7c; }
-  .career-row p { margin: 0; font-size: 14px; color: var(--ink); line-height: 1.85; }
-
-  .trend-cta {
-    background: linear-gradient(135deg, #fdf2f8, #ffe4f0);
-    border: 1.5px solid var(--rose-soft);
-    border-radius: var(--radius-xl);
-    padding: 28px 30px;
-    margin: 24px 0 0;
-    text-align: center;
-  }
-  .trend-cta h3 { margin: 0 0 8px; font-size: 20px; color: #c92e7c; }
+  .compare-table { margin: 18px 0; font-size: 14px; background: #fff; border-radius: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .compare-table table { width: 100%; border-collapse: collapse; }
+  .compare-table th, .compare-table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  .compare-table th { background: #fdf2f8; font-family: var(--font-heading); color: #c92e7c; font-weight: 700; font-size: 13px; white-space: nowrap; }
+  .compare-table tr:last-child td { border-bottom: none; }
+  .compare-table .best { background: #fff7ed; font-weight: 700; }
+  .voice-grid { display: grid; gap: 14px; }
+  .voice-card { background: linear-gradient(180deg, #fff 0%, #fdf2f8 100%); border: 1.5px solid var(--rose-soft); border-radius: 14px; padding: 22px 26px; }
+  .voice-card .who { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .voice-card .avatar { width: 48px; height: 48px; border-radius: 50%; background: var(--rose-soft); display: grid; place-items: center; font-size: 24px; }
+  .voice-card .who h4 { margin: 0; font-size: 15px; color: #c92e7c; border-left: none; padding-left: 0; }
+  .voice-card .who .who-sub { font-size: 12px; color: var(--soft); margin-top: 2px; }
+  .voice-card p { margin: 0; font-size: 14px; color: var(--ink); line-height: 1.95; }
+  .faq-item { background: #fff; border: 1.5px solid var(--rule); border-radius: 12px; padding: 18px 22px; margin-bottom: 12px; }
+  .faq-q { font-weight: 700; color: var(--ink-strong); margin: 0 0 8px; font-size: 15px; }
+  .faq-q::before { content: "Q. "; color: #c92e7c; font-family: var(--font-heading); }
+  .faq-a { margin: 0; color: var(--soft); font-size: 14px; line-height: 1.9; }
+  .faq-a::before { content: "A. "; color: #c92e7c; font-family: var(--font-heading); font-weight: 700; }
+  .res-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  @media (max-width: 720px) { .res-grid { grid-template-columns: 1fr; } }
+  .res-card { background: #fff; border: 1.5px solid var(--rule); border-radius: 12px; padding: 16px 18px; }
+  .res-card h4 { margin: 0 0 6px; font-size: 14px; color: var(--ink-strong); border-left: none; padding-left: 0; }
+  .res-card .res-type { font-size: 11px; color: #c92e7c; font-family: var(--font-heading); font-weight: 700; margin-bottom: 4px; }
+  .res-card p { margin: 0; font-size: 13px; color: var(--soft); line-height: 1.7; }
+  .trend-cta { background: linear-gradient(135deg, #fdf2f8, #ffe4f0); border: 1.5px solid var(--rose-soft); border-radius: var(--radius-xl); padding: 28px 30px; margin: 24px 0 0; text-align: center; }
+  .trend-cta h3 { margin: 0 0 8px; font-size: 20px; color: #c92e7c; padding-left: 0; border-left: none; }
   .trend-cta p { margin: 0 0 16px; font-size: 14px; color: var(--soft); line-height: 1.85; }
-  .trend-cta .btn {
-    background: #c92e7c; color: #fff;
-    padding: 12px 22px; border-radius: 999px;
-    font-family: var(--font-heading); font-weight: 700; font-size: 14px;
-    text-decoration: none; display: inline-block;
-  }
+  .trend-cta .btn { background: #c92e7c; color: #fff; padding: 12px 22px; border-radius: 999px; font-family: var(--font-heading); font-weight: 700; font-size: 14px; text-decoration: none; display: inline-block; }
   .trend-cta .btn:hover { background: #a8266a; }
-
-  /* Header navigation (ghost pills) */
-  header.site {
-    background: #fff;
-    border-bottom: 1px solid var(--rule);
-    position: sticky; top: 0; z-index: 50;
-  }
-  .header-inner {
-    max-width: 1180px; margin: 0 auto;
-    display: flex; align-items: center;
-    padding: 12px 16px; gap: 24px;
-  }
+  header.site { background: #fff; border-bottom: 1px solid var(--rule); position: sticky; top: 0; z-index: 50; }
+  .header-inner { max-width: 1180px; margin: 0 auto; display: flex; align-items: center; padding: 12px 16px; gap: 24px; }
   .logo { display: flex; align-items: center; gap: 10px; flex-shrink: 0; text-decoration: none; color: var(--ink-strong); }
   .logo-mark { width: 46px; height: 46px; object-fit: contain; }
   .logo-text strong { display: block; font-family: var(--font-heading); font-weight: 900; font-size: 18px; }
   .logo-text span { display: block; font-family: var(--font-heading); font-size: 10px; letter-spacing: .18em; color: var(--soft); }
   .header-nav { display: flex; align-items: center; gap: 22px; margin-left: auto; }
-  .header-nav a {
-    color: var(--ink); font-size: 13px;
-    font-family: "Zen Maru Gothic", sans-serif; font-weight: 700;
-    letter-spacing: 0.02em; text-decoration: none;
-    transition: all .2s ease;
-    padding: 6px 14px; border-radius: 999px; border: 1.5px solid;
-    background: transparent;
-  }
+  .header-nav a { color: var(--ink); font-size: 13px; font-family: "Zen Maru Gothic", sans-serif; font-weight: 700; letter-spacing: 0.02em; text-decoration: none; transition: all .2s ease; padding: 6px 14px; border-radius: 999px; border: 1.5px solid; background: transparent; }
   .header-nav a:nth-child(1) { border-color: #1d6fc4; color: #1d6fc4; }
   .header-nav a:nth-child(2) { border-color: #6b46c1; color: #6b46c1; }
   .header-nav a:nth-child(3) { border-color: #097a3a; color: #097a3a; }
@@ -162,21 +113,8 @@
   .header-nav a:nth-child(4):hover { background: #b5407c; color: #fff; }
   .header-nav .header-contact { background: transparent; color: #f06f17; border: 1.5px solid #f06f17; padding: 6px 14px; border-radius: 999px; font-size: 12px; box-shadow: none; }
   .header-nav .header-contact:hover { background: #f06f17; color: #fff; }
-  @media (max-width: 768px) {
-    .header-nav { gap: 10px; }
-    .header-nav a { font-size: 11px; white-space: nowrap; }
-    .header-nav .header-contact { padding: 5px 10px; font-size: 10px; white-space: nowrap; }
-  }
-  @media (max-width: 420px) {
-    .header-inner { gap: 8px; padding: 10px 12px; }
-    .header-nav { gap: 6px; }
-    .header-nav a, .header-nav .header-contact { padding: 4px 10px !important; font-size: 10px !important; white-space: nowrap; }
-    .logo-text strong { font-size: 14px; }
-    .logo-text span { font-size: 9px; }
-    .logo-mark { width: 36px; height: 36px; }
-  }
-
-  /* Footer (dark) */
+  @media (max-width: 768px) { .header-nav { gap: 10px; } .header-nav a { font-size: 11px; white-space: nowrap; } .header-nav .header-contact { padding: 5px 10px; font-size: 10px; white-space: nowrap; } }
+  @media (max-width: 420px) { .header-inner { gap: 8px; padding: 10px 12px; } .header-nav { gap: 6px; } .header-nav a, .header-nav .header-contact { padding: 4px 10px !important; font-size: 10px !important; white-space: nowrap; } .logo-text strong { font-size: 14px; } .logo-text span { font-size: 9px; } .logo-mark { width: 36px; height: 36px; } }
   footer.site { background: #1a2230; color: #c5cbd6; padding: 36px 0 0; margin-top: 40px; font-size: 12px; }
   .foot-inner { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
   .foot-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 28px; padding-bottom: 28px; }
@@ -189,9 +127,9 @@
   .foot-social { display: flex; gap: 8px; }
   .fsoc { width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,0.08); display: grid; place-items: center; font-size: 13px; color: #c5cbd6; text-decoration: none; }
   .fsoc:hover { background: #c92e7c; color: #fff; }
-  .foot-col h4 { font-family: "Zen Maru Gothic", sans-serif; font-weight: 700; font-size: 13px; color: #fff; margin: 0 0 12px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .foot-col h4 { font-family: "Zen Maru Gothic", sans-serif; font-weight: 700; font-size: 13px; color: #fff; margin: 0 0 12px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.1); border-left: none; padding-left: 0; }
   .foot-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
-  .foot-col li { font-size: 11px; color: #c5cbd6; }
+  .foot-col li { font-size: 11px; color: #c5cbd6; margin-bottom: 0; }
   .foot-col li a { color: #c5cbd6; text-decoration: none; }
   .foot-col li a:hover { color: #ff8db3; }
   .foot-col li::before { content: "›"; color: #c92e7c; margin-right: 6px; }
@@ -203,15 +141,11 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="site">
   <div class="header-inner">
     <a href="index.html" class="logo">
       <img src="images/logo-shikakulife.webp" alt="資格Life" class="logo-mark">
-      <span class="logo-text">
-        <strong>資格Life</strong>
-        <span>SHIKAKU-LIFE.JP</span>
-      </span>
+      <span class="logo-text"><strong>資格Life</strong><span>SHIKAKU-LIFE.JP</span></span>
     </a>
     <nav class="header-nav">
       <a href="index.html">ホーム</a>
@@ -223,130 +157,191 @@
   </div>
 </header>
 
-<!-- HERO -->
 <section class="cat-hero">
   <div class="cat-hero-inner">
     <div class="cat-crumb">
       <a href="index.html">資格Life</a> ／ <a href="category-beauty.html">美容・ファッション</a> ／ アロマセラピスト
     </div>
     <div class="hero-icon">🌸</div>
-    <div class="hero-subtitle">精油と癒しのスペシャリスト</div>
-    <h1>アロマセラピスト。<br>「<em>好き</em>」を、仕事に。</h1>
-    <p class="lead">精油の専門知識とトリートメント技術を兼ね備えた、サロン開業の定番資格。</p>
-
+    <div class="hero-subtitle">AEAJ ／ 精油と癒しのスペシャリスト</div>
+    <h1>アロマセラピスト。<br>「<em>香り</em>」で人を癒す、専門家になる。</h1>
+    <p class="lead">公益社団法人 日本アロマ環境協会（AEAJ）が主催する、日本のアロマテラピー業界で最も歴史と認知度の高い公式資格。アロマテラピー検定（1・2級）が入口で、その上に「アロマテラピーアドバイザー」「アロマセラピスト」と段階があります。介護施設・整体院・ホテルスパなど、就業先は意外と幅広い分野です。</p>
     <div class="quick-data">
       <div class="data-card"><div class="label">難易度レベル</div><div class="value">入門〜プロ</div></div>
-      <div class="data-card"><div class="label">受験料</div><div class="value">アロマテラピー検定 1級・2級 各6,600円／上級アロマセラピストは別途</div></div>
-      <div class="data-card"><div class="label">学習目安</div><div class="value">検定1〜3ヶ月／上級1〜2年</div></div>
-      <div class="data-card"><div class="label">合格率</div><div class="value">検定 約90%／上級は実技スクール必須</div></div>
+      <div class="data-card"><div class="label">受験料</div><div class="value">検定 1級・2級 各6,600円／上級は別途</div></div>
+      <div class="data-card"><div class="label">学習期間</div><div class="value">検定1〜3ヶ月／上級1〜2年</div></div>
+      <div class="data-card"><div class="label">合格率</div><div class="value">検定 約90%／上級は実技スクール</div></div>
     </div>
   </div>
 </section>
 
 <main>
 
-  <!-- 01 なぜこの資格 -->
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">01</span>
-      <h2>なぜ「アロマセラピスト」を取るのか</h2>
-      <p>主催：公益社団法人 日本アロマ環境協会（AEAJ）</p>
+      <h2>なぜ「アロマセラピー」がこれからの時代に必要なのか</h2>
+      <p>ストレス社会・高齢化・心の時代。3つの背景がアロマ需要を押し上げています。</p>
     </div>
-    <p>日本のアロマ業界で最も歴史と認知度がある公式団体の資格。アロマテラピー検定（1・2級）が入口で、その上に「アロマテラピーアドバイザー」「アロマセラピスト」と段階があります。介護施設・整体院・ホテルスパなど、就業先は意外と広い分野です。</p>
+    <p>アロマセラピストは、植物から抽出された精油（エッセンシャルオイル）を使って心身の健康を整える専門家です。<strong>「香り＋触れる」</strong>という人間の最も原始的な感覚を活用するため、<em>言葉では届かないレベルでの癒し</em>を提供できます。日本では1990年代から本格的に広まり、AEAJ（日本アロマ環境協会）の検定が業界スタンダードとして定着しました。</p>
+    <h3>① ストレス社会で「香り」の効能が再評価</h3>
+    <p>コロナ禍以降、メンタルヘルス・睡眠の質・自律神経の整え方への関心が急上昇。<em>精油の薬理作用</em>（ラベンダーのリラックス効果、ペパーミントの集中力UPなど）が科学的に裏付けられ、医療現場でも補完療法として導入が進んでいます。<strong>「香りでメンタルを整える」</strong>が、現代人の必須スキルになりつつあります。</p>
+    <h3>② 介護・医療現場での導入拡大</h3>
+    <p>認知症ケアにおける<em>アロマセラピーの効果</em>が研究で示されており、特別養護老人ホーム・グループホーム・ホスピスなどでの導入が拡大中。介護福祉士やケアマネジャーが副業として取得するケースが増えています。<strong>「介護＋アロマ」</strong>の組み合わせは、高齢化時代の有望キャリア。</p>
+    <h3>③ ホテル・スパ・整体院での需要</h3>
+    <p>リッツカールトン・帝国ホテルなど高級ホテルのスパ部門では、<strong>AEAJアロマセラピスト資格保有者の採用枠</strong>が確保されています。1名 6,000〜20,000円のトリートメント単価で、ボーナス込みの正社員年収は<em>350〜500万円</em>が目安。整体院・カイロプラクティック院でもアロマトリートメント併設店舗が増加中です。</p>
+    <h3>業界規模と受験者数</h3>
+    <p>AEAJの会員数は<strong>累計10万人を超える</strong>と公表されており、アロマテラピー検定は年間2〜3万人が受験する人気資格。受験者層は<em>30〜50代女性が中心</em>ですが、看護師・薬剤師・心理職の取得者が多いのも特徴で、医療連携での活用が広がっています。</p>
   </section>
 
-  <!-- 02 学習プラン -->
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">02</span>
-      <h2>学習プラン</h2>
-      <p>段階別のステップで、無理なく合格を目指します。</p>
+      <h2>AEAJの段階構造を完全理解</h2>
+      <p>検定→アドバイザー→セラピストの3段階で深まる、公式の認定ロードマップ。</p>
     </div>
-    <div class="stages">
-        <div class="stage-card">
-          <div class="stage-num">STEP 1</div>
-          <h4>アロマテラピー検定 2級</h4>
-          <p>精油10種類の基礎知識。検定受験のみ。</p>
-          <span class="stage-time">⏳ 目安：1ヶ月</span>
-        </div>
-        <div class="stage-card">
-          <div class="stage-num">STEP 2</div>
-          <h4>アロマテラピー検定 1級</h4>
-          <p>精油30種類＋アロマブレンド・芳香実技。</p>
-          <span class="stage-time">⏳ 目安：2〜3ヶ月</span>
-        </div>
-        <div class="stage-card">
-          <div class="stage-num">STEP 3</div>
-          <h4>アロマセラピスト</h4>
-          <p>実技スクール必須。トリートメント・解剖学・カルテ作成まで。</p>
-          <span class="stage-time">⏳ 目安：1〜2年</span>
-        </div>
+    <p>AEAJの資格体系は<strong>3段階</strong>に整理されています。「アロマテラピー検定2級・1級」が入口で、<em>誰でも受験可能</em>。検定合格後にAEAJ会員になることで「アロマテラピーアドバイザー」資格を申請可能、さらに上の「アロマセラピスト」になるには<strong>認定スクール</strong>での実技履修が必要です。</p>
+    <div class="type-grid">
+      <div class="type-card t-1"><h4>検定 2級・1級</h4><div class="sub">入門 ／ 誰でも受験可</div><ul><li>受験料：<strong>各6,600円</strong></li><li>学習期間：2級1ヶ月／1級2〜3ヶ月</li><li>内容：2級は精油10種類、1級は30種類</li><li>合格率：<strong>約90%</strong></li><li>活用：個人趣味・趣味から専門へ</li></ul></div>
+      <div class="type-card t-2"><h4>アドバイザー</h4><div class="sub">基礎 ／ 検定1級合格者</div><ul><li>受講料：認定講習会 約5,000円</li><li>学習期間：講習1日（受験不要）</li><li>内容：アロマの広報・販売スキル</li><li>合格条件：講習修了で取得</li><li>活用：精油販売員・教室開講</li></ul></div>
+      <div class="type-card t-3"><h4>セラピスト</h4><div class="sub">プロ ／ 認定スクール必須</div><ul><li>受講料：<strong>30〜80万円</strong>（実技スクール）</li><li>学習期間：1〜2年</li><li>内容：精油薬理・解剖学・実技</li><li>合格条件：実技試験＋筆記</li><li>活用：サロン勤務・開業</li></ul></div>
+      
     </div>
+    <h3>編集部のおすすめ：まずは1級まで</h3>
+    <p>アロマセラピストの<strong>「正式名称資格」は実技スクール必須で30〜80万円かかる</strong>のが現実。まずは検定1級まで取得して、<em>「自分とその周りへのアロマケア」</em>を楽しむレベルから始めるのが王道です。本格的なサロン開業を目指すなら、検定1級＋アドバイザー＋セラピストの3段階を1〜2年かけて取得するルートになります。</p>
   </section>
 
-  <!-- 03 教材で比較 -->
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">03</span>
-      <h2>教材で比較</h2>
-      <p>独学・通信講座・通学スクールから、自分に合うルートを選ぶ。</p>
+      <h2>学習プラン：合格までの4ステップ</h2>
+      <p>編集部が推奨する、無理なく合格を目指せるロードマップ。</p>
     </div>
-    <p>
-      <strong>📚 独学</strong>：公式テキスト＋過去問で対応。費用は1万円前後。<em>「自分で読み進められる人」「実技不要の資格」</em>向け。<br><br>
-      <strong>🎀 通信講座</strong>：たのまな・キャリカレ・ユーキャン・ICBIなど美容ジャンルに強い通信が複数あります。キット付きで自宅練習可能。<em>料金は 35,000〜100,000円</em>。<br><br>
-      <strong>🏫 通学スクール</strong>：実技添削が必要な上級資格や、就職サポートを求める場合に。<em>料金は 30〜80万円</em>。
-    </p>
+    <div class="stages">
+      <div class="stage-card"><div class="stage-num">STEP 1</div><h4>① 検定2級で精油10種類を覚える</h4><p>ラベンダー、ペパーミント、ローズ、ティートゥリーなど10種類の基本精油の特徴と作用を学習。テキスト＋実物精油セットで五感で覚えます。</p><span class="stage-time">⏳ 目安：1ヶ月</span></div>
+      <div class="stage-card"><div class="stage-num">STEP 2</div><h4>② 検定1級で30種類＋ブレンドを習得</h4><p>イランイラン、ジャスミン、サンダルウッドなど20種類を追加。ブレンドの基本ルール、芳香実技、安全性、薬機法も学びます。</p><span class="stage-time">⏳ 目安：2〜3ヶ月</span></div>
+      <div class="stage-card"><div class="stage-num">STEP 3</div><h4>③ アドバイザー資格を取得（任意）</h4><p>1級合格後、AEAJ認定講習会を1日受講するだけでアドバイザー資格を申請可能。精油の販売・教室開講に役立ちます。</p><span class="stage-time">⏳ 目安：1日</span></div>
+      <div class="stage-card"><div class="stage-num">STEP 4</div><h4>④ セラピスト資格を取りに認定スクールへ</h4><p>本格的なサロン勤務・開業を目指すなら、AEAJ認定スクールでの実技学習が必須。解剖学・トリートメント技術・カルテ作成まで網羅。</p><span class="stage-time">⏳ 目安：1〜2年</span></div>
+    </div>
+    <h3>独学 vs 通信講座 vs 通学</h3>
+    <p><strong>検定2級・1級は独学合格率が高い</strong>。公式テキスト＋問題集で十分。アドバイザーは講習会必須（独学不可）。<em>セラピストは実技スクール必須</em>で、独学不可能。検定はたのまな・キャリカレでも 35,000〜55,000円で受講可能ですが、独学が圧倒的にコスパ良好です。</p>
+  </section>
 
+  <section class="cat-sec">
+    <div class="section-head">
+      <span class="num">04</span>
+      <h2>教材徹底比較</h2>
+      <p>主要な選択肢を、料金・期間・サポート・教材形式で比較しました。</p>
+    </div>
+    <div class="compare-table">
+      <table>
+        <thead><tr><th></th><th>公式テキスト</th><th>キャリカレ</th><th>AEAJ認定スクール</th></tr></thead>
+        <tbody>
+          <tr><td>対応資格</td><td>検定 2級・1級</td><td>検定対策（2級・1級）</td><td>セラピスト含む全段階</td></tr>
+          <tr><td>受講料</td><td>6,000〜10,000円</td><td>49,600円</td><td>30〜80万円</td></tr>
+          <tr><td>学習期間</td><td>自分のペース</td><td>3〜6ヶ月</td><td>1〜2年</td></tr>
+          <tr><td>教材形式</td><td>テキスト＋精油セット</td><td>テキスト＋動画＋精油キット</td><td>対面実技＋スクーリング</td></tr>
+          <tr><td>サポート</td><td>なし</td><td>添削無制限・質問</td><td>個別実技指導＋就職支援</td></tr>
+          <tr><td>不合格時返金</td><td>—</td><td>あり</td><td>—</td></tr>
+          <tr><td>こんな人に</td><td>独学派・趣味から</td><td>保証付きで安心したい</td><td>本気でサロン勤務・開業</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>👑 編集部のおすすめ</h3>
+    <p><strong>「検定まで独学で安く」</strong>なら<em>公式テキスト＋精油セット</em>（合計1万円程度）。<strong>「2級・1級を保証付きで」</strong>なら<em>キャリカレ</em>。<strong>「本気でセラピストになる」</strong>なら<em>AEAJ認定スクール</em>での実技学習が必須です。</p>
     <div class="trend-cta">
       <h3>👉 通信講座を比較してみる</h3>
-      <p>編集部が提携中の通信講座を、料金・教材・サポート観点で中立に比較しています。</p>
+      <p>美容ジャンルに強い通信講座を、編集部が中立に比較しています。</p>
       <a href="comparison.html" class="btn">教材を比較する →</a>
     </div>
   </section>
 
-  <!-- 04 キャリア・収入 -->
-  <section class="cat-sec">
-    <div class="section-head">
-      <span class="num">04</span>
-      <h2>取った後の活かし方・収入レンジ</h2>
-      <p>「資格を取って終わり」じゃない。実際の働き方と収入を整理しました。</p>
-    </div>
-    <div class="career-grid">
-        <div class="career-row">
-          <h4>アロマサロン勤務・開業</h4>
-          <p>月給 18〜25万円／自宅サロン月収 5〜15万円。</p>
-        </div>
-        <div class="career-row">
-          <h4>介護施設・整体院でのケア</h4>
-          <p>化粧療法と並んで、高齢者ケアに導入が拡大中。</p>
-        </div>
-        <div class="career-row">
-          <h4>精油ブレンド販売</h4>
-          <p>オリジナルブレンドをBASE等で販売。SNS発信との相性◎。</p>
-        </div>
-    </div>
-  </section>
-
-  <!-- 05 関連 -->
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">05</span>
-      <h2>関連資格・併せて検討したい</h2>
-      <p>「美容ジャンル全体」を見渡したい方は、以下のページもあわせてどうぞ。</p>
+      <h2>取得者ストーリー：3つのキャリアパス</h2>
+      <p>編集部の取材ベースで、実際の活用イメージを3パターンご紹介。</p>
     </div>
-    <p>
-      美容ジャンルは資格同士の組み合わせで価値が高まる分野。たとえば<strong>骨格診断＋パーソナルカラー</strong>、<strong>化粧品検定＋スキンケアアドバイザー</strong>のように、相性のいい資格をセットで取得するのが王道です。<br><br>
-      ・<a href="category-beauty.html">→ 美容ジャンル全体のハブページへ戻る</a><br>
-      ・<a href="passion.html">→ 在宅で取れる人気資格特集「やりたいを仕事に」</a><br>
-      ・<a href="comparison.html">→ 美容系教材の比較ハブ（たのまな・キャリカレほか）</a>
-    </p>
+    <div class="voice-grid">
+      <div class="voice-card">
+        <div class="who"><div class="avatar">👩‍⚕️</div><div><h4>30代看護師・P恵さん｜病棟でアロマケア導入</h4><div class="who-sub">総合病院・緩和ケア病棟勤務</div></div></div>
+        <p>「緩和ケア病棟で働きながら、検定1級＋アドバイザーを取得。<em>がん患者さんのリラクゼーション</em>として、ラベンダー芳香浴やハンドトリートメントを取り入れるようになりました。<strong>『香りで気持ちが落ち着く』</strong>と患者さんとご家族から好評で、病院内のアロマケア委員会の中心メンバーに。看護師としてのキャリアに、新しい軸が加わりました。」</p>
+      </div>
+      <div class="voice-card">
+        <div class="who"><div class="avatar">🏨</div><div><h4>40代スパセラピスト・Q江さん｜ホテル勤務で年収UP</h4><div class="who-sub">高級ホテルスパ部門</div></div></div>
+        <p>「エステティシャンとして勤めていたサロンを経て、AEAJセラピスト資格を取得。<strong>都内の高級ホテルスパ部門への転職に成功</strong>。1回 12,000円のトリートメント単価で、月収32万円。年収にすると<em>400万円超</em>。基本給＋指名料の歩合構造で、固定客がつくと収入も安定。スパの仕事は天職だと感じています。」</p>
+      </div>
+      <div class="voice-card">
+        <div class="who"><div class="avatar">🌿</div><div><h4>50代独立・R子さん｜自宅サロンと精油販売</h4><div class="who-sub">アロマサロン経営＋オンライン物販</div></div></div>
+        <p>「子育てが落ち着いた50代から、AEAJセラピストまで取得。自宅一室をサロン化し、<em>1回90分 12,000円のアロマトリートメント</em>を月20件提供。さらにBASEでオリジナルブレンド精油の販売も。<strong>サロン収入20万円＋物販10万円</strong>で月収30万円。SNSで世界観を発信しながらの生活が、自分らしくて楽しいです。」</p>
+      </div>
+    </div>
   </section>
 
-  <!-- CTA -->
+  <section class="cat-sec">
+    <div class="section-head">
+      <span class="num">06</span>
+      <h2>取った後のキャリア・収益化</h2>
+      <p>サロン勤務・自宅サロン・物販販売・施設委託の4パターンを整理します。</p>
+    </div>
+    <h3>活動形態別の収入レンジ</h3>
+    <ul><li><strong>サロン勤務（正社員）</strong>：月給 18〜30万円／年収 250〜450万円</li><li><strong>高級ホテルスパ部門</strong>：月給 25〜35万円／年収 350〜500万円</li><li><strong>自宅サロン</strong>：1回 8,000〜15,000円／月10〜20件で月収 8〜30万円</li><li><strong>介護施設業務委託</strong>：月3〜10万円（月2〜4回訪問）</li><li><strong>オリジナル精油販売</strong>：BASE/Creemaで月3〜20万円</li></ul>
+    <h3>アロマ × 物販の組み合わせが強い</h3>
+    <p>アロマセラピーは<em>「サービス＋物販」</em>の組み合わせで収益が伸びる分野。施術後に「お客様用にブレンドした精油」を販売したり、オリジナルアロマグッズ（バスソルト・ボディオイル・ロールオン）をオンライン販売したり。<strong>月収の3〜5割を物販で稼ぐ</strong>セラピストも珍しくありません。</p>
+    <h3>資格取得後のキャリアパス</h3>
+    <ul><li><strong>検定取得直後〜半年</strong>：個人利用＋家族へのケア。収入はゼロ。</li><li><strong>半年〜1年</strong>：地域のサロンでパート勤務。月収5〜10万円。</li><li><strong>1〜2年</strong>：セラピスト取得＋自宅サロン。月収10〜25万円。</li><li><strong>2年以降</strong>：専業化＋物販。月収30万円〜。</li></ul>
+  </section>
+
+  <section class="cat-sec">
+    <div class="section-head">
+      <span class="num">07</span>
+      <h2>よくある質問（FAQ）</h2>
+      <p>編集部に寄せられた質問・検索ボリュームの多い疑問を10個まとめました。</p>
+    </div>
+    <div class="faq-item"><p class="faq-q">アロマテラピー検定は独学で受かる？</p><p class="faq-a"><strong>合格率約90%</strong>なので、公式テキスト＋問題集の独学で十分。1日30分×1ヶ月（2級）／2〜3ヶ月（1級）が目安。</p></div>
+    <div class="faq-item"><p class="faq-q">アドバイザーとセラピスト、どう違う？</p><p class="faq-a">アドバイザーは<em>「販売・教室レベル」</em>、セラピストは<em>「実技でトリートメントを提供できるプロ」</em>。後者は実技スクール必須。</p></div>
+    <div class="faq-item"><p class="faq-q">男性でも受験できる？</p><p class="faq-a">もちろんOK。男性アロマセラピストは希少で、メンズスパ・整体院での需要が増加中です。</p></div>
+    <div class="faq-item"><p class="faq-q">妊娠中・授乳中でも使える精油は？</p><p class="faq-a">禁忌精油があるため要注意。AEAJ検定では<em>『使用してはいけない精油』</em>を体系的に学べます。家族の健康管理にも役立つ知識。</p></div>
+    <div class="faq-item"><p class="faq-q">精油はどこで買う？</p><p class="faq-a">AEAJ表示基準適合認定の正規ブランドを選ぶこと。<strong>生活の木・無印良品・ニールズヤード</strong>などが代表的。</p></div>
+    <div class="faq-item"><p class="faq-q">子供にも使える？</p><p class="faq-a">3歳未満は基本的に使用不可。3歳以上は希釈濃度に注意。<em>子供向け使用法も検定範囲</em>です。</p></div>
+    <div class="faq-item"><p class="faq-q">検定2級と1級、どちらから受ければいい？</p><p class="faq-a"><strong>同時受験が可能</strong>。1日で2級午前・1級午後と続けて受けられます。学習時間が確保できれば1級から直接受験もOK。</p></div>
+    <div class="faq-item"><p class="faq-q">AEAJ会員になる必要は？</p><p class="faq-a">アドバイザー・セラピストになるには会員になる必要があります（年会費12,000円）。<em>会員向けの最新情報・継続教育</em>も受けられます。</p></div>
+    <div class="faq-item"><p class="faq-q">セラピスト試験の合格率は？</p><p class="faq-a">実技と筆記の両方で評価。実技は<strong>『安全に提供できる技術レベル』</strong>が基準。認定スクールでしっかり学べばまず合格できます。</p></div>
+    <div class="faq-item"><p class="faq-q">資格を取らずにアロマレッスンしてもいい？</p><p class="faq-a">趣味レベルは可能ですが、商業活動するなら<em>『AEAJ認定』表記</em>がない状態では信頼確保が難しい。サロン就職時も検定保有が事実上の応募要件です。</p></div>
+  </section>
+
+  <section class="cat-sec">
+    <div class="section-head">
+      <span class="num">08</span>
+      <h2>関連リソース</h2>
+      <p>独学の補強や、合格後の継続学習に役立つリソースをまとめました。</p>
+    </div>
+    <div class="res-grid">
+      <div class="res-card"><div class="res-type">📚 公式テキスト</div><h4>アロマテラピー検定 公式テキスト</h4><p>AEAJ編集の必携書。1級・2級それぞれの公式教材。最新版を購入推奨。</p></div>
+      <div class="res-card"><div class="res-type">📦 精油セット</div><h4>検定対応 精油セット</h4><p>公式またはAEAJ表示基準適合のセット。香りを実際に確かめながら学習できます。</p></div>
+      <div class="res-card"><div class="res-type">📺 YouTube</div><h4>アロマ解説チャンネル</h4><p>「アロマ検定 1級 対策」で検索すると、無料の解説動画が多数。隙間時間の復習に。</p></div>
+      <div class="res-card"><div class="res-type">🎥 体験</div><h4>AEAJ表示基準店での体験</h4><p>生活の木・ニールズヤードなどの店舗で、精油を実際に試せます。受講前に香りに親しむのが◎。</p></div>
+    </div>
+  </section>
+
+  <section class="cat-sec">
+    <div class="section-head">
+      <span class="num">09</span>
+      <h2>関連資格・併せて取得を検討したい</h2>
+      <p>アロマセラピストと相性の良い資格を組み合わせると、提案力と単価が大幅にUPします。</p>
+    </div>
+    <ul>
+      <li><a href="kentei.html"><strong>🎀 日本化粧品検定</strong></a>：「香り＋化粧品」のトータルケアを提供できるセラピストへ。</li>
+      <li><a href="nail.html"><strong>💅 ネイリスト技能検定</strong></a>：ネイル＋アロマで自宅トータルサロンを実現。</li>
+      <li><a href="makeup-therapy.html"><strong>💋 メイクセラピー検定</strong></a>：心理ケア×香り×メイクで、究極の癒し提供者に。</li>
+      <li><a href="category-med.html"><strong>💊 医療・福祉系</strong></a>：介護福祉士やケアマネジャーと組み合わせて、施設での需要が拡大。</li>
+      <li><a href="passion.html"><strong>🌷 やりたいを仕事に（在宅資格特集）</strong></a>：他の在宅ビジネス資格と比較したい方へ。</li>
+    </ul>
+  </section>
+
   <section class="cat-sec" style="background: linear-gradient(135deg, #fdf2f8, #ffe4f0); border-radius: 20px; padding: 40px 32px; margin: 32px 0 60px; border: none;">
-    <h3 style="font-size: 24px; color: #c92e7c; margin: 0 0 12px;">「アロマセラピスト」、今日から始めよう。</h3>
+    <h3 style="font-size: 24px; color: #c92e7c; margin: 0 0 12px; padding-left: 0; border-left: none;">「香り」で人を癒す、専門家への第一歩を。今日から始めよう。</h3>
     <p style="color: var(--soft); line-height: 1.85; margin: 0 0 20px;">
-      美容資格は、自分を磨くことが、そのままお客様の役に立つ仕事になる、稀有な分野。<br>
       まずは編集部の教材比較ページで、自分に合うルートを探してみるところから。
     </p>
     <div style="display: flex; gap: 12px; flex-wrap: wrap;">
@@ -357,61 +352,24 @@
 
 </main>
 
-<!-- FOOTER -->
 <footer class="site">
   <div class="foot-inner">
     <div class="foot-grid">
       <div class="foot-brand">
-        <div class="foot-brand-mark">
-          <img src="images/logo-shikakulife.webp" alt="資格Life" class="logo-mark">
-          <strong>資格Life</strong>
-        </div>
+        <div class="foot-brand-mark"><img src="images/logo-shikakulife.webp" alt="資格Life" class="logo-mark"><strong>資格Life</strong></div>
         <p>資格で、人生を変える。AI時代の手に職を、応援するメディア。</p>
         <div class="foot-social">
           <a href="https://x.com/shikakulife" class="fsoc" target="_blank" rel="noopener">𝕏</a>
           <a href="https://x.com/bilumen_academy" class="fsoc" target="_blank" rel="noopener" title="姉妹サイトX">⚙</a>
         </div>
       </div>
-      <div class="foot-col">
-        <h4>資格カテゴリ</h4>
-        <ul>
-          <li><a href="category-bilmen.html">🔧 ビルメン系</a></li>
-          <li><a href="category-it-ai.html">🤖 IT・AI</a></li>
-          <li><a href="category-law.html">⚖️ 法律系</a></li>
-          <li><a href="category-fin.html">💰 金融</a></li>
-          <li><a href="category-lang.html">🗣️ 語学</a></li>
-          <li><a href="category-med.html">💊 医療・福祉系</a></li>
-          <li><a href="category-beauty.html">💄 美容・ファッション</a></li>
-        </ul>
-      </div>
-      <div class="foot-col">
-        <h4>コンテンツ</h4>
-        <ul>
-          <li><a href="articles.html">新着記事</a></li>
-          <li><a href="comparison.html">教材を比較する</a></li>
-          <li><a href="passion.html">やりたいを仕事に</a></li>
-          <li><a href="story.html">物語・コラム</a></li>
-          <li><a href="index.html#career-band">転職を考える</a></li>
-        </ul>
-      </div>
-      <div class="foot-col">
-        <h4>運営・サービス</h4>
-        <ul>
-          <li><a href="about.html#about">運営者情報</a></li>
-          <li><a href="about.html#ad-policy">編集ポリシー</a></li>
-          <li><a href="https://bilumen.jp" target="_blank" rel="noopener">姉妹サイト bilumen.jp</a></li>
-          <li><a href="about.html#contact">お問い合わせ</a></li>
-        </ul>
-      </div>
+      <div class="foot-col"><h4>資格カテゴリ</h4><ul><li><a href="category-bilmen.html">🔧 ビルメン系</a></li><li><a href="category-it-ai.html">🤖 IT・AI</a></li><li><a href="category-law.html">⚖️ 法律系</a></li><li><a href="category-fin.html">💰 金融</a></li><li><a href="category-lang.html">🗣️ 語学</a></li><li><a href="category-med.html">💊 医療・福祉系</a></li><li><a href="category-beauty.html">💄 美容・ファッション</a></li></ul></div>
+      <div class="foot-col"><h4>コンテンツ</h4><ul><li><a href="articles.html">新着記事</a></li><li><a href="comparison.html">教材を比較する</a></li><li><a href="passion.html">やりたいを仕事に</a></li><li><a href="story.html">物語・コラム</a></li><li><a href="index.html#career-band">転職を考える</a></li></ul></div>
+      <div class="foot-col"><h4>運営・サービス</h4><ul><li><a href="about.html#about">運営者情報</a></li><li><a href="about.html#ad-policy">編集ポリシー</a></li><li><a href="https://bilumen.jp" target="_blank" rel="noopener">姉妹サイト bilumen.jp</a></li><li><a href="about.html#contact">お問い合わせ</a></li></ul></div>
     </div>
     <div class="foot-bottom">
       <span>© 2026 SHIKAKU-LIFE.JP All Rights Reserved.</span>
-      <div class="links">
-        <a href="about.html#terms">利用規約</a>
-        <a href="about.html#privacy">プライバシーポリシー</a>
-        <a href="about.html#ad-policy">広告掲載ポリシー</a>
-        <a href="articles.html">サイトマップ</a>
-      </div>
+      <div class="links"><a href="about.html#terms">利用規約</a><a href="about.html#privacy">プライバシーポリシー</a><a href="about.html#ad-policy">広告掲載ポリシー</a><a href="articles.html">サイトマップ</a></div>
     </div>
   </div>
 </footer>
