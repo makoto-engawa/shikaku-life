@@ -19,8 +19,10 @@
 <link rel="stylesheet" href="styles.css">
 <style>
   .cat-hero {
-    background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 40%, #ffe4f0 100%);
-    padding: 56px 0 44px;
+    background-image: linear-gradient(135deg, rgba(253, 242, 248, 0.85) 0%, rgba(255, 228, 240, 0.72) 55%, rgba(252, 231, 243, 0.55) 100%), url('images/beauty-hero.png');
+    background-size: cover;
+    background-position: center;
+    padding: 72px 0 56px;
     border-bottom: 1.5px solid var(--rule);
   }
   .cat-hero-inner { max-width: 940px; margin: 0 auto; padding: 0 20px; }
@@ -49,15 +51,17 @@
 
   .cat-sec { padding: 48px 0; border-bottom: 1px dashed var(--rule); }
   .cat-sec:last-child { border-bottom: none; }
-  .section-head { display: flex; align-items: baseline; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+  .section-head { margin-bottom: 24px; }
   .section-head .num {
+    display: inline-block;
     background: #c92e7c; color: #fff;
     font-family: var(--font-heading); font-weight: 900;
-    font-size: 14px; padding: 4px 12px; border-radius: 999px;
+    font-size: 12px; padding: 4px 12px; border-radius: 999px;
     letter-spacing: .12em;
+    margin-bottom: 12px;
   }
-  .section-head h2 { font-size: 26px; margin: 0; line-height: 1.5; }
-  .section-head p { color: var(--soft); margin: 6px 0 0; line-height: 1.9; font-size: 15px; }
+  .section-head h2 { font-size: 26px; margin: 0; line-height: 1.5; text-align: left; }
+  .section-head p { color: var(--soft); margin: 6px 0 0; line-height: 1.9; font-size: 15px; text-align: left; }
 
   .shikaku-grid {
     display: grid;
@@ -295,10 +299,8 @@
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">01</span>
-      <div>
-        <h2>美容業界、いま何が起きているのか</h2>
-        <p>SNS時代、誰もが「自分に何が似合うか」を理論で説明できる人を求めている。骨格診断・パーソナルカラーの爆発的ブームは、その答えです。</p>
-      </div>
+      <h2>美容業界、いま何が起きているのか</h2>
+      <p>SNS時代、誰もが「自分に何が似合うか」を理論で説明できる人を求めている。骨格診断・パーソナルカラーの爆発的ブームは、その答えです。</p>
     </div>
 
     <h3>骨格診断とパーソナルカラーが、なぜここまで人気なのか</h3>
@@ -339,10 +341,8 @@
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">02</span>
-      <div>
-        <h2>美容ジャンルの代表資格 8選</h2>
-        <p>「入門 → 基礎 → 専門 → 上級」の階層で整理。自分のレベルと目的にあわせて選べます。</p>
-      </div>
+      <h2>美容ジャンルの代表資格 8選</h2>
+      <p>「入門 → 基礎 → 専門 → 上級」の階層で整理。自分のレベルと目的にあわせて選べます。</p>
     </div>
 
     <div class="shikaku-grid">
@@ -418,10 +418,8 @@
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">03</span>
-      <div>
-        <h2>「最初の1本」は何から始める？タイプ別おすすめ</h2>
-        <p>「全部気になる」が当然のジャンル。だからこそ、目的にあわせて入口を選ぶのがコツです。</p>
-      </div>
+      <h2>「最初の1本」は何から始める？タイプ別おすすめ</h2>
+      <p>「全部気になる」が当然のジャンル。だからこそ、目的にあわせて入口を選ぶのがコツです。</p>
     </div>
 
     <div class="shikaku-grid">
@@ -456,10 +454,8 @@
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">04</span>
-      <div>
-        <h2>各資格の詳細・特徴</h2>
-        <p>8つの代表資格を、難易度・受験料・取得方法でひとつずつ解説します。</p>
-      </div>
+      <h2>各資格の詳細・特徴</h2>
+      <p>8つの代表資格を、難易度・受験料・取得方法でひとつずつ解説します。</p>
     </div>
 
     <h3 id="kentei">🎀 日本化粧品検定｜「コスメが読める」人気No.1の美資格</h3>
@@ -516,10 +512,8 @@
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">05</span>
-      <div>
-        <h2>教材で比較：独学／通信／通学</h2>
-        <p>美容ジャンルはキット付き通信講座が強い分野。独学・通学との違いを整理しました。</p>
-      </div>
+      <h2>教材で比較：独学／通信／通学</h2>
+      <p>美容ジャンルはキット付き通信講座が強い分野。独学・通学との違いを整理しました。</p>
     </div>
 
     <h3>📚 独学派｜書籍＋公式テキスト中心</h3>
@@ -555,10 +549,8 @@
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">06</span>
-      <div>
-        <h2>取った後、どう活かす？キャリアのリアル</h2>
-        <p>「資格を取って終わり」じゃない。実際の収入レンジと働き方を、編集部が整理しました。</p>
-      </div>
+      <h2>取った後、どう活かす？キャリアのリアル</h2>
+      <p>「資格を取って終わり」じゃない。実際の収入レンジと働き方を、編集部が整理しました。</p>
     </div>
 
     <h3>🏠 在宅サロン・自宅開業</h3>
@@ -585,9 +577,7 @@
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">07</span>
-      <div>
-        <h2>よくある質問（FAQ）</h2>
-      </div>
+      <h2>よくある質問（FAQ）</h2>
     </div>
 
     <h3>Q. 美容資格って、たくさんありすぎて何から取ればいい？</h3>
@@ -622,10 +612,8 @@
   <section class="cat-sec">
     <div class="section-head">
       <span class="num">08</span>
-      <div>
-        <h2>関連カテゴリ・姉妹サイト</h2>
-        <p>美容と相性が良い、資格Life の他カテゴリ＆姉妹サイトもチェック。</p>
-      </div>
+      <h2>関連カテゴリ・姉妹サイト</h2>
+      <p>美容と相性が良い、資格Life の他カテゴリ＆姉妹サイトもチェック。</p>
     </div>
 
     <div class="shikaku-grid">
