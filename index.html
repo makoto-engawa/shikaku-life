@@ -157,30 +157,35 @@
     transition: color .15s;
   }
   .header-nav a:hover { color: var(--blue); }
-  .header-nav a:nth-child(1) { color: #1d6fc4; }
-  .header-nav a:nth-child(2) { color: #6b46c1; }
-  .header-nav a:nth-child(3) { color: #097a3a; }
-  .header-nav a:nth-child(4) { color: #b5407c; }
-  .header-nav a:nth-child(1):hover { color: #155a9f; }
-  .header-nav a:nth-child(2):hover { color: #553396; }
-  .header-nav a:nth-child(3):hover { color: #075f2b; }
-  .header-nav a:nth-child(4):hover { color: #8c2f60; }
-  .header-nav .header-contact {
-    background: var(--orange); color: #fff;
-    padding: 8px 16px; border-radius: 999px;
-    font-size: 12px; box-shadow: 0 1px 0 var(--orange-deep);
+    .header-nav a {
+    padding: 7px 14px;
+    border-radius: 999px;
+    transition: all .18s ease;
   }
-  .header-nav .header-contact:hover { background: var(--orange-deep); color: #fff; }
+  .header-nav a:nth-child(1) { background: #e3f1ff; color: #1d6fc4; }
+  .header-nav a:nth-child(2) { background: #ecebff; color: #6b46c1; }
+  .header-nav a:nth-child(3) { background: #defaf0; color: #097a3a; }
+  .header-nav a:nth-child(4) { background: #ffe6ee; color: #b5407c; }
+  .header-nav a:nth-child(1):hover { background: #c8e2ff; color: #155a9f; }
+  .header-nav a:nth-child(2):hover { background: #d8d6ff; color: #553396; }
+  .header-nav a:nth-child(3):hover { background: #c3f0e0; color: #075f2b; }
+  .header-nav a:nth-child(4):hover { background: #ffd0de; color: #8c2f60; }
+  .header-nav .header-contact {
+    background: #fff0e3; color: #f06f17;
+    padding: 7px 14px; border-radius: 999px;
+    font-size: 12px; box-shadow: none;
+  }
+  .header-nav .header-contact:hover { background: #ffd9b8; color: #c25410; }
   @media (max-width: 768px) {
     .header-nav { gap: 10px; }
     .header-nav a { font-size: 11px; white-space: nowrap; }
-    .header-nav .header-contact { padding: 5px 10px; font-size: 10px; white-space: nowrap; }
+    .header-nav a, .header-nav .header-contact { padding: 4px 10px !important; font-size: 10px !important; white-space: nowrap; }
   }
   @media (max-width: 420px) {
     .header-inner { gap: 8px; padding: 10px 12px; }
     .header-nav { gap: 6px; }
     .header-nav a { font-size: 10px; }
-    .header-nav .header-contact { padding: 4px 8px; font-size: 9px; }
+    .header-nav a, .header-nav .header-contact { padding: 3px 8px !important; font-size: 9px !important; }
     .logo-text strong { font-size: 14px; }
     .logo-text span { font-size: 9px; }
     .logo-mark { width: 36px; height: 36px; }
