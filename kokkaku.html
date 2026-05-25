@@ -191,6 +191,33 @@
   .res-card .res-type { font-size: 11px; color: #c92e7c; font-family: var(--font-heading); font-weight: 700; margin-bottom: 4px; }
   .res-card p { margin: 0; font-size: 13px; color: var(--soft); line-height: 1.7; }
 
+  .video-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+    margin: 20px 0 0;
+  }
+  @media (max-width: 880px) { .video-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 520px) { .video-grid { grid-template-columns: 1fr; } }
+  .video-wrap {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    background: #000;
+  }
+  .video-wrap iframe {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    border: 0;
+  }
+  .video-caption {
+    margin-top: 8px;
+    font-size: 12px;
+    color: var(--soft);
+    text-align: center;
+    font-family: var(--font-heading);
+  }
+
   .trend-cta {
     background: linear-gradient(135deg, #fdf2f8, #ffe4f0);
     border: 1.5px solid var(--rose-soft);
@@ -700,8 +727,8 @@
       </div>
       <div class="res-card">
         <div class="res-type">📺 YouTube</div>
-        <h4>骨格スタイル協会 公式チャンネル</h4>
-        <p>ICBI公式の解説動画。3タイプの違い・診断テクニックの一部を無料公開。受講前に雰囲気を掴むのに最適。</p>
+        <h4>骨格診断 解説動画</h4>
+        <p>編集部おすすめの骨格診断解説動画を、本セクション最下部に3本埋め込みでまとめました。プロの診断テクニック・3タイプの違いが動画で確認できます。</p>
       </div>
       <div class="res-card">
         <div class="res-type">📱 Instagram</div>
@@ -712,6 +739,29 @@
         <div class="res-type">🎥 体験</div>
         <h4>プロの診断を一度受けてみる</h4>
         <p>診断を受ける側の体験は、提供する側になった時の宝。東京・大阪のサロンで 5,000円〜体験可能。「自分が何をされたか」を覚えておくのが最良の教材です。</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top: 36px;">📺 編集部おすすめの骨格診断 解説動画</h3>
+    <p>骨格3タイプの違い、セルフ診断のコツ、似合うアイテムの提案まで。本気で骨格診断を理解したい人の<em>必修動画</em>を3本ピックアップしました。</p>
+    <div class="video-grid">
+      <div>
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/psy9woqAA_8" title="骨格診断 解説動画①" loading="lazy" allowfullscreen></iframe>
+        </div>
+        <p class="video-caption">① 骨格3タイプの基礎理論</p>
+      </div>
+      <div>
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/Jn9n9IsJkqc" title="骨格診断 解説動画②" loading="lazy" allowfullscreen></iframe>
+        </div>
+        <p class="video-caption">② タイプ別の似合うアイテム</p>
+      </div>
+      <div>
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/9cwSn5MJuus" title="【永久保存版】セルフ骨格診断【迷ったらコレ見て！】" loading="lazy" allowfullscreen></iframe>
+        </div>
+        <p class="video-caption">③ 永久保存版 セルフ骨格診断</p>
       </div>
     </div>
   </section>
