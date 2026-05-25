@@ -1,0 +1,34 @@
+name: Auto Deploy to Render
+
+# master ブランチへの push を検知して、Render の Deploy Hook を叩く。
+# Render 側の Auto-Deploy webhook が機能しない問題への代替として導入（2026-05-25）。
+#
+# 設定済みシークレット:
+#   RENDER_DEPLOY_HOOK  Render Settings → Deploy → Deploy Hook で発行された秘密URL
+#
+# 動作確認:
+#   1. git push origin master
+#   2. GitHub Actions タブで「Auto Deploy to Render」が成功するか
+#   3. Render Events で新しい Deploy が走ったか
+
+on:
+  push:
+    branches: [master]
+  # 手動実行も可能にしておく（緊急時用）
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Render Deploy Hook
+        run: |
+          echo "🚀 Triggering Render deploy..."
+          HTTP_CODE=$(curl -s -o /tmp/response.txt -w "%{http_code}" -X POST "${{ secrets.RENDER_DEPLOY_HOOK }}")
+          echo "Response code: $HTTP_CODE"
+          cat /tmp/response.txt
+          if [ "$HTTP_CODE" -ge 400 ]; then
+            echo "❌ Deploy hook failed with HTTP $HTTP_CODE"
+            exit 1
+          fi
+          echo "✅ Deploy triggered successfully"
