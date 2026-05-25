@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>やりたいを仕事に｜在宅で取れる人気資格｜資格Life</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="ネイル、心理カウンセラー、アロマ、食育、ペット、ハンドメイドなど。在宅で学べて、暮らしや副業に活かせる人気資格を、編集部が中立に比較して紹介します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .hub-hero {
+    position: relative;
+    padding: 64px 0 48px;
+    overflow: hidden;
+  }
+  .hub-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(40% 70% at 12% 30%, rgba(255, 139, 175, .22), transparent 70%),
+      radial-gradient(40% 70% at 88% 70%, rgba(255, 200, 100, .18), transparent 70%);
+    z-index: 0;
+  }
+  .hub-hero .container { position: relative; z-index: 1; }
+  .hub-hero h1 { font-size: 44px; line-height: 1.4; margin: 16px 0 16px; }
+  @media (max-width: 720px) { .hub-hero h1 { font-size: 30px; } }
+  .hub-hero p.lede { color: var(--soft); font-size: 17px; line-height: 1.9; max-width: 680px; margin: 0; }
+
+  .hub-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    padding: 40px 0 60px;
+  }
+  @media (max-width: 720px) { .hub-grid { grid-template-columns: 1fr; } }
+  .hub-card {
+    background: #fff;
+    border: 1.5px solid var(--rule);
+    border-radius: var(--radius-xl);
+    padding: 28px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: all .2s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .hub-card::before {
+    content: "";
+    position: absolute;
+    inset: -40px -40px auto auto;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    opacity: .35;
+    z-index: 0;
+  }
+  .hub-card.h-nail::before    { background: radial-gradient(circle, var(--pink-soft), transparent 70%); }
+  .hub-card.h-psy::before     { background: radial-gradient(circle, var(--violet-soft), transparent 70%); }
+  .hub-card.h-aroma::before   { background: radial-gradient(circle, var(--mint-soft), transparent 70%); }
+  .hub-card.h-food::before    { background: radial-gradient(circle, var(--yellow-soft), transparent 70%); }
+  .hub-card.h-pet::before     { background: radial-gradient(circle, var(--orange-soft), transparent 70%); }
+  .hub-card.h-craft::before   { background: radial-gradient(circle, var(--primary-soft), transparent 70%); }
+  .hub-card.h-med::before     { background: radial-gradient(circle, var(--primary-soft), transparent 70%); }
+  .hub-card > * { position: relative; z-index: 1; }
+  .hub-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--primary-soft); text-decoration: none; }
+  .hub-card .ico {
+    width: 56px; height: 56px;
+    border-radius: 16px;
+    display: grid; place-items: center;
+    font-size: 28px;
+    background: var(--bg);
+  }
+  .hub-card h3 { margin: 0; font-size: 22px; color: var(--ink-strong); display: flex; align-items: center; gap: 8px; flex-wrap: wrap;}
+  .hub-card p { margin: 0; color: var(--soft); line-height: 1.85; font-size: 14px; }
+  .hub-card .list {
+    list-style: none; padding: 0; margin: 8px 0 4px;
+    display: flex; flex-wrap: wrap; gap: 6px;
+  }
+  .hub-card .list li {
+    background: var(--bg);
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 12px;
+    color: var(--soft);
+  }
+  .hub-card .foot {
+    margin-top: auto;
+    padding-top: 14px;
+    border-top: 1px dashed var(--rule);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-heading);
+  }
+  .hub-card .meta { color: var(--soft); font-size: 13px; }
+  .hub-card .go { color: var(--primary-deep); font-weight: 700; font-size: 14px; }
+  .badge-new {
+    background: var(--primary-deep);
+    color: #fff;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
+
+  .why-section { padding: 60px 0; background: var(--bg); }
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 24px;
+  }
+  @media (max-width: 720px) { .why-grid { grid-template-columns: 1fr; } }
+  .why-card {
+    background: #fff;
+    border: 1.5px solid var(--rule);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+  }
+  .why-card .ico {
+    width: 44px; height: 44px;
+    border-radius: 12px;
+    background: var(--primary-soft);
+    color: var(--primary-deep);
+    display: grid; place-items: center;
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  .why-card h3 { font-size: 17px; margin: 0 0 6px; }
+  .why-card p { color: var(--soft); font-size: 14px; line-height: 1.85; margin: 0; }
+
+  .partner-band {
+    padding: 60px 0 80px;
+  }
+  .partner-card {
+    background: linear-gradient(135deg, #fff7ed, #ffe9d6);
+    border: 1.5px solid var(--rule);
+    border-radius: var(--radius-xl);
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 32px;
+    align-items: center;
+  }
+  @media (max-width: 720px) { .partner-card { grid-template-columns: 1fr; padding: 28px; } }
+  .partner-card h2 { margin: 8px 0 12px; font-size: 28px; }
+  .partner-card p { color: var(--soft); line-height: 1.9; margin: 0 0 16px; }
+  .partner-card .btn-cta {
+    display: inline-block;
+    background: var(--primary-deep);
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    text-decoration: none;
+  }
+  .partner-card .badges {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    font-family: var(--font-heading);
+    font-size: 12px;
+  }
+  .partner-card .badges span {
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 6px 12px;
+  }
+</style>
+</head>
+<body data-screen-label="05 Passion to Work">
+
+<div id="header-slot"></div>
+
+<section class="hub-hero">
+  <div class="container">
+    <span class="eyebrow">PASSION TO WORK</span>
+    <h1>「やりたい」を、<br><em>仕事</em>に。</h1>
+    <p class="lede">
+      ネイル、心理カウンセラー、アロマ、食育、ペット、ハンドメイド——。<br>
+      <strong>在宅で学べて</strong>、暮らしや副業、開業まで活かせる人気資格を、<br>
+      編集部が中立に比較して紹介します。
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="hub-grid">
+
+      <a class="hub-card h-nail" href="#">
+        <span class="ico">💅</span>
+        <h3>ネイリスト・ジェルネイル <span class="badge-new">POPULAR</span></h3>
+        <p>JNECネイリスト技能検定／JNAジェルネイル検定。在宅サロン開業や副業ネイリストを目指す人向け。通信講座でキット付きが定番。</p>
+        <ul class="list">
+          <li>JNEC検定3〜1級</li><li>JNAジェル検定</li><li>キット付き通信</li><li>サロン開業</li>
+        </ul>
+        <div class="foot"><span class="meta">在宅OK ／ 副業向き</span><span class="go">詳しく見る →</span></div>
+      </a>
+
+      <a class="hub-card h-psy" href="#">
+        <span class="ico">🌿</span>
+        <h3>心理カウンセラー <span class="badge-new">NEW</span></h3>
+        <p>メンタルケア心理士、メンタルケアカウンセラー、産業カウンセラー。コロナ以降、需要が大幅に伸びている分野。</p>
+        <ul class="list">
+          <li>メンタルケア心理士</li><li>産業カウンセラー</li><li>チャイルドカウンセラー</li><li>家族療法</li>
+        </ul>
+        <div class="foot"><span class="meta">在宅OK ／ 民間資格</span><span class="go">詳しく見る →</span></div>
+      </a>
+
+      <a class="hub-card h-aroma" href="#">
+        <span class="ico">🌸</span>
+        <h3>アロマ・セラピー</h3>
+        <p>アロマテラピー検定、リンパドレナージュ、リフレクソロジー。サロン開業・自宅で人の役に立ちたい人に。</p>
+        <ul class="list">
+          <li>アロマ検定1・2級</li><li>リンパケア</li><li>リフレ</li><li>整体</li>
+        </ul>
+        <div class="foot"><span class="meta">在宅OK ／ 開業向き</span><span class="go">詳しく見る →</span></div>
+      </a>
+
+      <a class="hub-card h-food" href="#">
+        <span class="ico">🥗</span>
+        <h3>食育・フード系</h3>
+        <p>食育インストラクター、ベジフルプランナー、雑穀マイスター、薬膳。家族の健康と、教室開講・SNS発信に活きる。</p>
+        <ul class="list">
+          <li>食育インストラクター</li><li>ベジフルプランナー</li><li>薬膳</li><li>雑穀マイスター</li>
+        </ul>
+        <div class="foot"><span class="meta">在宅OK ／ 教室・SNS</span><span class="go">詳しく見る →</span></div>
+      </a>
+
+      <a class="hub-card h-pet" href="#">
+        <span class="ico">🐕</span>
+        <h3>ペット系資格</h3>
+        <p>トリマー、動物介護士、家庭犬トレーナー、ドッグシッター。動物が好き、ペット業界で働きたい人向けの定番。</p>
+        <ul class="list">
+          <li>トリマー検定</li><li>動物介護士</li><li>家庭犬トレーナー</li><li>ペット栄養</li>
+        </ul>
+        <div class="foot"><span class="meta">在宅＋実習 ／ 業界転職</span><span class="go">詳しく見る →</span></div>
+      </a>
+
+      <a class="hub-card h-craft" href="#">
+        <span class="ico">🧶</span>
+        <h3>ハンドメイド・クラフト</h3>
+        <p>POP・ラッピング・整理収納アドバイザー・お片付け。「好き」を仕事にする、minne/Creema世代の人気資格。</p>
+        <ul class="list">
+          <li>整理収納アドバイザー</li><li>POP</li><li>ラッピング</li><li>カラーコーディネーター</li>
+        </ul>
+        <div class="foot"><span class="meta">在宅OK ／ 副業向き</span><span class="go">詳しく見る →</span></div>
+      </a>
+
+      <a class="hub-card h-med" href="iryojimu.html">
+        <span class="ico">🏥</span>
+        <h3>医療事務</h3>
+        <p>働きやすさ重視の女性人気No.1。在宅勤務OKの求人も増加中。短期で取れて、ブランクからの復職にも強い。</p>
+        <ul class="list">
+          <li>医療事務認定実務者</li><li>診療報酬請求事務</li><li>調剤事務</li><li>登録販売者</li>
+        </ul>
+        <div class="foot"><span class="meta">在宅勤務可 ／ 通信3〜6ヶ月</span><span class="go">資格ページへ →</span></div>
+      </a>
+
+      <a class="hub-card h-med" href="kaigo.html">
+        <span class="ico">🤝</span>
+        <h3>介護・福祉系</h3>
+        <p>介護福祉士、ケアマネジャー、介護事務。人手不足が深刻で、求人が安定して多い。資格Lifeで安定の人気カテゴリ。</p>
+        <ul class="list">
+          <li>介護福祉士</li><li>ケアマネジャー</li><li>介護事務</li><li>初任者研修</li>
+        </ul>
+        <div class="foot"><span class="meta">需要安定 ／ 国家資格あり</span><span class="go">資格ページへ →</span></div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="why-section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">WHY THIS CATEGORY?</span>
+        <h2>なぜ「やりたいを仕事に」なのか</h2>
+      </div>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="ico">🏠</div>
+        <h3>在宅で学べる</h3>
+        <p>通学不要・通信講座が充実。子育て・介護・本業と両立しながら、自分のペースで進められる資格を厳選しました。</p>
+      </div>
+      <div class="why-card">
+        <div class="ico">💡</div>
+        <h3>「好き」を活かせる</h3>
+        <p>業務独占ではなく、暮らしや趣味の延長で取れる資格中心。自宅サロン・教室・副業・SNS発信など、活かし方は自由。</p>
+      </div>
+      <div class="why-card">
+        <div class="ico">⏳</div>
+        <h3>短期間で取れる</h3>
+        <p>3ヶ月〜半年で取得できる講座を中心にラインナップ。受験資格に学歴・実務経験を求めないものを優先しています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="partner-band">
+  <div class="container">
+    <div class="partner-card">
+      <div>
+        <span class="eyebrow">RECOMMENDED PARTNER</span>
+        <h2>在宅で取れる資格なら、<em>ヒューマンアカデミー通信講座</em>。</h2>
+        <p>
+          ネイル、心理、アロマ、食育、ペット、ハンドメイド——。<br>
+          約220講座を展開する大手通信講座「たのまな」。<br>
+          資料請求は無料。LINE友だち追加で5%OFFクーポン配布中。
+        </p>
+        <a href="#" class="btn-cta" target="_blank" rel="sponsored noopener">
+          ヒューマンアカデミー通信講座を見る →
+        </a>
+        <p style="font-size: 11px; margin-top: 12px; color: var(--soft);">
+          ※リンクは現在準備中（A8.net提携審査中）。提携承認後、正式URLに差し替えます。
+        </p>
+      </div>
+      <div class="badges">
+        <span>💅 ネイル</span>
+        <span>🌿 心理</span>
+        <span>🌸 アロマ</span>
+        <span>🥗 食育</span>
+        <span>🐕 ペット</span>
+        <span>🧶 ハンドメイド</span>
+        <span>🏥 医療事務</span>
+        <span>📚 全220講座</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-slot"></div>
+
+<script src="partials.js"></script>
+<script>
+  SL.mountHeader('passion');
+  SL.mountFooter();
+</script>
+</body>
+</html>

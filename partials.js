@@ -2,7 +2,7 @@
 
 (function () {
   const HEADER_HTML = (active) => `
-    <header class="site-header">
+    <header class="site-header site-header--sticky">
       <div class="container inner">
         <a href="index.html" class="brand">
           <img src="images/logo-shikakulife.png" alt="資格Life" class="brand-mark">
@@ -15,10 +15,9 @@
         <nav class="site-nav">
           <a href="index.html" ${active==='home'?'class="is-active"':''}>ホーム</a>
           <a href="articles.html" ${active==='articles'?'class="is-active"':''}>記事一覧</a>
-          <a href="categories.html" ${active==='categories'?'class="is-active"':''}>カテゴリ</a>
           <a href="comparison.html" ${active==='comparison'?'class="is-active"':''}>教材比較</a>
-          <a href="story.html" ${active==='story'?'class="is-active"':''}>物語</a>
-          <a href="comparison.html" class="nav-cta">教材を選ぶ →</a>
+          <a href="passion.html" ${active==='passion'?'class="is-active"':''}>やりたいを仕事に</a>
+          <a href="about.html#contact" ${active==='contact'?'class="is-active"':''}>問い合わせ</a>
         </nav>
       </div>
     </header>
@@ -43,9 +42,9 @@
             <ul>
               <li><a href="index.html">ホーム</a></li>
               <li><a href="articles.html">記事一覧</a></li>
-              <li><a href="categories.html">カテゴリ</a></li>
               <li><a href="comparison.html">教材比較</a></li>
-              <li><a href="story.html">物語</a></li>
+              <li><a href="passion.html">やりたいを仕事に</a></li>
+              <li><a href="about.html#contact">問い合わせ</a></li>
             </ul>
           </div>
           <div>

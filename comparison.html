@@ -138,6 +138,127 @@
   }
   .why-card h3 { font-size: 17px; margin: 0 0 6px; }
   .why-card p { color: var(--soft); font-size: 14px; line-height: 1.85; margin: 0; }
+
+  /* ===== Partner Schools Section ===== */
+  .partner-section { padding: 60px 0; background: var(--bg); }
+  .partner-section .section-head { margin-bottom: 32px; }
+  .partner-section h2 { font-size: 32px; margin: 8px 0 12px; }
+  .partner-section .lede { color: var(--soft); font-size: 16px; line-height: 1.9; max-width: 680px; margin: 0; }
+
+  .partner-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    margin-top: 28px;
+  }
+  @media (max-width: 720px) { .partner-grid { grid-template-columns: 1fr; } }
+
+  .partner-school {
+    background: #fff;
+    border: 1.5px solid var(--rule);
+    border-radius: var(--radius-xl);
+    padding: 28px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: all .2s ease;
+  }
+  .partner-school:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+
+  .partner-school .head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px dashed var(--rule);
+    padding-bottom: 16px;
+  }
+  .partner-school .logo-box {
+    width: 64px; height: 64px;
+    border-radius: 16px;
+    display: grid; place-items: center;
+    font-size: 30px;
+    flex-shrink: 0;
+  }
+  .partner-school h3 { margin: 0 0 4px; font-size: 22px; color: var(--ink-strong); }
+  .partner-school .tagline { margin: 0; font-size: 13px; color: var(--soft); font-family: var(--font-heading); }
+
+  .partner-school .status {
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+  .status.live { background: #d4f5dd; color: #097a3a; }
+  .status.pending { background: #fff1d4; color: #a8690a; }
+
+  .partner-school .meta-row {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px 14px;
+    font-size: 13px;
+    color: var(--soft);
+    line-height: 1.7;
+  }
+  .partner-school .meta-row dt { font-family: var(--font-heading); font-weight: 700; color: var(--ink-strong); }
+  .partner-school .meta-row dd { margin: 0; }
+
+  .partner-school .features {
+    list-style: none; padding: 0; margin: 0;
+    display: flex; flex-wrap: wrap; gap: 6px;
+  }
+  .partner-school .features li {
+    background: var(--bg);
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 12px;
+    color: var(--soft);
+  }
+
+  .partner-school .price-band {
+    background: var(--primary-soft);
+    border-radius: var(--radius-lg);
+    padding: 12px 16px;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .partner-school .price-band .label { font-size: 11px; color: var(--soft); font-family: var(--font-heading); }
+  .partner-school .price-band .price { font-size: 18px; font-weight: 900; color: var(--ink-strong); font-family: var(--font-heading); }
+  .partner-school .price-band .unit { font-size: 11px; color: var(--soft); }
+
+  .partner-school .cta-row {
+    display: flex; gap: 10px; margin-top: auto;
+  }
+  .partner-school .btn-official {
+    flex: 1;
+    background: var(--primary-deep);
+    color: #fff;
+    padding: 12px 16px;
+    border-radius: 999px;
+    text-align: center;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    font-size: 14px;
+    text-decoration: none;
+  }
+  .partner-school .btn-detail {
+    flex: 1;
+    background: #fff;
+    color: var(--ink-strong);
+    border: 1.5px solid var(--rule);
+    padding: 12px 16px;
+    border-radius: 999px;
+    text-align: center;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    font-size: 14px;
+    text-decoration: none;
+  }
+  .partner-school .disclaim { font-size: 10px; color: var(--soft); margin: 0; }
 </style>
 </head>
 <body data-screen-label="04 Comparison Hub">
@@ -149,8 +270,9 @@
     <span class="eyebrow">COMPARISON HUB</span>
     <h1>教材を選ぶ前に、<br><em>正直に比較</em>するページ。</h1>
     <p class="lede">
-      ジャンルごとに、信頼できる通信講座を中立に並べました。<br>
-      気になる資格カテゴリを選ぶと、比較表・各社レビュー・用途別ランキングが見られます。
+      編集部が実際に提携している通信講座を、<strong>一社ずつ徹底レビュー</strong>。<br>
+      料金・教材・サポート・合格率まで包み隠さず比較しています。<br>
+      気になる資格カテゴリ別の比較ガイドも公開中です。
     </p>
   </div>
 </section>
@@ -226,6 +348,338 @@
       </a>
 
     </div>
+  </div>
+</section>
+
+<!-- ============ PARTNER SCHOOLS ============ -->
+<section class="partner-section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">PARTNER SCHOOLS</span>
+        <h2>提携中の通信講座、<em>一社ずつ</em>徹底レビュー。</h2>
+        <p class="lede">
+          資格Life が編集部独自に提携・申請している通信講座を、料金・教材・サポート観点で詳しく紹介します。<br>
+          「提携中（LIVE）」表記は実際にリンクから申し込めるパートナー、「審査中」は提携審査が進行中のサービスです。
+        </p>
+      </div>
+    </div>
+
+    <div class="partner-grid">
+
+      <!-- オンスク.JP -->
+      <article class="partner-school">
+        <div class="head">
+          <div class="logo-box" style="background: linear-gradient(135deg, #a7f3d0, #14b8a6); color: #fff;">🎓</div>
+          <div>
+            <span class="status live">LIVE 提携中</span>
+            <h3>オンスク.JP <span class="badge-new">NEW</span></h3>
+            <p class="tagline">月1,628円で50資格が学び放題。資格学習のサブスク。</p>
+          </div>
+        </div>
+        <dl class="meta-row">
+          <dt>得意ジャンル</dt><dd>簿記 ／ 宅建 ／ FP ／ 行政書士 ／ ITパスポート ／ 衛生管理者 ／ 危険物乙4 ／ 社労士 ほか50資格</dd>
+          <dt>料金感</dt><dd>月額 1,628円（ウケホーダイ・スタンダードプラン）</dd>
+          <dt>強み</dt><dd>月単位の解約自由。「広く浅く・複数資格」狙いに最強コスパ</dd>
+        </dl>
+        <ul class="features">
+          <li>💰 サブスク型</li><li>📚 全50資格</li><li>📱 スマホ完結</li><li>🆓 無料体験あり</li>
+        </ul>
+        <div class="price-band">
+          <span class="label">ウケホーダイ</span>
+          <span class="price">¥1,628</span>
+          <span class="unit">/ 月（税込）</span>
+        </div>
+        <div class="cta-row">
+          <a href="https://px.a8.net/svt/ejp?a8mat=4B3Y3A+6NXPKI+408S+60H7M" class="btn-official" target="_blank" rel="sponsored noopener">公式サイトへ →</a>
+          <a href="#" class="btn-detail">詳細レビュー →</a>
+        </div>
+        <p class="disclaim">※ A8.net 経由・提携承認済み（2026/05/24）。資格Lifeの入門商材として推奨。</p>
+      </article>
+
+      <!-- SAT -->
+      <article class="partner-school">
+        <div class="head">
+          <div class="logo-box" style="background: linear-gradient(135deg, #fde68a, #fbbf24);">📘</div>
+          <div>
+            <span class="status live">LIVE 提携中</span>
+            <h3>SAT 通信講座</h3>
+            <p class="tagline">ビルメン・設備系資格に圧倒的に強い。映像授業が秀逸。</p>
+          </div>
+        </div>
+        <dl class="meta-row">
+          <dt>得意ジャンル</dt><dd>第二種電工 ／ 危険物乙4 ／ 2級ボイラー ／ 3冷凍機械 ／ ビル管理</dd>
+          <dt>料金感</dt><dd>32,000円〜（DVD＋eラーニング）</dd>
+          <dt>合格率</dt><dd>独学の約2倍（公式公表）</dd>
+        </dl>
+        <ul class="features">
+          <li>📺 短時間映像</li><li>📦 全部入り</li><li>💬 質問サポート</li><li>📜 不合格時返金あり</li>
+        </ul>
+        <div class="price-band">
+          <span class="label">最安プラン</span>
+          <span class="price">¥32,000</span>
+          <span class="unit">〜（税込）</span>
+        </div>
+        <div class="cta-row">
+          <a href="https://px.a8.net/svt/ejp?a8mat=4B3Y3A+6J68QA+5TRO+5YJRM" class="btn-official" target="_blank" rel="sponsored noopener">公式サイトへ →</a>
+          <a href="#" class="btn-detail">詳細レビュー →</a>
+        </div>
+        <p class="disclaim">※ A8.net 経由・提携承認済み（2026/05/24）。料金は2026年5月時点。EPC 26.44 ※業界トップクラス。</p>
+      </article>
+
+      <!-- フォーサイト -->
+      <article class="partner-school">
+        <div class="head">
+          <div class="logo-box" style="background: linear-gradient(135deg, #dbeafe, #3b82f6); color: #fff;">🎯</div>
+          <div>
+            <span class="status pending">審査中</span>
+            <h3>フォーサイト</h3>
+            <p class="tagline">合格率に妥協しない、難関国家資格の王道。</p>
+          </div>
+        </div>
+        <dl class="meta-row">
+          <dt>得意ジャンル</dt><dd>宅建 ／ 行政書士 ／ 社労士 ／ 簿記 ／ FP ／ ITパスポート</dd>
+          <dt>料金感</dt><dd>54,800円〜（バリューセット）</dd>
+          <dt>合格率</dt><dd>宅建 71.5%（全国平均の約4倍）</dd>
+        </dl>
+        <ul class="features">
+          <li>📊 高合格率</li><li>📱 ManaBun</li><li>🎓 教育訓練給付対応</li><li>💰 不合格全額返金</li>
+        </ul>
+        <div class="price-band">
+          <span class="label">バリューセット</span>
+          <span class="price">¥54,800</span>
+          <span class="unit">〜（税込）</span>
+        </div>
+        <div class="cta-row">
+          <a href="#" class="btn-official" target="_blank" rel="sponsored noopener">公式サイトへ →</a>
+          <a href="#" class="btn-detail">詳細レビュー →</a>
+        </div>
+        <p class="disclaim">※ A8.net 提携審査中。承認後リンクを差し替えます。</p>
+      </article>
+
+      <!-- スタディング -->
+      <article class="partner-school">
+        <div class="head">
+          <div class="logo-box" style="background: linear-gradient(135deg, #e9d5ff, #a855f7); color: #fff;">📱</div>
+          <div>
+            <span class="status pending">審査中</span>
+            <h3>スタディング</h3>
+            <p class="tagline">スマホ完結、スキマ時間で受かる新世代の通信講座。</p>
+          </div>
+        </div>
+        <dl class="meta-row">
+          <dt>得意ジャンル</dt><dd>宅建 ／ 行政書士 ／ 中小企業診断士 ／ 簿記 ／ 司法書士</dd>
+          <dt>料金感</dt><dd>19,800円〜（圧倒的低価格）</dd>
+          <dt>強み</dt><dd>スマホ1台で完結。電車・寝る前・昼休みに学習可</dd>
+        </dl>
+        <ul class="features">
+          <li>📱 スマホ完結</li><li>💴 業界最安級</li><li>🤖 AI問題復習</li><li>📊 学習レポート</li>
+        </ul>
+        <div class="price-band">
+          <span class="label">最安コース</span>
+          <span class="price">¥19,800</span>
+          <span class="unit">〜（税込）</span>
+        </div>
+        <div class="cta-row">
+          <a href="#" class="btn-official" target="_blank" rel="sponsored noopener">公式サイトへ →</a>
+          <a href="#" class="btn-detail">詳細レビュー →</a>
+        </div>
+        <p class="disclaim">※ A8.net 提携審査中。承認後リンクを差し替えます。</p>
+      </article>
+
+      <!-- ユーキャン -->
+      <article class="partner-school">
+        <div class="head">
+          <div class="logo-box" style="background: linear-gradient(135deg, #fecaca, #ef4444); color: #fff;">📚</div>
+          <div>
+            <span class="status pending">審査中</span>
+            <h3>ユーキャン</h3>
+            <p class="tagline">通信講座の代名詞。150講座超、誰でも知ってる安心感。</p>
+          </div>
+        </div>
+        <dl class="meta-row">
+          <dt>得意ジャンル</dt><dd>医療事務 ／ 介護福祉士 ／ 保育士 ／ 簿記 ／ FP ／ 食生活アドバイザー</dd>
+          <dt>料金感</dt><dd>35,000円〜（テキスト＋添削）</dd>
+          <dt>強み</dt><dd>紙テキスト充実、丁寧な添削指導、知名度No.1</dd>
+        </dl>
+        <ul class="features">
+          <li>📖 紙派に最適</li><li>✉️ 添削サポート</li><li>📺 一部映像あり</li><li>🌐 講座数150+</li>
+        </ul>
+        <div class="price-band">
+          <span class="label">人気講座</span>
+          <span class="price">¥35,000</span>
+          <span class="unit">〜（税込）</span>
+        </div>
+        <div class="cta-row">
+          <a href="#" class="btn-official" target="_blank" rel="sponsored noopener">公式サイトへ →</a>
+          <a href="#" class="btn-detail">詳細レビュー →</a>
+        </div>
+        <p class="disclaim">※ もしもアフィリエイト 提携審査中。</p>
+      </article>
+
+      <!-- たのまな -->
+      <article class="partner-school">
+        <div class="head">
+          <div class="logo-box" style="background: linear-gradient(135deg, #fed7aa, #f97316); color: #fff;">💅</div>
+          <div>
+            <span class="status pending">審査中</span>
+            <h3>ヒューマンアカデミー通信講座（たのまな）</h3>
+            <p class="tagline">ネイル・心理・アロマ・ペットなど在宅系220講座。</p>
+          </div>
+        </div>
+        <dl class="meta-row">
+          <dt>得意ジャンル</dt><dd>ネイル ／ 心理 ／ アロマ ／ 食育 ／ ペット ／ ハンドメイド ／ 医療事務</dd>
+          <dt>料金感</dt><dd>29,000円〜（キット付きあり）</dd>
+          <dt>強み</dt><dd>「やりたい」を仕事に。在宅サロン・副業開業に強い</dd>
+        </dl>
+        <ul class="features">
+          <li>🏠 全220講座</li><li>🎀 キット付き</li><li>🌸 在宅向き</li><li>💬 LINE5%OFF</li>
+        </ul>
+        <div class="price-band">
+          <span class="label">人気講座</span>
+          <span class="price">¥29,000</span>
+          <span class="unit">〜（税込）</span>
+        </div>
+        <div class="cta-row">
+          <a href="#" class="btn-official" target="_blank" rel="sponsored noopener">公式サイトへ →</a>
+          <a href="passion.html" class="btn-detail">在宅資格特集 →</a>
+        </div>
+        <p class="disclaim">※ A8.net 提携審査中。資格Life「やりたいを仕事に」の本命パートナー。</p>
+      </article>
+
+      <!-- クレアール -->
+      <article class="partner-school">
+        <div class="head">
+          <div class="logo-box" style="background: linear-gradient(135deg, #d1fae5, #10b981); color: #fff;">📊</div>
+          <div>
+            <span class="status pending">審査中</span>
+            <h3>クレアール</h3>
+            <p class="tagline">簿記・公認会計士・社労士に強い「非常識合格法」。</p>
+          </div>
+        </div>
+        <dl class="meta-row">
+          <dt>得意ジャンル</dt><dd>簿記 ／ 公認会計士 ／ 税理士 ／ 社労士 ／ 行政書士</dd>
+          <dt>料金感</dt><dd>16,000円〜（簿記3級パック）</dd>
+          <dt>強み</dt><dd>出題範囲を絞った効率学習、Web完結、コスパ◎</dd>
+        </dl>
+        <ul class="features">
+          <li>🎯 範囲絞り</li><li>💻 Web完結</li><li>💰 簿記が破格</li><li>📞 質問無制限</li>
+        </ul>
+        <div class="price-band">
+          <span class="label">簿記3級</span>
+          <span class="price">¥16,000</span>
+          <span class="unit">〜（税込）</span>
+        </div>
+        <div class="cta-row">
+          <a href="#" class="btn-official" target="_blank" rel="sponsored noopener">公式サイトへ →</a>
+          <a href="#" class="btn-detail">詳細レビュー →</a>
+        </div>
+        <p class="disclaim">※ A8.net 提携審査中。</p>
+      </article>
+
+      <!-- キャリカレ -->
+      <article class="partner-school">
+        <div class="head">
+          <div class="logo-box" style="background: linear-gradient(135deg, #cffafe, #06b6d4); color: #fff;">🌈</div>
+          <div>
+            <span class="status pending">審査中</span>
+            <h3>キャリカレ（資格のキャリカレ）</h3>
+            <p class="tagline">不合格全額返金・2講座目無料の安心保証ブランド。</p>
+          </div>
+        </div>
+        <dl class="meta-row">
+          <dt>得意ジャンル</dt><dd>心理カウンセラー ／ 食育 ／ 介護 ／ ペット ／ ハンドメイド</dd>
+          <dt>料金感</dt><dd>28,800円〜（業界最安級）</dd>
+          <dt>強み</dt><dd>合格保証＋2講座目無料、女性に圧倒的人気</dd>
+        </dl>
+        <ul class="features">
+          <li>💯 全額返金</li><li>🎁 2講座目無料</li><li>📱 スマホ学習</li><li>🌷 女性向き</li>
+        </ul>
+        <div class="price-band">
+          <span class="label">最安コース</span>
+          <span class="price">¥28,800</span>
+          <span class="unit">〜（税込）</span>
+        </div>
+        <div class="cta-row">
+          <a href="#" class="btn-official" target="_blank" rel="sponsored noopener">公式サイトへ →</a>
+          <a href="passion.html" class="btn-detail">在宅資格特集 →</a>
+        </div>
+        <p class="disclaim">※ A8.net 提携審査中。</p>
+      </article>
+
+      <!-- 楽天ブックス -->
+      <article class="partner-school">
+        <div class="head">
+          <div class="logo-box" style="background: linear-gradient(135deg, #fee2e2, #dc2626); color: #fff;">🛒</div>
+          <div>
+            <span class="status live">LIVE 提携中</span>
+            <h3>楽天ブックス（参考書）</h3>
+            <p class="tagline">「とりあえず1冊」の独学派に。ポイント還元あり。</p>
+          </div>
+        </div>
+        <dl class="meta-row">
+          <dt>得意ジャンル</dt><dd>全資格カテゴリの参考書 ／ 問題集 ／ 過去問題集</dd>
+          <dt>料金感</dt><dd>1,500円〜（書籍単品）</dd>
+          <dt>強み</dt><dd>楽天ポイント、レビュー豊富、独学派の最初の一歩</dd>
+        </dl>
+        <ul class="features">
+          <li>📚 書籍主体</li><li>💎 楽天ポイント</li><li>⭐ レビュー充実</li><li>🚚 送料無料多数</li>
+        </ul>
+        <div class="price-band">
+          <span class="label">参考書</span>
+          <span class="price">¥1,500</span>
+          <span class="unit">〜（税込）</span>
+        </div>
+        <div class="cta-row">
+          <a href="#" class="btn-official" target="_blank" rel="sponsored noopener">楽天ブックスへ →</a>
+          <a href="articles.html" class="btn-detail">独学記事を読む →</a>
+        </div>
+        <p class="disclaim">※ A8.net 楽天アフィリエイト（EPC 1.54）。即時提携・記事内で個別商品リンクを使用。</p>
+      </article>
+
+    </div>
+
+    <!-- ===== CAREER PARTNERS ===== -->
+    <div class="section-head" style="margin-top: 60px; padding-top: 32px; border-top: 1.5px dashed var(--rule);">
+      <div>
+        <span class="eyebrow">CAREER PARTNERS</span>
+        <h2>資格を、<em>キャリア</em>に変える。</h2>
+        <p class="lede">
+          資格取得後の出口戦略として、編集部が提携している転職・キャリアサービスをご紹介します。<br>
+          「資格を取った後、どう活かすか」まで伴走したい。
+        </p>
+      </div>
+    </div>
+
+    <div class="partner-grid" style="margin-top: 24px;">
+
+      <!-- ツインプロ -->
+      <article class="partner-school">
+        <div class="head">
+          <div class="logo-box" style="background: linear-gradient(135deg, #ddd6fe, #6366f1); color: #fff;">📈</div>
+          <div>
+            <span class="status live">LIVE 提携中</span>
+            <h3>ツインプロ <span class="badge-new">NEW</span></h3>
+            <p class="tagline">会計士・税理士特化の転職エージェント。無料キャリア面談。</p>
+          </div>
+        </div>
+        <dl class="meta-row">
+          <dt>対応資格</dt><dd>公認会計士 ／ 税理士 ／ 簿記2級以上 ／ USCPA ／ 経理実務経験者</dd>
+          <dt>料金</dt><dd>完全無料（成功報酬モデル）</dd>
+          <dt>強み</dt><dd>会計・税務業界に特化したエージェントが面談。会計事務所・税理士法人の非公開求人多数</dd>
+        </dl>
+        <ul class="features">
+          <li>💼 業界特化</li><li>🆓 完全無料</li><li>🤝 個別面談</li><li>📊 年収UP実績</li>
+        </ul>
+        <div class="cta-row">
+          <a href="https://af.moshimo.com/af/c/click?a_id=5583458&p_id=6451&pc_id=18215&pl_id=82585" class="btn-official" target="_blank" rel="sponsored noopener">無料キャリア面談へ →</a>
+          <a href="#" class="btn-detail">体験レビュー →</a>
+        </div>
+        <p class="disclaim">※ もしもアフィリエイト経由・提携承認済み（2026/05/25）。簿記・税理士・会計士関連記事の出口導線として展開。</p>
+      </article>
+
+    </div>
+
   </div>
 </section>
 
