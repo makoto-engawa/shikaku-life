@@ -120,26 +120,12 @@ em {
 }
 .brand:hover { text-decoration: none; }
 .brand-mark {
-  width: 38px; height: 38px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-deep) 80%);
-  display: inline-grid;
-  place-items: center;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 900;
-  box-shadow: 0 4px 10px rgba(58, 160, 255, .35);
-  position: relative;
+  width: 46px; height: 46px;
+  object-fit: contain;
+  border-radius: 10px;
+  flex-shrink: 0;
 }
-.brand-mark::after {
-  content: "";
-  position: absolute;
-  inset: auto -4px -4px auto;
-  width: 14px; height: 14px;
-  background: var(--orange);
-  border-radius: 50%;
-  border: 2.5px solid var(--bg);
-}
+/* .brand-mark::after は新ロゴ画像と干渉するため無効化 */
 .brand .sub {
   font-family: var(--font-body);
   font-weight: 500;
