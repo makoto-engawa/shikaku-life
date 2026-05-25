@@ -1020,8 +1020,36 @@
     .tabs-inner { grid-template-columns: repeat(2, 1fr); }
     .tab .tab-jp { font-size: 14px; }
     .hero h1 { font-size: 24px; }
-    .cats-grid { grid-template-columns: repeat(2, 1fr); }
-    .card-grid-4, .career-cards { grid-template-columns: 1fr; }
+
+    /* ===== DODA風 横スクロール（スマホのみ） ===== */
+    .cats-grid,
+    .card-grid-4,
+    .career-cards {
+      display: flex !important;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: 12px;
+      padding: 6px 16px 16px;
+      margin: 0 -16px;
+      grid-template-columns: none;
+      scrollbar-width: none;
+    }
+    .cats-grid > *,
+    .card-grid-4 > *,
+    .career-cards > * {
+      flex: 0 0 72%;
+      scroll-snap-align: start;
+      min-width: 220px;
+    }
+    .cats-grid::-webkit-scrollbar,
+    .card-grid-4::-webkit-scrollbar,
+    .career-cards::-webkit-scrollbar { display: none; }
+    /* 横スクロール示唆：右に少しグラデで「もっとある」感 */
+    .cats, .new-articles, .popular, .career-band {
+      position: relative;
+    }
+
     .foot-grid { grid-template-columns: 1fr; }
     .search-row { grid-template-columns: 1fr; }
     .search-row .btn-search { grid-column: auto; }
