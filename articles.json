@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "father-ai-51days",
+    "title": "父とAIで資格アプリを作った、夏のはなし。51日間の記録",
+    "excerpt": "電気工事士を取りたい父と、AIで学習アプリを作った51日間の記録。",
+    "date": "2026-05-24",
+    "category": "story",
+    "category_label": "物語",
+    "icon": "📔",
+    "thumb_color": "t-orange",
+    "read_minutes": 14,
+    "popular_rank": 5
+  },
+  {
+    "slug": "ai-shikaku-app",
+    "title": "AIだけで「自分専用の資格勉強アプリ」を作る、15分の手順【2026最新】",
+    "excerpt": "ChatGPT・Claudeを使って、過去問を分析する自分専用ツールを15分で構築する手順。",
+    "date": "2026-05-22",
+    "category": "ai",
+    "category_label": "IT・AI",
+    "icon": "🤖",
+    "thumb_color": "t-violet",
+    "read_minutes": 12,
+    "popular_rank": 3
+  },
+  {
+    "slug": "bilmen-4set",
+    "title": "ビルメン4点セット、取得順序の決定版【2026年版】",
+    "excerpt": "電工2→乙4→2ボ→3冷の順がベスト。現役主任が理由と教材を解説。",
+    "date": "2026-05-20",
+    "category": "bilmen",
+    "category_label": "ビルメン系",
+    "icon": "🛠",
+    "thumb_color": "t-mint",
+    "read_minutes": 9,
+    "popular_rank": 2
+  },
+  {
+    "slug": "kaigo-demand",
+    "title": "介護福祉士はなぜ今、需要が伸びているのか",
+    "excerpt": "2025年問題で求人が急増。資格取得ルート・年収・働き方を整理した完全版。",
+    "date": "2026-05-18",
+    "category": "medical",
+    "category_label": "医療・介護",
+    "icon": "🏥",
+    "thumb_color": "t-teal",
+    "read_minutes": 10,
+    "popular_rank": 4
+  },
+  {
+    "slug": "denko2-roadmap",
+    "title": "第二種電気工事士、独学6ヶ月で一発合格するロードマップ",
+    "excerpt": "月別タスク・教材選び・実技対策まで、初心者の目線で整理。",
+    "date": "2026-05-15",
+    "category": "bilmen",
+    "category_label": "ビルメン系",
+    "icon": "⚡",
+    "thumb_color": "t-mint",
+    "read_minutes": 12,
+    "popular_rank": 6
+  },
+  {
+    "slug": "chatgpt-prompts",
+    "title": "ChatGPTで資格勉強を爆速化、プロンプト10選",
+    "excerpt": "「過去問を分野別に解説して」だけで世界が変わる。実際に効いた指示文を共有。",
+    "date": "2026-05-13",
+    "category": "ai",
+    "category_label": "IT・AI",
+    "icon": "💬",
+    "thumb_color": "t-violet",
+    "read_minutes": 8,
+    "popular_rank": 7
+  },
+  {
+    "slug": "takken-300hr",
+    "title": "宅建、社会人が働きながら受かるには。通勤＋土日の300時間プラン",
+    "excerpt": "通勤時間と土日で完結する300時間プラン。挫折ポイントの避け方つき。",
+    "date": "2026-05-10",
+    "category": "law",
+    "category_label": "法律系",
+    "icon": "🏠",
+    "thumb_color": "t-orange",
+    "read_minutes": 10,
+    "popular_rank": 1
+  },
+  {
+    "slug": "boki3-2weeks",
+    "title": "簿記3級、最短2週間で合格する勉強法。最初の3日でやることを具体化",
+    "excerpt": "仕訳の感覚さえつかめば一気に進む。最初の3日でやることを具体化。",
+    "date": "2026-05-07",
+    "category": "money",
+    "category_label": "金融",
+    "icon": "📊",
+    "thumb_color": "t-yellow",
+    "read_minutes": 8,
+    "popular_rank": 8
+  },
+  {
+    "slug": "toeic-800",
+    "title": "TOEIC 600→800、半年で伸ばした朝活ルーティン",
+    "excerpt": "朝の30分を投資する習慣化テクと、効いた教材だけを残して紹介。",
+    "date": "2026-05-04",
+    "category": "lang",
+    "category_label": "語学",
+    "icon": "🗣️",
+    "thumb_color": "t-pink",
+    "read_minutes": 9,
+    "popular_rank": 9
+  },
+  {
+    "slug": "otsu4-bilmen",
+    "title": "危険物乙4、ビルメン入門に最適な理由",
+    "excerpt": "ビルメン四点セットのとっかかりに乙4を勧める理由を整理。",
+    "date": "2026-05-01",
+    "category": "bilmen",
+    "category_label": "ビルメン系",
+    "icon": "🔥",
+    "thumb_color": "t-mint",
+    "read_minutes": 6,
+    "popular_rank": 10
+  }
+]
