@@ -533,6 +533,8 @@
   .cat-fin    { background-image: url('images/cat-fin.webp'); }
   .cat-lang   { background-image: url('images/cat-lang.webp'); }
   .cat-med    { background-image: url('images/cat-med.webp'); }
+  .cat-care   { background-image: url('images/cat-med.webp'); }
+  .cat-care .cat-overlay { background: rgba(20, 184, 166, 0.55); }
   .cat-beauty { background-image: url('images/cat-beauty.webp'); }
   .cat-beauty .cat-overlay { background: rgba(201, 46, 124, 0.55); }
 
@@ -555,7 +557,7 @@
   }
   .shikaku-list-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 18px;
   }
   @media (max-width: 1100px) { .shikaku-list-grid { grid-template-columns: repeat(3, 1fr); } }
@@ -575,6 +577,8 @@
   .shikaku-list-col.lc-fin h4    { border-bottom-color: var(--yellow); }
   .shikaku-list-col.lc-lang h4   { border-bottom-color: var(--pink); }
   .shikaku-list-col.lc-med h4    { border-bottom-color: var(--blue); }
+  .shikaku-list-col.lc-care h4   { border-bottom-color: #14b8a6; }
+  .shikaku-list-col.lc-beauty h4 { border-bottom-color: #c92e7c; }
   .shikaku-list-col ul {
     list-style: none;
     padding: 0; margin: 0;
@@ -1253,8 +1257,14 @@
     </a>
     <a class="cat cat-med" href="category-med.html">
       <div class="cat-overlay">
-        <div class="cat-name">医療・福祉系</div>
-        <div class="cat-cnt">13 資格</div>
+        <div class="cat-name">医療系</div>
+        <div class="cat-cnt">8 資格</div>
+      </div>
+    </a>
+    <a class="cat cat-care" href="category-care.html">
+      <div class="cat-overlay">
+        <div class="cat-name">介護・福祉系</div>
+        <div class="cat-cnt">5 資格 NEW</div>
       </div>
     </a>
     <a class="cat cat-beauty" href="category-beauty.html">
@@ -1324,21 +1334,26 @@
         </ul>
       </div>
       <div class="shikaku-list-col lc-med">
-        <h4>医療・福祉系</h4>
+        <h4>医療系</h4>
         <ul>
           <li><a href="iryojimu.html">医療事務</a></li>
           <li><a href="tohan.html">登録販売者</a></li>
-          <li><a href="shoninsha.html">介護職員初任者研修</a></li>
-          <li><a href="kaigo.html">介護福祉士</a></li>
-          <li><a href="hoiku.html">保育士</a></li>
-          <li><a href="caremanager.html">ケアマネジャー</a></li>
-          <li><a href="seishin.html">精神保健福祉士</a></li>
           <li><a href="kangoshi.html">看護師</a></li>
           <li><a href="junkango.html">准看護師</a></li>
-          <li><a href="housha.html">診療放射線技師</a></li>
           <li><a href="yakuzaishi.html">薬剤師</a></li>
+          <li><a href="housha.html">診療放射線技師</a></li>
           <li><a href="me.html">臨床工学技士</a></li>
           <li><a href="kensa.html">臨床検査技師</a></li>
+        </ul>
+      </div>
+      <div class="shikaku-list-col lc-care">
+        <h4>介護・福祉系 <span style="background:#14b8a6;color:#fff;font-size:9px;padding:2px 6px;border-radius:8px;margin-left:4px;">NEW</span></h4>
+        <ul>
+          <li><a href="shoninsha.html">介護職員初任者研修</a></li>
+          <li><a href="kaigo.html">介護福祉士</a></li>
+          <li><a href="caremanager.html">ケアマネジャー</a></li>
+          <li><a href="hoiku.html">保育士</a></li>
+          <li><a href="seishin.html">精神保健福祉士</a></li>
         </ul>
       </div>
       <div class="shikaku-list-col lc-beauty">
