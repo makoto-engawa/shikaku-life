@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=1280" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>TOEIC L&R｜独学3ヶ月で730点突破する完全ガイド【2026年版】｜資格Life</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -501,6 +501,18 @@
 
   /* ===================== SECTIONS / MAIN ===================== */
   main { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
+  /* ===== スマホ読みやすさ改善 ===== */
+  @media (max-width: 720px) {
+    main { padding: 0 20px; }
+    .cat-hero, .cat-hero-inner { padding-left: 20px !important; padding-right: 20px !important; }
+    h1 { font-size: 26px !important; line-height: 1.5; }
+    h2 { font-size: 20px !important; line-height: 1.5; }
+    h3 { font-size: 17px !important; }
+    p, li { font-size: 15px !important; line-height: 1.85; }
+    table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; font-size: 13px; }
+    .shikaku-list-grid, .shikaku-grid, .path-cards, .edu-cards, .career-cards { grid-template-columns: 1fr !important; gap: 14px !important; }
+  }
+
 
   .section-head {
     display: flex; align-items: end; justify-content: space-between;
