@@ -1,5 +1,41 @@
 [
   {
+    "slug": "reskilling-grants",
+    "title": "リスキリング助成金で取れる資格 完全ガイド【2026年版】",
+    "excerpt": "国の制度で最大80%還付・年間64万円・3年で192万円。教育訓練給付＋経産省事業のすべて。",
+    "date": "2026-05-26",
+    "category": "story",
+    "category_label": "物語",
+    "icon": "📔",
+    "thumb_color": "t-orange",
+    "thumb_image": "images/art-reskilling.webp",
+    "read_minutes": 13
+  },
+  {
+    "slug": "jinsei-yarinaoshi-50dai",
+    "title": "50代から人生やり直し！定年なし＆生涯現役で稼げる資格5選【2026年版】",
+    "excerpt": "税理士・マンション管理士・行政書士・調理師・宅建士。定年のない仕事につながる5資格。",
+    "date": "2026-05-26",
+    "category": "story",
+    "category_label": "物語",
+    "icon": "📔",
+    "thumb_color": "t-orange",
+    "thumb_image": "images/art-jinsei-50dai.webp",
+    "read_minutes": 11
+  },
+  {
+    "slug": "jinsei-yarinaoshi-40dai",
+    "title": "40代から人生やり直し！実体験で選ばれた資格7選【2026年版】",
+    "excerpt": "宅建・登録販売者・FP・簿記・電工・介護福祉士・ITパスポート。40代合格者のリアルな声。",
+    "date": "2026-05-26",
+    "category": "story",
+    "category_label": "物語",
+    "icon": "📔",
+    "thumb_color": "t-orange",
+    "thumb_image": "images/art-jinsei-40dai.webp",
+    "read_minutes": 12
+  },
+  {
     "slug": "father-ai-51days",
     "title": "父とAIで資格アプリを作った、夏のはなし。51日間の記録",
     "excerpt": "電気工事士を取りたい父と、AIで学習アプリを作った51日間の記録。",
