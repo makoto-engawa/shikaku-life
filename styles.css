@@ -56,12 +56,17 @@ html, body {
   font-size: 16px;
   line-height: 1.8;
   -webkit-font-smoothing: antialiased;
+  /* Chromium向け: auto-phrase で日本語の文節単位で折返し。
+     Safari iOS 用フォールバック: word-break: keep-all + overflow-wrap: anywhere
+     で「取得 / 順序」みたいな途中分断を防ぎつつ、はみ出し時だけ任意改行 */
+  word-break: keep-all;
   word-break: auto-phrase;
+  overflow-wrap: anywhere;
   line-break: strict;
   overflow-x: hidden;     /* 美容ページのナビ等の横はみ出しで全体スクロールを起こさない */
 }
 
-body { word-break: auto-phrase; line-break: strict; }
+body { word-break: keep-all; word-break: auto-phrase; overflow-wrap: anywhere; line-break: strict; }
 
 /* ===== iOS overscroll/上部余白対策：html背景を bg と揃える ===== */
 html { background: var(--bg); }
@@ -89,6 +94,37 @@ html { background: var(--bg); }
   body .header-nav .header-contact {
     font-size: 10px !important;
     padding: 4px 8px !important;
+  }
+}
+
+/* ===== Article 系：スマホでの読みやすさ補正（全 article-*.html 共通） ===== */
+@media (max-width: 720px) {
+  body .a-head .crumbs {
+    font-size: 11px !important;
+    line-height: 1.6;
+    gap: 2px;
+    overflow-wrap: anywhere;
+    word-break: keep-all;
+  }
+  body .a-head .crumbs a, body .a-head .crumbs > span { white-space: normal; }
+  body .a-head .a-meta {
+    gap: 8px !important;
+    font-size: 11px !important;
+    padding: 10px 0 16px !important;
+  }
+  body .a-head .a-meta .dot { width: 2px !important; height: 2px !important; }
+  body .lede-block {
+    padding: 16px 18px !important;
+    margin: 0 0 24px !important;
+  }
+  body .lede-block p {
+    font-size: 14px !important;
+    line-height: 1.9 !important;
+  }
+  /* 記事タイトルも長い場合の安全弁 */
+  body .a-head h1 {
+    overflow-wrap: anywhere;
+    word-break: keep-all;
   }
 }
 
