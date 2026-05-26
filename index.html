@@ -307,18 +307,20 @@
   }
   .hero-illust {
     position: relative;
-    display: flex; align-items: end; gap: 8px;
-    margin-top: 10px;
+    display: flex; align-items: end; gap: 10px;
+    margin-top: 14px;
+    padding-bottom: 32px;   /* ラベルが下にはみ出すのでスペース確保 */
   }
   .person {
-    width: 110px; height: 130px;
+    width: 64px !important; height: 76px !important;   /* 110x130 → 64x76 (約半分) */
     background: linear-gradient(180deg, #ffe0b3 0%, #ffcf8a 100%);
-    border-radius: 60px 60px 12px 12px;
+    border-radius: 36px 36px 8px 8px;
     position: relative;
     display: grid; place-items: center;
-    font-size: 56px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
-    overflow: hidden;
+    font-size: 32px;
+    box-shadow: 0 5px 14px rgba(0,0,0,0.18);
+    overflow: visible !important;  /* ラベルを外に表示できるよう */
+    flex-shrink: 0;
   }
   .person.b { background: linear-gradient(180deg, #c5e1ff 0%, #88beff 100%); }
   .person.c { background: linear-gradient(180deg, #ffd9d9 0%, #ff9aa2 100%); }
@@ -326,7 +328,7 @@
     width: 100%; height: 100%;
     object-fit: cover;
     object-position: center top;
-    border-radius: inherit;
+    border-radius: 36px 36px 8px 8px;   /* img 側で角丸 */
   }
   .person-label {
     position: absolute; bottom: -22px; left: 50%; transform: translateX(-50%);
@@ -335,6 +337,7 @@
     padding: 3px 8px; border-radius: 10px;
     white-space: nowrap;
     box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    z-index: 2;
   }
 
   .hero-card {
@@ -1709,7 +1712,7 @@
 
 <main>
   <!-- ============ SISTER SITE BANNER ============ -->
-  <a href="#" class="sister">
+  <a href="https://bilumen.jp" target="_blank" rel="noopener" class="sister">
     <div class="sister-info">
       <span class="sister-tag">🏢 SISTER MEDIA</span>
       <h3 class="sister-title">
