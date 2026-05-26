@@ -24,25 +24,6 @@
   .a-head .crumbs { margin-bottom: 18px; }
   .a-head .pr-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 18px; }
   .a-head h1 { font-size: 38px; line-height: 1.5; margin: 12px 0 22px; }
-  @media (max-width: 720px) {
-    .a-head h1 { font-size: 28px; }
-    .a-body { font-size: 16px; line-height: 1.95; }
-    .a-body h2 { font-size: 21px; margin-top: 40px; margin-bottom: 14px; padding-left: 12px; border-left-width: 4px; line-height: 1.45; }
-    .a-body h3 { font-size: 17px; margin-top: 28px; margin-bottom: 10px; }
-    .a-body p { margin-bottom: 1.2em; }
-    .a-body ul, .a-body ol { padding-left: 1.2em; margin-bottom: 1.2em; }
-    .lede-block { padding: 16px 18px; }
-    .lede-block p { font-size: 14px; line-height: 1.8; }
-    .toc { padding: 16px 18px; }
-    .toc summary { font-size: 14px; }
-    .toc ol { font-size: 13px; line-height: 1.8; }
-    .a-body blockquote { padding: 14px 18px; font-size: 14px; line-height: 1.8; margin: 1.2em 0; }
-    .callout { padding: 14px 18px; margin: 1.2em 0; }
-    .callout .ico { font-size: 22px; }
-    .callout p { font-size: 14px; }
-    .a-body table { font-size: 13px; }
-    .a-body table td, .a-body table th { padding: 8px 10px; }
-  }
   .a-meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; font-family: var(--font-heading); font-size: 13px; color: var(--soft); padding: 14px 0 22px; border-bottom: 1.5px solid var(--rule); }
   .a-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--muted); }
   .a-meta .author { display: inline-flex; align-items: center; gap: 8px; }
@@ -95,6 +76,28 @@
 
   .related { margin-top: 56px; }
   .progress-bar { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--orange)); width: 0%; z-index: 40; transition: width .12s linear; }
+  @media (max-width: 720px) {
+    .article-wrap { padding: 28px 16px 64px; }
+    .a-head h1 { font-size: 26px; line-height: 1.4; }
+    .a-body { font-size: 15px; line-height: 1.9; }
+    .a-body h2 { font-size: 19px; margin-top: 36px; margin-bottom: 12px; padding-left: 10px; border-left-width: 4px; line-height: 1.45; }
+    .a-body h3 { font-size: 16px; margin-top: 24px; margin-bottom: 8px; }
+    .a-body p { margin-bottom: 1.1em; }
+    .a-body ul, .a-body ol { padding-left: 1.2em; margin-bottom: 1.1em; }
+    .a-body strong { word-break: auto-phrase; }
+    .lede-block { padding: 14px 16px; margin: 0 0 24px; }
+    .lede-block p { font-size: 13px; line-height: 1.75; word-break: auto-phrase; }
+    .toc { padding: 14px 16px; margin-bottom: 28px; }
+    .toc summary { font-size: 13px; }
+    .toc ol { font-size: 13px; line-height: 1.7; padding-left: 18px; }
+    .a-body blockquote { padding: 12px 16px; font-size: 13px; line-height: 1.75; margin: 1em 0; }
+    .callout { padding: 12px 14px; margin: 1em 0; gap: 10px; }
+    .callout .ico { font-size: 20px; }
+    .callout p { font-size: 13px; line-height: 1.75; }
+    .a-body table { font-size: 12px; }
+    .a-body table td, .a-body table th { padding: 6px 8px; }
+    .article-wrap { padding-left: 16px; padding-right: 16px; }
+  }
 </style>
 </head>
 <body data-screen-label="Article: reskilling-grants">
