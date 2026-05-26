@@ -647,3 +647,82 @@ em {
     justify-content: center !important;
   }
 }
+
+/* ===================================================== */
+/* Card components (index.html共通スタイル / 全ページ用)   */
+/* article ページの関連記事カードでも効くように styles.css に移植 */
+/* ===================================================== */
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all .15s;
+  display: flex; flex-direction: column;
+}
+.card:hover {
+  border-color: var(--blue);
+  box-shadow: 0 6px 18px rgba(0,40,100,0.10);
+  transform: translateY(-2px);
+}
+.card-thumb {
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(135deg, #e8f1fb, #d1e3f7);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: grid; place-items: center;
+  font-size: 44px;
+  overflow: hidden;
+}
+.card-thumb .new {
+  position: absolute; top: 8px; left: 8px;
+  background: var(--pink, #e8517f); color: #fff;
+  font-size: 10px; font-weight: 900;
+  padding: 3px 8px; border-radius: 3px;
+  letter-spacing: 0.08em;
+}
+.card-thumb .fav {
+  position: absolute; top: 8px; right: 8px;
+  width: 28px; height: 28px; border-radius: 50%;
+  background: rgba(255,255,255,0.92);
+  display: grid; place-items: center;
+  font-size: 14px; color: var(--mute);
+  transition: color .15s, transform .15s;
+}
+.card-thumb .fav:hover { color: var(--pink, #e8517f); transform: scale(1.1); }
+.card-thumb .fav.on { color: var(--pink, #e8517f); }
+.card-body {
+  padding: 14px 14px 16px;
+  display: flex; flex-direction: column; gap: 6px;
+  flex: 1;
+}
+.pill {
+  display: inline-block;
+  font-size: 10px; font-weight: 700;
+  padding: 3px 8px; border-radius: 3px;
+  letter-spacing: 0.04em;
+  width: fit-content;
+}
+.pill.bil { background: #e6f4ed; color: #1c8a5f; }
+.pill.it { background: #efe7ff; color: #5b35d3; }
+.pill.law { background: #e8eaef; color: #1a2230; }
+.pill.fin { background: #fff4d6; color: #b07c00; }
+.pill.lang { background: #ffe1e7; color: #cc324f; }
+.pill.medical { background: #d6f5f1; color: #097a72; }
+.pill.med { background: var(--blue-soft); color: var(--blue); }
+.card-title {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 700; font-size: 14px;
+  line-height: 1.45; color: var(--ink);
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card-meta {
+  margin-top: auto;
+  display: flex; justify-content: space-between;
+  font-size: 10px; color: var(--mute);
+  padding-top: 6px;
+}
+.card-meta .read { display: flex; align-items: center; gap: 3px; }
