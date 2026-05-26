@@ -24,7 +24,25 @@
   .a-head .crumbs { margin-bottom: 18px; }
   .a-head .pr-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 18px; }
   .a-head h1 { font-size: 38px; line-height: 1.5; margin: 12px 0 22px; }
-  @media (max-width: 720px) { .a-head h1 { font-size: 28px; } }
+  @media (max-width: 720px) {
+    .a-head h1 { font-size: 28px; }
+    .a-body { font-size: 16px; line-height: 1.95; }
+    .a-body h2 { font-size: 21px; margin-top: 40px; margin-bottom: 14px; padding-left: 12px; border-left-width: 4px; line-height: 1.45; }
+    .a-body h3 { font-size: 17px; margin-top: 28px; margin-bottom: 10px; }
+    .a-body p { margin-bottom: 1.2em; }
+    .a-body ul, .a-body ol { padding-left: 1.2em; margin-bottom: 1.2em; }
+    .lede-block { padding: 16px 18px; }
+    .lede-block p { font-size: 14px; line-height: 1.8; }
+    .toc { padding: 16px 18px; }
+    .toc summary { font-size: 14px; }
+    .toc ol { font-size: 13px; line-height: 1.8; }
+    .a-body blockquote { padding: 14px 18px; font-size: 14px; line-height: 1.8; margin: 1.2em 0; }
+    .callout { padding: 14px 18px; margin: 1.2em 0; }
+    .callout .ico { font-size: 22px; }
+    .callout p { font-size: 14px; }
+    .a-body table { font-size: 13px; }
+    .a-body table td, .a-body table th { padding: 8px 10px; }
+  }
   .a-meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; font-family: var(--font-heading); font-size: 13px; color: var(--soft); padding: 14px 0 22px; border-bottom: 1.5px solid var(--rule); }
   .a-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--muted); }
   .a-meta .author { display: inline-flex; align-items: center; gap: 8px; }
