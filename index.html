@@ -1118,9 +1118,8 @@
     .tab .tab-jp { font-size: 14px; }
     .hero h1 { font-size: 24px; }
 
-    /* ===== DODA風 横スクロール（スマホのみ） ===== */
+    /* ===== DODA風 横スクロール（スマホのみ・カテゴリ＆キャリアバンドだけ） ===== */
     .cats-grid,
-    .card-grid-4,
     .career-cards {
       display: flex !important;
       overflow-x: auto;
@@ -1133,15 +1132,24 @@
       scrollbar-width: none;
     }
     .cats-grid > *,
-    .card-grid-4 > *,
     .career-cards > * {
       flex: 0 0 72%;
       scroll-snap-align: start;
       min-width: 220px;
     }
     .cats-grid::-webkit-scrollbar,
-    .card-grid-4::-webkit-scrollbar,
     .career-cards::-webkit-scrollbar { display: none; }
+
+    /* ===== 新着カードは2列縦並び（記事数多めでも見やすく） ===== */
+    .card-grid-4 {
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+      gap: 10px !important;
+      overflow: visible !important;
+    }
+    .card-grid-4 .card-title { font-size: 12px; line-height: 1.4; }
+    .card-grid-4 .card-meta { font-size: 9px; }
+    .card-grid-4 .pill { font-size: 9px; padding: 2px 6px; }
     /* 横スクロール示唆：右に少しグラデで「もっとある」感 */
     .cats, .new-articles, .popular, .career-band {
       position: relative;
