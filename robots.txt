@@ -1,0 +1,13 @@
+# 資格Life (shikaku-life.jp) — robots.txt
+# 2026-05-27 初版
+
+User-agent: *
+Allow: /
+
+# クロール禁止：スクリプト・ログ・テスト系
+Disallow: /scripts/
+Disallow: /*.sh$
+Disallow: /*?debug=
+
+# サイトマップ
+Sitemap: https://shikaku-life.jp/sitemap.xml
