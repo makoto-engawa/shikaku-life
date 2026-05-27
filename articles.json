@@ -1,5 +1,53 @@
 [
   {
+    "slug": "yoga-instructor",
+    "title": "ヨガインストラクターになるには？資格・費用・働き方を経験者の声で徹底解説",
+    "excerpt": "RYT200の取得方法／国内通学vs海外留学／費用10〜100万円／卒業後の働き方3パターン／経験者の声を地図にまとめた完全ガイド。",
+    "date": "2026-05-27",
+    "category": "story",
+    "category_label": "物語",
+    "icon": "🧘‍♀️",
+    "thumb_color": "t-orange",
+    "thumb_image": "images/art-yoga.webp",
+    "read_minutes": 12
+  },
+  {
+    "slug": "pilates-instructor",
+    "title": "ピラティスインストラクターになるには？資格選び・養成費用・キャリアまで完全ガイド",
+    "excerpt": "STOTT・BASI・PHI・JOTなど主要団体比較／5器具と取る順番／費用30〜150万円／働き方3パターンまで深掘り。",
+    "date": "2026-05-27",
+    "category": "story",
+    "category_label": "物語",
+    "icon": "🌸",
+    "thumb_color": "t-orange",
+    "thumb_image": "images/art-pilates.webp",
+    "read_minutes": 12
+  },
+  {
+    "slug": "agaroot-guide",
+    "title": "アガルート完全解説｜難関国家資格20種類対応・キャリア再構築の本命通信講座【2026年版】",
+    "excerpt": "司法試験・行政書士・社労士・公認会計士・税理士・宅建…難関資格20種類以上対応。会員25万人突破の本命通信講座を深掘り。",
+    "date": "2026-05-27",
+    "category": "story",
+    "category_label": "物語",
+    "icon": "📔",
+    "thumb_color": "t-orange",
+    "thumb_image": "images/art-takken.webp",
+    "read_minutes": 12
+  },
+  {
+    "slug": "gcheck-guide",
+    "title": "G検定完全ガイド｜AI時代の必須資格を3ヶ月で取る勉強法【2026年版】",
+    "excerpt": "非エンジニア対応・合格率60〜70%・勉強時間30〜80時間。試験概要・教材・合格戦略まで体系解説。",
+    "date": "2026-05-27",
+    "category": "ai",
+    "category_label": "IT・AI",
+    "icon": "🤖",
+    "thumb_color": "t-violet",
+    "thumb_image": "images/art-gcheck.webp",
+    "read_minutes": 11
+  },
+  {
     "slug": "reskilling-grants",
     "title": "リスキリング助成金で取れる資格 完全ガイド【2026年版】",
     "excerpt": "国の制度で最大80%還付・年間64万円・3年で192万円。教育訓練給付＋経産省事業のすべて。",
