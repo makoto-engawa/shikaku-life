@@ -39,9 +39,21 @@
     position: absolute;
     inset: 0;
     background:
+      linear-gradient(180deg, rgba(255,255,255,.65) 0%, rgba(255,255,255,.30) 45%, rgba(255,255,255,.55) 100%),
       radial-gradient(40% 70% at 12% 30%, rgba(255, 139, 175, .22), transparent 70%),
-      radial-gradient(40% 70% at 88% 70%, rgba(255, 200, 100, .18), transparent 70%);
+      radial-gradient(40% 70% at 88% 70%, rgba(255, 200, 100, .18), transparent 70%),
+      url('images/bg-passion.webp') center / cover no-repeat;
     z-index: 0;
+  }
+  @media (max-width: 720px) {
+    /* スマホでは写真の人物を画面右寄りに見せるためフォーカス調整 */
+    .hub-hero::before {
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.70) 0%, rgba(255,255,255,.35) 45%, rgba(255,255,255,.60) 100%),
+        radial-gradient(40% 70% at 12% 30%, rgba(255, 139, 175, .22), transparent 70%),
+        radial-gradient(40% 70% at 88% 70%, rgba(255, 200, 100, .18), transparent 70%),
+        url('images/bg-passion.webp') 70% center / cover no-repeat;
+    }
   }
   .hub-hero .container { position: relative; z-index: 1; }
   .hub-hero h1 { font-size: 44px; line-height: 1.4; margin: 16px 0 16px; }
