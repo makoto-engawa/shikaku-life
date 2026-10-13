@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://shikaku-life.jp/</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://shikaku-life.jp/about.html</loc>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -68,7 +74,7 @@
   </url>
   <url>
     <loc>https://shikaku-life.jp/article-denko2-roadmap.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -149,12 +155,6 @@
     <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://shikaku-life.jp/article.html</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/articles.html</loc>
@@ -284,7 +284,7 @@
   </url>
   <url>
     <loc>https://shikaku-life.jp/comparison-denko2.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -332,7 +332,7 @@
   </url>
   <url>
     <loc>https://shikaku-life.jp/denko2.html</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -379,18 +379,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://shikaku-life.jp/fufuenman-privacy.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://shikaku-life.jp/fufuenman-support.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://shikaku-life.jp/gcheck.html</loc>
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -419,12 +407,6 @@
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://shikaku-life.jp/</loc>
-    <lastmod>2026-08-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/ipass.html</loc>
@@ -473,12 +455,6 @@
     <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://shikaku-life.jp/logo-for-x.html</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/makeup-therapy.html</loc>
@@ -578,7 +554,7 @@
   </url>
   <url>
     <loc>https://shikaku-life.jp/story.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
