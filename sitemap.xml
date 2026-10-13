@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://shikaku-life.jp/about.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/ap.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/aroma.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -26,13 +26,25 @@
   </url>
   <url>
     <loc>https://shikaku-life.jp/article-ai-shikaku-app.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shikaku-life.jp/article-aromatherapist-shikaku.html</loc>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/article-bilmen-4set.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shikaku-life.jp/article-boki2-roadmap.html</loc>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -44,7 +56,13 @@
   </url>
   <url>
     <loc>https://shikaku-life.jp/article-chatgpt-prompts.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shikaku-life.jp/article-denko2-ginou-chokuzen.html</loc>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -56,7 +74,13 @@
   </url>
   <url>
     <loc>https://shikaku-life.jp/article-father-ai-51days.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shikaku-life.jp/article-g-kentei-books.html</loc>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -68,13 +92,13 @@
   </url>
   <url>
     <loc>https://shikaku-life.jp/article-jinsei-yarinaoshi-40dai.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/article-jinsei-yarinaoshi-50dai.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -98,7 +122,7 @@
   </url>
   <url>
     <loc>https://shikaku-life.jp/article-reskilling-grants.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -110,13 +134,19 @@
   </url>
   <url>
     <loc>https://shikaku-life.jp/article-toeic-800.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/article-yoga-instructor.html</loc>
     <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shikaku-life.jp/article-zaitaku-kasegeru-shikaku.html</loc>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -134,37 +164,37 @@
   </url>
   <url>
     <loc>https://shikaku-life.jp/bilkan.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/boiler2.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/boki1.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/boki2.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/boki3.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/caremanager.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -176,259 +206,271 @@
   </url>
   <url>
     <loc>https://shikaku-life.jp/category-beauty.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/category-bilmen.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/category-care.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/category-fin.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/category-it-ai.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/category-lang.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/category-law.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/category-med.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/chukentei.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/color.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/comparison-beauty.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/comparison-bilmen.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/comparison-care.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/comparison-denko2.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/comparison-fin.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/comparison-it-ai.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/comparison-lang.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/comparison-law.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/comparison-med.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/comparison.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/denko1.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/denko2.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/eiken.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/enekan.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/eshikaku.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/fashion-color.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/fe.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/fp2.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/fp3.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://shikaku-life.jp/fufuenman-privacy.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://shikaku-life.jp/fufuenman-support.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://shikaku-life.jp/gcheck.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/gyousei.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/hand-therapy.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/hoiku.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/housha.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-08-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/ipass.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/iryojimu.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/junkango.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/kaigo.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/kangoshi.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/kensa.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/kentei.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/kokkaku.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -440,97 +482,97 @@
   </url>
   <url>
     <loc>https://shikaku-life.jp/makeup-therapy.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/me.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/medical-aroma.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/mos.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/nail.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/otsu4.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/passion.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/pilates.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/reito3.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/seishin.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/sharousi.html</loc>
-    <lastmod>2026-05-27</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/shindan.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/shoninsha.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/shoubou4.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/shouken.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/skincare.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -542,31 +584,31 @@
   </url>
   <url>
     <loc>https://shikaku-life.jp/takken.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/toeic.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/toeicsw.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/tohan.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shikaku-life.jp/yakuzaishi.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
