@@ -1,5 +1,29 @@
 [
   {
+    "slug": "sg-security-2026",
+    "title": "PHP騒動で注目のセキュリティ資格。情報セキュリティマネジメント試験は12月27日まで！独学2か月の受け方と定番参考書",
+    "excerpt": "使う側の国家資格。12月28日から一時休止、受けるなら12月27日まで。",
+    "date": "2026-10-23",
+    "category": "ai",
+    "category_label": "IT・AI",
+    "icon": "🛡️",
+    "thumb_color": "t-violet",
+    "thumb_image": "images/art-sg-security.webp",
+    "read_minutes": 8
+  },
+  {
+    "slug": "g-kentei-books",
+    "title": "G検定おすすめ参考書4選｜白本・黒本・赤本・青本を徹底比較",
+    "excerpt": "白本・黒本・赤本・青本を比較。2026年の試験形式に合わせた選び方。",
+    "date": "2026-06-05",
+    "category": "ai",
+    "category_label": "IT・AI",
+    "icon": "🤖",
+    "thumb_color": "t-violet",
+    "thumb_image": "images/art-g-kentei-books.webp",
+    "read_minutes": 7
+  },
+  {
     "slug": "boki2-roadmap",
     "title": "簿記2級、独学で受かる完全ロードマップ。工業簿記の壁を越える8週間プラン",
     "excerpt": "工業簿記という新科目の壁をどこで越えるか。過去問はいつから、アプリは何を使うか。合格まで届く独学8週間ロードマップ。",
