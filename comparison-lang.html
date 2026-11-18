@@ -113,6 +113,9 @@
   @media (max-width: 720px) { .qual-grid { grid-template-columns: 1fr; } }
   .qual-card { background: #fff; border: 1.5px solid var(--rule); border-radius: 14px; padding: 18px 20px; text-decoration: none; color: var(--ink); display: flex; gap: 14px; align-items: center; transition: all .2s ease; }
   .qual-card:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.06); border-color: #ec4899; }
+  .qual-card--soon { opacity: .6; cursor: default; }
+  .qual-card--soon:hover { transform: none; box-shadow: none; border-color: var(--rule); }
+  .qual-card .soon { margin-left: auto; font-size: 11px; color: #888; white-space: nowrap; }
   .qual-card .ico { font-size: 26px; width: 50px; height: 50px; background: #fce7f3; border-radius: 12px; display: grid; place-items: center; flex-shrink: 0; }
   .qual-card h4 { font-size: 16px; margin: 0 0 2px; color: var(--ink-strong); }
   .qual-card .level { font-family: var(--font-heading); font-size: 11px; color: #ec4899; font-weight: 700; letter-spacing: .05em; }
@@ -156,7 +159,8 @@
   .foot-bottom .links a { color: #6e7787; text-decoration: none; }
   .foot-bottom .links a:hover { color: #ec4899; }
 </style>
-</meta></head>
+</meta><style id="sl-wrap-fix">/* 2026-11-18 点検：見出しは文節で改行し、最後の行に1〜2文字だけ残らないよう行をそろえる */h1,h2,h3,h4{word-break:normal;word-break:auto-phrase;line-break:strict;text-wrap:balance}p,li{text-wrap:pretty}</style>
+</head>
 <body data-screen-label="比較・語学">
 <div id="header-slot"></div>
 <section class="cmp-hero">
@@ -421,20 +425,20 @@
 <div class="level">学生〜社会人</div>
 </div>
 </a>
-<a class="qual-card" href="chuken.html">
+<a class="qual-card" href="chukentei.html">
 <span class="ico">🇨🇳</span>
 <div>
 <h4>中国語検定</h4>
 <div class="level">アジア圏ビジネス</div>
 </div>
 </a>
-<a class="qual-card" href="hangul.html">
+<div class="qual-card qual-card--soon">
 <span class="ico">🇰🇷</span>
 <div>
 <h4>ハングル能力検定</h4>
 <div class="level">韓国語</div>
 </div>
-</a>
+<span class="soon">ページ準備中</span></div>
 </div>
 <div style="text-align:center; margin-top:24px;">
 <a href="category-lang.html" style="display:inline-block;color:#ec4899;font-weight:700;text-decoration:none;font-size:15px;">→ 語学カテゴリトップへ</a>
@@ -541,6 +545,7 @@
 </div>
 </div>
 </footer>
-<script src="header.js"></script>
+<script src="partials.js"></script>
+<script>SL.mountHeader('comparison');</script>
 </body>
 </html>

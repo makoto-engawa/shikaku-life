@@ -124,7 +124,10 @@ html { background: var(--bg); }
   /* 記事タイトルも長い場合の安全弁 */
   body .a-head h1 {
     overflow-wrap: anywhere;
-    word-break: keep-all;
+    word-break: normal;        /* keep-all だと「？」や「アル」だけが次の行に落ちる（2026-11-18点検） */
+    word-break: auto-phrase;   /* 対応ブラウザは文節で改行 */
+    line-break: strict;
+    text-wrap: balance;
   }
 }
 

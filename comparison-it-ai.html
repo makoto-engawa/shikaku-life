@@ -113,6 +113,9 @@
   @media (max-width: 720px) { .qual-grid { grid-template-columns: 1fr; } }
   .qual-card { background: #fff; border: 1.5px solid var(--rule); border-radius: 14px; padding: 18px 20px; text-decoration: none; color: var(--ink); display: flex; gap: 14px; align-items: center; transition: all .2s ease; }
   .qual-card:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.06); border-color: #8b5cf6; }
+  .qual-card--soon { opacity: .6; cursor: default; }
+  .qual-card--soon:hover { transform: none; box-shadow: none; border-color: var(--rule); }
+  .qual-card .soon { margin-left: auto; font-size: 11px; color: #888; white-space: nowrap; }
   .qual-card .ico { font-size: 26px; width: 50px; height: 50px; background: #ede9fe; border-radius: 12px; display: grid; place-items: center; flex-shrink: 0; }
   .qual-card h4 { font-size: 16px; margin: 0 0 2px; color: var(--ink-strong); }
   .qual-card .level { font-family: var(--font-heading); font-size: 11px; color: #8b5cf6; font-weight: 700; letter-spacing: .05em; }
@@ -156,6 +159,7 @@
   .foot-bottom .links a { color: #6e7787; text-decoration: none; }
   .foot-bottom .links a:hover { color: #8b5cf6; }
 </style>
+<style id="sl-wrap-fix">/* 2026-11-18 点検：見出しは文節で改行し、最後の行に1〜2文字だけ残らないよう行をそろえる */h1,h2,h3,h4{word-break:normal;word-break:auto-phrase;line-break:strict;text-wrap:balance}p,li{text-wrap:pretty}</style>
 </head>
 <body data-screen-label="比較・IT・AI">
 <div id="header-slot"></div>
@@ -406,7 +410,7 @@
 <p>個別の資格ページで、難易度・受験料・学習プラン・キャリア出口を1ページにまとめています。</p>
 </div>
 <div class="qual-grid">
-<a class="qual-card" href="itpass.html">
+<a class="qual-card" href="ipass.html">
 <span class="ico">💻</span>
 <div>
 <h4>ITパスポート</h4>
@@ -427,27 +431,27 @@
 <div class="level">国家資格</div>
 </div>
 </a>
-<a class="qual-card" href="gkentei.html">
+<a class="qual-card" href="gcheck.html">
 <span class="ico">🧠</span>
 <div>
 <h4>G検定</h4>
 <div class="level">ディープラーニング協会</div>
 </div>
 </a>
-<a class="qual-card" href="mos-excel.html">
+<a class="qual-card" href="mos.html">
 <span class="ico">📊</span>
 <div>
 <h4>MOS Excel</h4>
 <div class="level">Microsoft公式</div>
 </div>
 </a>
-<a class="qual-card" href="aws.html">
+<div class="qual-card qual-card--soon">
 <span class="ico">☁️</span>
 <div>
 <h4>AWS認定</h4>
 <div class="level">クラウド・実務直結</div>
 </div>
-</a>
+<span class="soon">ページ準備中</span></div>
 </div>
 <div style="text-align:center; margin-top:24px;">
 <a href="category-it-ai.html" style="display:inline-block;color:#8b5cf6;font-weight:700;text-decoration:none;font-size:15px;">→ IT・AIカテゴリトップへ</a>
@@ -554,6 +558,7 @@
 </div>
 </div>
 </footer>
-<script src="header.js"></script>
+<script src="partials.js"></script>
+<script>SL.mountHeader('comparison');</script>
 </body>
 </html>

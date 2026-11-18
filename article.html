@@ -452,6 +452,7 @@
     transition: width .12s linear;
   }
 </style>
+<style id="sl-wrap-fix">/* 2026-11-18 点検：見出しは文節で改行し、最後の行に1〜2文字だけ残らないよう行をそろえる */h1,h2,h3,h4{word-break:normal;word-break:auto-phrase;line-break:strict;text-wrap:balance}p,li{text-wrap:pretty}</style>
 </head>
 <body data-screen-label="03 Article Single">
 
@@ -583,7 +584,7 @@
       </div>
 
       <!-- ======================= 中間CTA: 教材ピックアップ ======================= -->
-      <section class="mid-cta" aria-labelledby="mid-cta-title">
+      <section class="mid-cta" id="chap-3" aria-labelledby="mid-cta-title">
         <div class="head">
           <span class="label">★ この資格に強い教材ピックアップ ★</span>
           <h3 id="mid-cta-title">迷うくらいなら、この3つから選べばOK</h3>

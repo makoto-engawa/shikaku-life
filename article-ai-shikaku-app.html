@@ -164,6 +164,7 @@
     "@id": "https://shikaku-life.jp/article-ai-shikaku-app.html"
   }
 }</script>
+<style id="sl-wrap-fix">/* 2026-11-18 点検：見出しは文節で改行し、最後の行に1〜2文字だけ残らないよう行をそろえる */h1,h2,h3,h4{word-break:normal;word-break:auto-phrase;line-break:strict;text-wrap:balance}p,li{text-wrap:pretty}</style>
 </head>
 <body data-screen-label="Article: AI Shikaku App in 15min">
 
@@ -296,35 +297,35 @@
           <li>
             <span class="num">1</span>
             <div class="body">
-              <h4>「企画書」をAIに作らせる</h4>
+              <h4 id="chap-3-1">「企画書」をAIに作らせる</h4>
               <p>Gemini 3 Pro に「あなたは優秀なPMです。以下のコンセプトでアプリの要件定義をしてください」と伝え、作りたいアプリの概要・ターゲット・主要機能をざっくり箇条書きで渡す。</p>
             </div>
           </li>
           <li>
             <span class="num">2</span>
             <div class="body">
-              <h4>エディタにプロンプトを投入</h4>
+              <h4 id="chap-3-2">エディタにプロンプトを投入</h4>
               <p>Gemini が返してくれた「実装用プロンプト」をコピーして、Antigravity のチャット欄に貼る。これで仕様がAIエージェントに引き継がれる。</p>
             </div>
           </li>
           <li>
             <span class="num">3</span>
             <div class="body">
-              <h4>AIが自動でコードを書く</h4>
+              <h4 id="chap-3-3">AIが自動でコードを書く</h4>
               <p>Antigravity のAIエージェントが自動でTodoリストを作り、React/TypeScript/CSSなどの最適な構成を選んで実装を進める。途中で必要なライブラリのインストール承認が出るので、Yes と返すだけ。</p>
             </div>
           </li>
           <li>
             <span class="num">4</span>
             <div class="body">
-              <h4>自然言語で追加調整</h4>
+              <h4 id="chap-3-4">自然言語で追加調整</h4>
               <p>動くプロトタイプができたら、「日本語対応にして」「正解時に紙吹雪を出して」「夜間モードを追加して」と<em>普通の言葉で追加注文</em>。AIが該当箇所だけ書き換えてくれる。</p>
             </div>
           </li>
           <li>
             <span class="num">5</span>
             <div class="body">
-              <h4>ネットに公開</h4>
+              <h4 id="chap-3-5">ネットに公開</h4>
               <p>完成したらVercel に接続。GitHubリポジトリを選んで「Deploy」ボタンを押すだけで、数分で世界中からアクセスできるURLが発行される。スマホでも開ける。</p>
             </div>
           </li>
